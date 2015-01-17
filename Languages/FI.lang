@@ -1,0 +1,2349 @@
+﻿# FINNISH LANGUAGE.
+# Copyright (C) 2013
+# This file is distributed under the same license as the PACKAGE package.
+# Marko Hämäläinen, make8686@gmail.com, 2012.
+# Corrected typos and some words to better describe. 2014 January.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-10 11:11-0500\n"
+"PO-Revision-Date: 2014-01-21 23:19+GMT+2\n"
+"Language-Team: Marko Hämäläinen <make8686@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translator: Marko Hämäläinen <make8686@gmail.com>\n"
+"Language: FINNISH\n"
+
+#, c-format
+msgid "%.1fGB free of %.1fGB"
+msgstr "%Vapaana .1fGB/%.1fGB"
+
+#, c-format
+msgid "%.2f%% of %.2fGB (%c) ETA: %d:%02d:%02d"
+msgstr "%.2f%%/%.2fGB (%c) Aika: %d:%02d:%02d"
+
+#, c-format
+msgid "%.2fGB copied in %d:%02d:%02d"
+msgstr "%.2fGB Kopioitu ajassa %d:%02d:%02d"
+
+#, c-format
+msgid "%d available"
+msgstr "%d vapaana"
+
+#, c-format
+msgid "%d more notes"
+msgstr "%d lisätietoja"
+
+#, c-format
+msgid "%s Split: %d %s"
+msgstr "%s Jako: %d %s"
+
+#, c-format
+msgid "%s, please wait..."
+msgstr "%s, odota..."
+
+#, c-format
+msgid "%s: Favorites"
+msgstr ""
+
+#, c-format
+msgid "%s: GUI "
+msgstr ""
+
+#, c-format
+msgid "%s: Options "
+msgstr ""
+
+#, c-format
+msgid "(%d online)"
+msgstr "(%d online)"
+
+#, c-format
+msgid "(%d seconds timeout)"
+msgstr "(Odotetaan %d sekuntia)"
+
+msgid "(This can take a couple of minutes)"
+msgstr "(Tässä voi mennä vähän aikaa)"
+
+msgid ".dol too small"
+msgstr "-dol-tiedosto liian pieni"
+
+msgid "1.2+"
+msgstr ""
+
+msgid "1st-Person Shooter"
+msgstr ""
+
+msgid "2.0+"
+msgstr ""
+
+msgid "2.1+"
+msgstr ""
+
+msgid "2.2+"
+msgstr ""
+
+msgid "3D cover"
+msgstr "3D kansi"
+
+msgid "3rd-person Shooter"
+msgstr ""
+
+msgid "< ASC  >"
+msgstr "< SUUR  >"
+
+msgid "< DESC >"
+msgstr "< PIEN >"
+
+msgid "< DOWNLOAD >"
+msgstr "< LATAA >"
+
+msgid "About"
+msgstr "Tietoa ohjelmasta"
+
+msgid "Action"
+msgstr "Toiminta"
+
+msgid "Additional config:"
+msgstr "Lisää asetuksia:"
+
+msgid "Admin Lock:"
+msgstr "Lapsilukko:"
+
+msgid "Admin Unlock"
+msgstr "Lapsilukko pois"
+
+msgid "Adult"
+msgstr "K18+"
+
+msgid "Adventure"
+msgstr "Seikkailu"
+
+msgid "All"
+msgstr "Kaikki"
+
+msgid "All Channels"
+msgstr "Kaikki kanavat"
+
+msgid "All Games"
+msgstr "Kaikki pelit"
+
+msgid "All themes up to date."
+msgstr "Kaikki teemat ajan tasalla"
+
+msgid "Alt Button Cfg:"
+msgstr "Vaihtoehtoiset napit"
+
+msgid "Alt dol:"
+msgstr "Muu .dol"
+
+msgid "Alternative .dol:"
+msgstr "Vaihtoehtoinen .dol"
+
+msgid "Anti 002 Fix:"
+msgstr "Anti 002 Fix"
+
+#, c-format
+msgid "App. Path: %s"
+msgstr "Ohj. polku: %s"
+
+msgid "Arcade"
+msgstr ""
+
+#, c-format
+msgid ""
+"Are you sure you want to %s\n"
+"this partition?"
+msgstr ""
+"Oletko varma että haluat %s\n"
+"tämän osion?"
+
+msgid ""
+"Are you sure you want to FIX\n"
+"this partition?"
+msgstr ""
+"Oletko varma että haluat korjata\n"
+"tämän osion?"
+
+msgid ""
+"Are you sure you want to remove this\n"
+"game?"
+msgstr ""
+"Oletko varma että haluat poistaa\n"
+"tämän pelin?"
+
+msgid "Ascending"
+msgstr "Nouseva"
+
+msgid "Auto"
+msgstr "Auto"
+
+#, c-format
+msgid "Auto-start game: %.6s not found!"
+msgstr "Auto-start-peli: %.6s ei löydy!"
+
+msgid "Available Updates"
+msgstr "Saatavilla olevat päivitykset"
+
+msgid "Back"
+msgstr "Takaisin"
+
+msgid "Balance Board"
+msgstr "Balance Board"
+
+msgid "Baseball"
+msgstr "Pesäpallo"
+
+msgid "Basic"
+msgstr "Perus"
+
+msgid "Basketball"
+msgstr "Koripallo"
+
+msgid "Bike Racing"
+msgstr "Pyöriä"
+
+msgid "Billiards"
+msgstr "Biljardi"
+
+msgid "Block IOS Reload:"
+msgstr "Block IOS Reload:"
+
+msgid "Board Game"
+msgstr "Lautapeli"
+
+msgid "Boot Disc"
+msgstr "Lataa levy"
+
+msgid "Boot disc"
+msgstr "Lataa levy"
+
+msgid "Booting game, please wait..."
+msgstr "Käynnistetään peliä, odota..."
+
+msgid "Bowling"
+msgstr "Keilaus"
+
+msgid "Boxing"
+msgstr "Nyrkkeily"
+
+msgid "Business Sim"
+msgstr ""
+
+#, c-format
+msgid "CFG base: %s"
+msgstr "CFG base: %s"
+
+msgid "Camera"
+msgstr "Kamera"
+
+msgid "Can not dump GC savegames.\n"
+msgstr "Ei voi kopioida GC tallennuksia. \n"
+
+msgid "Can't install Wii games!"
+msgstr "Ei voi asentaa Wii-pelejä!"
+
+msgid "Cancelled."
+msgstr "Peruutettu"
+
+#, c-format
+msgid "Cannot create dir: %s"
+msgstr "Ei voida luoda kansiota: %s"
+
+msgid "Cards"
+msgstr "Korttipeli"
+
+msgid "Channel"
+msgstr "Kanava"
+
+msgid "Cheat Codes:"
+msgstr "Huijauskoodit:"
+
+msgid "Cheats: "
+msgstr "Koodit:"
+
+msgid "Check For Updates"
+msgstr "Tarkista päivitykset"
+
+msgid "Checking for themes..."
+msgstr "Etsitään skinejä"
+
+msgid "Checking for updates..."
+msgstr "Tarkistetaan päivityksiä"
+
+msgid "Chess"
+msgstr "Shakki"
+
+msgid "Choose a sorting method"
+msgstr "Järjestäminen"
+
+msgid "Classic"
+msgstr "Classic"
+
+msgid "Classic Controller"
+msgstr "Classic-ohjain"
+
+msgid "Clear"
+msgstr "Tyhj."
+
+msgid "Clear Patches:"
+msgstr "Clear Patches:"
+
+msgid "Coaching"
+msgstr ""
+
+msgid "Compare Type"
+msgstr "Vertaa tyyppiä"
+
+msgid "Compilation"
+msgstr "Kokoelma"
+
+#, c-format
+msgid "Complete. Size: %d"
+msgstr "Valmis. Koko: %d"
+
+#, c-format
+msgid "Configurable Loader %s"
+msgstr "Configurable Loader %s"
+
+msgid "Configuration error, MAX_DNS_ENTRIES reached while the list is empty"
+msgstr "Virhe säädöissä, MAX_DNS_ENTRIES vaikka lista on tyhjänä"
+
+#, c-format
+msgid "Connection error from net_read()  Errorcode: %i"
+msgstr "Yhteysvirhe, net_read() Virhekoodi: %i"
+
+msgid "Console"
+msgstr "Yksinkertainen näkymä"
+
+msgid "Construction Sim"
+msgstr ""
+
+msgid "Contains"
+msgstr "Sisältää"
+
+msgid "Controller"
+msgstr "Ohjain"
+
+msgid "Cooking"
+msgstr "Ruoanlaitto"
+
+#, c-format
+msgid "Could not initialize DIP module! (ret = %d)"
+msgstr "DIP-modulia ei tunnistettu! (ret = %d)"
+
+msgid "Country Fix:"
+msgstr "Country Fix"
+
+msgid "Cover"
+msgstr "Kansi"
+
+msgid "Cover Image:"
+msgstr "Kansikuva"
+
+msgid "Cover Style"
+msgstr "Kansityyli"
+
+msgid "Covers Available"
+msgstr ""
+
+msgid "Cover~~Back"
+msgstr "Kansi~~Takakansi"
+
+msgid "Cover~~Front"
+msgstr "Kansi~~Etukansi"
+
+msgid "Create"
+msgstr "Valmis"
+
+msgid "Creator"
+msgstr "Tekijä"
+
+msgid "Cricket"
+msgstr ""
+
+#, c-format
+msgid "Current Version: %s"
+msgstr "Nykyinen versio: %s"
+
+#, c-format
+msgid ""
+"Custom IOS %d could not be found!\n"
+"Please install it."
+msgstr ""
+"Custom IOS %d Ei löydy!\n"
+"Kannattaa asentaa."
+
+#, c-format
+msgid "Custom IOS %d could not be loaded! (ret = %d)"
+msgstr "Custom IOS %d Ei voitu ladata! (ret = %d)"
+
+#, c-format
+msgid ""
+"Custom IOS %d is a stub!\n"
+"Please reinstall it."
+msgstr ""
+"Custom IOS %d on tynkä!\n"
+"Asenna se uudelleen."
+
+#, c-format
+msgid "Custom IOS %s Loaded OK"
+msgstr "Custom IOS %s Ladattu OK"
+
+msgid "DEVO"
+msgstr ""
+
+msgid "DISC cover"
+msgstr "Levyn kansi"
+
+msgid "DOWN"
+msgstr "Alas"
+
+msgid "Dance"
+msgstr "Tanssi"
+
+msgid "Dance Pad"
+msgstr "Tanssimatto"
+
+msgid "Darts"
+msgstr "Tikanheitto"
+
+msgid "Database update successful."
+msgstr "Tietokanta päivitetty onnistuneesti"
+
+msgid "Debug"
+msgstr "Debug"
+
+msgid "Delete Game"
+msgstr "Poista peli"
+
+msgid "Deleting"
+msgstr "Poistetaan"
+
+msgid "Descending"
+msgstr "Laskeva"
+
+msgid "Developer"
+msgstr "Tekijä"
+
+msgid "Device is not responding!"
+msgstr "Laite ei vastaa!"
+
+msgid "Device:"
+msgstr "Muisti:"
+
+msgid "Devolution only accepts clean dumps!\n"
+msgstr ""
+
+msgid "Devolution:"
+msgstr ""
+
+msgid "Disc"
+msgstr "Levy"
+
+msgid "Disc (Ask)"
+msgstr "Levy (Kysy)"
+
+msgid "Done."
+msgstr "Valmis."
+
+msgid "Download .txt"
+msgstr "Lataa .txt"
+
+msgid "Download All Covers"
+msgstr "Lataa kaikki kannet"
+
+msgid "Download All Missing Covers"
+msgstr "Lataa kaikki puuttuvat kannet"
+
+msgid "Download Missing Covers"
+msgstr "Lataa puuttuvat kannet"
+
+msgid "Download Plugins"
+msgstr "Lataa plugineja"
+
+msgid "Download Themes"
+msgstr "Lataa teemoja"
+
+msgid "Download complete."
+msgstr "Lataus valmis."
+
+#, c-format
+msgid "Download error on gamercard #%d."
+msgstr "Latausvirhe gamercardissa #%d."
+
+msgid "Download game information"
+msgstr "Lataa pelitietoja"
+
+msgid "Downloadable Content"
+msgstr "Ladattavaa sisältöä"
+
+msgid "Downloading ALL MISSING covers"
+msgstr "Ladataan KAIKKI puuttuvat kannet"
+
+msgid "Downloading ALL covers"
+msgstr "Ladataan KAIKKI kannet"
+
+#, c-format
+msgid "Downloading ALL covers for %.6s"
+msgstr "Ladataan KAIKKI kannet %.6slle"
+
+#, c-format
+msgid "Downloading MISSING covers for %.6s"
+msgstr "Ladataan PUUTTUVAT kannet %.6slle"
+
+msgid "Downloading Theme previews..."
+msgstr "Ladataan teemojen esikatseluita..."
+
+msgid "Downloading cheats..."
+msgstr "Ladataan huijauskoodeja..."
+
+msgid "Downloading database."
+msgstr "Ladataan tietokantaa."
+
+msgid "Downloading devolution."
+msgstr ""
+
+msgid "Downloading mighty plugin."
+msgstr ""
+
+msgid "Downloading neek2o plugin."
+msgstr ""
+
+msgid "Downloading titles.txt ..."
+msgstr "Ladataan titles.txt ..."
+
+msgid "Downloading translation file."
+msgstr "Ladataan käännöstiedostoa"
+
+msgid "Downloading unifont."
+msgstr ""
+
+#, c-format
+msgid "Downloading: %s"
+msgstr "Ladataan: %s"
+
+#, c-format
+msgid "Downloading: %s as %s"
+msgstr "Ladataan: %s as %s"
+
+msgid "Downloads"
+msgstr "Lataukset"
+
+msgid "Drawing"
+msgstr "Piirtäminen"
+
+msgid "Drums"
+msgstr "Rummut"
+
+msgid "Dump savegame"
+msgstr "Kopioi pelitallennus"
+
+msgid "Duplicate ID3"
+msgstr ""
+
+msgid "Dutch"
+msgstr "Hollanti"
+
+msgid "ERROR"
+msgstr "VIRHE"
+
+msgid "ERROR creating file"
+msgstr "VIRHE tehtäessä tiedostoa"
+
+msgid "ERROR game opt"
+msgstr "VIRHE game opt"
+
+msgid "ERROR reading BCA!"
+msgstr "VIRHE luettaessa BCA"
+
+#, c-format
+msgid "ERROR removing %s"
+msgstr "VIRHE poistaessa %s"
+
+msgid "ERROR writing BCA!"
+msgstr "VIRHE kirjoittaessa BCA!"
+
+msgid "ERROR!"
+msgstr "VIRHE!"
+
+#, c-format
+msgid "ERROR! (ret = %d)"
+msgstr "VIRHE! (ret = %d)"
+
+msgid "ERROR:"
+msgstr "VIRHE:"
+
+#, c-format
+msgid "ERROR: %s is not accessible"
+msgstr "VIRHE: %s ei ole saatavilla"
+
+#, c-format
+msgid "ERROR: Apploader %d"
+msgstr "VIRHE: Apploader %d"
+
+msgid "ERROR: CIOS222/223 v4 required for BCA"
+msgstr "VIRHE: BCA vaatii CIOS222/223 v4"
+
+msgid "ERROR: Cache Close"
+msgstr "VIRHE: Cache Close"
+
+#, c-format
+msgid "ERROR: Could not open game! (ret = %d)"
+msgstr "VIRHE: Ei voitu ladata peliä! (ret = %d)"
+
+msgid "ERROR: Game already installed!!"
+msgstr "VIRHE: Peli on jo asennettu!"
+
+#, c-format
+msgid "ERROR: GetCerts %d"
+msgstr "VIRHE: GetCerts %d"
+
+msgid "ERROR: Invalid Game ID"
+msgstr "VIRHE: Epäkelpo pelin ID"
+
+#, c-format
+msgid "ERROR: Loading EHC module! (%d)"
+msgstr "VIRHE: EHC moduulin latauksessa! (%d)"
+
+msgid ""
+"ERROR: NTFS write disabled!\n"
+"(set ntfs_write=1)"
+msgstr ""
+"VIRHE: NTFS kirjoitus poissa käytöstä!\n"
+"(set ntfs_write=1)"
+
+#, c-format
+msgid "ERROR: No partitions found! (ret = %d)"
+msgstr "VIRHE: Osioita ei löydy! (ret = %d)"
+
+msgid "ERROR: Not a Wii disc!!"
+msgstr "VIRHE: Ei ole Wiin levy!"
+
+#, c-format
+msgid "ERROR: Offset(0x%llx) %d"
+msgstr "VIRHE: Offset(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: OpenPartition %d"
+msgstr "VIRHE: OpenPartition %d"
+
+#, c-format
+msgid "ERROR: OpenPartition(0x%llx) %d"
+msgstr "VIRHE: OpenPartition(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: SetFragList(0): %d"
+msgstr "VIRHE: SetFragList(0): %d"
+
+#, c-format
+msgid "ERROR: SetWBFS: %d"
+msgstr "VIRHE: SetWBFS: %d"
+
+msgid "ERROR: Setting SD mode"
+msgstr "VIRHE: SD-tilaan vaihtaessa"
+
+#, c-format
+msgid "ERROR: USB init! (%d)"
+msgstr "VIRHE: USB ei tunnistettu! (%d)"
+
+msgid "ERROR: WBFS not mounted!"
+msgstr "VIRHE: WBFS ei päästä käsiksi!"
+
+msgid ""
+"ERROR: cIOS249rev18, cIOS222v4,\n"
+"cIOS223v4, cIOS224v5 or higher required\n"
+"for starting games from a FAT partition!\n"
+"Upgrade IOS249 or choose a different IOS."
+msgstr ""
+"VIRHE: Tarvitaan suurempi kuin cIOS249rev18,\n"
+"cIOS222v4, cIOS223v4, cIOS224v5\n"
+"Käynnistäessä pelejä FAT-osioilta!\n"
+"Päivitä IOS249 tai valitse joku muu IOS."
+
+msgid "ERROR: cache: out of memory"
+msgstr "VIRHE: cache: muisti loppu"
+
+#, c-format
+msgid "ERROR: creating: %s"
+msgstr "VIRHE: tehtäessä: %s"
+
+#, c-format
+msgid "ERROR: get_frag_list: %d"
+msgstr "VIRHE: get_frag_list: %d"
+
+msgid "ERROR: memory overlap!"
+msgstr "VIRHE: muisti ylittyi!"
+
+msgid ""
+"ERROR: multiple wbfs partitions\n"
+"supported only with IOS222/223-mload"
+msgstr ""
+"VIRHE: liian monta wbfs osiota\n"
+"tuettu vain IOS222/223-mload kanssa"
+
+msgid "ERROR: not enough free space!!"
+msgstr "VIRHE: Liian vähän vapaata tilaa!"
+
+msgid "ERROR: ntfs was not cleanly unmounted"
+msgstr "VIRHE: ntfs ei poistettu oikein."
+
+#, c-format
+msgid "ERROR: opening %.6s"
+msgstr "VIRHE: avattaessa %.6s"
+
+#, c-format
+msgid "ERROR: set_frag_list: %d"
+msgstr "VIRHE: set_frag_list: %d"
+
+#, c-format
+msgid "ERROR: setting up fragments %d %d"
+msgstr "VIRHE: asentaessa osia %d %d"
+
+#, c-format
+msgid "ERROR: the drive or partition %s/ is not connected!!"
+msgstr "VIRHE: levy tai osio %s/ ei ole yhdistettynä!!"
+
+#, c-format
+msgid "ERROR: writing %s (%d)."
+msgstr "VIRHE: kirjoittaessa %s (%d)."
+
+msgid "EXTEND"
+msgstr ""
+
+msgid "Educational"
+msgstr "Opetuksellinen"
+
+msgid "Ejecting DVD..."
+msgstr "Poistetaan levyä..."
+
+msgid "English"
+msgstr "Englanti"
+
+msgid "English Title"
+msgstr "Englanninkielinen nimi"
+
+msgid "Enter Code: "
+msgstr "Salasana: "
+
+msgid "Error GRRLIB init"
+msgstr "Virhe GRRLIB init"
+
+msgid "Error Initializing Network."
+msgstr "Virhe tunnistaessa verkkoa"
+
+msgid "Error adding disc!"
+msgstr "Virhe levyn lisäämisessä!"
+
+#, c-format
+msgid "Error allocating buffer: %d"
+msgstr ""
+
+msgid "Error creating directory..."
+msgstr "Virhe kansiota luotaessa..."
+
+msgid "Error discarding options!"
+msgstr "Virhe poistaessa asetuksia!"
+
+msgid "Error downloading theme preview..."
+msgstr "Virhe ladattaessa teemojen esikatselua..."
+
+msgid "Error downloading theme..."
+msgstr "Virhe ladattaessa teemaa"
+
+msgid "Error downloading themes..."
+msgstr "Virhe ladattaessa skinejä..."
+
+msgid "Error downloading update..."
+msgstr "Virhe ladattaessa päivitystä..."
+
+msgid "Error downloading updates..."
+msgstr "Virhe ladattaessa päivityksiä..."
+
+msgid "Error downloading."
+msgstr "Virhe latauksessa."
+
+msgid "Error establishing connection"
+msgstr "Virhe yhteyden muodostamisessa"
+
+msgid "Error extracting theme..."
+msgstr "Virhe teeman purkamisessa..."
+
+msgid "Error opening database, update did not complete."
+msgstr "Virhe avattaessa tietokantaa, päivitystä ei suoritettu."
+
+#, c-format
+msgid "Error opening: %s"
+msgstr "Virhe avattessa: %s"
+
+#, c-format
+msgid "Error playing %s"
+msgstr "Virhe toistaessa %s"
+
+msgid "Error reading .dol"
+msgstr "Virhe luettaessa .dol-tiedostoa"
+
+msgid "Error reading dol header"
+msgstr "Virhe luettaessa dol headeria"
+
+#, c-format
+msgid "Error saving %s"
+msgstr "Virhe tallentaessa: %s"
+
+msgid "Error saving options!"
+msgstr "Virhe tallentaessa valintoja!"
+
+msgid "Error saving settings!"
+msgstr "Virhe tallentaessa asetuksia!"
+
+msgid ""
+"Error storing playlog file.\n"
+"Start from the Wii Menu to fix."
+msgstr ""
+"Virhe tallentaessa playlog tiedostoa.\n"
+"Käynnistä Wii menusta korjaaksesi."
+
+msgid "Error: Invalid PNG image!"
+msgstr "Virhe: Epäkelpo PNG kuva!"
+
+msgid "Error: no URL."
+msgstr "Virhe: ei ole URL"
+
+msgid "Error: no data."
+msgstr "Virhe: ei dataa."
+
+msgid "Exercise"
+msgstr ""
+
+msgid "Exit"
+msgstr "Wii menu"
+
+#, c-format
+msgid "Extracting: %s"
+msgstr "Puretaan: %s"
+
+msgid "FAIL"
+msgstr "EPÄONNISTUI"
+
+#, c-format
+msgid "FAT: ALLOC ERROR %p %p %p"
+msgstr "FAT: ALLOC ERROR %p %p %p"
+
+#, c-format
+msgid "FATAL: alloc grid(%d)"
+msgstr "FATAL: alloc grid(%d)"
+
+#, c-format
+msgid "FILL %d"
+msgstr "TÄYTÄ %d"
+
+msgid "FLAT cover"
+msgstr "PELKKÄ kansi"
+
+msgid "FULL cover"
+msgstr "KOKO kansi"
+
+msgid "Fav"
+msgstr "Suosikki"
+
+msgid "Fav: Off"
+msgstr "Suosikki: On"
+
+msgid "Fav: On"
+msgstr "Suosikki: Off"
+
+msgid "Favorite"
+msgstr "Suosikki"
+
+msgid "Favorite Games"
+msgstr "Suosikkipelit"
+
+msgid "Favorite:"
+msgstr "Suosikki:"
+
+msgid "Favorites:"
+msgstr "Suosikit:"
+
+msgid "Fighting"
+msgstr "Tappelu"
+
+#, c-format
+msgid "File not found! %s"
+msgstr "Tiedostoa ei löydy! %s"
+
+msgid "Filter"
+msgstr "Suodata"
+
+msgid "Filter Games"
+msgstr "Suodata pelit"
+
+msgid "Filter by Controller"
+msgstr "Suodata ohjaimen mukaan"
+
+msgid "Filter by Game Type"
+msgstr ""
+
+msgid "Filter by Genre"
+msgstr "Suodata tyypin mukan"
+
+msgid "Filter by Online Features"
+msgstr "Suodata nettipelin mukaan"
+
+msgid "Filter:"
+msgstr "Suodata:"
+
+msgid "Fishing"
+msgstr "Kalastus"
+
+msgid "Fitness"
+msgstr "Liikunta"
+
+msgid "Fixing EXTEND partition..."
+msgstr "Korjataan EXTEND osiota..."
+
+msgid "Flight Sim"
+msgstr ""
+
+msgid "Football"
+msgstr "Jalkapallo"
+
+msgid "Force Devolution:"
+msgstr "Pakota Devolution"
+
+msgid "Force NTSC"
+msgstr "Pakota NTSC"
+
+msgid "Force NTSC 480p"
+msgstr "Pakota NTSC 480p"
+
+msgid "Force PAL"
+msgstr "Pakota PAL"
+
+msgid "Force PAL 480p"
+msgstr "Pakota PAL 480p"
+
+msgid "Force PAL50"
+msgstr "Pakota PAL50"
+
+msgid "Force PAL60"
+msgstr "Pakota PAL60"
+
+msgid "Formatting"
+msgstr "Alustetaan"
+
+#, c-format
+msgid "Found %s"
+msgstr "Löytyi %s"
+
+msgid "French"
+msgstr "Ranska"
+
+msgid "Full"
+msgstr "Täynnä"
+
+msgid "Futuristic Racing"
+msgstr "Futuristinen ajopeli"
+
+msgid "GB"
+msgstr "Gt"
+
+msgid "Game Default"
+msgstr "Oletus"
+
+msgid "Game ID"
+msgstr "Peli ID"
+
+msgid "Game Options"
+msgstr "Pelin asetukset"
+
+#, c-format
+msgid "Game Options:  %s"
+msgstr "Pelin asetukset: %s"
+
+msgid "Game Type"
+msgstr "Pelityyppi"
+
+msgid "GameCube"
+msgstr "GameCube"
+
+msgid "Gamecube"
+msgstr "Gamecube"
+
+msgid "Gamer Card:"
+msgstr "Gamer Card"
+
+#, c-format
+msgid "Gamercard #%d reported: %.*s"
+msgstr "Gamercard #%d raportoitu: %.*s"
+
+msgid "Genre"
+msgstr "Genre"
+
+msgid "German"
+msgstr "Saksa"
+
+msgid "Global Options"
+msgstr "Yleiset asetukset"
+
+msgid "Golf"
+msgstr "Golf"
+
+msgid "Guitar"
+msgstr "Kitara"
+
+msgid "HQ cover"
+msgstr "HQ kansi"
+
+msgid "HTTP Response was without a file"
+msgstr "HTTP vastasi ilman tiedostoa"
+
+msgid "Health"
+msgstr "Terveys"
+
+msgid "Hidden Object"
+msgstr ""
+
+msgid "Hide"
+msgstr "Piilota"
+
+msgid "Hide Game:"
+msgstr "Piilota peli"
+
+msgid "Hockey"
+msgstr "Jääkiekko"
+
+msgid "Hold button B to cancel."
+msgstr "Paina B peruuttaaksesi"
+
+msgid "Home Menu"
+msgstr "Päävalikko"
+
+msgid "Homebrew Channel"
+msgstr "Homebrew Channel"
+
+msgid "Hook Type:"
+msgstr "Hook Type:"
+
+msgid "Hunting"
+msgstr "Metsästys"
+
+#, c-format
+msgid "ID mismatch: [%.6s] [%.6s]"
+msgstr "ID ei käy: [%.6s] [%.6s]"
+
+msgid "IOS Reload: Blocked"
+msgstr "IOS Lataus: Estetty"
+
+#, c-format
+msgid "IOS_Open(%s) failed with code %d"
+msgstr "IOS_Open(%s) epäonnistui koodilla %d"
+
+msgid ""
+"If Cfg does not start properly\n"
+"next time, copy boot.dol.bak over\n"
+"boot.dol and try again."
+msgstr ""
+"Jollei Cfg käynnisty oikein\n"
+"ensi kerralla, kpioi boot.dol.bak\n"
+"boot.dol tilalle ja yritä uudelleen."
+
+#, c-format
+msgid "Inconsistency in LZ77 encoding %x"
+msgstr "Epäjohdonmukaisuus LZ77 koodauksessa %x"
+
+msgid "Infinity Base"
+msgstr "Infinity-alusta"
+
+msgid "Info"
+msgstr "Info"
+
+#, c-format
+msgid "Info file: %s"
+msgstr "Info tiedosto: %s"
+
+msgid "Initializing Network..."
+msgstr "Tunnistetaan verkkoa..."
+
+msgid "Install"
+msgstr "Asenna peli"
+
+msgid "Install Date"
+msgstr "Asennusjärjestys"
+
+msgid "Install Game"
+msgstr "Asenna peli"
+
+msgid "Install game"
+msgstr "Asenna peli"
+
+#, c-format
+msgid "Installation ERROR! (ret = %d)"
+msgstr "Virhe asennuksessa! (ret = %d)"
+
+msgid "Installing game, please wait..."
+msgstr "Asennetaan peliä, odota..."
+
+msgid "Invalid .dol"
+msgstr "Epäkelpo .dol"
+
+#, c-format
+msgid "Invalid partition: '%s'"
+msgstr "Epäkelpo osio: '%s'"
+
+msgid "Italian"
+msgstr "Italia"
+
+msgid "Japanese"
+msgstr "Japani"
+
+msgid "Japanese Title"
+msgstr "Japanilainen nimi"
+
+msgid "Jump"
+msgstr "Tasohyppy"
+
+msgid "Karaoke"
+msgstr "Karaoke"
+
+msgid "Kart Racing"
+msgstr "Kart-ajopeli"
+
+msgid "Keyboard"
+msgstr "Näppäimistö"
+
+msgid "Korean"
+msgstr "Korea"
+
+msgid "LED:"
+msgstr ""
+
+msgid "LEFT"
+msgstr "VASEN"
+
+msgid "LOCKED!"
+msgstr "LUKITTU!"
+
+msgid "Language:"
+msgstr "Kieli:"
+
+msgid "Last Play Date"
+msgstr "Viimeksi pelattu"
+
+msgid "Launch Methods"
+msgstr "Käynnistystavat"
+
+msgid "Life Simulation"
+msgstr "Elämä-simulaattori"
+
+msgid "Load OK!"
+msgstr "Lataus OK!"
+
+#, c-format
+msgid "Loader Version: %s"
+msgstr "Ohjelman versio: %s"
+
+msgid "Loading ..."
+msgstr "Lataa ..."
+
+#, c-format
+msgid "Loading..%s\n"
+msgstr "Lataa..%s\n"
+
+msgid "Main"
+msgstr "Päävalikko"
+
+msgid "Main Menu"
+msgstr "Päävalikko"
+
+msgid ""
+"Make sure USB port 0 is used!\n"
+"(The one nearest to the edge)"
+msgstr ""
+"Käytä USB 0 porttia!\n"
+"(Eli se joka on lähempänä reunaa)"
+
+msgid "Manage"
+msgstr "Asetuksia"
+
+msgid "Manage Cheats"
+msgstr "Huijauskoodit"
+
+msgid "Management Sim"
+msgstr ""
+
+msgid "Martial Arts"
+msgstr "Taistelulajit"
+
+msgid "Microphone"
+msgstr "Mikrofoni"
+
+msgid "Mighty Plugin"
+msgstr ""
+
+msgid "Motion+"
+msgstr "Motion+"
+
+msgid "Motorcycle Racing"
+msgstr "Moottoripyöriä"
+
+msgid "Mounting device, please wait..."
+msgstr "Otetaan laite käyttöön, odota..."
+
+msgid "Music"
+msgstr "Musiikki"
+
+#, c-format
+msgid "Music file from dir: %s"
+msgstr "Audiotiedosto kansiosta: %s"
+
+#, c-format
+msgid "Music file size: %d"
+msgstr "Audiotiedoston koko: %d"
+
+#, c-format
+msgid "Music file: %s"
+msgstr "Audiotiedosto: %s"
+
+msgid "Music: Disabled"
+msgstr "Musiikki: Pois"
+
+msgid "Music: Enabled"
+msgstr "Musiikki: Päällä"
+
+#, c-format
+msgid "Music: Looking for %s files in: %s"
+msgstr "Audio: Etsitään %s tiedostoja: %s"
+
+#, c-format
+msgid "Music: Next file index to play: %i"
+msgstr "Audio: Seuraava toistettava tiedosto: %i"
+
+#, c-format
+msgid "Music: Number of %s files found: %i"
+msgstr "Audio: %s tiedostoja löytyi %i kpl"
+
+msgid "Music: musicArray contents: "
+msgstr "Audio: musicArray sisällöt: "
+
+#, c-format
+msgid ""
+"NAND Emu Path:\n"
+"%s\n"
+msgstr "NAND Emu polku:\n"
+
+msgid "NAND Emu:"
+msgstr "NAND Emu:"
+
+msgid "NMM:"
+msgstr ""
+
+msgid ""
+"NOTE: CIOS249 before rev10:\n"
+"Loading games from SDHC not supported!"
+msgstr "Pelaaminen SDHC:lta ei ole tuettu!"
+
+msgid ""
+"NOTE: CIOS249 before rev14:\n"
+"Possible error #001 is not handled!"
+msgstr ""
+"HUOM: CIOS249 ennen rev14:\n"
+"Mahdollista virhettä #001 ei ole käsitelty!"
+
+msgid ""
+"NOTE: CIOS249 before rev9:\n"
+"Loading games from USB not supported!"
+msgstr "Pelaaminen USB:lta ei ole tuettu!"
+
+msgid ""
+"NOTE: You are using CIOS249 rev13:\n"
+"To quit the game you must reset or\n"
+"power-off the Wii before you start\n"
+"another game or it will hang here!"
+msgstr ""
+"HUOM: Käytössä on: CIOS249 rev13:\n"
+"Kun lopetat pelaamisen, resetoi tai\n"
+"sammuta Wii ennenkuin aloitat\n"
+"uuden pelin, tai Wii jää jumiin.!"
+
+msgid ""
+"NOTE: You are using CIOS249 rev14:\n"
+"It has known problems with dual layer\n"
+"games. It is highly recommended that\n"
+"you use a different IOS or revision\n"
+"for installation/playback of this game."
+msgstr ""
+"HUOM: Käytössä on: CIOS249 rev14:\n"
+"Dual Layer-pelit ei toimi kunnolla.\n"
+"Kannattaa käyttää muuta IOS:ta\n"
+"tai versiota\n"
+"kun asennat tai pelaat."
+
+msgid ""
+"NOTE: loader restart is required\n"
+"for the update to take effect."
+msgstr ""
+"HUOM: Ohjelma pitää käynnistää uudelleen\n"
+"jotta asetukset tulevat voimaan."
+
+msgid ""
+"NOTE: may loader restart is required\n"
+"for the settings to take effect."
+msgstr ""
+
+#, c-format
+msgid ""
+"NOTE: partition P#%d is type EXTEND but\n"
+"contains a WBFS filesystem. This is an\n"
+"invalid setup. Press %s to change the\n"
+"partition type from EXTEND to data."
+msgstr ""
+"HUOM: Osio P#%d on EXTEND, mutta\n"
+"sisältää WBFS järjestelmän. Tämä ei toimi\n"
+"Paina %s vaihtaaksesi\n"
+"osion EXTENDistä dataan."
+
+msgid "NTFS compression not supported!"
+msgstr "NTFS pakkaus ei tuettu!"
+
+msgid "NTFS encryption not supported!"
+msgstr "NTFS koodaus ei tuettu!"
+
+msgid "NTSC-J patch:"
+msgstr ""
+
+msgid "Neek2o Plugin"
+msgstr ""
+
+msgid "Network connection established."
+msgstr "Verkkoyhteys muodostettu."
+
+msgid "Network error. Can't update gamercards."
+msgstr "Verkkovirhe. Gamercardeja ei voi päivittää."
+
+msgid "New Themes"
+msgstr "Uudet teemat"
+
+msgid "Nintendo DS"
+msgstr "Nintendo DS"
+
+msgid "Nintendo DS Connectivity"
+msgstr "Nintendo DS mukana"
+
+msgid "No"
+msgstr "Ei"
+
+#, c-format
+msgid "No domain part in URL '%s'"
+msgstr "URL:sta puuttuu domain '%s'"
+
+msgid "No games found!"
+msgstr "Ei löytynyt pelejä!"
+
+msgid "No partition selected!"
+msgstr "Osiota ei valittuna!"
+
+msgid "No themes found."
+msgstr "Skinejä ei löytynyt."
+
+msgid "No updates found."
+msgstr "Päivityksiä ei löytynyt."
+
+msgid "NoDisc:"
+msgstr "EiLevyä:"
+
+msgid "None found on disc"
+msgstr "Levyltä ei löytynyt mitään."
+
+msgid "Not Found boot.dol!"
+msgstr "boot.dol ei löytynyt!"
+
+msgid "Not Found!"
+msgstr "Ei löydy!"
+
+msgid "Number of Online Players"
+msgstr "Verkkopelaajien määrä"
+
+msgid "Number of Players"
+msgstr "Pelaajia"
+
+msgid "Nunchuk"
+msgstr "Nunchuk"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "OK!"
+msgstr "OK!"
+
+msgid "Ocarina (cheats):"
+msgstr "Ocarina (huijaukset):"
+
+msgid "Ocarina Cheat Manager"
+msgstr "Huijaukset (Ocarina)"
+
+msgid "Ocarina: Code Error"
+msgstr "Ocarina: Virheellinen koodi"
+
+msgid "Ocarina: Codes found."
+msgstr "Ocarina: Koodeja löytyi"
+
+msgid "Ocarina: No codes found"
+msgstr "Ocarina: Ei löytynyt koodeja"
+
+msgid "Ocarina: Out Of Memory Error"
+msgstr "Ocarina: Muisti täynnä"
+
+msgid "Ocarina: Searching codes..."
+msgstr "Ocarina: Etsitään koodeja..."
+
+msgid "Ocarina: Too many codes"
+msgstr "Ocarina: Liikaa koodeja"
+
+msgid "Off"
+msgstr "Pois"
+
+msgid "Off-Road Racing"
+msgstr "Rallipeli"
+
+msgid "On"
+msgstr "Päällä"
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Online Content"
+msgstr "Kilpailuja"
+
+msgid "Online Play"
+msgstr "Nettimoninpeli"
+
+msgid "Online Players"
+msgstr "Online-pelaajia"
+
+msgid "Online Score List"
+msgstr "Pistelasku"
+
+msgid "Online Updates"
+msgstr "Päivittäminen"
+
+msgid "Open Sort"
+msgstr "Järjestysvalikko"
+
+msgid "Open Style"
+msgstr "Teemavalikko"
+
+msgid "Opening DVD disc..."
+msgstr "Avataan levyä..."
+
+#, c-format
+msgid "Opening partition: %s"
+msgstr "Avataan osiota: %s"
+
+msgid "Options"
+msgstr "Valinnat"
+
+msgid "Options discarded for this game."
+msgstr "Asetukset ovat pois päältä tässä pelissä."
+
+msgid "Options saved for this game."
+msgstr "Tämän pelin asetukset."
+
+msgid "Out of memory"
+msgstr "Muisti loppu."
+
+#, c-format
+msgid "P1 %3u%% | P2 %3u%% | P3 %3u%% | P4 %3u%%"
+msgstr ""
+
+msgid "PAD HOOK"
+msgstr ""
+
+msgid "PAD HOOK:"
+msgstr ""
+
+msgid "Page:"
+msgstr "Sivu:"
+
+msgid "Partial"
+msgstr ""
+
+msgid "Partition:"
+msgstr "Osio:"
+
+#, c-format
+msgid "Partition: %s not found!"
+msgstr "Osio: %s ei löydy!"
+
+msgid "Party"
+msgstr "Moninpeli"
+
+msgid "Paused Start"
+msgstr "Paused Start"
+
+msgid "Petanque"
+msgstr ""
+
+msgid "Pinball"
+msgstr ""
+
+msgid "Platformer"
+msgstr "Tasohyppely"
+
+msgid "Play Count"
+msgstr "Pelattuja"
+
+msgid "Players"
+msgstr "Pelaajia"
+
+msgid "Please insert a game disc..."
+msgstr "Aseta levy..."
+
+msgid "Plugin:"
+msgstr ""
+
+msgid "Poker"
+msgstr "Pokeri"
+
+msgid "Portal of Power"
+msgstr ""
+
+#, c-format
+msgid "Press %s button for options."
+msgstr "%s: Asetukset"
+
+#, c-format
+msgid "Press %s button to %s."
+msgstr "Paina %s jotta %s"
+
+#, c-format
+msgid "Press %s button to apply codes."
+msgstr "Koodit käyttöön, %s."
+
+#, c-format
+msgid "Press %s button to cancel."
+msgstr "%s, Peruuta valinta."
+
+#, c-format
+msgid "Press %s button to change device."
+msgstr "Vaihda laite, %s."
+
+#, c-format
+msgid "Press %s button to continue."
+msgstr "%s: Jatka"
+
+#, c-format
+msgid "Press %s button to delete FS."
+msgstr "%s: Poista FS"
+
+#, c-format
+msgid "Press %s button to dump BCA."
+msgstr "%s: Hylkää BCA."
+
+#, c-format
+msgid "Press %s button to exit."
+msgstr "Poistu, %s."
+
+#, c-format
+msgid "Press %s button to fix EXTEND/WBFS."
+msgstr "%s: Korjaa EXTEND/WBFS."
+
+#, c-format
+msgid "Press %s button to format WBFS."
+msgstr "%s alusta WBFS-osio"
+
+#, c-format
+msgid "Press %s button to go back."
+msgstr "%s: Takaisin"
+
+#, c-format
+msgid "Press %s button to select a partition."
+msgstr "Valitse osio, %s."
+
+#, c-format
+msgid "Press %s button to select."
+msgstr "%s: Valitse"
+
+#, c-format
+msgid "Press %s button to skip codes."
+msgstr "%s, hyppää koodien yli."
+
+#, c-format
+msgid "Press %s button to sync FAT."
+msgstr "%s: Synkkaa FAT-osio"
+
+#, c-format
+msgid "Press %s for fullscreen preview"
+msgstr "%s: Kokoruudun esikatselu"
+
+#, c-format
+msgid "Press %s for game options"
+msgstr "Pelin asetukset: %s"
+
+#, c-format
+msgid "Press %s for global options"
+msgstr "Yleiset asetukset, %s"
+
+#, c-format
+msgid "Press %s to discard options"
+msgstr "Hylkää muutokset, %s"
+
+#, c-format
+msgid "Press %s to download and update"
+msgstr "Lataa ja päivitä, %s"
+
+#, c-format
+msgid "Press %s to download this theme"
+msgstr "Lataa tämä teema, %s"
+
+#, c-format
+msgid "Press %s to download, %s to return"
+msgstr "Lataa, %s. Paluu, %s"
+
+#, c-format
+msgid "Press %s to return"
+msgstr "%s: Palaa"
+
+#, c-format
+msgid "Press %s to save global settings"
+msgstr "Tallenna yleiset asetukset, %s"
+
+#, c-format
+msgid "Press %s to save options"
+msgstr "Tallenna asetukset, %s"
+
+#, c-format
+msgid "Press %s to save selection"
+msgstr "Tallenna valinnat, %s"
+
+#, c-format
+msgid "Press %s to select filter type"
+msgstr "Valitse suodatin, %s"
+
+#, c-format
+msgid "Press %s to select sorting method"
+msgstr "Järjestelytapa, %s"
+
+#, c-format
+msgid "Press %s to start game"
+msgstr "Käynnistä peli, %s"
+
+#, c-format
+msgid "Press %s to update without meta.xml"
+msgstr "Päiivitä ilman meta.xml-tiedostoa, %s"
+
+#, c-format
+msgid "Press %s/%s to select device."
+msgstr "%s/%s: Valitse laite"
+
+msgid "Press 1 to skip WBFS mounting"
+msgstr "Paina 1 ohittaaksesi WBFS valmistelun"
+
+msgid "Press 2 to reload IOS"
+msgstr "2: Lataa IOS"
+
+msgid "Press A to continue without config.txt"
+msgstr "Paina A jatkaaksesi ilman config.txt-tiedostoa"
+
+msgid "Press A to select device"
+msgstr "A: Valitse laite"
+
+msgid "Press B to exit to HBC"
+msgstr "B: poistu HBC"
+
+msgid "Press HOME to reset"
+msgstr "HOME: Reset"
+
+msgid "Press LEFT/RIGHT to select IOS"
+msgstr "VASEN/OIKEA: Valitse IOS"
+
+msgid "Press any button to continue..."
+msgstr "Paina mitä tahansa nappia..."
+
+msgid "Press any button to exit..."
+msgstr "Paina mitä tahansa nappia poistuaksesi..."
+
+msgid "Press any button to restart..."
+msgstr "Paina mitä tahansa nappia käynnistääksesi ohjelman uudelleen..."
+
+msgid "Press any button.\n"
+msgstr "Paina mitä tahansa nappia.\n"
+
+msgid "Press any button..."
+msgstr "Paina mitä tahansa nappia..."
+
+#, c-format
+msgid "Press button %s to download covers."
+msgstr "Lataa kannet, %s"
+
+#, c-format
+msgid "Press button %s to eject DVD."
+msgstr "%s: Sylkäise levy ulos."
+
+msgid "Priiloader"
+msgstr ""
+
+msgid "Profile:"
+msgstr "Profiili:"
+
+#, c-format
+msgid "Profile: %s"
+msgstr "Prifiili: %s"
+
+msgid "Program Updates"
+msgstr "Ohjelman päivitykset"
+
+msgid "Publisher"
+msgstr "Julkaisija"
+
+msgid "Puzzle"
+msgstr "Pulmanratkonta"
+
+msgid "Quit"
+msgstr "Lopeta?"
+
+msgid "RAW"
+msgstr "RAW"
+
+msgid "RIGHT"
+msgstr "OIKEA"
+
+msgid "RPG"
+msgstr "Roolipeli"
+
+msgid "Racing"
+msgstr "Ajopeli"
+
+msgid "Rail Shooter"
+msgstr ""
+
+#, c-format
+msgid "Rated %s"
+msgstr "%s luokiteltu"
+
+msgid "Rating"
+msgstr "Luokitus"
+
+msgid "Read"
+msgstr "Lue"
+
+msgid "Reading BCA..."
+msgstr "Lukee BCA:ta..."
+
+msgid "Reboot"
+msgstr "Käynnistä uudelleen"
+
+msgid "Region"
+msgstr ""
+
+msgid "Release Date"
+msgstr "Julkaisupäivä"
+
+msgid "Release Notes: (short)"
+msgstr "Tietoa julkaisusta: (lyhyt)"
+
+msgid "Removing game, please wait..."
+msgstr "Poistetaan peliä, odota..."
+
+msgid "Restarting Wii..."
+msgstr "Käynnistetään Wiitä uudelleen..."
+
+#, c-format
+msgid "Returned! (ret = %d)"
+msgstr "Palattiin! (ret = %d)"
+
+msgid "Rhythm"
+msgstr "Tanssi"
+
+msgid "Rows:"
+msgstr "Rivejä:"
+
+msgid "Rugby"
+msgstr ""
+
+msgid "Running benchmark, please wait"
+msgstr "Running benchmark, odota"
+
+msgid "S. Chinese"
+msgstr "S. Chinese"
+
+msgid "SD/SDHC Card"
+msgstr "SD/SDHC"
+
+msgid "SUCCESS!"
+msgstr "ONNISTUI!"
+
+msgid "Save .gct"
+msgstr "Tallenna .gct"
+
+msgid "Save Debug"
+msgstr "Tallenna"
+
+msgid "Save Settings"
+msgstr "Tallenna asetukset"
+
+msgid "Save debug.log"
+msgstr "Tallenna debug.log"
+
+msgid "Savegame not found.\n"
+msgstr "Pelitallennusta ei löytynyt. \n"
+
+msgid "Savegame:"
+msgstr "Pelitallennus:"
+
+msgid "Saving Settings... "
+msgstr "Tallennetaan asetuksia..."
+
+msgid "Saving cheats..."
+msgstr "Tallennetaan koodeja..."
+
+msgid "Saving gamelist.txt ... "
+msgstr "Tallennetaan gamelist.txt..."
+
+msgid "Saving settings..."
+msgstr "Tallennetaan asetuksia..."
+
+msgid "Saving:"
+msgstr "Tallennetaan:"
+
+#, c-format
+msgid "Saving: %s"
+msgstr "Tallennetaan: %s"
+
+msgid "Screenshot:"
+msgstr "Kuvakaappaus:"
+
+msgid "Scroll:"
+msgstr "Rullaus:"
+
+msgid "Search"
+msgstr "Etsi"
+
+msgid "Search for:"
+msgstr "Etsi...:"
+
+msgid "Select Alternative .dol:"
+msgstr "Vaihtoehtoinen .dol"
+
+msgid "Select WBFS device:"
+msgstr "WBFS laite"
+
+msgid "Select a different partition"
+msgstr "Valitse toinen osio"
+
+msgid "Select a partition"
+msgstr "Valitse osio"
+
+msgid "Select all"
+msgstr "Valitse kaikki"
+
+msgid "Select device:"
+msgstr "Valitse laite:"
+
+msgid "Select the game you want to boot"
+msgstr "Valitse käynnistettävä peli"
+
+msgid "Selected Game"
+msgstr "Peli valittu"
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Shooter"
+msgstr "Ammuskelu"
+
+msgid "Show All"
+msgstr "Näytä kaikki"
+
+msgid "Show cIOS info"
+msgstr "Näytä CIOS info"
+
+msgid "Shutdown"
+msgstr "Sammuta"
+
+msgid "Side:"
+msgstr "Kansi:"
+
+msgid "Sim Racing"
+msgstr ""
+
+msgid "Simulation"
+msgstr "Simulaattori"
+
+msgid "Size(GB) Type  Mount Used"
+msgstr "Koko(GB) Tyyppi  Laite Tila"
+
+#, c-format
+msgid "Size: %d bytes"
+msgstr "Koko: %d tavua"
+
+msgid "Skateboard"
+msgstr "Rullalauta"
+
+msgid "Skateboarding"
+msgstr "Rullalautailu"
+
+msgid "Skiing"
+msgstr "Hiihto"
+
+msgid "Snowboarding"
+msgstr "Lumilautailu"
+
+msgid "Soccer"
+msgstr "Jalkapallo"
+
+msgid "Sort"
+msgstr "Järjestä"
+
+msgid "Sort Games"
+msgstr "Järjestä pelit"
+
+msgid "Sort Order:"
+msgstr "Järjestys:"
+
+msgid "Sort Type:"
+msgstr "Järjestä"
+
+#, c-format
+msgid "Sort: %s-%s"
+msgstr "Järjestä: %s-%s"
+
+msgid "Spanish"
+msgstr "Espanja"
+
+msgid "Sports"
+msgstr "Urheilu"
+
+msgid "Start"
+msgstr "Käynnistä"
+
+msgid "Start Game"
+msgstr "Käynnistä peli"
+
+msgid "Start this game?"
+msgstr "Käynnistä peli?"
+
+msgid "Stealth Action"
+msgstr ""
+
+msgid "Stopping DVD..."
+msgstr "Pysäytetään levyä..."
+
+msgid "Strategy"
+msgstr "Strategia"
+
+msgid "Style"
+msgstr "Tyyli"
+
+msgid "Style:"
+msgstr "Tyyli:"
+
+msgid "Surfing"
+msgstr "Surffaus"
+
+msgid "Survival Horror"
+msgstr "Kauhu"
+
+msgid "Sync FAT free space info?"
+msgstr "Sync FAT free space info?"
+
+msgid "Synchronizing, please wait."
+msgstr "Synkronisoidaan, odota."
+
+msgid "Synopsis"
+msgstr ""
+
+msgid "Synopsis Length"
+msgstr ""
+
+msgid "System"
+msgstr "Laitteisto"
+
+msgid "System Def."
+msgstr "System Def."
+
+msgid "T. Chinese"
+msgstr "T. Chinese"
+
+msgid "Table Tennis"
+msgstr "Pöytätennis"
+
+msgid "Tennis"
+msgstr ""
+
+msgid "Theme"
+msgstr "teema"
+
+msgid "Theme Info"
+msgstr "Tietoa teemasta"
+
+msgid ""
+"Theme may be too large.\n"
+"Reboot of Cfg suggested.\n"
+msgstr ""
+"teema saattaa olla liian iso.\n"
+"Suositellaan uudelleenkäynnistystä.\n"
+
+msgid "Theme:"
+msgstr "teema:"
+
+#, c-format
+msgid "Theme: %s"
+msgstr "teema: %s"
+
+msgid "Themes provided by wii.spiffy360.com"
+msgstr "teemat tarjonnut: wii.spiffy360.com"
+
+msgid "Themes to download"
+msgstr "Ladattavat teemat"
+
+msgid "Themes with updates"
+msgstr "Päivitettävät teemat"
+
+msgid "Title"
+msgstr "Nimi"
+
+#, c-format
+msgid "Too many cheats! (%d)"
+msgstr "Liikaa koodeja! (%d)"
+
+msgid "Too many code lines!"
+msgstr "Liian monta riviä koodeja!"
+
+#, c-format
+msgid "Too many fragments! %d"
+msgstr "Liian pirstoutunut! %d"
+
+msgid "Total Body Tracking"
+msgstr ""
+
+msgid "Train Simulation"
+msgstr "Junasimulaattori"
+
+msgid "Trivia"
+msgstr "Tietokilpailu"
+
+msgid "Truck Racing"
+msgstr "Kuorma-auto-kisailu"
+
+#, c-format
+msgid "Trying (url#%d) ..."
+msgstr "Yritetään (url#%d) ..."
+
+msgid "Turntable"
+msgstr ""
+
+msgid "UNUSED"
+msgstr "KÄYTTÄMÄTÖN"
+
+msgid "UP"
+msgstr "YLÖS"
+
+#, c-format
+msgid "URL '%s' doesn't start with 'http://'"
+msgstr "URL '%s' ei ala 'http://'"
+
+#, c-format
+msgid "URL '%s' has no PATH part"
+msgstr "URL '%s' ei sisällä PATH-osaa"
+
+msgid "USB Gecko found. Debugging is enabled."
+msgstr "USB Gecko löytyi. Debuggaus on päällä."
+
+msgid "USB Mass Storage Device"
+msgstr "USB massamuisti"
+
+msgid "Unknown"
+msgstr "Tuntematon"
+
+msgid "Unknown syntax!"
+msgstr "Tuntematon syntaksi!"
+
+msgid "Unplayed"
+msgstr "Ei-pelatut"
+
+msgid "Unplayed Games"
+msgstr "Ei-pelatut"
+
+msgid "Update themes"
+msgstr "Päiivitä teemat"
+
+msgid "Updates"
+msgstr "Päivitykset"
+
+msgid "Updating database."
+msgstr "Päivitetään tietokantaa."
+
+msgid "Updating devolution"
+msgstr "Päivitetään Devolution"
+
+#, c-format
+msgid "Used: %.1fGB Free: %.1fGB [%d]"
+msgstr "Käytetty: %.1fGB Vapaata %.1fGB [%d]"
+
+msgid "Using Saved Alternative .dol:"
+msgstr "Käytetään tallennettua vaihtoehtoista .dol:"
+
+msgid "VC-Arcade"
+msgstr ""
+
+msgid "VC-Commodore 64"
+msgstr ""
+
+msgid "VC-N64"
+msgstr ""
+
+msgid "VC-NES"
+msgstr ""
+
+msgid "VC-Neo Geo"
+msgstr ""
+
+msgid "VC-SMS"
+msgstr ""
+
+msgid "VC-SNES"
+msgstr ""
+
+msgid "VC-Sega Genesis"
+msgstr ""
+
+msgid "VC-TurboGrafx-16"
+msgstr ""
+
+msgid "Version"
+msgstr "Versio"
+
+msgid "Video Patch:"
+msgstr "Video Patch:"
+
+msgid "Video:"
+msgstr "Video:"
+
+msgid "View"
+msgstr "Järjestys"
+
+msgid "Virtual Pet"
+msgstr "Virtuaalilemmikki"
+
+msgid "Vitality Sensor"
+msgstr "Elinvoima sensori(?)"
+
+msgid "Volleyball"
+msgstr ""
+
+msgid "WARNING:"
+msgstr "VAROITUS:"
+
+#, c-format
+msgid "WBFS: %.1fGB free of %.1fGB"
+msgstr "WBFS: Vapaana %.1fGB/%.1fGB"
+
+msgid "Watercraft Racing"
+msgstr "Vene-kilpa-ajo"
+
+msgid "Wheel"
+msgstr "Ratti"
+
+msgid "Wide Screen:"
+msgstr "Laajakuva"
+
+msgid "Wii"
+msgstr ""
+
+msgid "Wii Channel"
+msgstr "Wii-kanava"
+
+msgid "Wii Speak"
+msgstr "Wii Speak"
+
+msgid "WiiWare"
+msgstr ""
+
+msgid "Wiimote"
+msgstr "Wiimote"
+
+msgid "Wrestling"
+msgstr "Paini"
+
+msgid "Write Playlog:"
+msgstr "Write Playlog:"
+
+#, c-format
+msgid "Writing to %s"
+msgstr "Kirjoitetaan: %s"
+
+#, c-format
+msgid "Writing: %s"
+msgstr "Kirjoitetaan: %s"
+
+#, c-format
+msgid "Wrong Size: %d (%d)"
+msgstr "Väärä koko: %d (%d)"
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid ""
+"You can also try unplugging\n"
+"and plugging back the device,\n"
+"or just wait some more"
+msgstr ""
+"Voit myös odottaa tai\n"
+"poistaa laitteen Wiistä\n"
+"ja kytkeä uudelleen"
+
+msgid "Zapper"
+msgstr "Zapper"
+
+msgid "[ CHANGED ]"
+msgstr "[ MUUTETTU ]"
+
+msgid "[ FOUND ]"
+msgstr "[ LÖYTYNYT ]"
+
+msgid "[ SAVED ]"
+msgstr "[ TALLENNETTU ]"
+
+msgid "[HOME]"
+msgstr "[HOME]"
+
+msgid "[No HQ]"
+msgstr "[Ei HQ]"
+
+msgid "[USED]"
+msgstr "[KÄYTÖSSÄ]"
+
+msgid "[default]"
+msgstr "[oletus]"
+
+msgid "[saved]"
+msgstr "[tallennettu]"
+
+#, c-format
+msgid "bad wbfs file: %s"
+msgstr "huono wbfs-tiedosto: %s"
+
+msgid "calculating space, please wait..."
+msgstr "lasketaan tilaa, odota..."
+
+msgid "delete"
+msgstr "poista"
+
+#, c-format
+msgid "dest: %p - %p"
+msgstr "kohde: %p - %p"
+
+msgid "discard"
+msgstr "hylkää"
+
+#, c-format
+msgid "domain %s could not be resolved"
+msgstr "palvelinta %d ei voitu selvittää"
+
+#, c-format
+msgid "error reading: %s (%d)"
+msgstr "virhe luettaessa: %s (%d)"
+
+#, c-format
+msgid "for %d players"
+msgstr "%d pelaajalle"
+
+msgid "for 1 player"
+msgstr "1 pelaajalle"
+
+msgid "format"
+msgstr "alusta"
+
+msgid "free"
+msgstr "vapaa"
+
+#, c-format
+msgid "linear read speed: %.2f mb/s"
+msgstr "lineaarinen lukunopeus %.2f mb/s"
+
+msgid "linear..."
+msgstr "lineaarinen..."
+
+#, c-format
+msgid "loader.bin size: %d"
+msgstr "loader.bin koko: %d"
+
+#, c-format
+msgid "music file too big (%d) %s"
+msgstr "musiikkitiedosto liian iso (%d) %s"
+
+msgid "music.mp3 or music.mod not found!"
+msgstr "music.mp3 tai music.mod ei löytynyt!"
+
+msgid "no file"
+msgstr "ei tiedostoa"
+
+msgid "none"
+msgstr "ei mitään"
+
+msgid "or format a WBFS partition."
+msgstr "tai alusta WBFS osio."
+
+msgid "page"
+msgstr "sivu"
+
+msgid "parse error"
+msgstr "jäsennysvirhe"
+
+msgid "r51-"
+msgstr ""
+
+msgid "r52+"
+msgstr ""
+
+#, c-format
+msgid "random read speed: %.2f mb/s"
+msgstr "vaihteleva lukunopeus: %.2f mb/s"
+
+msgid "random..."
+msgstr "vaihteleva..."
+
+msgid "reset"
+msgstr "reset"
+
+msgid "revert"
+msgstr "paluu"
+
+msgid "save"
+msgstr "tallenna"
+
+#, c-format
+msgid "split error: %s"
+msgstr "jakovirhe: %s"
+
+msgid "uDraw GameTablet"
+msgstr "uDrav Gametablet"
+
+msgid "unable to open wii disc"
+msgstr "Ei voitu avata Wii levyä"
+
+#, c-format
+msgid "used: %p - %p"
+msgstr "käytetty: %p - %p"
+
+#~ msgid "Booting Wii game, please wait..."
+#~ msgstr "Käynnistetään Wii peliä, Odota"
+
+#~ msgid "Console Def."
+#~ msgstr "Oletus."
+
+#~ msgid "Download titles.txt"
+#~ msgstr "Lataa titles.txt"
+
+#~ msgid "Update WiiTDB Game Database"
+#~ msgstr "päivitä WiiTDB tietokanta"
+
+#~ msgid "Update titles.txt"
+#~ msgstr "Päivitä titles.txt"
+
+#~ msgid "WiiTDB Game Database"
+#~ msgstr "WiiTDB pelitietokanta"

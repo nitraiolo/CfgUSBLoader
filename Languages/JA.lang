@@ -1,0 +1,1931 @@
+・ CFG USB Loader language file template.e
+# Put the translated string in msgstr ""
+# Fill in the Last-Translator and Language-Team fields.
+# Please use utf-8 charset when editing.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-07 23:40+0200\n"
+"PO-Revision-Date: 2010-02-11 HO:MI+ZONE\n"
+"Last-Translator: Trickart <trickart1109@gmail.com>\n"
+"Language-Team: Japanese <hosigumayuugi@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, c-format
+msgid "%.1fGB free of %.1fGB"
+msgstr "%.1fGB空いています(%.1fGB中)"
+
+#, c-format
+msgid "%.2f%% of %.2fGB (%c) ETA: %d:%02d:%02d"
+msgstr "%.2f%%[%.2fGB中](%c)残り%d時間%02d分%02d秒"
+
+#, c-format
+msgid "%.2fGB copied in %d:%02d:%02d"
+msgstr "%d時間%02d分%02d秒で%.2fGBコピーしました"
+
+#, c-format
+msgid "%d available"
+msgstr "%dが利用可能です"
+
+#, c-format
+msgid "%d more notes"
+msgstr "%dその他のノート"
+
+#, c-format
+msgid "%s Split: %d %s"
+msgstr "%s分割: %d %s"
+
+#, c-format
+msgid "%s, please wait..."
+msgstr "%s、お待ちください…"
+
+#, c-format
+msgid "(%d online)"
+msgstr "(%d人まで通信可能)"
+
+#, c-format
+msgid "(%d seconds timeout)"
+msgstr "(%d秒でタイムアウト)"
+
+msgid "(This can take a couple of minutes)"
+msgstr "(これには数分かかります)"
+
+msgid ".dol too small"
+msgstr ".dolが小さすぎます"
+
+msgid "3D cover"
+msgstr "3Dカバー"
+
+msgid "< ASC  >"
+msgstr "< 昇順  >"
+
+msgid "< DESC >"
+msgstr "< 降順 >"
+
+msgid "< DOWNLOAD >"
+msgstr "<ダウンロード>"
+
+msgid "About"
+msgstr "情報"
+
+msgid "Action"
+msgstr "アクション"
+
+msgid "Additional config:"
+msgstr "設定の保存場所:"
+
+msgid "Admin Lock:"
+msgstr "管理者ロック:"
+
+msgid "Admin Unlock"
+msgstr "管理者アンロック"
+
+msgid "Adult"
+msgstr "成人向け"
+
+msgid "Adventure"
+msgstr "アドベンチャー"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "All Games"
+msgstr "すべてのゲーム"
+
+msgid "All themes up to date."
+msgstr "全てのテーマを更新しました"
+
+msgid "Alt dol:"
+msgstr "代替dol"
+
+msgid "Alternative .dol:"
+msgstr "代替dol"
+
+msgid "Anti 002 Fix:"
+msgstr "エラー002対策"
+
+#, c-format
+msgid "App. Path: %s"
+msgstr "アプリのパス: %s"
+
+#, c-format
+msgid ""
+"Are you sure you want to %s\n"
+"this partition?"
+msgstr "この領域を%sしますか?"
+
+msgid ""
+"Are you sure you want to FIX\n"
+"this partition?"
+msgstr "この領域を修復しますか?"
+
+msgid ""
+"Are you sure you want to remove this\n"
+"game?"
+msgstr "このゲームを削除しますか?"
+
+msgid "Ascending"
+msgstr "昇順"
+
+msgid "Auto"
+msgstr "自動"
+
+#, c-format
+msgid "Auto-start game: %.6s not found!"
+msgstr "自動起動ゲーム: %.6sが見つかりません"
+
+msgid "Available Updates"
+msgstr "利用可能な更新"
+
+msgid "Back"
+msgstr "戻る"
+
+msgid "Balance Board"
+msgstr "バランスボード"
+
+msgid "Basic"
+msgstr "ベーシック"
+
+msgid "Block IOS Reload:"
+msgstr "IOSの再読込み禁止"
+
+msgid "Boot Disc"
+msgstr "ディスクを起動"
+
+msgid "Boot disc"
+msgstr "ディスク起動"
+
+msgid "Booting Wii game, please wait..."
+msgstr "起動中です、しばらくお待ちください"
+
+#, c-format
+msgid "CFG base: %s"
+msgstr "基本ディレクトリ: %s"
+
+msgid "Cancelled."
+msgstr "キャンセルしました"
+
+#, c-format
+msgid "Cannot create dir: %s"
+msgstr "ディレクトリを作成できませんでした: %s"
+
+msgid "Channel"
+msgstr "チャンネル"
+
+msgid "Cheat Codes:"
+msgstr "チートコード:"
+
+msgid "Cheats: "
+msgstr "チート:"
+
+msgid "Check For Updates"
+msgstr "更新を確認"
+
+msgid "Checking for themes..."
+msgstr "テーマを確認中です…"
+
+msgid "Checking for updates..."
+msgstr "更新を探しています…"
+
+msgid "Choose a sorting method"
+msgstr "並び替え方法を選んでください"
+
+msgid "Classic"
+msgstr "クラシック"
+
+msgid "Classic Controller"
+msgstr "クラシックコントローラ"
+
+msgid "Clear Patches:"
+msgstr "パッチを無効化:"
+
+#, c-format
+msgid "Complete. Size: %d"
+msgstr "完了しました(サイズ: %d)"
+
+#, c-format
+msgid "Configurable Loader %s"
+msgstr "Configurable Loader %s"
+
+msgid "Configuration error, MAX_DNS_ENTRIES reached while the list is empty"
+msgstr "設定エラーが発生しました"
+
+#, c-format
+msgid "Connection error from net_read()  Errorcode: %i"
+msgstr "接続エラーが発生しました:%i"
+
+msgid "Console"
+msgstr "コンソール"
+
+msgid "Console Def."
+msgstr "コンソールの標準"
+
+msgid "Controller"
+msgstr "コントローラ"
+
+#, c-format
+msgid "Could not initialize DIP module! (ret = %d)"
+msgstr "DIPモジュールを初期化できませんでした"
+
+msgid "Country Fix:"
+msgstr "リージョン回避:"
+
+msgid "Cover"
+msgstr "カバー"
+
+msgid "Cover Image:"
+msgstr "カバー画像:"
+
+msgid "Cover Style"
+msgstr "カバースタイル"
+
+msgid "Cover~~Back"
+msgstr "カバー~~背面"
+
+msgid "Cover~~Front"
+msgstr "カバー~~正面"
+
+msgid "Create"
+msgstr "作成"
+
+msgid "Creator"
+msgstr "制作者"
+
+#, c-format
+msgid "Current Version: %s"
+msgstr "現在のバージョン: %s"
+
+#, c-format
+msgid ""
+"Custom IOS %d could not be found!\n"
+"Please install it."
+msgstr ""
+"cIOS%dが見つかりません\n"
+"インストールしてください"
+
+#, c-format
+msgid "Custom IOS %d could not be loaded! (ret = %d)"
+msgstr "cIOS%dが読み込めません(ret = %d)"
+
+#, c-format
+msgid ""
+"Custom IOS %d is a stub!\n"
+"Please reinstall it."
+msgstr ""
+"cIOS%dはスタブです!\n"
+"再インストールしてください"
+
+#, c-format
+msgid "Custom IOS %s Loaded OK"
+msgstr "cIOS%sを読み込みました"
+
+msgid "DISC cover"
+msgstr "ディスクカバー"
+
+msgid "Dol Booter"
+msgstr "DOL Booter"
+
+msgid "DOWN"
+msgstr "下"
+
+msgid "Dance Pad"
+msgstr "ダンスマット"
+
+msgid "Database update successful."
+msgstr "データベースを更新しました"
+
+msgid "Debug"
+msgstr "デバッグ"
+
+msgid "default"
+msgstr	"デフォルト"
+
+msgid "Delete Game"
+msgstr "ゲームを削除"
+
+msgid "Deleting"
+msgstr "削除中"
+
+msgid "Descending"
+msgstr "降順"
+
+msgid "Developer"
+msgstr "開発者"
+
+msgid "Device is not responding!"
+msgstr "デバイスが応答していません!"
+
+msgid "Device:"
+msgstr "使用デバイス:"
+
+msgid "Disc"
+msgstr "ディスク"
+
+msgid "Disc (Ask)"
+msgstr "ディスク(尋ねる)"
+
+msgid "DML version:"
+msgstr "DMlバージョン:"
+
+msgid "Done."
+msgstr "完了しました"
+
+msgid "Download .txt"
+msgstr "txtをダウンロード"
+
+msgid "Download All Covers"
+msgstr "全てのカバーをダウンロード"
+
+msgid "Download All Missing Covers"
+msgstr "不足しているカバーをダウンロード"
+
+msgid "Download game information"
+msgstr "ゲームインフォをダウンロード"
+
+msgid "Download Missing Covers"
+msgstr "不足しているカバーをダウンロード"
+
+msgid "Download Plugins"
+msgstr "プラグインをダウンロード"
+
+msgid "Download Themes"
+msgstr "テーマをダウンロード"
+
+msgid "Download complete."
+msgstr "ダウンロードしました"
+
+#, c-format
+msgid "Download error on gamercard #%d."
+msgstr "ゲーマーカード#%dのダウンロードに失敗しました"
+
+msgid "Download titles.txt"
+msgstr "titles.txtをダウンロード"
+
+msgid "Downloadable Content"
+msgstr "追加データを受信可能"
+
+msgid "Downloading ALL MISSING covers"
+msgstr "すべての不足カバーをダウンロードしています"
+
+msgid "Downloading ALL covers"
+msgstr "すべてのカバーをダウンロードしています"
+
+#, c-format
+msgid "Downloading ALL covers for %.6s"
+msgstr "%.6sのすべてのカバーをダウンロードしています"
+
+#, c-format
+msgid "Downloading MISSING covers for %.6s"
+msgstr ""
+"%.6sの不足しているカバーを\n"
+"ダウンロードしています"
+
+msgid "Downloading Theme previews..."
+msgstr "プレビューをダウンロードしています…"
+
+msgid "Downloading cheats..."
+msgstr "コードをダウンロード中…"
+
+msgid "Downloading database."
+msgstr "データベースをダウンロード中…"
+
+msgid "Downloading titles.txt ..."
+msgstr "titles.txtをダウンロード中…"
+
+#, c-format
+msgid "Downloading: %s"
+msgstr "ダウンロード中: %s"
+
+#, c-format
+msgid "Downloading: %s as %s"
+msgstr "%sを%sとしてダウンロードしています"
+
+msgid "Downloads"
+msgstr "ダウンロード数"
+
+msgid "Drums"
+msgstr "タルコンガ"
+
+msgid "Dump savegame"
+msgstr "セーブデータをダンプ"
+
+msgid "Dutch"
+msgstr "オランダ語"
+
+msgid "ERROR"
+msgstr "エラー"
+
+msgid "ERROR creating file"
+msgstr "ファイルの作成エラー"
+
+msgid "ERROR game opt"
+msgstr "ゲーム設定エラー"
+
+msgid "ERROR reading BCA!"
+msgstr "BCAの読み込みエラー"
+
+#, c-format
+msgid "ERROR removing %s"
+msgstr "%s移動中エラー"
+
+msgid "ERROR writing BCA!"
+msgstr "BCA書き込み中エラー"
+
+msgid "ERROR!"
+msgstr "エラー!"
+
+#, c-format
+msgid "ERROR! (ret = %d)"
+msgstr "エラー!(ret = %d)"
+
+msgid "ERROR:"
+msgstr "エラー:"
+
+#, c-format
+msgid "ERROR: %s is not accessible"
+msgstr "エラー:%sはアクセスできません"
+
+#, c-format
+msgid "ERROR: Apploader %d"
+msgstr "エラー:アプリローダー %d"
+
+msgid "ERROR: CIOS222/223 v4 required for BCA"
+msgstr "エラー:BCAにはcIOS222/223v4が必要です"
+
+msgid "ERROR: Cache Close"
+msgstr "エラー:キャッシュが閉じられています"
+
+#, c-format
+msgid "ERROR: Could not open game! (ret = %d)"
+msgstr "エラー:ゲームを起動できません (ret = %d)"
+
+msgid "ERROR: Game already installed!!"
+msgstr "エラー:すでにインストールされています"
+
+#, c-format
+msgid "ERROR: GetCerts %d"
+msgstr "エラー:証明書の取得%d"
+
+msgid "ERROR: Invalid Game ID"
+msgstr "エラー:不正なゲームIDです"
+
+#, c-format
+msgid "ERROR: Loading EHC module! (%d)"
+msgstr "エラー:EHCモジュールの読み込み中(%d)"
+
+msgid ""
+"ERROR: NTFS write disabled!\n"
+"(set ntfs_write=1)"
+msgstr ""
+"ERROR: NTFS書き込みは無効になっています!\n"
+"(「ntfs_write=1」をセットしてください)"
+
+#, c-format
+msgid "ERROR: No partitions found! (ret = %d)"
+msgstr "エラー:領域が見つかりません (ret = %d)"
+
+msgid "ERROR: Not a Wii disc!!"
+msgstr "エラー:Wiiディスクではありません"
+
+#, c-format
+msgid "ERROR: Offset(0x%llx) %d"
+msgstr "エラー:オフセット(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: OpenPartition %d"
+msgstr "エラー:領域の展開%d"
+
+#, c-format
+msgid "ERROR: OpenPartition(0x%llx) %d"
+msgstr "エラー:領域の展開(0x%llx)%d"
+
+#, c-format
+msgid "ERROR: SetFragList(0): %d"
+msgstr "エラー: フラグリストのセット(0): %d"
+
+#, c-format
+msgid "ERROR: SetWBFS: %d"
+msgstr "エラー: WBFSのセット: %d"
+
+msgid "ERROR: Setting SD mode"
+msgstr "エラー:SDモードへの設定"
+
+#, c-format
+msgid "ERROR: USB init! (%d)"
+msgstr "エラー:USBの初期化 (%d)"
+
+msgid ""
+"ERROR: cIOS249rev18, cIOS222v4,\n"
+"cIOS223v4, cIOS224v5 or higher required\n"
+"for starting games from a FAT partition!\n"
+"Upgrade IOS249 or choose a different IOS."
+msgstr ""
+"エラー: cIOS249rev18､cIOS222v4､\n"
+"cIOS223v4､cIOS224v5以上が\n"
+"FAT領域からのゲームの起動に必要です!\n"
+"IOS249を更新するか別のIOSを選択してください"
+
+msgid "ERROR: cache: out of memory"
+msgstr "エラー:メモリ不足"
+
+#, c-format
+msgid "ERROR: creating: %s"
+msgstr "%s作成中のエラー"
+
+#, c-format
+msgid "ERROR: get_frag_list: %d"
+msgstr "エラー:フラグ取得リスト: %d"
+
+msgid "ERROR: memory overlap!"
+msgstr "エラー:メモリの重複"
+
+msgid ""
+"ERROR: multiple wbfs partitions\n"
+"supported only with IOS222/223-mload"
+msgstr ""
+"マルチWBFS領域は\n"
+"IOS222/223-mloadだけでサポートされています"
+
+msgid "ERROR: not enough free space!!"
+msgstr "エラー:空き容量がありません"
+
+msgid "ERROR: ntfs was not cleanly unmounted"
+msgstr "エラー:NTFSは取り外されていません"
+
+#, c-format
+msgid "ERROR: opening %.6s"
+msgstr "エラー:%.6s開き中"
+
+#, c-format
+msgid "ERROR: set_frag_list: %d"
+msgstr "エラー: フラグリストのセット: %d"
+
+#, c-format
+msgid "ERROR: setting up fragments %d %d"
+msgstr "エラー: フラグメントの構成 %d %d"
+
+#, c-format
+msgid "ERROR: writing %s (%d)."
+msgstr "エラー:%s (%d)書き込み中"
+
+msgid "EXTEND"
+msgstr "拡張"
+
+msgid "Ejecting DVD..."
+msgstr "DVDを取り出しています…"
+
+msgid "English"
+msgstr "英語"
+
+msgid "English Title"
+msgstr "英語名"
+
+msgid "Enter Code: "
+msgstr "コードを入力してください:"
+
+msgid "Error GRRLIB init"
+msgstr "GRRLIBの初期化に失敗しました"
+
+msgid "Error Initializing Network."
+msgstr "接続の初期化に失敗しました"
+
+msgid "Error adding disc!"
+msgstr "ディスクの追加に失敗しました"
+
+msgid "Error creating directory..."
+msgstr "フォルダの作成に失敗しました"
+
+msgid "Error discarding options!"
+msgstr "設定の破棄に失敗しました"
+
+msgid "Error downloading theme preview..."
+msgstr "プレビューがダウンロードできませんでした"
+
+msgid "Error downloading theme..."
+msgstr "テーマのダウンロードに失敗しました"
+
+msgid "Error downloading themes..."
+msgstr "テーマのダウンロードに失敗しました"
+
+msgid "Error downloading update..."
+msgstr "更新のダウンロードに失敗しました"
+
+msgid "Error downloading updates..."
+msgstr "更新のダウンロードに失敗しました…"
+
+msgid "Error downloading."
+msgstr "ダウンロードに失敗しました"
+
+msgid "Error establishing connection"
+msgstr "接続の確立に失敗しました"
+
+msgid "Error extracting theme..."
+msgstr "テーマの解凍に失敗しました"
+
+msgid "Error opening database, update did not complete."
+msgstr "データベースを開けません、更新は完了していません"
+
+#, c-format
+msgid "Error opening: %s"
+msgstr "展開中エラー: %s"
+
+#, c-format
+msgid "Error playing %s"
+msgstr "%s起動中のエラー"
+
+msgid "Error reading .dol"
+msgstr ".dolの読み込みに失敗しました"
+
+msgid "Error reading dol header"
+msgstr "dolのヘッダの読み込みに失敗しました"
+
+#, c-format
+msgid "Error saving %s"
+msgstr "%s保存中のエラー"
+
+msgid "Error saving options!"
+msgstr "設定の保存に失敗しました"
+
+msgid "Error saving settings!"
+msgstr "設定の保存に失敗しました"
+
+msgid ""
+"Error storing playlog file.\n"
+"Start from the Wii Menu to fix."
+msgstr ""
+"プレイ履歴ファイルエラーです\n"
+"Wiiメニューから始めると修復できます"
+
+msgid "Error: Invalid PNG image!"
+msgstr "エラー:不正なPNGファイルです"
+
+msgid "Error: no URL."
+msgstr "URLがありません"
+
+msgid "Error: no data."
+msgstr "データがありません"
+
+msgid "Exit"
+msgstr "終了"
+
+#, c-format
+msgid "Extracting: %s"
+msgstr "解凍中: %s"
+
+msgid "FAIL"
+msgstr "失敗"
+
+#, c-format
+msgid "FAT: ALLOC ERROR %p %p %p"
+msgstr "FAT: ALLOCエラー %p %p %p"
+
+#, c-format
+msgid "FATAL: alloc grid(%d)"
+msgstr "致命的:アロケーショングリッド(%d)"
+
+#, c-format
+msgid "FILL %d"
+msgstr "満タン %d"
+
+msgid "FLAT cover"
+msgstr "正面カバー"
+
+msgid "FULL cover"
+msgstr "完全なカバー"
+
+msgid "Fav"
+msgstr "お気に入り"
+
+msgid "Fav: Off"
+msgstr "お気に入り:オフ"
+
+msgid "Fav: On"
+msgstr "お気に入り:オン"
+
+msgid "Favorite"
+msgstr "お気に入り"
+
+msgid "Favorite Games"
+msgstr "お気に入りのゲーム"
+
+msgid "Favorite:"
+msgstr "お気に入り:"
+
+msgid "Favorites:"
+msgstr "お気に入り:"
+
+msgid "Fighting"
+msgstr "格闘"
+
+#, c-format
+msgid "File not found! %s"
+msgstr "ファイルが見つかりません%s"
+
+msgid "Filter"
+msgstr "絞り込み"
+
+msgid "Filter Games"
+msgstr "ゲームの絞り込み"
+
+msgid "Filter by Controller"
+msgstr "コントローラで絞り込む"
+
+msgid "Filter by Genre"
+msgstr "ジャンルで絞り込む"
+
+msgid "Filter by Online Features"
+msgstr "ネットワーク対応機能で絞り込む"
+
+msgid "Filter:"
+msgstr "絞り込み:"
+
+msgid "Fixing EXTEND partition..."
+msgstr "拡張領域を修復中です…"
+
+msgid "Force Devolution:"
+msgstr "Devolutionを強制使用:"
+
+msgid "Force NTSC"
+msgstr "強制NTSC"
+
+msgid "Force PAL50"
+msgstr "強制PAL50"
+
+msgid "Force PAL60"
+msgstr "強制PAL60"
+
+msgid "Formatting"
+msgstr "初期化中"
+
+#, c-format
+msgid "Found %s"
+msgstr "%s見つかりました"
+
+msgid "French"
+msgstr "フランス語"
+
+msgid "Full"
+msgstr "フル"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "Game Default"
+msgstr "ゲームの標準"
+
+msgid "Game Options"
+msgstr "ゲーム設定"
+
+#, c-format
+msgid "Game Options:  %s"
+msgstr "ゲーム設定:%s"
+
+msgid "Gamecube"
+msgstr "ゲームキューブ"
+
+msgid "Gamer Card:"
+msgstr "ゲーマーカード:"
+
+#, c-format
+msgid "Gamercard #%d reported: %.*s"
+msgstr "ゲーマーカード#%dに報告しました: %.*s"
+
+msgid "Genre"
+msgstr "ジャンル"
+
+msgid "German"
+msgstr "ドイツ語"
+
+msgid "Global Options"
+msgstr "基本設定"
+
+msgid "Guitar"
+msgstr "ギター"
+
+msgid "HQ cover"
+msgstr "高品質カバー"
+
+msgid "HTTP Response was without a file"
+msgstr "HTTPの応答はファイル無しでした"
+
+msgid "Hide"
+msgstr "隠す"
+
+msgid "Hide Game:"
+msgstr "ゲームを隠す:"
+
+msgid "Hold button B to cancel."
+msgstr "キャンセルするにはBボタンを押してください"
+
+msgid "Home Menu"
+msgstr "HOMEメニュー"
+
+msgid "Homebrew Channel"
+msgstr "Homebrewチャンネル"
+
+msgid "Hook Type:"
+msgstr "フックタイプ:"
+
+#, c-format
+msgid "ID mismatch: [%.6s] [%.6s]"
+msgstr "IDが一致しません: [%.6s] [%.6s]"
+
+msgid "IOS Reload: Blocked"
+msgstr "IOSの再読み込み:禁止"
+
+#, c-format
+msgid "IOS_Open(%s) failed with code %d"
+msgstr "%dのコードでIOSを開く(%s)のに失敗しました"
+
+msgid ""
+"If Cfg does not start properly\n"
+"next time, copy boot.dol.bak over\n"
+"boot.dol and try again."
+msgstr ""
+"もしCFGが起動しなければboot.dolを削除後\n"
+"boot.dol.bakをboot.dolに名前を変えて\n"
+"再試行してください"
+
+#, c-format
+msgid "Inconsistency in LZ77 encoding %x"
+msgstr "%xをLZ77で符号化中に矛盾があります"
+
+msgid "Info"
+msgstr "情報"
+
+#, c-format
+msgid "Info file: %s"
+msgstr "ファイル情報:%s"
+
+msgid "Initializing Network..."
+msgstr "接続中…"
+
+msgid "Install"
+msgstr "インストール"
+
+msgid "Install Date"
+msgstr "インストール日"
+
+msgid "Install Game"
+msgstr "ゲームをインストール"
+
+msgid "Install game"
+msgstr "ゲームをインストール"
+
+#, c-format
+msgid "Installation ERROR! (ret = %d)"
+msgstr "インストールエラー!(ret = %d)"
+
+msgid "Installing game, please wait..."
+msgstr "インストール中です、お待ちください…"
+
+msgid "Invalid .dol"
+msgstr "不正なdolです"
+
+#, c-format
+msgid "Invalid partition: '%s'"
+msgstr "不正な領域です: '%s'"
+
+msgid "Italian"
+msgstr "イタリア語"
+
+msgid "Japanese"
+msgstr "日本語"
+
+msgid "Japanese Title"
+msgstr "日本語名"
+
+msgid "Keyboard"
+msgstr "キーボード"
+
+msgid "Korean"
+msgstr "韓国語"
+
+msgid "LED:"
+msgstr "LED点灯:"
+
+msgid "LEFT"
+msgstr "左"
+
+msgid "LOCKED!"
+msgstr "ロックしました"
+
+msgid "Language:"
+msgstr "言語:"
+
+msgid "Last Play Date"
+msgstr "最終プレイ日"
+
+msgid "Launch Methods"
+msgstr "起動方法"
+
+msgid "Load OK!"
+msgstr "読み込みました"
+
+#, c-format
+msgid "Loader Version: %s"
+msgstr "ローダーのバージョン: %s"
+
+msgid "Loading ..."
+msgstr "読み込み中･･･"
+
+msgid "Main"
+msgstr "メイン"
+
+msgid "Main Menu"
+msgstr "メインメニュー"
+
+msgid ""
+"Make sure USB port 0 is used!\n"
+"(The one nearest to the edge)"
+msgstr "端に近い方のUSBポートを使用してください"
+
+msgid "Manage"
+msgstr "管理画面"
+
+msgid "Manage Cheats"
+msgstr "チートを管理"
+
+msgid "Microphone"
+msgstr "マイク"
+
+msgid "Motion+"
+msgstr "Wiiモーションプラス"
+
+msgid "Mounting device, please wait..."
+msgstr "デバイスをマウント中です、お待ちください…"
+
+msgid "Music"
+msgstr "音楽"
+
+#, c-format
+msgid "Music file from dir: %s"
+msgstr "音楽ファイルの場所:%s"
+
+#, c-format
+msgid "Music file size: %d"
+msgstr "音楽ファイルのサイズ: %d"
+
+#, c-format
+msgid "Music file: %s"
+msgstr "音楽ファイル: %s"
+
+msgid "Music: Disabled"
+msgstr "BGM:無効"
+
+msgid "Music: Enabled"
+msgstr "BGM:有効"
+
+#, c-format
+msgid "Music: Looking for %s files in: %s"
+msgstr "%sを%sから探しています"
+
+#, c-format
+msgid "Music: Next file index to play: %i"
+msgstr "BGM:再生する次のファイル目次:%i"
+
+#, c-format
+msgid "Music: Number of %s files found: %i"
+msgstr "BGM:%sが%i個見つかりました"
+
+msgid "Music: musicArray contents: "
+msgstr "BGM:音楽コンテンツ: "
+
+msgid "NAND Emu:"
+msgstr "NANDエミュレーション:"
+
+msgid "NAND Emu Path:"
+msgstr "エミュNANDのパス:"
+
+msgid "NoDisc:"
+msgstr "ディスクなし起動:"
+
+msgid ""
+"NOTE: CIOS249 before rev10:\n"
+"Loading games from SDHC not supported!"
+msgstr ""
+"注意:rev10以前のcIOS249は:\n"
+"SDHCからのゲームの起動に対応していません"
+
+msgid ""
+"NOTE: CIOS249 before rev14:\n"
+"Possible error #001 is not handled!"
+msgstr ""
+"注意:rev14以前のcIOS249は:\n"
+"error#001に対応していません"
+
+msgid ""
+"NOTE: CIOS249 before rev9:\n"
+"Loading games from USB not supported!"
+msgstr ""
+"注意:rev9以前のcIOS249は:\n"
+"USBからのゲーム起動に対応していません"
+
+msgid ""
+"NOTE: You are using CIOS249 rev13:\n"
+"To quit the game you must reset or\n"
+"power-off the Wii before you start\n"
+"another game or it will hang here!"
+msgstr ""
+"注意:cIOS249 rev13では:\n"
+"ゲームを終了するとき\n"
+"電源を切るかリセットしてから\n"
+"別のゲームを起動してください"
+
+msgid ""
+"NOTE: You are using CIOS249 rev14:\n"
+"It has known problems with dual layer\n"
+"games. It is highly recommended that\n"
+"you use a different IOS or revision\n"
+"for installation/playback of this game."
+msgstr ""
+"注意:cIOS249 rev14には:\n"
+"二層のDVDでの問題があります\n"
+"このゲームをインストールするときは\n"
+"別のrevかIOSを使用することをおすすめします\n"
+
+msgid ""
+"NOTE: loader restart is required\n"
+"for the update to take effect."
+msgstr ""
+"注意:更新を反映させるために\n"
+"ローダーを再起動してください"
+
+#, c-format
+msgid ""
+"NOTE: partition P#%d is type EXTEND but\n"
+"contains a WBFS filesystem. This is an\n"
+"invalid setup. Press %s to change the\n"
+"partition type from EXTEND to data."
+msgstr ""
+"注意: 領域 P#%dは拡張形式ですが\n"
+"WBFS領域を含んでいます\n"
+"これは不正な構成です\n"
+"%sボタンを押すと領域形式を拡張形式から変更します"
+
+msgid "NTFS compression not supported!"
+msgstr "NTFS圧縮には対応していません"
+
+msgid "NTFS encryption not supported!"
+msgstr "NTFS解凍には対応していません"
+
+msgid "Network connection established."
+msgstr "接続しました"
+
+msgid "Network error. Can't update gamercards."
+msgstr "エラーが発生しました。ゲーマーカードを更新できません"
+
+msgid "New Themes"
+msgstr "新しいテーマ"
+
+msgid "Nintendo DS"
+msgstr "ニンテンドーDS"
+
+msgid "Nintendo DS Connectivity"
+msgstr "DSとの通信機能"
+
+msgid "No"
+msgstr "いいえ"
+
+#, c-format
+msgid "No domain part in URL '%s'"
+msgstr "'%s'のURLにドメインがありません"
+
+msgid "No games found!"
+msgstr "ゲームが見つかりません"
+
+msgid "No partition selected!"
+msgstr "領域が選ばれていません"
+
+msgid "No themes found."
+msgstr "テーマが見つかりません"
+
+msgid "No updates found."
+msgstr "更新はありません"
+
+msgid "None found on disc"
+msgstr "ディスクに何も見つかりません"
+
+msgid "NTSC-J patch:"
+msgstr "セーブ破損回避:"
+
+msgid "Not Found!"
+msgstr "見つかりません"
+
+msgid "Number of Online Players"
+msgstr "通信時のプレイ可能人数"
+
+msgid "Number of Players"
+msgstr "プレイ可能人数"
+
+msgid "Nunchuk"
+msgstr "ヌンチャク"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "OK!"
+msgstr "完了しました"
+
+msgid "Ocarina (cheats):"
+msgstr "チート機能:"
+
+msgid "Ocarina Cheat Manager"
+msgstr "Ocarinaチートマネージャー"
+
+msgid "Ocarina: Code Error"
+msgstr "Ocarina:コードエラー"
+
+msgid "Ocarina: Codes found."
+msgstr "Ocarina:コードが見つかりました"
+
+msgid "Ocarina: No codes found"
+msgstr "Ocarina:コードが見つかりませんでした"
+
+msgid "Ocarina: Out Of Memory Error"
+msgstr "Ocarina:メモリ不足です"
+
+msgid "Ocarina: Searching codes..."
+msgstr "Ocarina:コードを探しています…"
+
+msgid "Ocarina: Too many codes"
+msgstr "コードが多すぎます"
+
+msgid "Off"
+msgstr "使用しない"
+
+msgid "On"
+msgstr "使用する"
+
+msgid "Online"
+msgstr "ネットワーク"
+
+msgid "Online Content"
+msgstr "ネットワーク対応"
+
+msgid "Online Play"
+msgstr "ネットワークプレイ"
+
+msgid "Online Players"
+msgstr "ネットワークプレイ人数"
+
+msgid "Online Score List"
+msgstr "オンラインスコアリスト"
+
+msgid "Online Updates"
+msgstr "オンライン更新"
+
+msgid "Open Sort"
+msgstr "並び替えを開く"
+
+msgid "Open Style"
+msgstr "スタイルを開く"
+
+msgid "Opening DVD disc..."
+msgstr "DVDを開いています…"
+
+#, c-format
+msgid "Opening partition: %s"
+msgstr "開いている領域: %s"
+
+msgid "Options"
+msgstr "オプション"
+
+msgid "Options discarded for this game."
+msgstr "このゲームのため設定を破棄しました"
+
+msgid "Options saved for this game."
+msgstr "このゲームのため設定を保存しました"
+
+msgid "Out of memory"
+msgstr "メモリ不足"
+
+msgid "PAD HOOK"
+msgstr "パッドフック:"
+
+msgid "Page:"
+msgstr "ページ:"
+
+msgid "Partition:"
+msgstr "使用領域:"
+
+#, c-format
+msgid "Partition: %s not found!"
+msgstr "領域: %sが見つかりません"
+
+msgid "Party"
+msgstr "パーティ"
+
+msgid "Paused Start"
+msgstr "ポーズスタート"
+
+msgid "Platformer"
+msgstr "プラットフォーム"
+
+msgid "Play Count"
+msgstr "プレイ回数"
+
+msgid "Players"
+msgstr "プレイヤー"
+
+msgid "Please insert a game disc..."
+msgstr "ゲームディスクを入れてください…"
+
+#, c-format
+msgid "Press %s button for options."
+msgstr "%sボタンで設定へ移動します"
+
+#, c-format
+msgid "Press %s button to %s."
+msgstr "%sボタンで%sします"
+
+#, c-format
+msgid "Press %s button to apply codes."
+msgstr "%sボタンでコードを適用します"
+
+#, c-format
+msgid "Press %s button to cancel."
+msgstr "%sボタンでキャンセルします"
+
+#, c-format
+msgid "Press %s button to change device."
+msgstr "%sボタンでデバイスを変更します"
+
+#, c-format
+msgid "Press %s button to continue."
+msgstr "%sボタンで続行します"
+
+#, c-format
+msgid "Press %s button to delete FS."
+msgstr "%sボタンでFSを削除します"
+
+#, c-format
+msgid "Press %s button to dump BCA."
+msgstr "%sボタンでBCAをダンプします"
+
+#, c-format
+msgid "Press %s button to exit."
+msgstr "%sボタンで終了します"
+
+#, c-format
+msgid "Press %s button to fix EXTEND/WBFS."
+msgstr "%sボタンでEXTEND/WBFSを修復します"
+
+#, c-format
+msgid "Press %s button to format WBFS."
+msgstr "%sボタンでWBFSフォーマットします"
+
+#, c-format
+msgid "Press %s button to go back."
+msgstr "%sボタンで戻ります"
+
+#, c-format
+msgid "Press %s button to select a partition."
+msgstr "%sボタンで領域を選びます"
+
+#, c-format
+msgid "Press %s button to select."
+msgstr "%sボタンで選びます"
+
+#, c-format
+msgid "Press %s button to skip codes."
+msgstr "%sボタンでコードをスキップします"
+
+#, c-format
+msgid "Press %s button to sync FAT."
+msgstr "%sボタンでFATを同期します"
+
+#, c-format
+msgid "Press %s for fullscreen preview"
+msgstr "%sボタンで全画面プレビューをします"
+
+#, c-format
+msgid "Press %s for game options"
+msgstr "%sボタンで前の画面に移動します"
+
+#, c-format
+msgid "Press %s for global options"
+msgstr "%sボタンで基本設定に移動します"
+
+#, c-format
+msgid "Press %s to discard options"
+msgstr "%sボタンで設定を破棄します"
+
+#, c-format
+msgid "Press %s to download and update"
+msgstr "%sボタンで更新します"
+
+#, c-format
+msgid "Press %s to download this theme"
+msgstr "%sボタンでこのテーマをダウンロードします"
+
+#, c-format
+msgid "Press %s to download, %s to return"
+msgstr "%sボタンでダウンロードし、%sボタンで戻ります"
+
+#, c-format
+msgid "Press %s to return"
+msgstr "%sボタンで戻ります"
+
+#, c-format
+msgid "Press %s to save global settings"
+msgstr "%sボタンで基本設定を保存します"
+
+#, c-format
+msgid "Press %s to save options"
+msgstr "%sボタンで設定を保存します"
+
+#, c-format
+msgid "Press %s to save selection"
+msgstr "%sボタンで選択を保存します"
+
+#, c-format
+msgid "Press %s to select filter type"
+msgstr "%sボタンで絞り込む条件を選びます"
+
+#, c-format
+msgid "Press %s to select sorting method"
+msgstr "%sボタンで並び替え方法を選びます"
+
+#, c-format
+msgid "Press %s to start game"
+msgstr "%sボタンでゲームを起動します"
+
+#, c-format
+msgid "Press %s to update without meta.xml"
+msgstr "%sボタンでboot.dolのみ更新します"
+
+#, c-format
+msgid "Press %s/%s to select device."
+msgstr "%s/%sボタンでデバイスを選んでください"
+
+msgid "Press 2 to reload IOS"
+msgstr "2ボタンでIOSを再読み込みします"
+
+msgid "Press A to select device"
+msgstr "Aボタンでデバイスを選択します"
+
+msgid "Press B to exit to HBC"
+msgstr "BボタンでHBCに移動します"
+
+msgid "Press HOME to reset"
+msgstr "HOMEボタンでリセットします"
+
+msgid "Press LEFT/RIGHT to select IOS"
+msgstr "左/右ボタンでIOSを選択します"
+
+msgid "Press any button to continue..."
+msgstr "何かボタンを押すと続行します"
+
+msgid "Press any button to exit..."
+msgstr "何かボタンを押すと終了します"
+
+msgid "Press any button to restart..."
+msgstr "何かボタンを押すと再起動します"
+
+msgid "Press any button..."
+msgstr "何かボタンを押してください"
+
+#, c-format
+msgid "Press button %s to download covers."
+msgstr "%sボタンでカバーをダウンロードします"
+
+#, c-format
+msgid "Press button %s to eject DVD."
+msgstr "%sボタンでDVDを取り出します"
+
+msgid "Profile:"
+msgstr "ﾌﾟﾛﾌｧｲﾙ:"
+
+#, c-format
+msgid "Profile: %s"
+msgstr "プロファイル: %s"
+
+msgid "Program Updates"
+msgstr "プログラム更新"
+
+msgid "Publisher"
+msgstr "発売元"
+
+msgid "Puzzle"
+msgstr "パズル"
+
+msgid "Quit"
+msgstr "終了"
+
+msgid "RAW"
+msgstr "無圧縮"
+
+msgid "RIGHT"
+msgstr "右"
+
+msgid "RPG"
+msgstr "RPG"
+
+msgid "Racing"
+msgstr "レース"
+
+#, c-format
+msgid "Rated %s"
+msgstr "レーティング[%s]"
+
+msgid "Rating"
+msgstr "レーティング"
+
+msgid "Read"
+msgstr "読み込み"
+
+msgid "Reading BCA..."
+msgstr "BCAを読み込み中…"
+
+msgid "Reboot"
+msgstr "Wiiメニュー"
+
+msgid "Release Date"
+msgstr "発売日"
+
+msgid "Release Notes: (short)"
+msgstr "変更点:"
+
+msgid "Removing game, please wait..."
+msgstr "ゲームを削除しています、お待ちください…"
+
+msgid "Restarting Wii..."
+msgstr "Wiiを再起動しています…"
+
+msgid "Retry: %d ...\n"
+msgstr "再試行: %d ...\n"
+
+#, c-format
+msgid "Returned! (ret = %d)"
+msgstr "戻りました(ret = %d)"
+
+msgid "Rhythm"
+msgstr "リズム"
+
+msgid "Rows:"
+msgstr "行:"
+
+msgid "Running benchmark, please wait"
+msgstr "ベンチマークを起動しています､お待ちください"
+
+msgid "S. Chinese"
+msgstr "簡体字中国語"
+
+msgid "SD/SDHC Card"
+msgstr "SD/SDHCカード"
+
+msgid "SUCCESS!"
+msgstr "成功しました!"
+
+msgid "Save .gct"
+msgstr "gctを保存"
+
+msgid "Save Debug"
+msgstr "デバッグを保存"
+
+msgid "Save Settings"
+msgstr "設定を保存"
+
+msgid "Save debug.log"
+msgstr "デバッグ情報を保存"
+
+msgid "Saving Settings... "
+msgstr "設定を保存中…"
+
+msgid "Saving cheats..."
+msgstr "チートを保存中…"
+
+msgid "Saving gamelist.txt ... "
+msgstr "gamelist.txtを保存中…"
+
+msgid "Saving settings..."
+msgstr "設定を保存中…"
+
+msgid "Saving:"
+msgstr "保存中:"
+
+#, c-format
+msgid "Saving: %s"
+msgstr "保存中:%s"
+
+msgid "Screenshot:"
+msgstr "スクリーンショット:"
+
+msgid "Scroll:"
+msgstr "スクロール:"
+
+msgid "Select Alternative .dol:"
+msgstr "代替dolを選んでください:"
+
+msgid "Select WBFS device:"
+msgstr "WBFSデバイスを選んでください:"
+
+msgid "Select a different partition"
+msgstr "違う領域を選んでください"
+
+msgid "Select a partition"
+msgstr "領域を選んでください"
+
+msgid "Select all"
+msgstr "すべて選択"
+
+msgid "Select the game you want to boot"
+msgstr "起動したいゲームを選んでください"
+
+msgid "Selected Game"
+msgstr "選択されたゲーム"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Shooter"
+msgstr "シューティング"
+
+msgid "Show All"
+msgstr "全て表示"
+
+msgid "Show cIOS info"
+msgstr "cIOS情報を表示"
+
+msgid "Shutdown"
+msgstr "シャットダウン"
+
+msgid "Side:"
+msgstr "サイド:"
+
+msgid "Simulation"
+msgstr "シミュレーション"
+
+msgid "Size(GB) Type  Mount Used"
+msgstr "　サイズ(GB) 形式"
+
+#, c-format
+msgid "Size: %d bytes"
+msgstr "サイズ: %dバイト"
+
+msgid "Sort"
+msgstr "並び替え"
+
+msgid "Sort Games"
+msgstr "ゲームを並び替え"
+
+msgid "Sort Order:"
+msgstr "並び替え順:"
+
+msgid "Sort Type:"
+msgstr "並び替えタイプ:"
+
+#, c-format
+msgid "Sort: %s-%s"
+msgstr "並び替え; %s～%s"
+
+msgid "Spanish"
+msgstr "スペイン語"
+
+msgid "Sports"
+msgstr "スポーツ"
+
+msgid "Start"
+msgstr "はじめる"
+
+msgid "Start Game"
+msgstr "ゲームを始める"
+
+msgid "Start this game?"
+msgstr "このゲームを始めますか?"
+
+msgid "Stopping DVD..."
+msgstr "DVDを停止中..."
+
+msgid "Strategy"
+msgstr "戦略ゲーム"
+
+msgid "Style"
+msgstr "スタイル"
+
+msgid "Style:"
+msgstr "スタイル:"
+
+msgid "Sync FAT free space info?"
+msgstr "FATの空き容量情報を同期しますか?"
+
+msgid "Synchronizing, please wait."
+msgstr "同期中です、お待ちください"
+
+msgid "System"
+msgstr "システム"
+
+msgid "System Def."
+msgstr "システムの標準"
+
+msgid "T. Chinese"
+msgstr "繁体字中国語"
+
+msgid "Theme"
+msgstr "テーマ"
+
+msgid "Theme Info"
+msgstr "テーマ情報"
+
+msgid ""
+"Theme may be too large.\n"
+"Reboot of Cfg suggested.\n"
+msgstr ""
+"テーマのサイズが大きすぎます\n"
+"CFGを再起動してください\n"
+
+msgid "Theme:"
+msgstr "テーマ:"
+
+#, c-format
+msgid "Theme: %s"
+msgstr "テーマ: %s"
+
+msgid "Themes provided by wii.spiffy360.com"
+msgstr "wii.spiffy360.comにテーマは保存されています"
+
+msgid "Themes to download"
+msgstr "ダウンロードするテーマ"
+
+msgid "Themes with updates"
+msgstr "更新のあるテーマ"
+
+msgid "Title"
+msgstr "タイトル"
+
+#, c-format
+msgid "Too many cheats! (%d)"
+msgstr "チートが多すぎます(%d)"
+
+msgid "Too many code lines!"
+msgstr "コードの行数が多すぎます"
+
+#, c-format
+msgid "Too many fragments! %d"
+msgstr "フラグが多すぎます%d"
+
+#, c-format
+msgid "Trying (url#%d) ..."
+msgstr "試行中(URL#%d)…"
+
+msgid "UNUSED"
+msgstr "不使用"
+
+msgid "UP"
+msgstr "上"
+
+#, c-format
+msgid "URL '%s' doesn't start with 'http://'"
+msgstr "'%s'のURLは'http://'で始まっていません"
+
+#, c-format
+msgid "URL '%s' has no PATH part"
+msgstr "'%s'のURLはパスの一部を持っていません"
+
+msgid "USB Gecko found. Debugging is enabled."
+msgstr "USB Geckoを見つけました。デバッグを有効にしました"
+
+msgid "USB Mass Storage Device"
+msgstr "USBデバイス"
+
+msgid "Unknown"
+msgstr "不明"
+
+msgid "Unknown syntax!"
+msgstr "不明な構文です"
+
+msgid "Unplayed"
+msgstr "未プレイ"
+
+msgid "Unplayed Games"
+msgstr "プレイされていないゲーム"
+
+msgid "Update WiiTDB Game Database"
+msgstr "WiiTDBのゲームデータベースを更新"
+
+msgid "Update themes"
+msgstr "テーマを更新"
+
+msgid "Update titles.txt"
+msgstr "titles.txtを更新"
+
+msgid "Updates"
+msgstr "更新"
+
+msgid "Updating database."
+msgstr "データベースを更新中です"
+
+#, c-format
+msgid "Used: %.1fGB Free: %.1fGB [%d]"
+msgstr "使用容量: %.1fGB 空き容量: %.1fGB [%d]"
+
+msgid "Using Saved Alternative .dol:"
+msgstr "保存された代替dolを使用しています"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgid "Video Patch:"
+msgstr "映像パッチ:"
+
+msgid "Video:"
+msgstr "映像出力:"
+
+msgid "View"
+msgstr "表示"
+
+msgid "Vitality Sensor"
+msgstr "バイタリティセンサー"
+
+msgid "WARNING:"
+msgstr "警告:"
+
+#, c-format
+msgid "WBFS: %.1fGB free of %.1fGB"
+msgstr "使用容量: %.1fGB 空き容量: %.1fGB"
+
+msgid "Wheel"
+msgstr "Wiiハンドル"
+
+msgid "Wide Screen:"
+msgstr "ワイドスクリーン"
+
+msgid "Wii Speak"
+msgstr "Wiiスピーク"
+
+msgid "WiiTDB Game Database"
+msgstr "WiiTDBゲームデータベース"
+
+msgid "Wiimote"
+msgstr "Wiiリモコン"
+
+msgid "Write Playlog:"
+msgstr "Wii伝言板に書く:"
+
+#, c-format
+msgid "Writing to %s"
+msgstr "%sに書き込み中"
+
+#, c-format
+msgid "Writing: %s"
+msgstr "書き込み中: %s"
+
+#, c-format
+msgid "Wrong Size: %d (%d)"
+msgstr "不正なサイズです: %d (%d)"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid ""
+"You can also try unplugging\n"
+"and plugging back the device,\n"
+"or just wait some more"
+msgstr ""
+"一度取り外してもういちど\n"
+"デバイスを取り付けるか、\n"
+"もう少し待ってください"
+
+msgid "Zapper"
+msgstr "Wiiザッパー"
+
+msgid "[ CHANGED ]"
+msgstr "[ 変更されています ]"
+
+msgid "[ FOUND ]"
+msgstr "[ あります ]"
+
+msgid "[ SAVED ]"
+msgstr "[ 保存済み ]"
+
+msgid "[HOME]"
+msgstr "　"
+
+msgid "[No HQ]"
+msgstr "[HQ無し]"
+
+msgid "[USED]"
+msgstr "[使用中]"
+
+msgid "[default]"
+msgstr "[デフォルト]"
+
+msgid "[saved]"
+msgstr "[保存しました]"
+
+#, c-format
+msgid "bad wbfs file: %s"
+msgstr "不正なwbfsファイルです: %s"
+
+msgid "calculating space, please wait..."
+msgstr "領域の計算中です、お待ちください…"
+
+msgid "delete"
+msgstr "削除"
+
+#, c-format
+msgid "dest: %p - %p"
+msgstr "目的地: %p - %p"
+
+msgid "discard"
+msgstr "破棄"
+
+#, c-format
+msgid "domain %s could not be resolved"
+msgstr "%sのドメインを解決できませんでした"
+
+#, c-format
+msgid "error reading: %s (%d)"
+msgstr "読み込みエラー: %s (%d)"
+
+#, c-format
+msgid "for %d players"
+msgstr "1～%d人用"
+
+msgid "for 1 player"
+msgstr "1人用"
+
+msgid "format"
+msgstr "フォーマット"
+
+msgid "free"
+msgstr "空き"
+
+#, c-format
+msgid "linear read speed: %.2f mb/s"
+msgstr "リニア読み込み速度: %.2f MB/秒"
+
+msgid "linear..."
+msgstr "リニア…"
+
+#, c-format
+msgid "music file too big (%d) %s"
+msgstr "音楽ファイルが大きすぎです(%d) %s"
+
+msgid "music.mp3 or music.mod not found!"
+msgstr ".mp3もしくは.modが見つかりません"
+
+msgid "no file"
+msgstr "ファイル無し"
+
+msgid "none"
+msgstr "無し"
+
+msgid "or format a WBFS partition."
+msgstr "もしくはWBFS領域にしてください"
+
+msgid "page"
+msgstr "ページ"
+
+msgid "parse error"
+msgstr "構文解析エラー"
+
+#, c-format
+msgid "random read speed: %.2f mb/s"
+msgstr "ランダム読み込み速度: %.2f mb/秒"
+
+msgid "random..."
+msgstr "ランダム…"
+
+msgid "reset"
+msgstr "初期化"
+
+msgid "revert"
+msgstr "戻す"
+
+msgid "save"
+msgstr "保存"
+
+#, c-format
+msgid "split error: %s"
+msgstr "分割エラー: %s"
+
+msgid "uDraw GameTablet"
+msgstr "uDraw GameTablet"
+
+msgid "unable to open wii disc"
+msgstr "Wiiディスクを開けません"
+
+#, c-format
+msgid "used: %p - %p"
+msgstr "使用済み: %p - %p"
+
+
+msgid "No Hooks"
+msgstr "フックなし"
+
+#~ msgid "Front"
+#~ msgstr "正面"
+
+#~ msgid "Loading previous game list..."
+#~ msgstr "以前のゲームのリストを読み込み中"
+
+#~ msgid "Remove Game"
+#~ msgstr "ゲームを削除"

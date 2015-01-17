@@ -1,0 +1,32 @@
+ODIP-Plugin
+-----------
+
+Esta es un versión abierta del DIP-Plugin (intento de, por ahora) correspondiente al cIOS de Hermes,
+la versión que lanzó los primeros días de Enero del 2010 (para ser usada con
+el uLoader 3.6A).
+
+
+Estado
+------
+
+No está funcionando correctamente. No es por ahora un producto para usuarios
+finales sino para desarrolladores.
+
+Lamentablemente por ahora no tengo mucho tiempo para probarlo pero quería liberar 
+lo que tengo por ahora.
+
+Usandolo desde el uLoader, en modo DVD, en mi Wii con chip el juego se carga
+correctamente.
+
+En modo USB, se detectan correctamente las particiones y cargue exitosamente 2
+juegos. No está funcionando la instalación de juegos.
+
+Tener en cuenta que esto es un producto de analizar el código binario y
+generar código C, por lo tanto puede haber muchos errores, mi entendimiento
+del HW de Wii y del funcionamiento de los módulo es limitado.
+
+Los nombres de las funciones pueden no ser correctos siempre, ya que son mi
+interpretación de lo que el código hace.
+
+
+             Spaceman Spiff

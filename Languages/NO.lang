@@ -1,0 +1,1880 @@
+﻿# The awesome Norwegian translation!
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR, Stigmatic <veldigkul@gmail.com>, 2011.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-07 23:40+0200\n"
+"PO-Revision-Date: 2011-04-12 16:10+GMT1\n"
+"Last-Translator: Stigmatic <veldigkul@gmail.com>\n"
+"Language-Team: Norwegian <veldigkul@gmail.com>\n"
+"Language: Norsk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, c-format
+msgid "%.1fGB free of %.1fGB"
+msgstr "%.1fGB ledig, av %.1fGB"
+
+#, c-format
+msgid "%.2f%% of %.2fGB (%c) ETA: %d:%02d:%02d"
+msgstr "%.2f%% av %.2fGB (%c) ETA: %d:%02d:%02d"
+
+#, c-format
+msgid "%.2fGB copied in %d:%02d:%02d"
+msgstr "%.2fGB kopiert p?d:%02d:%02d"
+
+#, c-format
+msgid "%d available"
+msgstr "%d tilgjengelig"
+
+#, c-format
+msgid "%d more notes"
+msgstr "%d flere notater"
+
+#, c-format
+msgid "%s Split: %d %s"
+msgstr "%s Oppdeling: %d %s"
+
+#, c-format
+msgid "%s, please wait..."
+msgstr "%s, vennligst vent..."
+
+#, c-format
+msgid "(%d online)"
+msgstr "(%d på nett)"
+
+#, c-format
+msgid "(%d seconds timeout)"
+msgstr "(%d sekunder tidsavbrudd)"
+
+msgid "(This can take a couple of minutes)"
+msgstr "(Dette kan ta noen minutter)"
+
+msgid ".dol too small"
+msgstr ".dol for liten"
+
+msgid "3D cover"
+msgstr "3D cover"
+
+msgid "< ASC  >"
+msgstr "< ASC  >"
+
+msgid "< DESC >"
+msgstr "< BESKR >"
+
+msgid "< DOWNLOAD >"
+msgstr "< LAST NED >"
+
+msgid "About"
+msgstr "Om"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Additional config:"
+msgstr "Tillegs innstillinger:"
+
+msgid "Admin Lock:"
+msgstr "Admin lås:"
+
+msgid "Admin Unlock"
+msgstr "Admin lås opp"
+
+msgid "Adult"
+msgstr "Voksen"
+
+msgid "Adventure"
+msgstr "Eventyr"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "All Games"
+msgstr "Alle spill"
+
+msgid "All themes up to date."
+msgstr "Alle temaer er oppdatert."
+
+msgid "Alt dol:"
+msgstr "Alt dol:"
+
+msgid "Alternative .dol:"
+msgstr "Alternativ .dol:"
+
+msgid "Anti 002 Fix:"
+msgstr "Anti 002 fiks:"
+
+#, c-format
+msgid "App. Path: %s"
+msgstr "App. path: %s"
+
+#, c-format
+msgid ""
+"Are you sure you want to %s\n"
+"this partition?"
+msgstr ""
+"Er du sikker på at du vil %s\n"
+"denne partisjonen?"
+
+msgid ""
+"Are you sure you want to FIX\n"
+"this partition?"
+msgstr ""
+"Er du sikker på at du vil FIKSE\n"
+"denne partisjonen?"
+
+msgid ""
+"Are you sure you want to remove this\n"
+"game?"
+msgstr ""
+"Er du sikker på at du vil fjerne\n"
+"dette spillet?"
+
+msgid "Ascending"
+msgstr "Stigende"
+
+msgid "Auto"
+msgstr ""
+
+#, c-format
+msgid "Auto-start game: %.6s not found!"
+msgstr "Auto-start spill: %.6s ikke funnet!"
+
+msgid "Available Updates"
+msgstr "Tilgjengelige oppdateringer"
+
+msgid "Back"
+msgstr "Tilbake"
+
+msgid "Balance Board"
+msgstr "Balansebrett"
+
+msgid "Basic"
+msgstr "Enkel"
+
+msgid "Block IOS Reload:"
+msgstr "Stopp IOS omstart:"
+
+msgid "Boot Disc"
+msgstr "Start disc"
+
+msgid "Boot disc"
+msgstr "Start disc"
+
+msgid "Booting Wii game, please wait..."
+msgstr "Starter Wii spill, vennligst vent..."
+
+#, c-format
+msgid "CFG base: %s"
+msgstr "CFG base: %s"
+
+msgid "Cancelled."
+msgstr "Avbrutt."
+
+#, c-format
+msgid "Cannot create dir: %s"
+msgstr "Kan ikke lage: %s"
+
+msgid "Cheat Codes:"
+msgstr "Juksekoder:"
+
+msgid "Cheats: "
+msgstr "Juks: "
+
+msgid "Check For Updates"
+msgstr "Se etter oppdateringer"
+
+msgid "Checking for themes..."
+msgstr "Ser etter temaer..."
+
+msgid "Checking for updates..."
+msgstr "Ser etter oppdateringer..."
+
+msgid "Choose a sorting method"
+msgstr "Velg en sorterings metode"
+
+msgid "Classic"
+msgstr "Klassisk"
+
+msgid "Classic Controller"
+msgstr "Klassisk kontroller"
+
+msgid "Clear Patches:"
+msgstr "Tøm patcher:"
+
+#, c-format
+msgid "Complete. Size: %d"
+msgstr "Fullført. Str: %d"
+
+#, c-format
+msgid "Configurable Loader %s"
+msgstr "Configurable Loader %s"
+
+msgid "Configuration error, MAX_DNS_ENTRIES reached while the list is empty"
+msgstr "Konfigurasjons feil, MAX_DNS_ENTRIES nådd mens listen er tom"
+
+#, c-format
+msgid "Connection error from net_read()  Errorcode: %i"
+msgstr "Koblingsfeil fra net_read()  Feilkode: %i"
+
+msgid "Console"
+msgstr "Konsoll"
+
+msgid "Console Def."
+msgstr "Konsoll standard"
+
+msgid "Controller"
+msgstr "Kontroll"
+
+#, c-format
+msgid "Could not initialize DIP module! (ret = %d)"
+msgstr "Kunne ikke initialisere DIP modul! (ret = %d)"
+
+msgid "Country Fix:"
+msgstr "PAL til NTSC fiks:"
+
+msgid "Cover"
+msgstr "Cover"
+
+msgid "Cover Image:"
+msgstr "Cover bilde:"
+
+msgid "Cover Style"
+msgstr "Cover stil"
+
+msgid "Cover~~Back"
+msgstr "Cover~~bak"
+
+msgid "Cover~~Front"
+msgstr "Cover~~forran"
+
+msgid "Create"
+msgstr "Lag"
+
+msgid "Creator"
+msgstr "Forfatter"
+
+#, c-format
+msgid "Current Version: %s"
+msgstr "Nåverende versjon: %s"
+
+#, c-format
+msgid ""
+"Custom IOS %d could not be found!\n"
+"Please install it."
+msgstr ""
+"Custom IOS %d ble ikke funnet!\n"
+"Vennligst installér den."
+
+#, c-format
+msgid "Custom IOS %d could not be loaded! (ret = %d)"
+msgstr "Custom IOS %d kunne ikke lastes! (ret = %d)"
+
+#, c-format
+msgid ""
+"Custom IOS %d is a stub!\n"
+"Please reinstall it."
+msgstr ""
+"Custom IOS %d er en stump!\n"
+"Vennligst installér på nytt."
+
+#, c-format
+msgid "Custom IOS %s Loaded OK"
+msgstr "Custom IOS %s lastet OK"
+
+msgid "DISC cover"
+msgstr "DISC bilde"
+
+msgid "DOWN"
+msgstr "NED"
+
+msgid "Dance Pad"
+msgstr "Danse matte"
+
+msgid "Database update successful."
+msgstr "Database oppdatert vellykket"
+
+msgid "Debug"
+msgstr "Debug"
+
+msgid "Delete Game"
+msgstr "Slett spill"
+
+msgid "Deleting"
+msgstr "Sletter"
+
+msgid "Descending"
+msgstr "Synkende"
+
+msgid "Developer"
+msgstr "Utvikler"
+
+msgid "Device is not responding!"
+msgstr "Enheten svarer ikke!"
+
+msgid "Device:"
+msgstr "Enhet:"
+
+msgid "Disc"
+msgstr "Disc"
+
+msgid "Disc (Ask)"
+msgstr "Disc (Spørr)"
+
+msgid "Done."
+msgstr "Ferdig."
+
+msgid "Download .txt"
+msgstr "Last ned .txt"
+
+msgid "Download All Covers"
+msgstr "Last ned alle cover"
+
+msgid "Download All Missing Covers"
+msgstr "Last ned alle savnede cover"
+
+msgid "Download Missing Covers"
+msgstr "Last ned SAVNEDE cover"
+
+msgid "Download Themes"
+msgstr "Last ned temaer"
+
+msgid "Download complete."
+msgstr "Nedlasting ferdig."
+
+#, c-format
+msgid "Download error on gamercard #%d."
+msgstr "Nedlastings feil for spillerkort #%d."
+
+msgid "Download titles.txt"
+msgstr "Last ned titles.txt (titler)"
+
+msgid "Downloadable Content"
+msgstr "Nedlastbart innhold"
+
+msgid "Downloading ALL MISSING covers"
+msgstr "Last ned ALLE SAVNEDE cover"
+
+msgid "Downloading ALL covers"
+msgstr "Last ned ALLE cover"
+
+#, c-format
+msgid "Downloading ALL covers for %.6s"
+msgstr "Last ned ALLE cover for %.6s"
+
+#, c-format
+msgid "Downloading MISSING covers for %.6s"
+msgstr "Last ned SAVNEDE cover for %.6s"
+
+msgid "Downloading Theme previews..."
+msgstr "Last ned tema forhåndsvisning..."
+
+msgid "Downloading cheats..."
+msgstr "Last ned juks..."
+
+msgid "Downloading database."
+msgstr "Laster ned database."
+
+msgid "Downloading titles.txt ..."
+msgstr "Laster ned titles.txt ..."
+
+#, c-format
+msgid "Downloading: %s"
+msgstr "Laster ned: %s"
+
+#, c-format
+msgid "Downloading: %s as %s"
+msgstr "Laster ned: %s som %s"
+
+msgid "Downloads"
+msgstr "Nedlastinger"
+
+msgid "Drums"
+msgstr "Trommer"
+
+msgid "Dutch"
+msgstr "Nederlandsk"
+
+msgid "ERROR"
+msgstr "FEIL"
+
+msgid "ERROR creating file"
+msgstr "FEIL ved opretting av fil"
+
+msgid "ERROR game opt"
+msgstr "FEIL spill inst"
+
+msgid "ERROR reading BCA!"
+msgstr "FEIL ved lesing av BCA!"
+
+#, c-format
+msgid "ERROR removing %s"
+msgstr "FEIL ved fjerning av %s"
+
+msgid "ERROR writing BCA!"
+msgstr "FEIL ved skriving av BCA!"
+
+msgid "ERROR!"
+msgstr "FEIL!"
+
+#, c-format
+msgid "ERROR! (ret = %d)"
+msgstr "FEIL! (ret = %d)"
+
+msgid "ERROR:"
+msgstr "FEIL:"
+
+#, c-format
+msgid "ERROR: %s is not accessible"
+msgstr "FEIL: %s er ikke tilgjengelig"
+
+#, c-format
+msgid "ERROR: Apploader %d"
+msgstr "FEIL: Apploader %d"
+
+msgid "ERROR: CIOS222/223 v4 required for BCA"
+msgstr "FEIL: cIOS222/223 v4 kreves for BCA"
+
+msgid "ERROR: Cache Close"
+msgstr "FEIL: Buffer lukket"
+
+#, c-format
+msgid "ERROR: Could not open game! (ret = %d)"
+msgstr "FEIL: Kunne ikke åpne spill! (ret = %d)"
+
+msgid "ERROR: Game already installed!!"
+msgstr "FEIL: Spill er allerede innstallert!!"
+
+#, c-format
+msgid "ERROR: GetCerts %d"
+msgstr "FEIL: GetCerts %d"
+
+msgid "ERROR: Invalid Game ID"
+msgstr "FEIL: Ugyldig spill ID"
+
+#, c-format
+msgid "ERROR: Loading EHC module! (%d)"
+msgstr "FEIL: Lasting EHC modul! (%d)"
+
+msgid ""
+"ERROR: NTFS write disabled!\n"
+"(set ntfs_write=1)"
+msgstr ""
+"ERROR: NTFS skriving deaktivert!\n"
+"(sets ntfs_write=1)"
+
+#, c-format
+msgid "ERROR: No partitions found! (ret = %d)"
+msgstr "FEIL: Ingen partisjon funnet! (ret = %d)"
+
+msgid "ERROR: Not a Wii disc!!"
+msgstr "FEIL: Ikke et Wii spill!!"
+
+#, c-format
+msgid "ERROR: Offset(0x%llx) %d"
+msgstr "FEIL: Offset(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: OpenPartition %d"
+msgstr "FEIL: ÅpenPartisjon %d"
+
+#, c-format
+msgid "ERROR: OpenPartition(0x%llx) %d"
+msgstr "FEIL: ÅpenPartisjon(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: SetFragList(0): %d"
+msgstr "FEIL: SetFragList(0): %d"
+
+#, c-format
+msgid "ERROR: SetWBFS: %d"
+msgstr "FEIL: SetWBFS: %d"
+
+msgid "ERROR: Setting SD mode"
+msgstr "FEIL: Angir SD modus"
+
+#, c-format
+msgid "ERROR: USB init! (%d)"
+msgstr "FEIL: USB init! (%d)"
+
+msgid ""
+"ERROR: cIOS249rev18, cIOS222v4,\n"
+"cIOS223v4, cIOS224v5 or higher required\n"
+"for starting games from a FAT partition!\n"
+"Upgrade IOS249 or choose a different IOS."
+msgstr ""
+"FEIL: cIOS249rev18, cIOS222v4,\n"
+"cIOS223v4, cIOS224v5 eller nyere kreves\n"
+"for å starte spill fra FAT partisjon!\n"
+"Oppgrader IOS249 eller velg en annen IOS."
+
+msgid "ERROR: cache: out of memory"
+msgstr "FEIL: buffer: tomt for minne"
+
+#, c-format
+msgid "ERROR: creating: %s"
+msgstr "FEIL: oppretting av: %s"
+
+#, c-format
+msgid "ERROR: get_frag_list: %d"
+msgstr "FEIL: get_frag_list: %d"
+
+msgid "ERROR: memory overlap!"
+msgstr "FEIL: minne overlapp!"
+
+msgid ""
+"ERROR: multiple wbfs partitions\n"
+"supported only with IOS222/223-mload"
+msgstr ""
+"FEIL: flere wbfs partisjoner\n"
+"kun støttet med IOS222/223-mload"
+
+msgid "ERROR: not enough free space!!"
+msgstr "FEIL: ikke nok ledig plass!!"
+
+msgid "ERROR: ntfs was not cleanly unmounted"
+msgstr "FEIL: ntfs ble ikke riktig koblet ut"
+
+#, c-format
+msgid "ERROR: opening %.6s"
+msgstr "FEIL: ved åpning av %.6s"
+
+#, c-format
+msgid "ERROR: set_frag_list: %d"
+msgstr "FEIL: set_frag_list: %d"
+
+#, c-format
+msgid "ERROR: setting up fragments %d %d"
+msgstr "FEIL: ved oppsetting av fragmenter %d %d"
+
+#, c-format
+msgid "ERROR: writing %s (%d)."
+msgstr "FEIL: ved skriving %s (%d)."
+
+msgid "EXTEND"
+msgstr "FORLENG"
+
+msgid "Ejecting DVD..."
+msgstr "Løser ut DVD..."
+
+msgid "English"
+msgstr "Engelsk"
+
+msgid "English Title"
+msgstr "Engelsk tittel"
+
+msgid "Enter Code: "
+msgstr "Skriv inn kode: "
+
+msgid "Error GRRLIB init"
+msgstr "Feil GRRLIB init"
+
+msgid "Error Initializing Network."
+msgstr "Feil ved å initialisere nettverk."
+
+msgid "Error adding disc!"
+msgstr "Feil ved tillegging av disc"
+
+msgid "Error creating directory..."
+msgstr "Feil ved oppretting av sti..."
+
+msgid "Error discarding options!"
+msgstr "Feil ved bortkast av innstillinger"
+
+msgid "Error downloading theme preview..."
+msgstr "Feil ved nedlasting av temaforhåndsvisning..."
+
+msgid "Error downloading theme..."
+msgstr "Feil ved nedlasting av tema..."
+
+msgid "Error downloading themes..."
+msgstr "Feil ved nedlasting av temaer..."
+
+msgid "Error downloading update..."
+msgstr "Feil ved nedlasting av oppdatering..."
+
+msgid "Error downloading updates..."
+msgstr "Feil ved nedlasting av oppdateringer..."
+
+msgid "Error downloading."
+msgstr "Feil ved nedlasting."
+
+msgid "Error establishing connection"
+msgstr "Feil ved oppretting av kobling"
+
+msgid "Error extracting theme..."
+msgstr "Feil ved utpakking av tema..."
+
+msgid "Error opening database, update did not complete."
+msgstr "Feil ved åpning av database, oppdatering ufullført."
+
+#, c-format
+msgid "Error opening: %s"
+msgstr "Feil ved åpning: %s"
+
+#, c-format
+msgid "Error playing %s"
+msgstr "Feil ved avspillin av %s"
+
+msgid "Error reading .dol"
+msgstr "Feil ved lesing av .dol"
+
+msgid "Error reading dol header"
+msgstr "Feil ved lesing av dol header"
+
+#, c-format
+msgid "Error saving %s"
+msgstr "Feil ved lagring av %s"
+
+msgid "Error saving options!"
+msgstr "Feil ved lagring av alternativer!"
+
+msgid "Error saving settings!"
+msgstr "Feil ved lagring av innstillinger!"
+
+msgid ""
+"Error storing playlog file.\n"
+"Start from the Wii Menu to fix."
+msgstr ""
+"Feil ved lagring av spillerlogg fil.\n"
+"Start fra Wii menyen for å fikse."
+
+msgid "Error: Invalid PNG image!"
+msgstr "Feil: Ugyldig PNG bilde!"
+
+msgid "Error: no URL."
+msgstr "Feil: ingen URL."
+
+msgid "Error: no data."
+msgstr "Feil: ingen data."
+
+msgid "Exit"
+msgstr "Avslutt"
+
+#, c-format
+msgid "Extracting: %s"
+msgstr "Pakker ut: %s"
+
+msgid "FAIL"
+msgstr "FEILET"
+
+#, c-format
+msgid "FAT: ALLOC ERROR %p %p %p"
+msgstr "FAT: ALLOK FEIL %p %p %p"
+
+#, c-format
+msgid "FATAL: alloc grid(%d)"
+msgstr "FATAL: alloc grid(%d)"
+
+#, c-format
+msgid "FILL %d"
+msgstr "FYLL %d"
+
+msgid "FLAT cover"
+msgstr "FLATT cover"
+
+msgid "FULL cover"
+msgstr "FULLT cover"
+
+msgid "Fav"
+msgstr "Fav"
+
+msgid "Fav: Off"
+msgstr "Fav: Av"
+
+msgid "Fav: On"
+msgstr "Fav: På"
+
+msgid "Favorite"
+msgstr "Favoritt"
+
+msgid "Favorite Games"
+msgstr "Favoritt spill"
+
+msgid "Favorite:"
+msgstr "Favoritt:"
+
+msgid "Favorites:"
+msgstr "Favoritter:"
+
+msgid "Fighting"
+msgstr "Slåssing"
+
+#, c-format
+msgid "File not found! %s"
+msgstr "Fil ikke funnet! %s"
+
+msgid "Filter"
+msgstr "Filtrer"
+
+msgid "Filter Games"
+msgstr "Filtrer spill"
+
+msgid "Filter by Controller"
+msgstr "Filtrer etter kontroller"
+
+msgid "Filter by Genre"
+msgstr "Filtrer etter sjanger"
+
+msgid "Filter by Online Features"
+msgstr "Filtrer etter "
+
+msgid "Filter:"
+msgstr "Filtrer:"
+
+msgid "Fixing EXTEND partition..."
+msgstr "Fikser EXTEND partisjon..."
+
+msgid "Force NTSC"
+msgstr "Tving NTSC"
+
+msgid "Force PAL50"
+msgstr "Tving PAL50hz"
+
+msgid "Force PAL60"
+msgstr "Tving PAL60hz"
+
+msgid "Formatting"
+msgstr "Formattering"
+
+#, c-format
+msgid "Found %s"
+msgstr "Fant %s"
+
+msgid "French"
+msgstr "Fransk"
+
+msgid "Full"
+msgstr "Full"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "Game Default"
+msgstr "Spill standard"
+
+msgid "Game Options"
+msgstr "Spill alternativer"
+
+#, c-format
+msgid "Game Options:  %s"
+msgstr "Spill alternativer:  %s"
+
+msgid "Gamecube"
+msgstr "GameCube"
+
+msgid "Gamer Card:"
+msgstr "Spillerkort:"
+
+#, c-format
+msgid "Gamercard #%d reported: %.*s"
+msgstr "Spillerkort #%d raporterte: %.*s"
+
+msgid "Genre"
+msgstr "Sjanger"
+
+msgid "German"
+msgstr "Tysk"
+
+msgid "Global Options"
+msgstr "Globale alternativer"
+
+msgid "Guitar"
+msgstr "Gitar"
+
+msgid "HQ cover"
+msgstr "HK cover"
+
+msgid "HTTP Response was without a file"
+msgstr "HTTP svar var uten en fil"
+
+msgid "Hide"
+msgstr "Skjul"
+
+msgid "Hide Game:"
+msgstr "Skjul spill:"
+
+msgid "Hold button B to cancel."
+msgstr "Hold B for å avbryte"
+
+msgid "Homebrew Channel"
+msgstr "Homebrew kanalen"
+
+msgid "Hook Type:"
+msgstr "Krok type:"
+
+#, c-format
+msgid "ID mismatch: [%.6s] [%.6s]"
+msgstr "ID samsvarer ikke: [%.6s] [%.6s]"
+
+msgid "IOS Reload: Blocked"
+msgstr "IOS gjenlasting: Blokkert"
+
+#, c-format
+msgid "IOS_Open(%s) failed with code %d"
+msgstr "IOS_Open(%s) failet med kode %d"
+
+msgid ""
+"If Cfg does not start properly\n"
+"next time, copy boot.dol.bak over\n"
+"boot.dol and try again."
+msgstr ""
+"Om Cfg ikke starter riktig\n"
+"neste gang, kopier boot.dol.bak over\n"
+"boot.dol og prøv igjen."
+
+#, c-format
+msgid "Inconsistency in LZ77 encoding %x"
+msgstr "Uoverenstemmelse i LZ77 koding %x"
+
+msgid "Info"
+msgstr "Info"
+
+#, c-format
+msgid "Info file: %s"
+msgstr "Info fil: %s"
+
+msgid "Initializing Network..."
+msgstr "Initialiserer nettverk..."
+
+msgid "Install"
+msgstr "Installér"
+
+msgid "Install Date"
+msgstr "Installérings dato"
+
+msgid "Install Game"
+msgstr "Installér spill"
+
+msgid "Install game"
+msgstr "Installér spill"
+
+#, c-format
+msgid "Installation ERROR! (ret = %d)"
+msgstr "Installérings FEIL! (ret = %d)"
+
+msgid "Installing game, please wait..."
+msgstr "Installérer spill, vennligst vent..."
+
+msgid "Invalid .dol"
+msgstr "Ugyldig .dol"
+
+#, c-format
+msgid "Invalid partition: '%s'"
+msgstr "Ugyldig partisjon: '%s'"
+
+msgid "Italian"
+msgstr "Italiensk"
+
+msgid "Japanese"
+msgstr "Japansk"
+
+msgid "Japanese Title"
+msgstr "Japansk tittel"
+
+msgid "Keyboard"
+msgstr "Tastatur"
+
+msgid "Korean"
+msgstr "Koreansk"
+
+msgid "LEFT"
+msgstr "VENSTRE"
+
+msgid "LOCKED!"
+msgstr "LÅST!"
+
+msgid "Language:"
+msgstr "Språk:"
+
+msgid "Last Play Date"
+msgstr "Sist startet"
+
+msgid "Launch Methods"
+msgstr "Start metoder"
+
+msgid "Load OK!"
+msgstr "Lasting OK!"
+
+#, c-format
+msgid "Loader Version: %s"
+msgstr "Laster versjon: %s"
+
+msgid "Loading ..."
+msgstr "Laster ..."
+
+msgid "Main"
+msgstr "Hoved"
+
+msgid "Main Menu"
+msgstr "Hoved meny"
+
+msgid ""
+"Make sure USB port 0 is used!\n"
+"(The one nearest to the edge)"
+msgstr ""
+"Vær sikker på at USB port 0 blir brukt!\n"
+"(Den nærmest kanten)"
+
+msgid "Manage"
+msgstr "Administrer"
+
+msgid "Manage Cheats"
+msgstr "Administrer juks"
+
+msgid "Microphone"
+msgstr "Mikrofon"
+
+msgid "Motion+"
+msgstr "MotionPlus"
+
+msgid "Mounting device, please wait..."
+msgstr "Monterer enhet, vennligst vent..."
+
+msgid "Music"
+msgstr "Musikk"
+
+#, c-format
+msgid "Music file from dir: %s"
+msgstr "Musikk fil fra kat: %s"
+
+#, c-format
+msgid "Music file size: %d"
+msgstr "Musikk filstørrelse: #d"
+
+#, c-format
+msgid "Music file: %s"
+msgstr "Musikk fil: %s"
+
+msgid "Music: Disabled"
+msgstr "Musikk: Av"
+
+msgid "Music: Enabled"
+msgstr "Musikk: På"
+
+#, c-format
+msgid "Music: Looking for %s files in: %s"
+msgstr "Musikkk: Ser etter %s filer i: %s"
+
+#, c-format
+msgid "Music: Next file index to play: %i"
+msgstr "Musikk: Neste fil indeks å spille: %i"
+
+#, c-format
+msgid "Music: Number of %s files found: %i"
+msgstr "Musikk: Antall %s filer funnet: %i"
+
+msgid "Music: musicArray contents: "
+msgstr "Musikk: musicArray innhold: "
+
+msgid ""
+"NOTE: CIOS249 before rev10:\n"
+"Loading games from SDHC not supported!"
+msgstr ""
+"NOTAT: CIOS249 før rev10:\n"
+"Lasting av spill fra SDHC ikke støttet!"
+
+msgid ""
+"NOTE: CIOS249 before rev14:\n"
+"Possible error #001 is not handled!"
+msgstr ""
+"NOTAT: CIOS249 før rev14:\n"
+"Mulig feil #001 blir ikke håndtert!"
+
+msgid ""
+"NOTE: CIOS249 before rev9:\n"
+"Loading games from USB not supported!"
+msgstr ""
+"NOTAT: CIOS249 før rev9:\n"
+"Lasting av spill fra USB ikke støttet!"
+
+msgid ""
+"NOTE: You are using CIOS249 rev13:\n"
+"To quit the game you must reset or\n"
+"power-off the Wii before you start\n"
+"another game or it will hang here!"
+msgstr ""
+"NOTAT: Du bruker CIOS249 rev13:\n"
+"For å avslutte spillet må du starte på\n"
+"nytt eller slå av Wiien før du starter\n"
+"et nytt spill, ellers vil det krasje her!"
+
+msgid ""
+"NOTE: You are using CIOS249 rev14:\n"
+"It has known problems with dual layer\n"
+"games. It is highly recommended that\n"
+"you use a different IOS or revision\n"
+"for installation/playback of this game."
+msgstr ""
+"NOTAT: Du bruker CIOS249 rev14:\n"
+"Den har kjente problemere med 'dual-layer'\n"
+"spill. Det er høyst anbefalt at du\n"
+"bruker en annen cIOS er version for\n"
+"installasjon/spilling av dette spillet."
+
+msgid ""
+"NOTE: loader restart is required\n"
+"for the update to take effect."
+msgstr ""
+"NOTAT: loader omstart er påkrevd\n"
+"for at oppdateringen skal bli brukt."
+
+#, c-format
+msgid ""
+"NOTE: partition P#%d is type EXTEND but\n"
+"contains a WBFS filesystem. This is an\n"
+"invalid setup. Press %s to change the\n"
+"partition type from EXTEND to data."
+msgstr ""
+"NOTAT: Partisjon P#%d er type EXTEND men\n"
+"inneholder WBFS filsystem. Dette er et\n"
+"ugyldig oppsett. Trykk %s for å endre\n"
+"partisjons type fra EXTEND til data."
+
+msgid "NTFS compression not supported!"
+msgstr "NTFS komprimering ikke støttet!"
+
+msgid "NTFS encryption not supported!"
+msgstr "NTFS kryptering ikke støttet!"
+
+msgid "Network connection established."
+msgstr "Nettverkskobling etablert."
+
+msgid "Network error. Can't update gamercards."
+msgstr "Nettverks feil. Kan ikke oppdatere spillerkort."
+
+msgid "New Themes"
+msgstr "Nye temaer"
+
+msgid "Nintendo DS"
+msgstr "Nintendo DS"
+
+msgid "Nintendo DS Connectivity"
+msgstr "Nintendo DS Connectivity"
+
+msgid "No"
+msgstr "Nei"
+
+#, c-format
+msgid "No domain part in URL '%s'"
+msgstr "Ingen domene del i URL '%s'"
+
+msgid "No games found!"
+msgstr "Ingen spill funnet!"
+
+msgid "No partition selected!"
+msgstr "Ingen partisjon valgt!"
+
+msgid "No themes found."
+msgstr "Ingen temaer funnet."
+
+msgid "No updates found."
+msgstr "Ingen oppdateringer funent"
+
+msgid "None found on disc"
+msgstr "Ingen funnet på disc"
+
+msgid "Not Found!"
+msgstr "Ikke funnet!"
+
+msgid "Number of Online Players"
+msgstr "Antall spillere på nett"
+
+msgid "Number of Players"
+msgstr "Antall spillere"
+
+msgid "Nunchuk"
+msgstr "Nunchuk"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "OK!"
+msgstr "OK!"
+
+msgid "Ocarina (cheats):"
+msgstr "Ocarina (juks):"
+
+msgid "Ocarina Cheat Manager"
+msgstr "Ocarina jukse manager"
+
+msgid "Ocarina: Code Error"
+msgstr "Ocarina: Kode feil"
+
+msgid "Ocarina: Codes found."
+msgstr "Ocarina: Koder funnet"
+
+msgid "Ocarina: No codes found"
+msgstr "Ocarina: Ingen koder funnet"
+
+msgid "Ocarina: Out Of Memory Error"
+msgstr "Ocarina: Tomt for minne feil"
+
+msgid "Ocarina: Searching codes..."
+msgstr "Ocarina: Søker koder..."
+
+msgid "Ocarina: Too many codes"
+msgstr "Ocarina: For mange koder"
+
+msgid "Off"
+msgstr "Nei"
+
+msgid "On"
+msgstr "Ja"
+
+msgid "Online"
+msgstr "På nett"
+
+msgid "Online Content"
+msgstr "Innhold på nett"
+
+msgid "Online Play"
+msgstr "Spill på nett"
+
+msgid "Online Players"
+msgstr "Spillere på nett"
+
+msgid "Online Score List"
+msgstr "Poengliste på nett"
+
+msgid "Online Updates"
+msgstr "Oppdateringer på nett"
+
+msgid "Open Sort"
+msgstr "Åpne sortering"
+
+msgid "Open Style"
+msgstr "Åpner stil"
+
+msgid "Opening DVD disc..."
+msgstr "Åpner DVD disc..."
+
+#, c-format
+msgid "Opening partition: %s"
+msgstr "Åpner partisjon: %s"
+
+msgid "Options"
+msgstr "Innstillinger"
+
+msgid "Options discarded for this game."
+msgstr "Innstillinger forkastet for spillet."
+
+msgid "Options saved for this game."
+msgstr "Innstillinger lagret for spillet."
+
+msgid "Out of memory"
+msgstr "Tomt for minne"
+
+msgid "Page:"
+msgstr "Side:"
+
+msgid "Partition:"
+msgstr "Partisjon:"
+
+#, c-format
+msgid "Partition: %s not found!"
+msgstr "Partisjon: %s ikke funnet!"
+
+msgid "Party"
+msgstr "Fest"
+
+msgid "Paused Start"
+msgstr "Start er pauset"
+
+msgid "Platformer"
+msgstr "Plattformspill"
+
+msgid "Play Count"
+msgstr "Ganger spillt"
+
+msgid "Players"
+msgstr "Spillere"
+
+msgid "Please insert a game disc..."
+msgstr "Vennligst sett inn en spilldisc..."
+
+#, c-format
+msgid "Press %s button for options."
+msgstr "Trykk %s for alternativer."
+
+#, c-format
+msgid "Press %s button to %s."
+msgstr "Trykk %s for å %s."
+
+#, c-format
+msgid "Press %s button to apply codes."
+msgstr "Trykk %s for å bruke koder"
+
+#, c-format
+msgid "Press %s button to cancel."
+msgstr "Trykk %s for å avbryte."
+
+#, c-format
+msgid "Press %s button to change device."
+msgstr "Trykk %s for å endre enhet."
+
+#, c-format
+msgid "Press %s button to continue."
+msgstr "Trykk %s for å fortsette"
+
+#, c-format
+msgid "Press %s button to delete FS."
+msgstr "Trykk %s for å slette FilSyst.."
+
+#, c-format
+msgid "Press %s button to dump BCA."
+msgstr "Trykk %s for å vise BCA."
+
+#, c-format
+msgid "Press %s button to exit."
+msgstr "Trykk %s for å avslutte."
+
+#, c-format
+msgid "Press %s button to fix EXTEND/WBFS."
+msgstr "Trykk %s for å fikse EXTEND/WBFS."
+
+#, c-format
+msgid "Press %s button to format WBFS."
+msgstr "Trykk %s for å formatere WBFS."
+
+#, c-format
+msgid "Press %s button to go back."
+msgstr "Trykk %s for å gå tilbake."
+
+#, c-format
+msgid "Press %s button to select a partition."
+msgstr "Trykk %s for å velge en partisjon."
+
+#, c-format
+msgid "Press %s button to select."
+msgstr "Trykk %s for å velge."
+
+#, c-format
+msgid "Press %s button to skip codes."
+msgstr "Trykk %s for å hoppe over koder"
+
+#, c-format
+msgid "Press %s button to sync FAT."
+msgstr "Trykk %s for å synkronisere FAT"
+
+#, c-format
+msgid "Press %s for fullscreen preview"
+msgstr "Trykk %s for full skjerm forhåndsvisning"
+
+#, c-format
+msgid "Press %s for game options"
+msgstr "Trykk %s for spill innstillinger"
+
+#, c-format
+msgid "Press %s for global options"
+msgstr "Trykk %s for globale innstillinger"
+
+#, c-format
+msgid "Press %s to discard options"
+msgstr "Trykk %s for å forkaste alternativer"
+
+#, c-format
+msgid "Press %s to download and update"
+msgstr "Trykk %s for å laste ned og oppdatere"
+
+#, c-format
+msgid "Press %s to download this theme"
+msgstr "Trykk %s for å laste ned dette temaet"
+
+#, c-format
+msgid "Press %s to download, %s to return"
+msgstr "Trykk %s for å laste ned, %s for å gå tilbake"
+
+#, c-format
+msgid "Press %s to return"
+msgstr "Trykk %s for å gå tilbake"
+
+#, c-format
+msgid "Press %s to save global settings"
+msgstr "Trykk %s for å lagre globale innstillinger"
+
+#, c-format
+msgid "Press %s to save options"
+msgstr "Trykk %s for å lagre instillinger"
+
+#, c-format
+msgid "Press %s to save selection"
+msgstr "Trykk %s for å lagre valg"
+
+#, c-format
+msgid "Press %s to select filter type"
+msgstr "Trykk %s for å velge filter"
+
+#, c-format
+msgid "Press %s to select sorting method"
+msgstr "Trykk %s for å velge sorterings metode"
+
+#, c-format
+msgid "Press %s to start game"
+msgstr "Trykk %s for å starte spillet"
+
+#, c-format
+msgid "Press %s to update without meta.xml"
+msgstr "Trykk %s for å oppdatere uten meta.xml"
+
+#, c-format
+msgid "Press %s/%s to select device."
+msgstr "Trykk %s/%s for å velge enhet."
+
+msgid "Press 2 to reload IOS"
+msgstr "Trykk 2 for å laste IOS på nytt"
+
+msgid "Press A to select device"
+msgstr "Trykk A for å velge enhet"
+
+msgid "Press B to exit to HBC"
+msgstr "Trykk B for å avslutte til HBC"
+
+msgid "Press HOME to reset"
+msgstr "Trykk HJEM for å starte på nytt"
+
+msgid "Press LEFT/RIGHT to select IOS"
+msgstr "Trykk på VENSTRE/HØYRE for å velge IOS"
+
+msgid "Press any button to continue..."
+msgstr "Trykk på en knapp for å fortsette..."
+
+msgid "Press any button to exit..."
+msgstr "Trykk på en knapp for å avslutte..."
+
+msgid "Press any button to restart..."
+msgstr "Trykk på en knapp for å starte på nytt..."
+
+msgid "Press any button..."
+msgstr "Trykk på hvilken som helst knapp..."
+
+#, c-format
+msgid "Press button %s to download covers."
+msgstr "Trykk på %s for å laste ned covers"
+
+#, c-format
+msgid "Press button %s to eject DVD."
+msgstr "Trykk på %s for å løse ut DVD."
+
+msgid "Profile:"
+msgstr "Profil:"
+
+#, c-format
+msgid "Profile: %s"
+msgstr "Profil: %s"
+
+msgid "Program Updates"
+msgstr "Program oppdateringer"
+
+msgid "Publisher"
+msgstr "Utgiver"
+
+msgid "Puzzle"
+msgstr "Pusslespill"
+
+msgid "Quit"
+msgstr "Utgangsdøra"
+
+msgid "RAW"
+msgstr "RÅ"
+
+msgid "RIGHT"
+msgstr "HØYRE"
+
+msgid "RPG"
+msgstr "Rollespill"
+
+msgid "Racing"
+msgstr "Racing"
+
+#, c-format
+msgid "Rated %s"
+msgstr "Vurdert til %s"
+
+msgid "Rating"
+msgstr "Aldersgrense"
+
+msgid "Read"
+msgstr "Les"
+
+msgid "Reading BCA..."
+msgstr "Leser BCA..."
+
+msgid "Reboot"
+msgstr "Omstart"
+
+msgid "Release Date"
+msgstr "Utgivelsesdato"
+
+msgid "Release Notes: (short)"
+msgstr "Utgivelses notater: (kort)"
+
+msgid "Removing game, please wait..."
+msgstr "Fjerner spill, venligst vent..."
+
+msgid "Restarting Wii..."
+msgstr "Starter Wii på nytt..."
+
+#, c-format
+msgid "Returned! (ret = %d)"
+msgstr "Returnerte! (ret = %d)"
+
+msgid "Rhythm"
+msgstr "Rytme"
+
+msgid "Rows:"
+msgstr "Rader:"
+
+msgid "Running benchmark, please wait"
+msgstr "Kjører benchmark, vennligst vent"
+
+msgid "S. Chinese"
+msgstr "Smpl. Kinesisk"
+
+msgid "SD/SDHC Card"
+msgstr "SD/SDHC kort"
+
+msgid "SUCCESS!"
+msgstr "SUKSESS!"
+
+msgid "Save .gct"
+msgstr "Lagre .gct"
+
+msgid "Save Debug"
+msgstr "Lagre debug"
+
+msgid "Save Settings"
+msgstr "Lagre instillinger"
+
+msgid "Save debug.log"
+msgstr "Lagre debug.log"
+
+msgid "Saving Settings... "
+msgstr "Lagrer instillinger... "
+
+msgid "Saving cheats..."
+msgstr "Lagrer juksekoder..."
+
+msgid "Saving gamelist.txt ... "
+msgstr "Lagrer gamelist.txt ... "
+
+msgid "Saving settings..."
+msgstr "Lagrer instillinger..."
+
+msgid "Saving:"
+msgstr "Lagrer:"
+
+#, c-format
+msgid "Saving: %s"
+msgstr "Lagrer: %s"
+
+msgid "Scroll:"
+msgstr "Bla:"
+
+msgid "Select Alternative .dol:"
+msgstr "velg alternativ .dol"
+
+msgid "Select WBFS device:"
+msgstr "Velg WBFS enhet:"
+
+msgid "Select a different partition"
+msgstr "Velg en annen partisjon"
+
+msgid "Select a partition"
+msgstr "Velg en partisjon"
+
+msgid "Select all"
+msgstr "Velg alle"
+
+msgid "Select the game you want to boot"
+msgstr "Velg spillet du vil starte"
+
+msgid "Selected Game"
+msgstr "Valgt spill"
+
+msgid "Settings"
+msgstr "Instillinger"
+
+msgid "Shooter"
+msgstr "Skyting"
+
+msgid "Show All"
+msgstr "Vis alle"
+
+msgid "Show cIOS info"
+msgstr "Vis cIOS info"
+
+msgid "Shutdown"
+msgstr "Slå av"
+
+msgid "Side:"
+msgstr "Side:"
+
+msgid "Simulation"
+msgstr "Simulering"
+
+msgid "Size(GB) Type  Mount Used"
+msgstr "Størrelse(GB) Type  Montert Brukt"
+
+#, c-format
+msgid "Size: %d bytes"
+msgstr "Størrelse: %d bytes"
+
+msgid "Sort"
+msgstr "Sorter"
+
+msgid "Sort Games"
+msgstr "Sorter spill"
+
+msgid "Sort Order:"
+msgstr "Sort. rekkefølge"
+
+msgid "Sort Type:"
+msgstr "Sort. type"
+
+#, c-format
+msgid "Sort: %s-%s"
+msgstr "Sorter: %s-%s"
+
+msgid "Spanish"
+msgstr "Spansk"
+
+msgid "Sports"
+msgstr "Sport"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Start Game"
+msgstr "Start spillet"
+
+msgid "Start this game?"
+msgstr "Start dette spillet?"
+
+msgid "Stopping DVD..."
+msgstr "Stopper DVD..."
+
+msgid "Strategy"
+msgstr "Strategi"
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "Style:"
+msgstr "Stil"
+
+msgid "Sync FAT free space info?"
+msgstr "Synkroniser FAT ledig plass informasjon?"
+
+msgid "Synchronizing, please wait."
+msgstr "Synkroniserer, vennligst vent."
+
+msgid "System"
+msgstr "System"
+
+msgid "System Def."
+msgstr "Wii standard"
+
+msgid "T. Chinese"
+msgstr "Tra. Kinesisk"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Theme Info"
+msgstr "Tema informasjon"
+
+msgid ""
+"Theme may be too large.\n"
+"Reboot of Cfg suggested.\n"
+msgstr ""
+"Tema kan være for stort.\n"
+"Det er anbefalt å starte Cfg på nytt.\n"
+
+msgid "Theme:"
+msgstr "Tema:"
+
+#, c-format
+msgid "Theme: %s"
+msgstr "Tema: %s"
+
+msgid "Themes provided by wii.spiffy360.com"
+msgstr "Temaer levert av wii.spiffy360.com"
+
+msgid "Themes to download"
+msgstr "Temaer å laste ned"
+
+msgid "Themes with updates"
+msgstr "Temaer med oppdateringer"
+
+msgid "Title"
+msgstr "Tittel"
+
+#, c-format
+msgid "Too many cheats! (%d)"
+msgstr "For mange juksekoder! (%d)"
+
+msgid "Too many code lines!"
+msgstr "For mange kode linjer!"
+
+#, c-format
+msgid "Too many fragments! %d"
+msgstr "For mange fragmenter! %d"
+
+#, c-format
+msgid "Trying (url#%d) ..."
+msgstr "Prøver (url#%d) ..."
+
+msgid "UNUSED"
+msgstr "UBRUKT"
+
+msgid "UP"
+msgstr "OPP"
+
+#, c-format
+msgid "URL '%s' doesn't start with 'http://'"
+msgstr "URL '%s' starter ikke med 'http://'"
+
+#, c-format
+msgid "URL '%s' has no PATH part"
+msgstr "URL '%s' har ingen STI del"
+
+msgid "USB Gecko found. Debugging is enabled."
+msgstr "USB Gecko funnet. Debugging er aktivert."
+
+msgid "USB Mass Storage Device"
+msgstr "USB lagringsenhet"
+
+msgid "Unknown"
+msgstr "Ukjent"
+
+msgid "Unknown syntax!"
+msgstr "Ukjent syntax!"
+
+msgid "Unplayed"
+msgstr "Uprøvd"
+
+msgid "Unplayed Games"
+msgstr "Uprøvde spill"
+
+msgid "Update WiiTDB Game Database"
+msgstr "Oppdater WiiTDB spill database"
+
+msgid "Update themes"
+msgstr "Oppdater temaer"
+
+msgid "Update titles.txt"
+msgstr "Oppdater titler tekstfil (titles.txt)"
+
+msgid "Updates"
+msgstr "Oppdateringer"
+
+msgid "Updating database."
+msgstr "Oppdaterer database."
+
+#, c-format
+msgid "Used: %.1fGB Free: %.1fGB [%d]"
+msgstr "Brukt: %.1fGB Ledig: %.1fGB [%d]"
+
+msgid "Using Saved Alternative .dol:"
+msgstr "Bruker lagret alternativ .dol:"
+
+msgid "Version"
+msgstr "Versjon"
+
+msgid "Video Patch:"
+msgstr "Bildepatch:"
+
+msgid "Video:"
+msgstr "Bilde:"
+
+msgid "View"
+msgstr "Visning"
+
+msgid "Vitality Sensor"
+msgstr "Vitalitet føler"
+
+msgid "WARNING:"
+msgstr "ADVARSEL:"
+
+#, c-format
+msgid "WBFS: %.1fGB free of %.1fGB"
+msgstr "WBFS: %.1fGB av %.1fGB ledig"
+
+msgid "Wheel"
+msgstr "Ratt"
+
+msgid "Wii Speak"
+msgstr "Wii Speak"
+
+msgid "WiiTDB Game Database"
+msgstr "WiiTDB spill database"
+
+msgid "Wiimote"
+msgstr "Wiikontroll"
+
+msgid "Write Playlog:"
+msgstr "Lagre spillelogg:"
+
+#, c-format
+msgid "Writing to %s"
+msgstr "Skriver til %s"
+
+#, c-format
+msgid "Writing: %s"
+msgstr "Skriver: %s"
+
+#, c-format
+msgid "Wrong Size: %d (%d)"
+msgstr "Feil størrelse: %d (%d)"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid ""
+"You can also try unplugging\n"
+"and plugging back the device,\n"
+"or just wait some more"
+msgstr ""
+"Du kan også prøve å koble fra\n"
+"og sette i enheten igjen,\n"
+"eller bare vente litt til"
+
+msgid "Zapper"
+msgstr "Zapper"
+
+msgid "[ CHANGED ]"
+msgstr "[ ENDRET ]"
+
+msgid "[ FOUND ]"
+msgstr "[ FUNNET ]"
+
+msgid "[ SAVED ]"
+msgstr "[ LAGRET ]"
+
+msgid "[HOME]"
+msgstr "[HJEM]"
+
+msgid "[No HQ]"
+msgstr "[Ingen HK]"
+
+msgid "[USED]"
+msgstr "[BRUKT]"
+
+msgid "[default]"
+msgstr "[standard]"
+
+msgid "[saved]"
+msgstr "[lagret]"
+
+#, c-format
+msgid "bad wbfs file: %s"
+msgstr "skadet/dårlig wbfs fil: %s"
+
+msgid "calculating space, please wait..."
+msgstr "beregner plass, vennligst vent"
+
+msgid "delete"
+msgstr "slett"
+
+#, c-format
+msgid "dest: %p - %p"
+msgstr "dest: %p - %p"
+
+msgid "discard"
+msgstr "forkast"
+
+#, c-format
+msgid "domain %s could not be resolved"
+msgstr "domene %s kunne ikke løses"
+
+#, c-format
+msgid "error reading: %s (%d)"
+msgstr "feil ved lesing av: %s (%d)"
+
+#, c-format
+msgid "for %d players"
+msgstr "for %d spillere"
+
+msgid "for 1 player"
+msgstr "for 1 spiller"
+
+msgid "format"
+msgstr "formater"
+
+msgid "free"
+msgstr "ledig"
+
+#, c-format
+msgid "linear read speed: %.2f mb/s"
+msgstr "lineærlesehastighet: %.2f mb/s"
+
+msgid "linear..."
+msgstr "lineær?.."
+
+#, c-format
+msgid "music file too big (%d) %s"
+msgstr "musikk fil for stor (%d) %s"
+
+msgid "music.mp3 or music.mod not found!"
+msgstr "music.mp3 eller music.mod ikke funnet!"
+
+msgid "no file"
+msgstr "ingen fil"
+
+msgid "none"
+msgstr "ingen"
+
+msgid "or format a WBFS partition."
+msgstr "eller formater en WBFS partisjon"
+
+msgid "page"
+msgstr "side"
+
+msgid "parse error"
+msgstr "parse error"
+
+#, c-format
+msgid "random read speed: %.2f mb/s"
+msgstr "tilfedlig lese hastighet: %.2f mb/s"
+
+msgid "random..."
+msgstr "tilfeldig..."
+
+msgid "reset"
+msgstr "nullstill"
+
+msgid "revert"
+msgstr "nullstill"
+
+msgid "save"
+msgstr "lagre"
+
+#, c-format
+msgid "split error: %s"
+msgstr "oppdelings feil: %s"
+
+msgid "uDraw GameTablet"
+msgstr "uDraw GameTablet"
+
+msgid "unable to open wii disc"
+msgstr "kan ikke lese wii discen"
+
+#, c-format
+msgid "used: %p - %p"
+msgstr "brukt: %p - %p"
+
+#~ msgid "Front"
+#~ msgstr "Front"
+
+#~ msgid "Loading previous game list..."
+#~ msgstr "Leser inn forige spill liste..."
+
+#~ msgid "Remove Game"
+#~ msgstr "Fjern spill"

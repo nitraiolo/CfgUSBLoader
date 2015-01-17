@@ -1,0 +1,1865 @@
+﻿# CFG USB Loader language file template.
+# Put the translated string in msgstr ""
+# Fill in the Last-Translator and Language-Team fields.
+# Please use utf-8 charset when editing.
+msgid ""
+msgstr ""
+"Project-Id-Version: CFG USB Loader\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-19 16:17+0800\n"
+"PO-Revision-Date: 2010-03-17 05:55+0800\n"
+"Last-Translator: 19872001\n"
+"Language-Team: Traditional Chinese (ZH_TW) <19872001@tvgzone.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, c-format
+msgid "%.1fGB free of %.1fGB"
+msgstr "%.1fGB 剩餘 %.1fGB"
+
+#, c-format
+msgid "%.2f%% of %.2fGB (%c) ETA: %d:%02d:%02d"
+msgstr "%.2f%% of %.2fGB (%c) ETA: %d:%02d:%02d"
+
+#, c-format
+msgid "%.2fGB copied in %d:%02d:%02d"
+msgstr "%.2fGB 已複製在 %d:%02d:%02d"
+
+#, c-format
+msgid "%d available"
+msgstr "%d 可使用"
+
+#, c-format
+msgid "%d more notes"
+msgstr "%d 更多註釋"
+
+#, c-format
+msgid "%s Split: %d %s"
+msgstr "%s 分割: %d %s"
+
+#, c-format
+msgid "%s, please wait..."
+msgstr "%s, 請等候..."
+
+#, c-format
+msgid "(%d online)"
+msgstr "(支援 %d 名玩家連線)"
+
+#, c-format
+msgid "(%d seconds timeout)"
+msgstr "(%d 秒逾時)"
+
+msgid "(This can take a couple of minutes)"
+msgstr "(這可能需要數分鐘)"
+
+msgid ".dol too small"
+msgstr ".dol 太小"
+
+msgid "3D cover"
+msgstr "3D 封面"
+
+msgid "< ASC  >"
+msgstr "< 遞增 >"
+
+msgid "< DESC >"
+msgstr "< 遞減 >"
+
+msgid "< DOWNLOAD >"
+msgstr "< 下載 >"
+
+msgid "About"
+msgstr "關於"
+
+msgid "Action"
+msgstr "動作"
+
+msgid "Additional config:"
+msgstr "額外的設定:"
+
+msgid "Admin Lock:"
+msgstr "系統管理上鎖:"
+
+msgid "Admin Unlock"
+msgstr "系統管理解鎖"
+
+msgid "Adult"
+msgstr "成人"
+
+msgid "Adventure"
+msgstr "冒險"
+
+msgid "All"
+msgstr "全部"
+
+msgid "All Games"
+msgstr "所有遊戲"
+
+msgid "All themes up to date."
+msgstr "更新全部主題."
+
+msgid "Alt dol:"
+msgstr "替代 dol:"
+
+msgid "Alternative .dol:"
+msgstr "替代的 .dol:"
+
+msgid "Anti 002 Fix:"
+msgstr "抑制 002 修復:"
+
+#, c-format
+msgid "App. Path: %s"
+msgstr "程式路徑: %s"
+
+#, c-format
+msgid ""
+"Are you sure you want to %s\n"
+"this partition?"
+msgstr ""
+"你是否確定要使用 %s\n"
+"這個分割區?"
+
+msgid ""
+"Are you sure you want to FIX\n"
+"this partition?"
+msgstr ""
+"你是否確定要修復\n"
+"這個分割區?"
+
+msgid ""
+"Are you sure you want to remove this\n"
+"game?"
+msgstr "你是否確定要移除這個遊戲?"
+
+msgid "Ascending"
+msgstr "依遞增排序"
+
+#, c-format
+msgid "Auto-start game: %.6s not found!"
+msgstr "自動開始遊戲: %.6s 找不到!"
+
+msgid "Available Updates"
+msgstr "可用的更新"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Balance Board"
+msgstr "平衡器"
+
+msgid "Basic"
+msgstr "基本的"
+
+msgid "Block IOS Reload:"
+msgstr "封鎖 IOS 重新載入:"
+
+msgid "Boot Disc"
+msgstr "啟動光碟"
+
+msgid "Boot disc"
+msgstr "由光碟啟動"
+
+msgid "Booting Wii game, please wait..."
+msgstr "正在啟動 Wii 遊戲, 請等候..."
+
+#, c-format
+msgid "CFG base: %s"
+msgstr "CFG 基底: %s"
+
+msgid "Cancelled."
+msgstr "已取消."
+
+#, c-format
+msgid "Cannot create dir: %s"
+msgstr "無法建立目錄: %s"
+
+msgid "Cheat Codes:"
+msgstr "金手指密碼:"
+
+msgid "Cheats: "
+msgstr "金手指: "
+
+msgid "Check For Updates"
+msgstr "檢查更新"
+
+msgid "Checking for themes..."
+msgstr "正在檢查主題..."
+
+msgid "Checking for updates..."
+msgstr "正在檢查更新..."
+
+msgid "Choose a sorting method"
+msgstr "選擇一個排序方式"
+
+msgid "Classic"
+msgstr "古典的"
+
+msgid "Classic Controller"
+msgstr "傳統控制器"
+
+msgid "Clear Patches:"
+msgstr "清除補綴:"
+
+#, c-format
+msgid "Complete. Size: %d"
+msgstr "完成. 大小: %d"
+
+#, c-format
+msgid "Configurable Loader %s"
+msgstr "Configurable Loader %s"
+
+msgid "Configuration error, MAX_DNS_ENTRIES reached while the list is empty"
+msgstr "設定錯誤, 已達到 MAX_DNS_ENTRIES 並且清單是空的"
+
+#, c-format
+msgid "Connection error from net_read()  Errorcode: %i"
+msgstr "從 net_read() 連線錯誤  錯誤代碼: %i"
+
+msgid "Console"
+msgstr "主控台"
+
+msgid "Console Def."
+msgstr "預設主控台."
+
+msgid "Controller"
+msgstr "控制器"
+
+#, c-format
+msgid "Could not initialize DIP module! (ret = %d)"
+msgstr "無法初始化 DIP 模組! (ret = %d)"
+
+msgid "Country Fix:"
+msgstr "國別代碼修復:"
+
+msgid "Cover"
+msgstr "封面"
+
+msgid "Cover Image:"
+msgstr "封面圖片:"
+
+msgid "Cover Style"
+msgstr "封面風格"
+
+msgid "Cover~~Back"
+msgstr "封面~~背面"
+
+msgid "Cover~~Front"
+msgstr "封面~~正面"
+
+msgid "Create"
+msgstr "建立"
+
+msgid "Creator"
+msgstr "建立者"
+
+#, c-format
+msgid "Current Version: %s"
+msgstr "目前的版本: %s"
+
+#, c-format
+msgid ""
+"Custom IOS %d could not be found!\n"
+"Please install it."
+msgstr ""
+"cIOS %d 無法被找到!\n"
+"請安裝它."
+
+#, c-format
+msgid "Custom IOS %d could not be loaded! (ret = %d)"
+msgstr "cIOS %d 無法載入! (ret = %d)"
+
+#, c-format
+msgid ""
+"Custom IOS %d is a stub!\n"
+"Please reinstall it."
+msgstr ""
+"cIOS %d 是一個殘段!\n"
+"請重新安裝它."
+
+#, c-format
+msgid "Custom IOS %s Loaded OK"
+msgstr "cIOS %s 載入完成"
+
+msgid "DISC cover"
+msgstr "光碟封面"
+
+msgid "DOWN"
+msgstr "下"
+
+msgid "Dance Pad"
+msgstr "跳舞踏墊"
+
+msgid "Database update successful."
+msgstr "資料庫更新成功."
+
+msgid "Debug"
+msgstr "偵錯"
+
+msgid "Delete Game"
+msgstr "刪除遊戲"
+
+msgid "Deleting"
+msgstr "正在刪除"
+
+msgid "Descending"
+msgstr "依遞減排序"
+
+msgid "Developer"
+msgstr "開發成員"
+
+msgid "Device is not responding!"
+msgstr "裝置沒有回應!"
+
+msgid "Device:"
+msgstr "裝置:"
+
+msgid "Disc"
+msgstr "光碟"
+
+msgid "Disc (Ask)"
+msgstr "光碟 (詢問)"
+
+msgid "Done."
+msgstr "完成"
+
+msgid "Download .txt"
+msgstr "下載 .txt"
+
+msgid "Download All Covers"
+msgstr "下載所有的封面"
+
+msgid "Download All Missing Covers"
+msgstr "下載所有缺少的封面"
+
+msgid "Download Missing Covers"
+msgstr "下載缺少的封面"
+
+msgid "Download Themes"
+msgstr "下載主題包"
+
+msgid "Download complete."
+msgstr "下載完成."
+
+#, c-format
+msgid "Download error on gamercard #%d."
+msgstr "下載 Gamercard #%d 錯誤."
+
+msgid "Download titles.txt"
+msgstr "下載 titles.txt"
+
+msgid "Downloadable Content"
+msgstr "可下載的內容"
+
+msgid "Downloading ALL MISSING covers"
+msgstr "正在下載所有缺少的封面"
+
+msgid "Downloading ALL covers"
+msgstr "正在下載所有封面"
+
+#, c-format
+msgid "Downloading ALL covers for %.6s"
+msgstr "正在下載 %.6s 所有封面"
+
+#, c-format
+msgid "Downloading MISSING covers for %.6s"
+msgstr "正在下載 %.6s 缺少的封面"
+
+msgid "Downloading Theme previews..."
+msgstr "正在下載主題預覽..."
+
+msgid "Downloading cheats..."
+msgstr "正在下載金手指..."
+
+msgid "Downloading database."
+msgstr "正在下載資料庫."
+
+msgid "Downloading titles.txt ..."
+msgstr "正在下載 titles.txt ..."
+
+#, c-format
+msgid "Downloading: %s"
+msgstr "正在下載: %s"
+
+#, c-format
+msgid "Downloading: %s as %s"
+msgstr "正在下載: %s 為 %s"
+
+msgid "Downloads"
+msgstr "下載"
+
+msgid "Drums"
+msgstr "康加鼓"
+
+msgid "Dutch"
+msgstr "荷蘭文"
+
+msgid "ERROR"
+msgstr "錯誤"
+
+msgid "ERROR creating file"
+msgstr "建立檔案時錯誤"
+
+msgid "ERROR game opt"
+msgstr "遊戲選項錯誤"
+
+msgid "ERROR reading BCA!"
+msgstr "讀取 BCA 時錯誤!"
+
+#, c-format
+msgid "ERROR removing %s"
+msgstr "移除 %s 時錯誤"
+
+msgid "ERROR writing BCA!"
+msgstr "寫入 BCA 時錯誤!"
+
+msgid "ERROR!"
+msgstr "錯誤!"
+
+#, c-format
+msgid "ERROR! (ret = %d)"
+msgstr "錯誤! (ret = %d)"
+
+msgid "ERROR:"
+msgstr "錯誤:"
+
+#, c-format
+msgid "ERROR: %s is not accessible"
+msgstr "錯誤: %s 無法存取"
+
+#, c-format
+msgid "ERROR: Apploader %d"
+msgstr "錯誤: Apploader %d"
+
+msgid "ERROR: CIOS222/223 v4 required for BCA"
+msgstr "錯誤: BCA 需要 cIOS222/223 v4"
+
+msgid "ERROR: Cache Close"
+msgstr "錯誤: 快取關閉"
+
+#, c-format
+msgid "ERROR: Could not open game! (ret = %d)"
+msgstr "錯誤: 無法開啟遊戲! (ret = %d)"
+
+msgid "ERROR: Game already installed!!"
+msgstr "錯誤: 遊戲已經被安裝!!"
+
+#, c-format
+msgid "ERROR: GetCerts %d"
+msgstr "錯誤: 取得憑證 %d"
+
+msgid "ERROR: Invalid Game ID"
+msgstr "錯誤: 無效的遊戲 ID"
+
+#, c-format
+msgid "ERROR: Loading EHC module! (%d)"
+msgstr "錯誤: 載入 EHC 模組! (%d)"
+
+msgid ""
+"ERROR: NTFS write disabled!\n"
+"(set ntfs_write=1)"
+msgstr ""
+"錯誤: NTFS 分割區寫入已停用!\n"
+"(請設定 ntfs_write=1)"
+
+#, c-format
+msgid "ERROR: No partitions found! (ret = %d)"
+msgstr "錯誤: 沒有找到分割區! (ret = %d)"
+
+msgid "ERROR: Not a Wii disc!!"
+msgstr "錯誤: 不是 Wii 光碟!!"
+
+#, c-format
+msgid "ERROR: Offset(0x%llx) %d"
+msgstr "錯誤: 偏移(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: OpenPartition %d"
+msgstr "錯誤: 開啟分割區 %d"
+
+#, c-format
+msgid "ERROR: OpenPartition(0x%llx) %d"
+msgstr "錯誤: 開啟分割區(0x%llx) %d"
+
+#, c-format
+msgid "ERROR: SetFragList(0): %d"
+msgstr "錯誤: SetFragList(0): %d"
+
+#, c-format
+msgid "ERROR: SetWBFS: %d"
+msgstr "錯誤: SetWBFS: %d"
+
+msgid "ERROR: Setting SD mode"
+msgstr "錯誤: 設定 SD 模式"
+
+#, c-format
+msgid "ERROR: USB init! (%d)"
+msgstr "錯誤: USB 初始化! (%d)"
+
+msgid ""
+"ERROR: cIOS249rev18, cIOS222v4,\n"
+"cIOS223v4, cIOS224v5 or higher required\n"
+"for starting games from a FAT partition!\n"
+"Upgrade IOS249 or choose a different IOS."
+msgstr ""
+"錯誤: 從 FAT 分割區啟動遊戲時需要 cIOS249rev18,\n"
+"cIOS222v4, cIOS223v4, cIOS224v5 或更高的版本!\n"
+"請更新 IOS249 或選擇一個不同的 IOS."
+
+msgid "ERROR: cache: out of memory"
+msgstr "錯誤: 快取: 記憶體不足"
+
+#, c-format
+msgid "ERROR: creating: %s"
+msgstr "錯誤: 正在建立: %s"
+
+#, c-format
+msgid "ERROR: get_frag_list: %d"
+msgstr "錯誤: get_frag_list: %d"
+
+msgid "ERROR: memory overlap!"
+msgstr "錯誤: 記憶體重疊!"
+
+msgid ""
+"ERROR: multiple wbfs partitions\n"
+"supported only with IOS222/223-mload"
+msgstr ""
+"錯誤: 多重 WBFS 分割區\n"
+"僅 IOS222/223-mload 支援"
+
+msgid "ERROR: not enough free space!!"
+msgstr "錯誤: 沒有足夠的可用空間!!"
+
+msgid "ERROR: ntfs was not cleanly unmounted"
+msgstr "錯誤: NTFS 分割區沒有乾淨的解除掛載"
+
+#, c-format
+msgid "ERROR: opening %.6s"
+msgstr "錯誤: 開啟 %.6s 時"
+
+#, c-format
+msgid "ERROR: set_frag_list: %d"
+msgstr "錯誤: set_frag_list: %d"
+
+#, c-format
+msgid "ERROR: setting up fragments %d %d"
+msgstr "錯誤: 設定碎片 %d %d 時"
+
+#, c-format
+msgid "ERROR: writing %s (%d)."
+msgstr "錯誤: 寫入 %s (%d) 時."
+
+msgid "EXTEND"
+msgstr "擴充"
+
+msgid "Ejecting DVD..."
+msgstr "正在退出 DVD..."
+
+msgid "English"
+msgstr "英文"
+
+msgid "English Title"
+msgstr "英文標題"
+
+msgid "Enter Code: "
+msgstr "輸入代碼:"
+
+msgid "Error GRRLIB init"
+msgstr "初始化 GRRLIB 錯誤"
+
+msgid "Error Initializing Network."
+msgstr "初始化網路時錯誤."
+
+msgid "Error adding disc!"
+msgstr "加入光碟時錯誤!"
+
+msgid "Error creating directory..."
+msgstr "建立目錄時錯誤..."
+
+msgid "Error discarding options!"
+msgstr "放棄選項時錯誤!"
+
+msgid "Error downloading theme preview..."
+msgstr "下載主題預覽時錯誤..."
+
+msgid "Error downloading theme..."
+msgstr "下載主題時錯誤..."
+
+msgid "Error downloading themes..."
+msgstr "下載主題時錯誤..."
+
+msgid "Error downloading update..."
+msgstr "下載更新時錯誤..."
+
+msgid "Error downloading updates..."
+msgstr "下載更新時錯誤..."
+
+msgid "Error downloading."
+msgstr "下載時錯誤."
+
+msgid "Error establishing connection"
+msgstr "建立連線時錯誤"
+
+msgid "Error extracting theme..."
+msgstr "解壓縮主題時錯誤..."
+
+msgid "Error opening database, update did not complete."
+msgstr "開啟資料庫錯誤, 更新沒有完成."
+
+#, c-format
+msgid "Error opening: %s"
+msgstr "開啟時錯誤: %s"
+
+#, c-format
+msgid "Error playing %s"
+msgstr "遊戲時錯誤 %s"
+
+msgid "Error reading .dol"
+msgstr "讀取 .dol 時錯誤"
+
+msgid "Error reading dol header"
+msgstr "讀取 dol 檔頭時錯誤"
+
+#, c-format
+msgid "Error saving %s"
+msgstr "儲存時錯誤 %s"
+
+msgid "Error saving options!"
+msgstr "儲存選項時錯誤!"
+
+msgid "Error saving settings!"
+msgstr "儲存設定時錯誤!"
+
+msgid ""
+"Error storing playlog file.\n"
+"Start from the Wii Menu to fix."
+msgstr ""
+"儲存遊戲記錄檔案時錯誤.\n"
+"從 Wii 系統選單啟動的話能修復."
+
+msgid "Error: Invalid PNG image!"
+msgstr "錯誤: 無效的 PNG 圖片!"
+
+msgid "Error: no URL."
+msgstr "錯誤: 沒有 URL."
+
+msgid "Error: no data."
+msgstr "錯誤: 沒有資料."
+
+msgid "Exit"
+msgstr "離開"
+
+#, c-format
+msgid "Extracting: %s"
+msgstr "正在解壓縮: %s"
+
+msgid "FAIL"
+msgstr "失敗"
+
+#, c-format
+msgid "FAT: ALLOC ERROR %p %p %p"
+msgstr "FAT: 配置錯誤 %p %p %p"
+
+#, c-format
+msgid "FATAL: alloc grid(%d)"
+msgstr "嚴重錯誤: 配置資料格(%d)"
+
+#, c-format
+msgid "FILL %d"
+msgstr "填滿 %d"
+
+msgid "FLAT cover"
+msgstr "平面封面"
+
+msgid "FULL cover"
+msgstr "完整封面"
+
+msgid "Fav"
+msgstr "顯示最喜愛的"
+
+msgid "Fav: Off"
+msgstr "不顯示最愛的"
+
+msgid "Fav: On"
+msgstr "顯示最喜愛的"
+
+msgid "Favorite"
+msgstr "最喜愛的"
+
+msgid "Favorite Games"
+msgstr "最愛的遊戲"
+
+msgid "Favorite:"
+msgstr "最愛的:"
+
+msgid "Favorites:"
+msgstr "最喜愛的"
+
+msgid "Fighting"
+msgstr "格鬥"
+
+#, c-format
+msgid "File not found! %s"
+msgstr "找不到檔案! %s"
+
+msgid "Filter"
+msgstr "過濾"
+
+msgid "Filter Games"
+msgstr "遊戲過濾"
+
+msgid "Filter by Controller"
+msgstr "依控制器過濾"
+
+msgid "Filter by Genre"
+msgstr "依類型過濾"
+
+msgid "Filter by Online Features"
+msgstr "依網路功能過濾"
+
+msgid "Filter:"
+msgstr "過濾:"
+
+msgid "Fixing EXTEND partition..."
+msgstr "正在修復擴充分割區..."
+
+msgid "Force NTSC"
+msgstr "強制 NTSC"
+
+msgid "Force PAL50"
+msgstr "強制 PAL50"
+
+msgid "Force PAL60"
+msgstr "強制 PAL60"
+
+msgid "Formatting"
+msgstr "正在格式化"
+
+#, c-format
+msgid "Found %s"
+msgstr "找到 %s"
+
+msgid "French"
+msgstr "法文"
+
+msgid "Full"
+msgstr "完整的"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "Game Default"
+msgstr "遊戲預設"
+
+msgid "Game Options"
+msgstr "遊戲選項"
+
+#, c-format
+msgid "Game Options:  %s"
+msgstr "遊戲選項: %s"
+
+msgid "Gamecube"
+msgstr "Gamecube"
+
+msgid "Gamer Card:"
+msgstr "玩家卡:"
+
+#, c-format
+msgid "Gamercard #%d reported: %.*s"
+msgstr "Gamercard #%d 報告: %.*s"
+
+msgid "Genre"
+msgstr "類型"
+
+msgid "German"
+msgstr "德文"
+
+msgid "Global Options"
+msgstr "全域選項"
+
+msgid "Guitar"
+msgstr "吉他"
+
+msgid "HQ cover"
+msgstr "HQ 封面"
+
+msgid "HTTP Response was without a file"
+msgstr "HTTP 回應沒有檔案"
+
+msgid "Hide"
+msgstr "隱藏"
+
+msgid "Hide Game:"
+msgstr "隱藏遊戲:"
+
+msgid "Hold button B to cancel."
+msgstr "按住按鈕 B 取消."
+
+msgid "Homebrew Channel"
+msgstr "退出至HBC頻道"
+
+msgid "Hook Type:"
+msgstr "攔截類型:"
+
+#, c-format
+msgid "ID mismatch: [%.6s] [%.6s]"
+msgstr "ID 不符合: [%.6s] [%.6s]"
+
+msgid "IOS Reload: Blocked"
+msgstr "IOS 重新載入: 已封鎖"
+
+#, c-format
+msgid "IOS_Open(%s) failed with code %d"
+msgstr "IOS_Open(%s) 失敗, 代碼 %d"
+
+msgid ""
+"If Cfg does not start properly\n"
+"next time, copy boot.dol.bak over\n"
+"boot.dol and try again."
+msgstr ""
+"如果下次無法適當地啟動 Cfg 時,\n"
+"複製 boot.dol.bak 取代為 boot.dol\n"
+"然後再試一次."
+
+#, c-format
+msgid "Inconsistency in LZ77 encoding %x"
+msgstr "LZ77 編碼方式 %x 不一致"
+
+msgid "Info"
+msgstr "資訊"
+
+#, c-format
+msgid "Info file: %s"
+msgstr "檔案資訊: %s"
+
+msgid "Initializing Network..."
+msgstr "初始化網路..."
+
+msgid "Install"
+msgstr "安裝"
+
+msgid "Install Date"
+msgstr "安裝日期"
+
+msgid "Install Game"
+msgstr "安裝遊戲"
+
+msgid "Install game"
+msgstr "安裝遊戲"
+
+#, c-format
+msgid "Installation ERROR! (ret = %d)"
+msgstr "安裝錯誤! (ret = %d)"
+
+msgid "Installing game, please wait..."
+msgstr "正在安裝遊戲, 請等候..."
+
+msgid "Invalid .dol"
+msgstr "無效的 .dol"
+
+#, c-format
+msgid "Invalid partition: '%s'"
+msgstr "無效的分割區: '%s'"
+
+msgid "Italian"
+msgstr "義大利文"
+
+msgid "Japanese"
+msgstr "日文"
+
+msgid "Japanese Title"
+msgstr "日文標題"
+
+msgid "Keyboard"
+msgstr "鍵盤"
+
+msgid "Korean"
+msgstr "韓文"
+
+msgid "LEFT"
+msgstr "左"
+
+msgid "LOCKED!"
+msgstr "已鎖定!"
+
+msgid "Language:"
+msgstr "語言:"
+
+msgid "Last Play Date"
+msgstr "最後遊戲日期"
+
+msgid "Launch Methods"
+msgstr "執行方式"
+
+msgid "Load OK!"
+msgstr "載入完成!"
+
+#, c-format
+msgid "Loader Version: %s"
+msgstr "載入器版本: %s"
+
+msgid "Loading ..."
+msgstr "正在載入 ..."
+
+msgid "Main"
+msgstr "主選單"
+
+msgid "Main Menu"
+msgstr "主選單"
+
+msgid ""
+"Make sure USB port 0 is used!\n"
+"(The one nearest to the edge)"
+msgstr ""
+"請確定使用 USB 的 0 號連接埠!\n"
+"(最靠近主機邊緣的連接埠)"
+
+msgid "Manage"
+msgstr "管理"
+
+msgid "Manage Cheats"
+msgstr "管理金手指"
+
+msgid "Microphone"
+msgstr "麥克風"
+
+msgid "Motion+"
+msgstr "動感強化器"
+
+msgid "Mounting device, please wait..."
+msgstr "正在掛載裝置, 請等候..."
+
+msgid "Music"
+msgstr "音樂"
+
+#, c-format
+msgid "Music file from dir: %s"
+msgstr "音樂檔案從目錄: %s"
+
+#, c-format
+msgid "Music file size: %d"
+msgstr "音樂檔案大小: %d"
+
+#, c-format
+msgid "Music file: %s"
+msgstr "音樂檔案: %s"
+
+msgid "Music: Disabled"
+msgstr "音樂: 關閉"
+
+msgid "Music: Enabled"
+msgstr "音樂: 啟用"
+
+#, c-format
+msgid "Music: Looking for %s files in: %s"
+msgstr "音樂: 正在尋找 %s 檔案在: %s"
+
+#, c-format
+msgid "Music: Next file index to play: %i"
+msgstr "音樂: 播放下一個檔案: %i"
+
+#, c-format
+msgid "Music: Number of %s files found: %i"
+msgstr "音樂: 找到 %s 個檔案: %i"
+
+msgid "Music: musicArray contents: "
+msgstr "音樂: 音樂陣列內容: "
+
+msgid ""
+"NOTE: CIOS249 before rev10:\n"
+"Loading games from SDHC not supported!"
+msgstr ""
+"注意: cIOS249 rev10 之前的版本:\n"
+"不支援從 SDHC 載入遊戲!"
+
+msgid ""
+"NOTE: CIOS249 before rev14:\n"
+"Possible error #001 is not handled!"
+msgstr ""
+"注意: cIOS249 rev14 之前的版本:\n"
+"可能會發生 #001 的錯誤, 導致遊戲無法執行!"
+
+msgid ""
+"NOTE: CIOS249 before rev9:\n"
+"Loading games from USB not supported!"
+msgstr ""
+"注意: cIOS249 rev9 之前的版本:\n"
+"不支援從 USB 載入遊戲!"
+
+msgid ""
+"NOTE: You are using CIOS249 rev13:\n"
+"To quit the game you must reset or\n"
+"power-off the Wii before you start\n"
+"another game or it will hang here!"
+msgstr ""
+"注意: 你正在使用 cIOS249 rev13:\n"
+"當你離開遊戲之後你必須關閉 Wii 主機\n"
+"電源或重置 Wii 主機, 否則將無法執行\n"
+"另一個遊戲!"
+
+msgid ""
+"NOTE: You are using CIOS249 rev14:\n"
+"It has known problems with dual layer\n"
+"games. It is highly recommended that\n"
+"you use a different IOS or revision\n"
+"for installation/playback of this game."
+msgstr ""
+"注意: 你正在使用的 cIOS249 rev14:\n"
+"它和雙層 DVD 遊戲有不相容的問題發生\n"
+"安裝這個遊戲時請使用其他版本的 IOS."
+
+msgid ""
+"NOTE: loader restart is required\n"
+"for the update to take effect."
+msgstr ""
+"注意: 載入器需要重新啟動\n"
+"才能夠套用更新內容."
+
+#, c-format
+msgid ""
+"NOTE: partition P#%d is type EXTEND but\n"
+"contains a WBFS filesystem. This is an\n"
+"invalid setup. Press %s to change the\n"
+"partition type from EXTEND to data."
+msgstr ""
+"注意: 分割區 P#%d 類型是延伸, 但它包含\n"
+"WBFS 檔案系統. 這是一個無效的設定. 請按\n"
+"%s 鈕變更延伸分割區類型."
+
+msgid "NTFS compression not supported!"
+msgstr "尚未支援 NTFS 壓縮!"
+
+msgid "NTFS encryption not supported!"
+msgstr "尚未支援 NTFS 加密!"
+
+msgid "Network connection established."
+msgstr "建立網路連線."
+
+msgid "Network error. Can't update gamercards."
+msgstr "網路錯誤. 無法更新 Gamercard."
+
+msgid "New Themes"
+msgstr "新增主題"
+
+msgid "Nintendo DS"
+msgstr "任天堂 DS"
+
+msgid "Nintendo DS Connectivity"
+msgstr "任天堂 DS 無線通信功能"
+
+msgid "No"
+msgstr "否"
+
+#, c-format
+msgid "No domain part in URL '%s'"
+msgstr "沒有域名部分在 URL '%s'"
+
+msgid "No games found!"
+msgstr "沒有發現遊戲!"
+
+msgid "No partition selected!"
+msgstr "沒有選取的分割區!"
+
+msgid "No themes found."
+msgstr "沒有發現主題."
+
+msgid "No updates found."
+msgstr "沒有發現更新."
+
+msgid "None found on disc"
+msgstr "光碟上沒有發現"
+
+msgid "Not Found!"
+msgstr "找不到!"
+
+msgid "Number of Online Players"
+msgstr "線上玩家人數"
+
+msgid "Number of Players"
+msgstr "玩家人數"
+
+msgid "Nunchuk"
+msgstr "雙節棍控制器"
+
+msgid "OK"
+msgstr "完成"
+
+msgid "OK!"
+msgstr "確定!"
+
+msgid "Ocarina (cheats):"
+msgstr "Ocarina (金手指):"
+
+msgid "Ocarina Cheat Manager"
+msgstr "Ocarina 金手指管理器"
+
+msgid "Ocarina: Code Error"
+msgstr "Ocarina: 密碼錯誤"
+
+msgid "Ocarina: Codes found."
+msgstr "Ocarina: 找到密碼."
+
+msgid "Ocarina: No codes found"
+msgstr "Ocarina: 沒有找到密碼"
+
+msgid "Ocarina: Out Of Memory Error"
+msgstr "Ocarina: 記憶體不足錯誤"
+
+msgid "Ocarina: Searching codes..."
+msgstr "Ocarina: 正在搜尋密碼..."
+
+msgid "Ocarina: Too many codes"
+msgstr "Ocarina: 太多的密碼"
+
+msgid "Off"
+msgstr "關閉"
+
+msgid "On"
+msgstr "開啟"
+
+msgid "Online"
+msgstr "連線"
+
+msgid "Online Content"
+msgstr "線上內容"
+
+msgid "Online Play"
+msgstr "線上遊戲"
+
+msgid "Online Players"
+msgstr "連上玩家"
+
+msgid "Online Score List"
+msgstr "線上得分清單"
+
+msgid "Online Updates"
+msgstr "線上更新"
+
+msgid "Open Sort"
+msgstr "打開排序"
+
+msgid "Open Style"
+msgstr "打開風格"
+
+msgid "Opening DVD disc..."
+msgstr "正在開啟 DVD 光碟..."
+
+#, c-format
+msgid "Opening partition: %s"
+msgstr "正在開啟分割區: %s"
+
+msgid "Options"
+msgstr "功能選項"
+
+msgid "Options discarded for this game."
+msgstr "放棄這個遊戲設定."
+
+msgid "Options saved for this game."
+msgstr "儲存這個遊戲設定."
+
+msgid "Out of memory"
+msgstr "記憶體不足"
+
+msgid "Page:"
+msgstr "頁數:"
+
+msgid "Partition:"
+msgstr "分割區:"
+
+#, c-format
+msgid "Partition: %s not found!"
+msgstr "分割區: %s 找不到!"
+
+msgid "Party"
+msgstr "聚會"
+
+msgid "Paused Start"
+msgstr "已暫停開始"
+
+msgid "Platformer"
+msgstr "平台"
+
+msgid "Play Count"
+msgstr "遊戲次數"
+
+msgid "Players"
+msgstr "玩家"
+
+msgid "Please insert a game disc..."
+msgstr "請插入遊戲光碟..."
+
+#, c-format
+msgid "Press %s button for options."
+msgstr "請按 %s 按鈕進入設定."
+
+#, c-format
+msgid "Press %s button to %s."
+msgstr "請按 %s 鈕到 %s."
+
+#, c-format
+msgid "Press %s button to apply codes."
+msgstr "請按 %s 鈕套用密碼."
+
+#, c-format
+msgid "Press %s button to cancel."
+msgstr "請按 %s 鈕取消."
+
+#, c-format
+msgid "Press %s button to change device."
+msgstr "請按 %s 鈕變更裝置."
+
+#, c-format
+msgid "Press %s button to continue."
+msgstr "請按 %s 鈕繼續."
+
+#, c-format
+msgid "Press %s button to delete FS."
+msgstr "請按 %s 鈕刪除檔案系統."
+
+#, c-format
+msgid "Press %s button to dump BCA."
+msgstr "請按 %s 鈕轉儲 BCA."
+
+#, c-format
+msgid "Press %s button to exit."
+msgstr "請按 %s 鈕離開."
+
+#, c-format
+msgid "Press %s button to fix EXTEND/WBFS."
+msgstr "請按 %s 鈕修復延伸或 WBFS 分割區."
+
+#, c-format
+msgid "Press %s button to format WBFS."
+msgstr "請按 %s 鈕格式化 WBFS 格式."
+
+#, c-format
+msgid "Press %s button to go back."
+msgstr "請按 %s 鈕返回."
+
+#, c-format
+msgid "Press %s button to select a partition."
+msgstr "請按 %s 鈕選擇分割區."
+
+#, c-format
+msgid "Press %s button to select."
+msgstr "請按 %s 鈕選取."
+
+#, c-format
+msgid "Press %s button to skip codes."
+msgstr "請按 %s 鈕略過密碼."
+
+#, c-format
+msgid "Press %s button to sync FAT."
+msgstr "請按 %s 鈕同步 FAT 分割區."
+
+#, c-format
+msgid "Press %s for fullscreen preview"
+msgstr "請按 %s 全螢幕預覽"
+
+#, c-format
+msgid "Press %s for game options"
+msgstr "請按 %s 進入遊戲選項"
+
+#, c-format
+msgid "Press %s for global options"
+msgstr "請按 %s 進入全域選項"
+
+#, c-format
+msgid "Press %s to discard options"
+msgstr "請按 %s 放棄選項"
+
+#, c-format
+msgid "Press %s to download and update"
+msgstr "請按 %s 下載及更新"
+
+#, c-format
+msgid "Press %s to download this theme"
+msgstr "請按 %s 下載這個主題"
+
+#, c-format
+msgid "Press %s to download, %s to return"
+msgstr "請按 %s 下載, %s 返回"
+
+#, c-format
+msgid "Press %s to return"
+msgstr "請按 %s 返回"
+
+#, c-format
+msgid "Press %s to save global settings"
+msgstr "請按 %s 儲存全域設定"
+
+#, c-format
+msgid "Press %s to save options"
+msgstr "請按 %s 儲存選項"
+
+#, c-format
+msgid "Press %s to save selection"
+msgstr "請按 %s 儲存選取的"
+
+#, c-format
+msgid "Press %s to select filter type"
+msgstr "請按 %s 選擇過濾類型"
+
+#, c-format
+msgid "Press %s to select sorting method"
+msgstr "請按 %s 選擇排序方式"
+
+#, c-format
+msgid "Press %s to start game"
+msgstr "請按 %s 開始遊戲"
+
+#, c-format
+msgid "Press %s to update without meta.xml"
+msgstr "請按 %s 更新外部 meta.xml"
+
+#, c-format
+msgid "Press %s/%s to select device."
+msgstr "請按 %s/%s 選擇裝置."
+
+msgid "Press 2 to reload IOS"
+msgstr "請按 2 鈕重新載入 IOS"
+
+msgid "Press A to select device"
+msgstr "請按 A 鈕選擇裝置"
+
+msgid "Press B to exit to HBC"
+msgstr "請按 B 鈕離開到 HBC"
+
+msgid "Press HOME to reset"
+msgstr "請按 HOME 鈕重置"
+
+msgid "Press LEFT/RIGHT to select IOS"
+msgstr "請按 左/右 鈕選擇 IOS"
+
+msgid "Press any button to continue..."
+msgstr "請按任意按鈕繼續..."
+
+msgid "Press any button to exit..."
+msgstr "請按任意按鈕離開..."
+
+msgid "Press any button to restart..."
+msgstr "請按任意按鈕重新啟動..."
+
+msgid "Press any button..."
+msgstr "請按任意按鈕..."
+
+#, c-format
+msgid "Press button %s to download covers."
+msgstr "請按 %s 鈕下載封面."
+
+#, c-format
+msgid "Press button %s to eject DVD."
+msgstr "請按 %s 鈕退出 DVD 光碟."
+
+msgid "Profile:"
+msgstr "設定檔:"
+
+#, c-format
+msgid "Profile: %s"
+msgstr "設定檔: %s"
+
+msgid "Program Updates"
+msgstr "程式更新"
+
+msgid "Publisher"
+msgstr "發行者"
+
+msgid "Puzzle"
+msgstr "益智"
+
+msgid "Quit"
+msgstr "退出"
+
+msgid "RAW"
+msgstr "未經處理"
+
+msgid "RIGHT"
+msgstr "右"
+
+msgid "RPG"
+msgstr "角色扮演"
+
+msgid "Racing"
+msgstr "競速"
+
+#, c-format
+msgid "Rated %s"
+msgstr "分級 %s"
+
+msgid "Rating"
+msgstr "分級"
+
+msgid "Read"
+msgstr "讀取"
+
+msgid "Reading BCA..."
+msgstr "正在讀取 BCA..."
+
+msgid "Reboot"
+msgstr "重新啟動"
+
+msgid "Release Date"
+msgstr "發售日期"
+
+msgid "Release Notes: (short)"
+msgstr "發佈註釋: (簡略)"
+
+msgid "Remove Game"
+msgstr "移除遊戲"
+
+msgid "Removing game, please wait..."
+msgstr "正在移除遊戲, 請等候..."
+
+msgid "Restarting Wii..."
+msgstr "正在重新啟動 Wii..."
+
+#, c-format
+msgid "Returned! (ret = %d)"
+msgstr "已返回! (ret = %d)"
+
+msgid "Rhythm"
+msgstr "節奏"
+
+msgid "Rows:"
+msgstr "列數:"
+
+msgid "Running benchmark, please wait"
+msgstr "正在執行基準, 請等候"
+
+msgid "S. Chinese"
+msgstr "中文 (簡體)"
+
+msgid "SD/SDHC Card"
+msgstr "SD/SDHC 卡"
+
+msgid "SUCCESS!"
+msgstr "成功!"
+
+msgid "Save .gct"
+msgstr "儲存 .gct"
+
+msgid "Save Debug"
+msgstr "偵錯存檔"
+
+msgid "Save Settings"
+msgstr "儲存設定"
+
+msgid "Save debug.log"
+msgstr "儲存 debug.log"
+
+msgid "Saving Settings... "
+msgstr "正在儲存設定..."
+
+msgid "Saving cheats..."
+msgstr "正在儲存金手指..."
+
+msgid "Saving gamelist.txt ... "
+msgstr "正在儲存 gamelist.txt ... "
+
+msgid "Saving settings..."
+msgstr "正在儲存設定..."
+
+msgid "Saving:"
+msgstr "正在儲存:"
+
+#, c-format
+msgid "Saving: %s"
+msgstr "正在儲存: %s"
+
+msgid "Scroll:"
+msgstr "捲動:"
+
+msgid "Select Alternative .dol:"
+msgstr "選擇替代的 .dol:"
+
+msgid "Select WBFS device:"
+msgstr "選擇 WBFS 裝置:"
+
+msgid "Select a different partition"
+msgstr "選擇不同的分割區"
+
+msgid "Select a partition"
+msgstr "選擇分割區"
+
+msgid "Select all"
+msgstr "全選"
+
+msgid "Select the game you want to boot"
+msgstr "選擇你要啟動的遊戲"
+
+msgid "Selected Game"
+msgstr "選取的遊戲"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Shooter"
+msgstr "射擊"
+
+msgid "Show All"
+msgstr "顯示全部"
+
+msgid "Show cIOS info"
+msgstr "顯示 cIOS 資訊"
+
+msgid "Shutdown"
+msgstr "關機"
+
+msgid "Side:"
+msgstr "側邊:"
+
+msgid "Simulation"
+msgstr "模擬"
+
+msgid "Size(GB) Type  Mount Used"
+msgstr "大小(GB) 類型 掛載 已使用"
+
+#, c-format
+msgid "Size: %d bytes"
+msgstr "大小: %d 位元組"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Sort Games"
+msgstr "排序遊戲"
+
+msgid "Sort Order:"
+msgstr "排序方式:"
+
+msgid "Sort Type:"
+msgstr "排序類型:"
+
+#, c-format
+msgid "Sort: %s-%s"
+msgstr "排序: %s-%s"
+
+msgid "Spanish"
+msgstr "西班牙文"
+
+msgid "Sports"
+msgstr "運動"
+
+msgid "Start"
+msgstr "開始"
+
+msgid "Start Game"
+msgstr "開始遊戲"
+
+msgid "Start this game?"
+msgstr "開始這個遊戲?"
+
+msgid "Stopping DVD..."
+msgstr "停止 DVD..."
+
+msgid "Strategy"
+msgstr "戰略"
+
+msgid "Style"
+msgstr "風格"
+
+msgid "Style:"
+msgstr "風格:"
+
+msgid "Sync FAT free space info?"
+msgstr "同步 FAT 分割區剩餘空間資訊?"
+
+msgid "Synchronizing, please wait."
+msgstr "正在同步, 請等候."
+
+msgid "System"
+msgstr "系統"
+
+msgid "System Def."
+msgstr "系統預設."
+
+msgid "T. Chinese"
+msgstr "中文 (繁體)"
+
+msgid "Theme"
+msgstr "主題"
+
+msgid "Theme Info"
+msgstr "主題資訊"
+
+msgid ""
+"Theme may be too large.\n"
+"Reboot of Cfg suggested.\n"
+msgstr ""
+"主題可能太大.\n"
+"建議重新啟動 CFG.\n"
+
+msgid "Theme:"
+msgstr "主題:"
+
+#, c-format
+msgid "Theme: %s"
+msgstr "主題: %s"
+
+msgid "Themes provided by wii.spiffy360.com"
+msgstr "主題由 wii.spiffy360.com 提供"
+
+msgid "Themes to download"
+msgstr "主題下載"
+
+msgid "Themes with updates"
+msgstr "主題更新"
+
+msgid "Title"
+msgstr "標題"
+
+#, c-format
+msgid "Too many cheats! (%d)"
+msgstr "太多的金手指! (%d)"
+
+msgid "Too many code lines!"
+msgstr "太多行密碼!"
+
+#, c-format
+msgid "Too many fragments! %d"
+msgstr "太多的碎片! %d"
+
+#, c-format
+msgid "Trying (url#%d) ..."
+msgstr "嘗試 (url#%d) ..."
+
+msgid "UNUSED"
+msgstr "尚未使用"
+
+msgid "UP"
+msgstr "上"
+
+#, c-format
+msgid "URL '%s' doesn't start with 'http://'"
+msgstr "URL '%s' 無法開啟, 需要帶有 'http://'"
+
+#, c-format
+msgid "URL '%s' has no PATH part"
+msgstr "URL '%s' 路徑部分不完整"
+
+msgid "USB Gecko found. Debugging is enabled."
+msgstr "USB Gecko 發現. 啟用偵錯."
+
+msgid "USB Mass Storage Device"
+msgstr "USB 大型存放裝置"
+
+msgid "Unknown"
+msgstr "未知的"
+
+msgid "Unknown syntax!"
+msgstr "未知的語法!"
+
+msgid "Unplayed"
+msgstr "尚未玩過"
+
+msgid "Unplayed Games"
+msgstr "沒有玩過的遊戲"
+
+msgid "Update WiiTDB Game Database"
+msgstr "更新 WiiTDB 遊戲資料庫"
+
+msgid "Update themes"
+msgstr "更新主題"
+
+msgid "Update titles.txt"
+msgstr "更新 titles.txt"
+
+msgid "Updates"
+msgstr "更新"
+
+msgid "Updating database."
+msgstr "正在更新資料庫."
+
+#, c-format
+msgid "Used: %.1fGB Free: %.1fGB [%d]"
+msgstr "已使用: %.1fGB 剩餘: %.1fGB [%d]"
+
+msgid "Using Saved Alternative .dol:"
+msgstr "使用儲存替代 .dol:"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Video Patch:"
+msgstr "視訊補綴:"
+
+msgid "Video:"
+msgstr "視訊:"
+
+msgid "View"
+msgstr "檢視"
+
+msgid "Vitality Sensor"
+msgstr "活力偵測器"
+
+msgid "WARNING:"
+msgstr "警告:"
+
+#, c-format
+msgid "WBFS: %.1fGB free of %.1fGB"
+msgstr "WBFS: %.1fGB 剩餘 %.1fGB"
+
+msgid "Wheel"
+msgstr "方向盤"
+
+msgid "Wii Speak"
+msgstr "Wii 聊天裝置"
+
+msgid "WiiTDB Game Database"
+msgstr "WiiTDB 遊戲資料庫"
+
+msgid "Wiimote"
+msgstr "遙控器"
+
+msgid "Write Playlog:"
+msgstr "寫入遊戲記錄:"
+
+#, c-format
+msgid "Writing to %s"
+msgstr "正在寫入到 %s"
+
+#, c-format
+msgid "Writing: %s"
+msgstr "正在寫入: %s"
+
+#, c-format
+msgid "Wrong Size: %d (%d)"
+msgstr "錯誤的大小: %d (%d)"
+
+msgid "Yes"
+msgstr "是"
+
+msgid ""
+"You can also try unplugging\n"
+"and plugging back the device,\n"
+"or just wait some more"
+msgstr ""
+"您可以嘗試移除裝置後在插回\n"
+"或是等候一會"
+
+msgid "Zapper"
+msgstr "槍架"
+
+msgid "[ CHANGED ]"
+msgstr "[ 已變更 ]"
+
+msgid "[ FOUND ]"
+msgstr "[ 已找到 ]"
+
+msgid "[ SAVED ]"
+msgstr "[ 已儲存 ]"
+
+msgid "[HOME]"
+msgstr "[回到系統選單]"
+
+msgid "[No HQ]"
+msgstr "[No HQ]"
+
+msgid "[USED]"
+msgstr "[已使用]"
+
+msgid "[default]"
+msgstr "[預設值]"
+
+msgid "[saved]"
+msgstr "[已儲存]"
+
+#, c-format
+msgid "bad wbfs file: %s"
+msgstr "壞的 wbfs 檔案: %s"
+
+msgid "calculating space, please wait..."
+msgstr "正在計算空間, 請等候..."
+
+msgid "delete"
+msgstr "刪除"
+
+#, c-format
+msgid "dest: %p - %p"
+msgstr "接收: %p - %p"
+
+msgid "discard"
+msgstr "丟棄"
+
+#, c-format
+msgid "domain %s could not be resolved"
+msgstr "域名 %s 無法被解析"
+
+#, c-format
+msgid "error reading: %s (%d)"
+msgstr "讀取錯誤: %s (%d)"
+
+#, c-format
+msgid "for %d players"
+msgstr "最多 %d 人遊戲"
+
+msgid "for 1 player"
+msgstr "單人遊戲"
+
+msgid "format"
+msgstr "格式化"
+
+msgid "free"
+msgstr "剩餘"
+
+#, c-format
+msgid "linear read speed: %.2f mb/s"
+msgstr "線性讀取速度: %.2f mb/s"
+
+msgid "linear..."
+msgstr "線性..."
+
+#, c-format
+msgid "music file too big (%d) %s"
+msgstr "音樂檔案太大 (%d) %s"
+
+msgid "music.mp3 or music.mod not found!"
+msgstr "找不到 music.mp3 或 music.mod!"
+
+msgid "no file"
+msgstr "沒有檔案"
+
+msgid "none"
+msgstr "無"
+
+msgid "or format a WBFS partition."
+msgstr "或格式化 WBFS 分割區."
+
+msgid "page"
+msgstr "頁"
+
+msgid "parse error"
+msgstr "剖析錯誤"
+
+#, c-format
+msgid "random read speed: %.2f mb/s"
+msgstr "隨機讀取速度: %.2f mb/s"
+
+msgid "random..."
+msgstr "隨機..."
+
+msgid "reset"
+msgstr "重新設定"
+
+msgid "revert"
+msgstr "回復"
+
+msgid "save"
+msgstr "儲存"
+
+#, c-format
+msgid "split error: %s"
+msgstr "分割錯誤: %s"
+
+msgid "uDraw GameTablet"
+msgstr "uDraw GameTablet"
+
+msgid "unable to open wii disc"
+msgstr "無法開啟 Wii 光碟"
+
+#, c-format
+msgid "used: %p - %p"
+msgstr "已使用: %p - %p"
+
+#~ msgid "Loading previous game list..."
+#~ msgstr "正在載入之前的遊戲清單..."
