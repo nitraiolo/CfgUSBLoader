@@ -21,19 +21,20 @@ typedef struct RectCoords
 } RectCoords;
 
 
-#define CFG_IOS_245       0
-#define CFG_IOS_246       1
-#define CFG_IOS_247       2
-#define CFG_IOS_248       3
-#define CFG_IOS_249       4
-#define CFG_IOS_250       5
-#define CFG_IOS_251       6
-#define CFG_IOS_222_MLOAD 7
-#define CFG_IOS_223_MLOAD 8
-#define CFG_IOS_224_MLOAD 9
-#define CFG_IOS_222_YAL  10
-#define CFG_IOS_223_YAL  11
-#define CFG_IOS_AUTO     12
+#define CFG_IOS_245        0
+#define CFG_IOS_246        1
+#define CFG_IOS_247        2
+#define CFG_IOS_248        3
+#define CFG_IOS_249        4
+#define CFG_IOS_250        5
+#define CFG_IOS_251        6
+#define CFG_IOS_252        7
+#define CFG_IOS_222_MLOAD  8
+#define CFG_IOS_223_MLOAD  9
+#define CFG_IOS_224_MLOAD 10
+#define CFG_IOS_222_YAL   11
+#define CFG_IOS_223_YAL   12
+#define CFG_IOS_AUTO      13
 extern int CFG_IOS_MAX;
 extern int CURR_IOS_IDX;
 

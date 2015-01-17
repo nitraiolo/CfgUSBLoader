@@ -1129,6 +1129,7 @@ int get_ios_type()
 		case 249:
 		case 250:
 		case 251:
+		case 252:
 			return IOS_TYPE_WANIN;
 		case 222:
 		case 223:
@@ -1600,7 +1601,7 @@ retry:;
 			goto retry;
 		}
 		// patch title id, so hash matches
-		if (ios_slot >= 245 && ios_slot <= 251) {
+		if (ios_slot >= 245 && ios_slot <= 252) {
 			if (t->title_id != TITLE_ID(1, 249)) {
 				t->title_id = TITLE_ID(1, 249);
 				goto retry;
@@ -1724,7 +1725,7 @@ retry:;
 			goto retry;
 		}
 		// patch title id, so hash matches
-		if (ios_slot >= 245 && ios_slot <= 251) {
+		if (ios_slot >= 245 && ios_slot <= 252) {
 			if (t->title_id != TITLE_ID(1, 249)) {
 				t->title_id = TITLE_ID(1, 249);
 				goto retry;
@@ -1768,7 +1769,7 @@ void fill_base_array() {
 
 	ISFS_Initialize();
 	
-	for (i = 0; i < 10; i++) {
+	for (i = 0; i < 11; i++) {
 		cIOS_base[i] = 0;
 	}
 	
@@ -1779,9 +1780,10 @@ void fill_base_array() {
 	cIOS_base[4] = get_base_ios_from_tmd(249, NULL);// CFG_IOS_249
 	cIOS_base[5] = get_base_ios_from_tmd(250, NULL);// CFG_IOS_250
 	cIOS_base[6] = get_base_ios_from_tmd(251, NULL);// CFG_IOS_251
-	cIOS_base[7] = get_base_ios_from_tmd(222, NULL);// CFG_IOS_222
-	cIOS_base[8] = get_base_ios_from_tmd(223, NULL);// CFG_IOS_223
-	cIOS_base[9] = get_base_ios_from_tmd(224, NULL);// CFG_IOS_224
+	cIOS_base[7] = get_base_ios_from_tmd(252, NULL);// CFG_IOS_252
+	cIOS_base[8] = get_base_ios_from_tmd(222, NULL);// CFG_IOS_222
+	cIOS_base[9] = get_base_ios_from_tmd(223, NULL);// CFG_IOS_223
+	cIOS_base[10] = get_base_ios_from_tmd(224, NULL);// CFG_IOS_224
 }
 
 char* get_ios_info_from_tmd()
@@ -1794,7 +1796,7 @@ void get_all_ios_info_str(char *str, int size)
 	int i;
 	char *info;
 	int ret;
-	for (i=222; i<=251; i++) {
+	for (i=222; i<=252; i++) {
 		if (i > 224 && i < 245) continue;
 		snprintf(str, size, "IOS%d ", i);
 		str_seek_end(&str, &size);

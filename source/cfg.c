@@ -149,6 +149,7 @@ struct TextMap map_ios[] =
 	{ "249",        CFG_IOS_249 },
 	{ "250",        CFG_IOS_250 },
 	{ "251",        CFG_IOS_251 },
+	{ "252",        CFG_IOS_252 },
 	{ "222-mload",  CFG_IOS_222_MLOAD },
 	{ "223-mload",  CFG_IOS_223_MLOAD },
 	{ "224-mload",  CFG_IOS_224_MLOAD },
@@ -158,7 +159,7 @@ struct TextMap map_ios[] =
 	{ NULL, -1 }
 };
 
-u8 cIOS_base[10];
+u8 cIOS_base[11];
 
 struct TextMap map_gui_style[] =
 {
@@ -2095,15 +2096,17 @@ void set_recommended_cIOS_idx(u8 ios, bool onlyD2x) {
 		cfg_ios_set_idx(CFG_IOS_250);
 	} else if (ios == cIOS_base[6]) {
 		cfg_ios_set_idx(CFG_IOS_251);
-	} else if (ios == cIOS_base[7] && !onlyD2x) {
-		cfg_ios_set_idx(CFG_IOS_222_MLOAD);
+	} else if (ios == cIOS_base[7]) {
+		cfg_ios_set_idx(CFG_IOS_252);
 	} else if (ios == cIOS_base[8] && !onlyD2x) {
-		cfg_ios_set_idx(CFG_IOS_223_MLOAD);
+		cfg_ios_set_idx(CFG_IOS_222_MLOAD);
 	} else if (ios == cIOS_base[9] && !onlyD2x) {
+		cfg_ios_set_idx(CFG_IOS_223_MLOAD);
+	} else if (ios == cIOS_base[10] && !onlyD2x) {
 		cfg_ios_set_idx(CFG_IOS_224_MLOAD);
 	} else {
 		int i = 0;
-		for (i = 0; i < 10; i++) {
+		for (i = 0; i < 11; i++) {
 			if (cIOS_base[i] == 56) {
 				cfg_ios_set_idx(i);
 				return;
@@ -2140,6 +2143,9 @@ void cfg_ios_set_idx(int ios_idx)
 			break;
 		case CFG_IOS_251:
 			CFG.ios = 251;
+			break;
+		case CFG_IOS_252:
+			CFG.ios = 252;
 			break;
 		case CFG_IOS_222_MLOAD:
 			CFG.ios = 222;
@@ -2225,6 +2231,7 @@ int get_ios_idx_type(int ios_idx)
 		case CFG_IOS_249:
 		case CFG_IOS_250:
 		case CFG_IOS_251:
+		case CFG_IOS_252:
 			return IOS_TYPE_WANIN;
 		case CFG_IOS_222_MLOAD:
 		case CFG_IOS_223_MLOAD:
