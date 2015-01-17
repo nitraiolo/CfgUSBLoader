@@ -367,17 +367,17 @@ bool Download_Cheats_TXT(char *id)
 	//snprintf(D_S(url), "%s/%c/%.6s.txt", url_base, id[0], id);
 	snprintf(D_S(url), "%s/R/%.6s.txt", url_base, id);
 	dbg_printf("url: %s\n", url);
-	file = downloadfile(url);
+	file = downloadfile_noreferer(url);
 	if (file.data == NULL || file.size == 0) {
 	
 		snprintf(D_S(url), "%s/G/%.6s.txt", url_base, id);
 		dbg_printf("url: %s\n", url);
-		file = downloadfile(url);
+		file = downloadfile_noreferer(url);
 		if (file.data == NULL || file.size == 0) {
 			// 4 letters ID
 			snprintf(D_S(url), "%s/%c/%.4s.txt", url_base, id[0], id);
 			dbg_printf("url: %s\n", url);
-			file = downloadfile(url);
+			file = downloadfile_noreferer(url);
 			if (file.data == NULL || file.size == 0) {
 				printf_(gt("Error downloading."));
 				printf("\n");

@@ -266,13 +266,141 @@ struct block downloadfile_fname(const char *url, const char *fname)
 	
 	//Form a nice request header to send to the webserver
 	extern char CFG_VERSION[];
-//referer removed for compatability with geckocodes.org if it causes problems make it conditional
-//	char* headerformat = "GET %s HTTP/1.0\r\nHost: %s\r\nReferer: %s\r\nUser-Agent: CFG-Loader %s\r\n\r\n";
-//	char header[strlen(headerformat) + strlen(domain) + strlen(path) + strlen(domain) + strlen(CFG_VERSION) + 16];
-//	sprintf(header, headerformat, path, domain, domain, CFG_VERSION);
-	char* headerformat = "GET %s HTTP/1.0\r\nHost: %s\r\nUser-Agent: CFG-Loader %s\r\n\r\n";
-	char header[strlen(headerformat) + strlen(path) + strlen(domain) + strlen(CFG_VERSION) + 16];
-	sprintf(header, headerformat, path, domain, CFG_VERSION);
+	char* headerformat = "GET %s HTTP/1.0\r\nHost: %s\r\nReferer: %s\r\nUser-Agent: CFG-Loader %s\r\n\r\n";
+	char header[strlen(headerformat) + strlen(domain) + strlen(path) + strlen(domain) + strlen(CFG_VERSION) + 16];
+	sprintf(header, headerformat, path, domain, domain, CFG_VERSION);
+
+	//Do the request and get the response
+	send_message(connection, header);
+	struct block response = read_message(connection, fname);
+	net_close(connection);
+
+	// Check response status. Should be something like HTTP/1.1 200 OK
+	if (response.size > 10 && strncmp((char*)response.data, "HTTP/", 5)==0) {
+		char htstat[100];
+		int i;
+		for (i=0; i<100 && i<response.size; i++) {
+			if (response.data[i] == '\n' || response.data[i] == '\r') {
+				strncpy(htstat, (char*)response.data, i);
+				htstat[i] = 0;
+				//printf("HTTP response status: %s\n", htstat);
+				char *codep;
+				codep = strchr(htstat, ' ');
+				if (codep) {
+					int code;
+					if (sscanf(codep+1, "%d", &code) == 1) {
+						//printf("HTTP response code: %d\n", code);
+						//if (code != 200) {
+						if (code >= 400) {
+							printf("%s: %s", gt("ERROR"), htstat);
+							if (!http_progress) printf("\n");
+							SAFE_FREE(response.data);
+							return emptyblock;
+						}
+					}
+				}
+				break;
+			}
+		}
+	}
+
+	if (fname != NULL) {
+		return response;
+	}
+	// Search for the 4-character sequence \r\n\r\n in the response
+	// which signals the start of the http payload (file)
+	unsigned char *filestart = NULL;
+	u32 filesize = 0;
+	int i;
+	if (response.size > 3)			//need at least the 4 chars we are trying to match
+		for(i = 0; i < response.size-3; i++)
+		{
+			if (memcmp(response.data+i, "\r\n\r\n", 4) == 0) {
+				filestart = response.data + i + 4;
+				filesize = response.size - i - 4;
+				break;
+			}
+		}
+	
+	if(filestart == NULL)
+	{
+		printf(gt("HTTP Response was without a file"));
+		printf("\n");
+		SAFE_FREE(response.data);
+		return emptyblock;
+	}
+	
+	// move file part of the response into the start of the block
+	memmove(response.data, filestart, filesize);
+	// free extra memory
+	response.data = mem_realloc(response.data, filesize);
+	response.size = filesize;
+	
+	return response;
+}
+
+struct block downloadfile_noreferer(const char *url) {
+	return downloadfile_noreferer_fname(url, NULL);
+}
+
+struct block downloadfile_noreferer_fname(const char *url, const char *fname)
+{
+	//Check if the url starts with "http://", if not it is not considered a valid url
+	if(strncmp(url, "http://", strlen("http://")) != 0)
+	{
+		printf(gt("URL '%s' doesn't start with 'http://'"), url);
+		printf("\n");
+		return emptyblock;
+	}
+	
+	//Locate the path part of the url by searching for '/' past "http://"
+	char *path = strchr(url + strlen("http://"), '/');
+	
+	//At the very least the url has to end with '/', ending with just a domain is invalid
+	if(path == NULL)
+	{
+		printf(gt("URL '%s' has no PATH part"), url);
+		printf("\n");
+		return emptyblock;
+	}
+	
+	//Extract the domain part out of the url
+	int domainlength = path - url - strlen("http://");
+	
+	if(domainlength == 0)
+	{
+		printf(gt("No domain part in URL '%s'"), url);
+		printf("\n");
+		return emptyblock;
+	}
+	
+	char domain[domainlength + 1];
+	strncpy(domain, url + strlen("http://"), domainlength);
+	domain[domainlength] = '\0';
+	
+	//Parsing of the URL is done, start making an actual connection
+	u32 ipaddress = getipbynamecached(domain);
+	
+	if(ipaddress == 0)
+	{
+		printf("\n");
+		printf(gt("domain %s could not be resolved"), domain);
+		return emptyblock;
+	}
+
+
+	s32 connection = server_connect(ipaddress, 80);
+	
+	if(connection < 0) {
+		printf(gt("Error establishing connection"));
+		return emptyblock;
+	}
+	
+	//Form a nice request header to send to the webserver
+	extern char CFG_VERSION[];
+	char* headerformat = "GET %s HTTP/1.0\r\nHost: %s\r\nUser-Agent: libcurl-agent/1.0\r\n\r\n";
+	char header[strlen(headerformat) + strlen(domain) + strlen(path) + 16];
+	sprintf(header, headerformat, path, domain);
 
 	//Do the request and get the response
 	send_message(connection, header);
