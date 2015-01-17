@@ -717,19 +717,20 @@ int ReloadIOS(int subsys, int verbose)
 		printf(".");
 	}
 
-	// mload ehc & dip
-	if (CFG.ios_mload) {
-		ret = load_ehc_module_ex(verbose);
-		if (ret < 0) {
-			//if (verbose) {
-				printf("\n");
-				printf_x(gt("ERROR: Loading EHC module! (%d)"), ret);
-				printf("\n");
-			//}
-			goto err;
+	// mload ehc & dip only for cIOS
+	if (CFG.ios >= 202) {
+		if (CFG.ios_mload) {
+			ret = load_ehc_module_ex(verbose);
+			if (ret < 0) {
+				//if (verbose) {
+					printf("\n");
+					printf_x(gt("ERROR: Loading EHC module! (%d)"), ret);
+					printf("\n");
+				//}
+				goto err;
+			}
 		}
 	}
-
 	if (is_ios_type(IOS_TYPE_WANIN) && IOS_GetRevision() >= 18) {
 		//load_dip_249();
 		mk_mload_version();
