@@ -309,6 +309,10 @@ $(OUTPUT).elf: $(OFILES)
 	@echo $(notdir $<)
 	@$(bin2o)
 
+%.bin.o : %.bin
+	@echo $(notdir $<)
+	@$(bin2o)
+
 #%.o: %.c
 #	@echo $(notdir $<)
 #	$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@

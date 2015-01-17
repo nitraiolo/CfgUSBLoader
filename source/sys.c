@@ -731,6 +731,7 @@ int ReloadIOS(int subsys, int verbose)
 			}
 		}
 	}
+
 	if (is_ios_type(IOS_TYPE_WANIN) && IOS_GetRevision() >= 18) {
 		//load_dip_249();
 		mk_mload_version();
@@ -853,10 +854,7 @@ void get_title_id()
 	if (old_title_id <= 2)
 	{
 		// HBC reload stub -> assuming boot from HBC
-		if (strncmp("STUBHAXX", (char *)0x80001804, 8) == 0)
-		{
-			old_title_id = 0xAF1BF516;
-		}	
+		old_title_id = HBC_LOWER_TID;	
 	}
 	dbg_printf("channel id: %08X\n", old_title_id);
 }
@@ -1536,7 +1534,7 @@ u8 get_base_ios_from_tmd(int ios_slot, u32 *version) {
 	t = (tmd*)SIGNATURE_PAYLOAD(TMD);
 
 	dbg_printf("\ntmd id: %llx %x-%x t: %x v: %d",
-			t->title_id, TITLE_HIGH(t->title_id), TITLE_LOW(t->title_id),
+			t->title_id, TITLE_UPPER(t->title_id), TITLE_LOWER(t->title_id),
 			t->title_type, t->title_version);
 	if (version) *version = t->title_version;
 
@@ -1579,7 +1577,7 @@ retry:;
 	for (mm = 0; mm < 2; mm++) {
 		for (i = 0; i < ios_info_number; i++)
 		{
-			if (ios_info[i].slot != TITLE_LOW(t->title_id)) continue;
+			if (ios_info[i].slot != TITLE_LOWER(t->title_id)) continue;
 			if (memcmp((void *)hash, &ios_info[i].hash, sizeof(sha1)) == 0)
 			{
 				retValue = atoi(ios_info[i].info);
@@ -1658,7 +1656,7 @@ char* get_iosx_info_from_tmd(int ios_slot, u32 *version)
 	t = (tmd*)SIGNATURE_PAYLOAD(TMD);
 
 	dbg_printf("\ntmd id: %llx %x-%x t: %x v: %d",
-			t->title_id, TITLE_HIGH(t->title_id), TITLE_LOW(t->title_id),
+			t->title_id, TITLE_UPPER(t->title_id), TITLE_LOWER(t->title_id),
 			t->title_type, t->title_version);
 	if (version) *version = t->title_version;
 
@@ -1703,7 +1701,7 @@ retry:;
 	for (mm = 0; mm < 2; mm++) {
 		for (i = 0; i < ios_info_number; i++)
 		{
-			if (ios_info[i].slot != TITLE_LOW(t->title_id)) continue;
+			if (ios_info[i].slot != TITLE_LOWER(t->title_id)) continue;
 			if (memcmp((void *)hash, &ios_info[i].hash, sizeof(sha1)) == 0)
 			{
 				info = ios_info[i].info;
@@ -1851,7 +1849,7 @@ char* get_ios_tmd_hash_str(char *str)
 	if (ret != 0) goto out;
 	t = (tmd*)SIGNATURE_PAYLOAD(TMD);
 	dbg_printf("\ntmd id: %llx %x-%x t: %x v: %d",
-			t->title_id, TITLE_HIGH(t->title_id), TITLE_LOW(t->title_id),
+			t->title_id, TITLE_UPPER(t->title_id), TITLE_LOWER(t->title_id),
 			t->title_type, t->title_version);
 	// safety check
 	if (t->title_id != TITLE_ID(1, IOS_GetVersion())) goto out;

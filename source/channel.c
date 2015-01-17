@@ -97,7 +97,7 @@ char *read_name_from_banner_app(u64 titleid)
 	
 	u8 imet[4] = {0x49, 0x4D, 0x45, 0x54};
 	
-	sprintf(path_buffer, "%s/title/%08x/%08x/content", CFG.nand_emu_path, TITLE_HIGH(titleid), TITLE_LOW(titleid));
+	sprintf(path_buffer, "%s/title/%08x/%08x/content", CFG.nand_emu_path, TITLE_UPPER(titleid), TITLE_LOWER(titleid));
 	
 	dbg_printf("opendir(%s)\n", path_buffer);
 	sdir = opendir(path_buffer);
@@ -109,7 +109,7 @@ char *read_name_from_banner_app(u64 titleid)
  			{
 				continue;
  			}
-			sprintf(path_buffer, "%s/title/%08x/%08x/content/%s", CFG.nand_emu_path, TITLE_HIGH(titleid), TITLE_LOW(titleid), entry->d_name);
+			sprintf(path_buffer, "%s/title/%08x/%08x/content/%s", CFG.nand_emu_path, TITLE_UPPER(titleid), TITLE_LOWER(titleid), entry->d_name);
 			
 			dbg_printf("fopen(%s)\n", path_buffer);
 			fp = fopen(path_buffer, "rb");
@@ -159,7 +159,7 @@ char *read_name_from_banner_bin(u64 titleid)
 	u32 filesize;
 	FILE *fp;
    
-	sprintf(path, "%s/title/%08x/%08x/data/banner.bin", CFG.nand_emu_path, TITLE_HIGH(titleid), TITLE_LOW(titleid));
+	sprintf(path, "%s/title/%08x/%08x/data/banner.bin", CFG.nand_emu_path, TITLE_UPPER(titleid), TITLE_LOWER(titleid));
  
 	fp = fopen(path, "rb");
     if (fp == NULL)
@@ -189,7 +189,7 @@ char *get_channel_name(u64 titleid, FILE *fp)
 {
 	char *temp = NULL;
 	u32 low;
-	low = TITLE_LOW(titleid);
+	low = TITLE_LOWER(titleid);
 
 	// TODO
 //	dbg_printf("Getting the name for: %08x...\n", titleid);

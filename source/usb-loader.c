@@ -22,6 +22,8 @@
 #include "console.h"
 #include "RuntimeIOSPatch.h"
 
+#include "rcstub.h"
+
 // libogc < 1.8.5 can hang if wiimote is initialized multiple times
 // (in case ios is reload 2x) so we delay wpad to later
 // libogc = 1.8.5 can crash if started with 2+ wiimotes
@@ -71,6 +73,8 @@ void print_ios()
 int main(int argc, char **argv)
 {
 	s32 ret;
+	signed_blob *buf = NULL;
+	u32 filesize;
 	
 	IOSPATCH_Apply();
 
@@ -247,6 +251,48 @@ int main(int argc, char **argv)
 		goto out;
 	}
 
+	/* identify HBC lower TID if installed */
+	// check HBC 1.1.2+ (LULZ) first
+	ret = GetTMD(TITLE_ID(DOWNLOADED_CHANNELS,HBC_112_CHANNEL), &buf, &filesize);
+	SAFE_FREE(buf);
+	if (ret == 0) {
+		HBC_LOWER_TID = HBC_112_CHANNEL;
+	} else {
+		// check old 1.0.7+
+		ret = GetTMD(TITLE_ID(DOWNLOADED_CHANNELS,HBC_107_CHANNEL), &buf, &filesize);
+		SAFE_FREE(buf);
+		if (ret == 0) {
+			HBC_LOWER_TID = HBC_107_CHANNEL;
+		} else {
+			// check older (JODI)
+			ret = GetTMD(TITLE_ID(DOWNLOADED_CHANNELS,HBC_NEW_CHANNEL), &buf, &filesize);
+			SAFE_FREE(buf);
+			if (ret == 0) {
+				HBC_LOWER_TID = HBC_NEW_CHANNEL;
+			} else {
+				// check oldest (HAXX)
+				ret = GetTMD(TITLE_ID(DOWNLOADED_CHANNELS,HBC_OLD_CHANNEL), &buf, &filesize);
+				SAFE_FREE(buf);
+				if (ret == 0) {
+					HBC_LOWER_TID = HBC_OLD_CHANNEL;
+				}
+			}
+		}
+	}
+	dbg_printf("HBC lower TID %08x\n", HBC_LOWER_TID);
+	
+	if (CFG.return_to > 2)
+	{
+		// Check if the title exists
+		ret = GetTMD(TITLE_ID(DOWNLOADED_CHANNELS,CFG.return_to), &buf, &filesize);
+		SAFE_FREE(buf);
+		if (ret == 0) {
+			stub_load ();
+			stub_set_splitted_tid(DOWNLOADED_CHANNELS,(char*)&(CFG.return_to));
+			dbg_printf("stub_return_to_channel %08x\n", CFG.return_to);
+		}
+	}
+	
 	/* Menu loop */
 	//dbg_printf("Menu_Loop\n"); //Wpad_WaitButtons();
 	Menu_Loop();
@@ -256,7 +302,9 @@ out:
 	/* Restart */
 	exit(0);
 	Restart_Wait();
-
+	
+	stub_unload ();
+	
 	return 0;
 }
 

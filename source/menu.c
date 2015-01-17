@@ -61,6 +61,7 @@
 #include "savegame.h"
 #include "channel.h"
 #include "RuntimeIOSPatch.h"
+#include "titles.h"
 
 void _unstub_start();
 
@@ -69,10 +70,6 @@ u32		dolchunksize[64];
 u32		dolchunkcount;
 
 extern void __exception_closeall();
-
-#define TITLE_UPPER(x)		((u32)((x) >> 32))
-#define TITLE_LOWER(x)		((u32)(x))
-#define TITLE_ID(x,y)		(((u64)(x) << 32) | (y))
 
 typedef void (*entrypoint) (void);
 
@@ -397,7 +394,7 @@ s32 get_channel_list(void *outbuf, u32 size)
 					
 					channel->magic = CHANNEL_MAGIC;
 					//strncpy(channel->path, path, strlen(path));
-					u32 title_low = TITLE_LOW(strtol(entry->d_name,NULL,16));
+					u32 title_low = TITLE_LOWER(strtol(entry->d_name,NULL,16));
 					memcpy(channel->id, &title_low, sizeof(u32));
 					char *name = get_channel_name(TITLE_ID(0x00010001, title_low),fp);
 					strncpy(channel->title, name, sizeof(channel->title));
@@ -1061,7 +1058,7 @@ void Menu_GameInfoStr2(struct discHdr *header, char *str, u64 comp_size, u64 rea
 	}
 	if (game_tmd.sys_version) {
 		s += strlen(s);
-		sprintf(s, " IOS%d\n\n", TITLE_LOW(game_tmd.sys_version));
+		sprintf(s, " IOS%d\n\n", TITLE_LOWER(game_tmd.sys_version));
 	} else {
 		s += strlen(s);
 		sprintf(s, "\n\n");
@@ -4644,7 +4641,7 @@ L_repaint:
 				}
 			}
 			if (game_tmd.sys_version) {
-				set_recommended_cIOS_idx(TITLE_LOW(game_tmd.sys_version), false);
+				set_recommended_cIOS_idx(TITLE_LOWER(game_tmd.sys_version), false);
 			}
 		}
 		//dbg_printf("set ios: %d idx: %d\n", CFG.ios, CFG.game.ios_idx);

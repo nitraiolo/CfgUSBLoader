@@ -35,6 +35,7 @@ char APPS_DIR[200] = "";
 char LAST_CFG_PATH[200];
 char direct_start_id_buf[] = "#GAMEID\0\0\0\0\0CFGUSB0000000000";
 char DIOS_MIOS_INFO[200] = "";
+u32  HBC_LOWER_TID = 0x00000000;
 
 /* configurable fields */
 

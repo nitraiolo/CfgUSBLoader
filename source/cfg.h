@@ -233,6 +233,7 @@ extern char APPS_DIR[];
 extern char CFG_VERSION[];
 extern char LAST_CFG_PATH[];
 extern char DIOS_MIOS_INFO[];
+extern u32  HBC_LOWER_TID;
 
 typedef char GAMEID_t[8];
 
