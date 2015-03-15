@@ -457,6 +457,8 @@ struct W_GameCfg
 	Widget *video_patch;
 	Widget *vidtv;
 	Widget *country_patch;
+	Widget *mem_card_emu;
+	Widget *mem_card_size;
 	Widget *ios_idx;
 	Widget *block_ios_reload;
 	Widget *fix_002;
@@ -744,7 +746,8 @@ void update_gameopt_state()
 		gameopt_inactive(cond, wgame.language, CFG_LANG_CONSOLE);
 		gameopt_inactive(cond, wgame.video, CFG_VIDEO_GAME);
 		gameopt_inactive(cond, wgame.vidtv, 0);
-		gameopt_inactive(cond, wgame.country_patch, 0);
+		gameopt_inactive(cond, wgame.mem_card_emu, 0);
+		gameopt_inactive(cond, wgame.mem_card_size, 0);
 		gameopt_inactive(cond, wgame.channel_boot, 0);
 		gameopt_inactive(cond, wgame.ocarina, 0);
 		gameopt_inactive(cond, wgame.wide_screen, 0);		
@@ -973,6 +976,10 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			int num_gc_boot = map_get_num(map_gc_boot);
 			char *names_gc_boot[num_gc_boot];
 			num_gc_boot = map_to_list(map_gc_boot, num_gc_boot, names_gc_boot);
+			
+			int num_mem_card_size = map_get_num(map_mem_card_size);
+			char *names_mem_card_size[num_mem_card_size];
+			num_mem_card_size = map_to_list(map_mem_card_size, num_mem_card_size, names_mem_card_size);
 
 			ww = wgui_add_game_opt(op, gt("Language:"), CFG_LANG_NUM, languages);
 			BIND_OPT(language);
@@ -984,23 +991,27 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			ww = wgui_add_game_opt(op, gt("Video Patch:"), 3, str_block);
 			BIND_OPT(block_ios_reload);
 			
-			ww = wgui_add_game_opt(op, gt("NMM:"), 2, NULL);
-			BIND_OPT(country_patch);
-			     
+			char *str_nmm[3] = { gt("Off"), gt("On"), gt("Shared") };
+			ww = wgui_add_game_opt(op, gt("NMM:"), 3, str_nmm);
+			BIND_OPT(mem_card_emu);
+			
+			ww = wgui_add_game_opt(op, gt("MC size:"), num_mem_card_size, names_mem_card_size);
+			BIND_OPT(mem_card_size);
+			
      		ww = wgui_add_game_opt(op, gt("Wide Screen:"), 2, NULL);
 			BIND_OPT(wide_screen);
 
 			ww = wgui_add_game_opt(op, gt("Ocarina (cheats):"), 2, NULL);
 			BIND_OPT(ocarina);
-					
-			ww = wgui_add_game_opt(op, gt("Boot Method:"), num_gc_boot, names_gc_boot);
-			BIND_OPT(channel_boot);
 
 			/////////////////
-					
+			
 			op = wgui_add_page(pp, w_opt_page, pos_wh(SIZE_FULL, -bh), "opt");
 			op->render = NULL;
 			
+			ww = wgui_add_game_opt(op, gt("Boot Method:"), num_gc_boot, names_gc_boot);
+			BIND_OPT(channel_boot);
+
 			ww = wgui_add_game_opt(op, gt("PAD HOOK"), 2, NULL);
 			BIND_OPT(hooktype);
 			
@@ -1018,6 +1029,11 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			
 			ww = wgui_add_game_opt(op, gt("Screenshot:"), 2, NULL);
 			BIND_OPT(screenshot);
+
+			/////////////////
+			
+			op = wgui_add_page(pp, w_opt_page, pos_wh(SIZE_FULL, -bh), "opt");
+			op->render = NULL;
 			
 			ww = wgui_add_game_opt(op, gt("Alt Button Cfg:"), 2, NULL);
 			BIND_OPT(alt_controller_cfg);

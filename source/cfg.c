@@ -290,6 +290,17 @@ struct TextMap map_gc_boot[] =
 	{ NULL, -1 }
 };
 
+struct TextMap map_mem_card_size[] =
+{
+	{ "  59 blocks", 0 }, // 512KB
+	{ " 123 blocks", 1 }, //  1MB
+	{ " 251 blocks", 2 }, //  2MB
+	{ " 507 blocks", 3 }, //  4MB
+	{ "1019 blocks", 4 }, //  8MB
+	{ "2043 blocks", 5 }, // 16MB
+	{ NULL, -1 }
+};
+
 struct playStat {
 	char id[7];
 	s32 playCount;
@@ -2272,6 +2283,8 @@ void cfg_set_game(char *name, char *val, struct Game_CFG *game_cfg)
 
 	cfg_bool("vidtv", &game_cfg->vidtv);
 	cfg_bool("country_patch", &game_cfg->country_patch);
+	cfg_int_max("mem_card_emu", &game_cfg->mem_card_emu, 2);
+	cfg_int_max("mem_card_size", &game_cfg->mem_card_size, 5);
 	cfg_bool("clear_patches", &game_cfg->clean);
 	cfg_map("clear_patches", "all", &game_cfg->clean, CFG_CLEAN_ALL);
 	cfg_bool("fix_002", &game_cfg->fix_002);
@@ -3003,6 +3016,12 @@ bool CFG_Save_Settings(int verbose)
 		SAVE_BOOL(ntsc_j_patch);
 		SAVE_BOOL(nodisc);
 		SAVE_BOOL(screenshot);
+		if (game_cfg-> mem_card_emu == 2) {
+			SAVE_NUM(mem_card_emu);
+		} else {
+			SAVE_BOOL(mem_card_emu);
+		}
+		SAVE_NUM(mem_card_size);
 		SAVE_BOOL(country_patch);
 		SAVE_BOOL(fix_002);
 		s = ios_str(game_cfg->ios_idx);

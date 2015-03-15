@@ -248,6 +248,8 @@ struct Game_CFG
 	int nodisc;
 	int screenshot;
 	int country_patch;
+	int mem_card_emu;
+	int mem_card_size;
 	int fix_002;
 	int ios_idx;
 	int block_ios_reload;
@@ -363,6 +365,7 @@ struct CFG
 	int device;
 	char partition[16];
 	int hide_header;
+	int vwii_mode;
 	// simple variants:
 	int confirm_start;
 	int hide_hddinfo;
@@ -724,6 +727,7 @@ extern struct TextMap map_ios[];
 extern struct TextMap map_nand_emu[];
 extern struct TextMap map_channel_boot[];
 extern struct TextMap map_gc_boot[];
+extern struct TextMap map_mem_card_size[];
 extern char *names_vpatch[CFG_VIDEO_PATCH_NUM];
 extern u8	  cIOS_base[];
 

@@ -60,11 +60,12 @@ const u8 es_set_ahbprot_patch[]   = { 0x01 };
 
 u32 IOSPATCH_Apply() {
     u32 count = 0;
-	s32 ret = 0;
+	//s32 ret = 0;
 	
 	if (HAVE_AHBPROT) {
 		disable_memory_protection();
-		ret = apply_patch("es_set_ahbprot", es_set_ahbprot_pattern, sizeof(es_set_ahbprot_pattern), es_set_ahbprot_patch, sizeof(es_set_ahbprot_patch), 25);
+		//ret = apply_patch("es_set_ahbprot", es_set_ahbprot_pattern, sizeof(es_set_ahbprot_pattern), es_set_ahbprot_patch, sizeof(es_set_ahbprot_patch), 25);
+		apply_patch("es_set_ahbprot", es_set_ahbprot_pattern, sizeof(es_set_ahbprot_pattern), es_set_ahbprot_patch, sizeof(es_set_ahbprot_patch), 25);
 	}
 	//if (ret) {
 	//	IOS_ReloadIOS(IOS_GetVersion());

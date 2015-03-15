@@ -24,6 +24,8 @@
 
 #include "rcstub.h"
 
+#define HW_PROCESSOR	((vu32*)0xCD8005A0)
+
 // libogc < 1.8.5 can hang if wiimote is initialized multiple times
 // (in case ios is reload 2x) so we delay wpad to later
 // libogc = 1.8.5 can crash if started with 2+ wiimotes
@@ -89,6 +91,16 @@ int main(int argc, char **argv)
 	mem_init();
 	Sys_Init();
 
+	/* Identify if we are on WII or WIIU in crediar way, Thanks! */
+	if((*HW_PROCESSOR >> 16) == 0xCAFE)
+	{
+		dbg_printf("vWii Mode\n");
+		CFG.vwii_mode = true;
+	} else {
+		dbg_printf("Legacy Wii Mode\n");
+		CFG.vwii_mode = false;
+	}
+	
 	cfg_parsearg_early(argc, argv);
 	InitDebug();
 	// reset in 60 seconds in case an exception (CODE DUMP) occurs

@@ -1242,6 +1242,9 @@ msgstr "Emu NAND:"
 msgid "NMM:"
 msgstr "NMM:"
 
+msgid "MC size:"
+msgstr "Dimensione MC:"
+
 msgid ""
 "NOTE: CIOS249 before rev10:\n"
 "Loading games from SDHC not supported!"
@@ -1416,6 +1419,9 @@ msgstr "Corse Fuoristrada"
 
 msgid "On"
 msgstr "Attivato"
+
+msgid "Shared"
+msgstr "Condiviso"
 
 msgid "Online"
 msgstr "Online"

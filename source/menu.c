@@ -189,9 +189,19 @@ char *str_channel_boot[2] =
 char *str_gc_boot[4] =
 {
 	gts("Default"),
-	gts("DIOS MIOS")
-	gts("Devolution")
+	gts("DIOS MIOS"),
+	gts("Devolution"),
 	gts("Nintendont")
+};
+
+char *str_mem_card_size[6] =
+{
+	gts("  59 blocks"),
+	gts(" 123 blocks"),
+	gts(" 251 blocks"),
+	gts(" 507 blocks"),
+	gts("1019 blocks"),
+	gts("2043 blocks")
 };
 
 int Menu_Global_Options();
@@ -1818,7 +1828,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 	int opt_saved;
 	//int opt_ios_reload;
 	int opt_language, opt_video, opt_video_patch, opt_vidtv, opt_padhook, opt_nand_emu;
-	int opt_country_patch, opt_anti_002, opt_ocarina, opt_wide_screen, opt_nodisc, opt_ntsc_j_patch, opt_screenshot; 
+	int opt_mem_card_emu, opt_mem_card_size, opt_country_patch, opt_anti_002, opt_ocarina, opt_wide_screen, opt_nodisc, opt_ntsc_j_patch, opt_screenshot; 
 	f32 size = 0.0;
 	int redraw_cover = 0;
 	int i;
@@ -1865,7 +1875,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 
 	struct Menu menu;
 	int NUM_OPT = 19;
-	if (header->magic == GC_GAME_ON_DRIVE) NUM_OPT = 16;
+	if (header->magic == GC_GAME_ON_DRIVE) NUM_OPT = 17;
 	if (header->magic == CHANNEL_MAGIC) NUM_OPT = 19;
 	char active[NUM_OPT];
 	menu_init(&menu, NUM_OPT);
@@ -1898,6 +1908,8 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 		opt_video_patch = game_cfg->video_patch;
 		opt_vidtv = game_cfg->vidtv;
 		opt_country_patch = game_cfg->country_patch;
+		opt_mem_card_emu = game_cfg->mem_card_emu;
+		opt_mem_card_size = game_cfg->mem_card_size;
 		opt_anti_002 = game_cfg->fix_002;
 		opt_wide_screen = game_cfg->wide_screen;
 		opt_nodisc = game_cfg->nodisc;
@@ -1913,6 +1925,8 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 			opt_video_patch = CFG_VIDEO_PATCH_OFF;
 			opt_vidtv = 0;
 			opt_country_patch = 0;
+			opt_mem_card_emu = 0;
+			opt_mem_card_size = 2;
 			opt_anti_002 = 0;
 			opt_ocarina = 0;
 			opt_ntsc_j_patch = 0;
@@ -2014,8 +2028,15 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 			}
 			if (menu_window_mark(&menu))
 				PRINT_OPT_B(gt("LED:"), opt_vidtv);
+			if (menu_window_mark(&menu)) {
+				if (opt_mem_card_emu == 2) {
+					PRINT_OPT_S(gt("NMM:"), gt("Shared"));
+				} else {	
+					PRINT_OPT_B(gt("NMM:"), opt_mem_card_emu);	
+				}
+			}
 			if (menu_window_mark(&menu))
-				PRINT_OPT_B(gt("NMM:"), opt_country_patch);
+				PRINT_OPT_S(gt("MC size::"), gt(str_mem_card_size[opt_mem_card_size]));
 			if (menu_window_mark(&menu))
 				PRINT_OPT_B(gt("Ocarina (cheats):"), opt_ocarina);
 			if (menu_window_mark(&menu))
@@ -2197,40 +2218,43 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				CHANGE(game_cfg->vidtv, 1);
 				break;
 			case 5:
-				CHANGE(game_cfg->country_patch, 1);
+				CHANGE(game_cfg->mem_card_emu, 2);
 				break;
 			case 6:
-				CHANGE(game_cfg->ocarina, 1);
+				CHANGE(game_cfg->mem_card_size, 5);
 				break;
 			case 7:
-				Menu_Cheats(header);
+				CHANGE(game_cfg->ocarina, 1);
 				break;
 			case 8:
+				Menu_Cheats(header);
+				break;
+			case 9:
 				printf("\n\n");
 				Download_Cover((char*)header->id, change > 0, true);
 				Cache_Invalidate();
 				Gui_DrawCover(header->id);
 				Menu_PrintWait();
 				break;
-			case 9: // Wide Screen
+			case 10: // Wide Screen
 				CHANGE(game_cfg->wide_screen, 1);
 				break;
-			case 10: // NoDisc+
+			case 11: // NoDisc+
 				CHANGE(game_cfg->ntsc_j_patch, 1);
 				break;
-			case 11: // NoDisc+
+			case 12: // NoDisc+
 				CHANGE(game_cfg->nodisc, 1);
 				break;
-			case 12: // PAD HOOK)
+			case 13: // PAD HOOK)
 				CHANGE(game_cfg->hooktype, 1);
 				break;	
-			case 13: // gc Boot Method
+			case 14: // gc Boot Method
 				CHANGE(game_cfg->channel_boot, 3);
 				break;
-			case 14: // Screenshot
+			case 15: // Screenshot
 				CHANGE(game_cfg->screenshot, 1);
 				break;
-			case 15: // Alt Button Cfg
+			case 16: // Alt Button Cfg
 				CHANGE(game_cfg->alt_controller_cfg, 1);
 				break;
 			}
@@ -4863,7 +4887,7 @@ L_repaint:
 			
 			snprintf(devoPath, sizeof(devoPath), "%s/game.iso", header->path);	
 			
-			DEVO_SetOptions(devoPath, CFG.game.country_patch);
+			DEVO_SetOptions(devoPath, CFG.game.mem_card_emu);
 			
 			snprintf(D_S(loaderPath), "%s/loader.bin", USBLOADER_PATH);
 			sleep(1);
@@ -4914,10 +4938,10 @@ L_repaint:
 			if (CFG.dml == CFG_DML_R51) {
 				DML_Old_SetOptions(header->path, cheatPath, newCheatPath, CFG.game.ocarina);
 			} else {
-				DML_New_SetOptions(header->path, cheatPath, newCheatPath, CFG.game.ocarina, false, CFG.game.country_patch, CFG.game.nodisc, CFG.game.vidtv, CFG.game.video, CFG.game.wide_screen, CFG.game.hooktype, CFG.game.block_ios_reload, CFG.game.screenshot);
+				DML_New_SetOptions(header->path, cheatPath, newCheatPath, CFG.game.ocarina, false, CFG.game.mem_card_emu, CFG.game.nodisc, CFG.game.vidtv, CFG.game.video, CFG.game.wide_screen, CFG.game.hooktype, CFG.game.block_ios_reload, CFG.game.screenshot);
 			}
 		} else if (CFG.dml >= CFG_DML_1_2) {
-			DML_New_SetBootDiscOption(cheatPath, newCheatPath, CFG.game.ocarina, CFG.game.country_patch, CFG.game.vidtv, CFG.game.video);
+			DML_New_SetBootDiscOption(cheatPath, newCheatPath, CFG.game.ocarina, CFG.game.mem_card_emu, CFG.game.vidtv, CFG.game.video);
 		}
 
 		if (CFG.game.ntsc_j_patch)

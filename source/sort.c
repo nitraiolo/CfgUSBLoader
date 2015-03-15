@@ -639,7 +639,7 @@ int filter_search(struct discHdr *list, int cnt, char *search_field, bool notuse
 	int kept_cnt = 0;
 	struct gameXMLinfo *g;
 	char temp_str[200];
-	int	search_int;
+	int	search_int = 0;
 	int rec_int;
 	bool keep_record;
 	
