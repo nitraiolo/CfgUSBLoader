@@ -2705,6 +2705,29 @@ int Menu_Global_Options()
 				else new_theme = CFG.profile_theme[CFG.current_profile];
 				CFG_switch_theme(new_theme);
 				Video_DrawBg();
+				if (CFG.save_filter) {
+					switch (CFG.profile_filter[CFG.current_profile]) {
+						case FILTER_GENRE:
+							filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_genre[CFG.current_profile]);
+							break;
+						case FILTER_FEATURES:
+							filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_feature[CFG.current_profile]);
+							break;
+						case FILTER_CONTROLLER:
+							filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_controller[CFG.current_profile]);
+							break;
+						case FILTER_GAME_TYPE:
+							filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_gametype[CFG.current_profile]);
+							break;
+						case FILTER_SEARCH:
+							strncpy(search_str, CFG.profile_search_string[CFG.current_profile], 100);
+							filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_search_field[CFG.current_profile]);
+							break;
+						default:
+							filter_games_set(CFG.profile_filter[CFG.current_profile], 0);
+							break;
+					}
+				}
 				redraw_cover = 1;
 				Cache_Invalidate();
 				break;
@@ -2867,6 +2890,29 @@ void DoAction(int action)
 			else new_theme = CFG.profile_theme[CFG.current_profile];
 			CFG_switch_theme(new_theme);
 			Video_DrawBg();
+			if (CFG.save_filter) {
+				switch (CFG.profile_filter[CFG.current_profile]) {
+					case FILTER_GENRE:
+						filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_genre[CFG.current_profile]);
+						break;
+					case FILTER_FEATURES:
+						filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_feature[CFG.current_profile]);
+						break;
+					case FILTER_CONTROLLER:
+						filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_controller[CFG.current_profile]);
+						break;
+					case FILTER_GAME_TYPE:
+						filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_gametype[CFG.current_profile]);
+						break;
+					case FILTER_SEARCH:
+						strncpy(search_str, CFG.profile_search_string[CFG.current_profile], 100);
+						filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_search_field[CFG.current_profile]);
+						break;
+					default:
+						filter_games_set(CFG.profile_filter[CFG.current_profile], 0);
+						break;
+				}
+			}
 			if (gameCnt) Gui_DrawCover(gameList[gameSelected].id);//redraw_cover = 1;
 			Cache_Invalidate();
 
@@ -5190,7 +5236,32 @@ void Menu_Loop(void)
 
 	// Init Favorites
 	Switch_Favorites(CFG.start_favorites || CFG.profile_start_favorites[CFG.current_profile]);
-
+	
+	// Init Saved Filters
+	if (CFG.save_filter) {
+		switch (CFG.profile_filter[CFG.current_profile]) {
+			case FILTER_GENRE:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_genre[CFG.current_profile]);
+				break;
+			case FILTER_FEATURES:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_feature[CFG.current_profile]);
+				break;
+			case FILTER_CONTROLLER:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_controller[CFG.current_profile]);
+				break;
+			case FILTER_GAME_TYPE:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_gametype[CFG.current_profile]);
+				break;
+			case FILTER_SEARCH:
+				strncpy(search_str, CFG.profile_search_string[CFG.current_profile], 100);
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_search_field[CFG.current_profile]);
+				break;
+			default:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], 0);
+				break;
+		}
+	}
+	
 	switch(CFG.select) {
 		case CFG_SELECT_PREVIOUS: 
 			{

@@ -366,6 +366,8 @@ struct CFG
 	char partition[16];
 	int hide_header;
 	int vwii_mode;
+	// save filter to settings.cfg per profile
+	int save_filter;
 	// simple variants:
 	int confirm_start;
 	int hide_hddinfo;
@@ -424,6 +426,14 @@ struct CFG
 	int profile_num_favorite[MAX_PROFILES];
 	GAMEID_t profile_favorite[MAX_PROFILES][MAX_FAVORITE_GAME];
 	int profile_theme[MAX_PROFILES];
+	// list filtering parameters
+	int profile_filter[MAX_PROFILES];
+	int profile_filter_genre[MAX_PROFILES];
+	int profile_filter_feature[MAX_PROFILES];
+	int profile_filter_controller[MAX_PROFILES];
+	int profile_filter_gametype[MAX_PROFILES];
+	int profile_search_field[MAX_PROFILES];
+	char profile_search_string[MAX_PROFILES][100];
 	int profile_start_favorites[MAX_PROFILES];
 	// sort order ignore list
 	char sort_ignore[200];

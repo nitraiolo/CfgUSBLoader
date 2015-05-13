@@ -28,6 +28,7 @@
 #include "menu.h"
 #include "wbfs.h"
 #include "wgui.h"
+#include "sort.h"
 
 char FAT_DRIVE[8] = SDHC_DRIVE;
 char USBLOADER_PATH[200] = "sd:/usb-loader";
@@ -299,6 +300,178 @@ struct TextMap map_mem_card_size[] =
 	{ "1019 blocks", 4 }, //  8MB
 	{ "2043 blocks", 5 }, // 16MB
 	{ NULL, -1 }
+};
+
+struct TextMap map_filter_type[] = 
+{
+	{ "all",       -1 },
+	{ "online",     0 },
+	{ "unplayed",   1 },
+	{ "genre",      2 },
+	{ "features",   3 },
+	{ "controller", 4 },
+	{ "gamecube",   5 },
+	{ "wii",        6 },
+	{ "channel",    7 },
+	{ "duplicate",  8 },
+	{ "game_type",  9 },
+	{ "search",    10 },
+	{ NULL,        -2 }
+};
+
+struct TextMap map_game_type[] = 
+{
+	{ "wii",           0 },
+	{ "gamecube",      1 },
+	{ "all_channels",  2 },
+	{ "wiiware",       3 },
+	{ "vc_nes",        4 },
+	{ "vc_snes",       5 },
+	{ "vc_n64",        6 },
+	{ "vc_sms",        7 },
+	{ "vc_md",         8 },
+	{ "vc_pce",        9 },
+	{ "vc_neogeo",    10 },
+	{ "vc_arcade",    11 },
+	{ "vc_c64",       12 },
+	{ "wii_channels", 13 },
+	{ "fwd_emu",      14 },
+	{ NULL,           -1 }
+};
+
+struct TextMap map_game_controller[] =
+{
+	{ "wiimote",            0 },
+	{ "nunchuk",            1 },
+	{ "motionplus",         2 },
+	{ "gamecube",           3 },
+	{ "nintendods",         4 },
+	{ "classiccontroller",  5 },
+	{ "wheel",              6 },
+	{ "zapper",             7 },
+	{ "balanceboard",       8 },
+	{ "microphone",         9 },
+	{ "guitar",            10 },
+	{ "drums",             11 },
+	{ "camera",            12 },
+	{ "dancepad",          13 },
+	{ "infinitybase",      14 },
+	{ "keyboard",          15 },
+	{ "portalofpower",     16 },
+	{ "skateboard",        17 },
+	{ "totalbodytracking", 18 },
+	{ "turntable",         19 },
+	{ "udraw",             20 },
+	{ "wiispeak",          21 },
+	{ "vitalitysensor",    22 },
+	{ NULL,                -1 }
+};
+
+struct TextMap map_game_feature[] =
+{
+	{ "online",      0 },
+	{ "download",    1 },
+	{ "score",       2 },
+	{ "nintendods",  3 },
+	{ NULL,         -1 }
+};
+
+struct TextMap map_game_genre[] =
+{
+	{ "action",                   0 },
+	{ "adventure",                1 },
+	{ "fighting",                 2 },
+	{ "music",                    3 },
+	{ "platformer",               4 },
+	{ "puzzle",                   5 },
+	{ "racing",                   6 },
+	{ "role-playing",             7 },
+	{ "shooter",                  8 },
+	{ "simulation",               9 },
+	{ "sports",                  10 },
+	{ "strategy",                11 },
+	{ "arcade",                  12 },
+	{ "baseball",                13 },
+	{ "basketball",              14 },
+	{ "bike_racing",             15 },
+	{ "billiards",               16 },
+	{ "board_game",              17 },
+	{ "bowling",                 18 },
+	{ "boxing",                  19 },
+	{ "business_simulation",     20 },
+	{ "cards",                   21 },
+	{ "chess",                   22 },
+	{ "coaching",                23 },
+	{ "compilation",             24 },
+	{ "construction_simulation", 25 },
+	{ "cooking",                 26 },
+	{ "cricket",                 27 },
+	{ "dance",                   28 },
+	{ "darts",                   29 },
+	{ "drawing",                 30 },
+	{ "educational",             31 },
+	{ "exercise",                32 },
+	{ "first-person_shooter",    33 },
+	{ "fishing",                 34 },
+	{ "fitness",                 35 },
+	{ "flight_simulation",       36 },
+	{ "football",                37 },
+	{ "futuristic_racing",       38 },
+	{ "golf",                    39 },
+	{ "health",                  40 },
+	{ "hidden_object",           41 },
+	{ "hockey",                  42 },
+	{ "hunting",                 43 },
+	{ "karaoke",                 44 },
+	{ "kart_racing",             45 },
+	{ "life_simulation",         46 },
+	{ "management_simulation",   47 },
+	{ "martial_arts",            48 },
+	{ "motorcycle_racing",       49 },
+	{ "off-road_racing",         50 },
+	{ "party",                   51 },
+	{ "petanque",                52 },
+	{ "pinball",                 53 },
+	{ "poker",                   54 },
+	{ "rail_shooter",            55 },
+	{ "rhythm",                  56 },
+	{ "rugby",                   57 },
+	{ "sim_racing",              58 },
+	{ "skateboarding",           59 },
+	{ "ski",                     60 },
+	{ "snowboarding",            61 },
+	{ "soccer",                  62 },
+	{ "stealth_action",          63 },
+	{ "surfing",                 64 },
+	{ "survival_horror",         65 },
+	{ "table_tennis",            66 },
+	{ "tennis",                  67 },
+	{ "third-person_shooter",    68 },
+	{ "train_simulation",        69 },
+	{ "trivia",                  70 },
+	{ "truck_racing",            71 },
+	{ "virtual_pet",             72 },
+	{ "volleyball",              73 },
+	{ "watercraft_racing",       74 },
+	{ "wrestling",               75 },
+	{ NULL,                      -1 }
+};
+
+struct TextMap map_search_field[] = 
+{
+	{ "title",             0 },
+	{ "synopsis",          1 },
+	{ "developer",         2 },
+	{ "publisher",         3 },
+	{ "id6",               4 },
+	{ "region",            5 },
+	{ "rating",            6 },
+	{ "players",           7 },
+	{ "online_players",    8 },
+	{ "play_count",        9 },
+	{ "synopsis_len",     10 },
+	{ "covers_available", 11 },
+	{ NULL,               -1 }
 };
 
 struct playStat {
@@ -1189,6 +1362,7 @@ void CFG_default_path()
 
 void CFG_Default()
 {
+	int i;
 	memset(&CFG, 0, sizeof(CFG));
 
 	// set coverflow defaults
@@ -1245,6 +1419,8 @@ void CFG_Default()
 	CFG.num_profiles = 1;
 	//CFG.current_profile = 0;
 	STRCOPY(CFG.profile_names[0], "default");
+	for (i = 0; i < MAX_PROFILES; i++)
+		CFG.profile_filter[i] = -1;
 	STRCOPY(CFG.titles_url, "http://www.gametdb.com/titles.txt?LANG={DBL}");
 	CFG.intro = 4;
 	CFG.fat_install_dir = 1;
@@ -2645,6 +2821,8 @@ void cfg_set(char *name, char *val)
 	cfg_map("select", "most", &CFG.select, CFG_SELECT_MOST);
 	cfg_map("select", "least", &CFG.select, CFG_SELECT_LEAST);
 	cfg_map("select", "random", &CFG.select, CFG_SELECT_RANDOM);
+	
+	cfg_bool("save_filter",  &CFG.save_filter);
 }
 
 
@@ -2838,6 +3016,14 @@ void settings_set(char *name, char *val)
 				}
 			}
 		}
+		cfg_map_auto("profile_filter", map_filter_type, &CFG.profile_filter[profile_tag_index]);
+		cfg_map_auto("profile_filter_genre", map_game_genre, &CFG.profile_filter_genre[profile_tag_index]);
+		cfg_map_auto("profile_filter_feature", map_game_feature, &CFG.profile_filter_feature[profile_tag_index]);
+		cfg_map_auto("profile_filter_controller", map_game_controller, &CFG.profile_filter_controller[profile_tag_index]);
+		cfg_map_auto("profile_filter_gametype", map_game_type, &CFG.profile_filter_gametype[profile_tag_index]);
+		cfg_map_auto("profile_search_field", map_search_field, &CFG.profile_search_field[profile_tag_index]);
+		if (strcmp(name, "profile_search_string") == 0)
+			strncpy(CFG.profile_search_string[profile_tag_index], val, 100);
 	}
 	if (profile_tag_index >= 0) {
 		cfg_id_list("favorite_game", CFG.favorite_game,
@@ -2968,6 +3154,29 @@ bool CFG_Save_Settings(int verbose)
 		//fprintf(f, "# Profile: [%d] %s\n", j+1, CFG.profile_names[j]);
 		if (CFG.profile_theme[j] != -1) {
 			fprintf(f, "profile_theme = %s\n", theme_list[CFG.profile_theme[j]]);
+		}
+		if (CFG.save_filter) {
+			if (CFG.profile_filter[j] >= 0) {
+				fprintf(f, "profile_filter = %s\n", map_get_name(map_filter_type, CFG.profile_filter[j]));
+				switch (CFG.profile_filter[j]) {
+					case FILTER_GENRE:
+						fprintf(f, "profile_filter_genre = %s\n", map_get_name(map_game_genre, CFG.profile_filter_genre[j]));
+						break;
+					case FILTER_FEATURES:
+						fprintf(f, "profile_filter_feature = %s\n", map_get_name(map_game_feature, CFG.profile_filter_feature[j]));
+						break;
+					case FILTER_CONTROLLER:
+						fprintf(f, "profile_filter_controller = %s\n", map_get_name(map_game_controller, CFG.profile_filter_controller[j]));
+						break;
+					case FILTER_GAME_TYPE:
+						fprintf(f, "profile_filter_gametype = %s\n", map_get_name(map_game_type, CFG.profile_filter_gametype[j]));
+						break;
+					case FILTER_SEARCH:
+						fprintf(f, "profile_search_field = %s\n", map_get_name(map_search_field, CFG.profile_search_field[j]));
+						fprintf(f, "profile_search_string = %s\n", CFG.profile_search_string[j]);
+						break;
+				}
+			}
 		}
 		fprintf(f, "# Favorite Games: %d\n", CFG.num_favorite_game);
 		for (i=0; i<CFG.num_favorite_game; i++) {

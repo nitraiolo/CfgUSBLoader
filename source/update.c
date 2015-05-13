@@ -995,7 +995,11 @@ out:
 
 void Online_Update()
 {
-	char *updates_url = "http://cfg-loader-mod.googlecode.com/svn/trunk/updates.txt";
+#if defined(BUILD_222) && (BUILD_222 == 1)
+	char *updates_url = "http://cfgusbloader.ntd.homelinux.org/svn/CfgUSBLoader/trunk/updates-222.txt";
+#else
+	char *updates_url = "http://cfgusbloader.ntd.homelinux.org/svn/CfgUSBLoader/trunk/updates.txt";
+#endif 
 	struct block file;
 	file.data = NULL;
 

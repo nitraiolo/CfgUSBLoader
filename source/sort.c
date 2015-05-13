@@ -121,6 +121,7 @@ char *gameTypes[gameTypeCnt][2] =
 	{ "vc-arcade",	gts("VC-Arcade") },
 	{ "vc-c64",		gts("VC-Commodore 64") },
 	{ "wiichannel",	gts("Wii Channel") },
+	{ "fwd-emu",	gts("FWD Emulators") },
 };
 
 char *genreTypes[genreCnt][2];
@@ -570,9 +571,37 @@ int filter_game_type(struct discHdr *list, int cnt, char *typeWanted, bool notus
 				break;
 			case GAME_TYPE_Wii_Channel:
 				isGameType = (list[i].magic == CHANNEL_MAGIC) && ((memcmp("H",list[i].id,1) == 0)
-							|| (memcmp("UCXF",list[i].id,4) == 0)		//cfg loader
-							|| (memcmp("MAUI",list[i].id,4) == 0)		//backup homebrew channel
-							|| (memcmp("NEOG",list[i].id,4) == 0));	//backup disk channel
+							|| (memcmp("UCXF",list[i].id,4) == 0)	// Cfg loader
+							|| (memcmp("MAUI",list[i].id,4) == 0)	// Backup homebrew channel
+							|| (memcmp("NEOG",list[i].id,4) == 0));	// Backup disk channel
+			case GAME_TYPE_FWD_Emu: /* Common emulators forward channels */
+				isGameType = (list[i].magic == CHANNEL_MAGIC) && ((memcmp("D26A",list[i].id,4) == 0)	// Atari 2600 Emulator - Wii2600
+							|| (memcmp("DCVA",list[i].id,4) == 0)	// ColecoVision Emulator - WiiColem
+							|| (memcmp("D78A",list[i].id,4) == 0)	// Atari 7800 Emulator - Wii7800
+							|| (memcmp("DC6A",list[i].id,4) == 0)	// Commodore 64 Emulator - Frodo
+							|| (memcmp("FCEU",list[i].id,4) == 0)	// Nintendo Emulator - FCE Ultra GX
+							|| (memcmp("DSMA",list[i].id,4) == 0)	// Sega Master System/Game Gear Emulator - SMS Plus GX
+							|| (memcmp("DENA",list[i].id,4) == 0)	// PC Engine Emulator - WiiEngine
+							|| (memcmp("DGPA",list[i].id,4) == 0)	// Sega Genesis/Mega Drive Emulator - Genesis Plus GX
+							|| (memcmp("DSNA",list[i].id,4) == 0)	// Super Nintendo Emulator - SNES9X GX
+							|| (memcmp("DHGA",list[i].id,4) == 0)	// TurboGrafx-16 Emulator - Hugo GX
+							|| (memcmp("DNCA",list[i].id,4) == 0)	// Neo Geo CD Emulator - NeoCD
+							|| (memcmp("D64A",list[i].id,4) == 0)	// Nintendo 64 Emulator - Wii64
+							|| (memcmp("DWSA",list[i].id,4) == 0)	// Playstation Emulator - WiiSX
+							|| (memcmp("DYBA",list[i].id,4) == 0)	// Sega Saturn Emulator - Yabause
+							|| (memcmp("DWHA",list[i].id,4) == 0)	// Atari Lynx Emulator - WiiHandySDL
+							|| (memcmp("VBGX",list[i].id,4) == 0)	// Gameboy / Gameboy Advance / Gameboy Colour - Visual Boy Advance GX
+							|| (memcmp("DDSA",list[i].id,4) == 0)	// Nintendo DS Emulator - DeSmuMEWii
+							|| (memcmp("DWBA",list[i].id,4) == 0)	// Nintendo Virtual Boy Emulator - WiiVB
+							|| (memcmp("DMAA",list[i].id,4) == 0)	// M.A.M.E. Emulator - SDLMameWii
+							|| (memcmp("DGXA",list[i].id,4) == 0)	// Neo Geo Emulator - GXGeo
+							|| (memcmp("DUAA",list[i].id,4) == 0)	// Amiga Emulator - UAE
+							|| (memcmp("DWTA",list[i].id,4) == 0)	// Amstrad CPC Emulator - Wiituka
+							|| (memcmp("DWAA",list[i].id,4) == 0)	// Apple II Emulator - WiiApple
+							|| (memcmp("DXLA",list[i].id,4) == 0)	// Atari 800/XL/XE/5200 Emulator - WiiXL
+							|| (memcmp("DDBA",list[i].id,4) == 0)	// DOSBox Emulator - DOSBoxWii
+							|| (memcmp("DBLA",list[i].id,4) == 0)	// MSX Emulator - BlueMSXWii
+							|| (memcmp("DSVA",list[i].id,4) == 0));	// ScummVM Emulator - ScummVM
 				break;
 			default:
 				isGameType = false;
@@ -1088,6 +1117,7 @@ void showAllGames(void)
 int filter_games_set(int type, int index)
 {
 	int ret = -1;
+	CFG.profile_filter[CFG.current_profile] = type;
 	switch (type) {
 		case FILTER_ALL:
 			showAllGames();
@@ -1103,12 +1133,15 @@ int filter_games_set(int type, int index)
 			index = -1;
 			break;
 		case FILTER_GENRE:
+			CFG.profile_filter_genre[CFG.current_profile] = index;
 			ret = filter_games(filter_genre, genreTypes[index][0], 0);
 			break;
 		case FILTER_FEATURES:
+			CFG.profile_filter_feature[CFG.current_profile] = index;
 			ret = filter_games(filter_features, featureTypes[index][0], 0);
 			break;
 		case FILTER_CONTROLLER:
+			CFG.profile_filter_controller[CFG.current_profile] = index;
 			ret = filter_games(filter_controller, accessoryTypes[index][0], 0);
 			break;
 		case FILTER_GAMECUBE:
@@ -1124,9 +1157,12 @@ int filter_games_set(int type, int index)
 			ret = filter_games(filter_duplicate_id3, "", 0);
 			break;
 		case FILTER_GAME_TYPE:
+			CFG.profile_filter_gametype[CFG.current_profile] = index;
 			ret = filter_games(filter_game_type, (char*)index, 0);
 			break;
 		case FILTER_SEARCH:
+			CFG.profile_search_field[CFG.current_profile]  = index;
+			strncpy(CFG.profile_search_string[CFG.current_profile], search_str, 100);
 			ret = filter_games(filter_search, (char*)index, 0);
 			break;
 	}

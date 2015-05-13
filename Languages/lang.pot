@@ -8,13 +8,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 11:11-0500\n"
+"POT-Creation-Date: 2015-05-07 20:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "  59 blocks"
+msgstr ""
+
+msgid " 123 blocks"
+msgstr ""
+
+msgid " 251 blocks"
+msgstr ""
+
+msgid " 507 blocks"
+msgstr ""
 
 #, c-format
 msgid "%.1fGB free of %.1fGB"
@@ -73,6 +85,9 @@ msgstr ""
 msgid "1.2+"
 msgstr ""
 
+msgid "1019 blocks"
+msgstr ""
+
 msgid "1st-Person Shooter"
 msgstr ""
 
@@ -83,6 +98,9 @@ msgid "2.1+"
 msgstr ""
 
 msgid "2.2+"
+msgstr ""
+
+msgid "2043 blocks"
 msgstr ""
 
 msgid "3D cover"
@@ -211,7 +229,13 @@ msgstr ""
 msgid "Boot Disc"
 msgstr ""
 
+msgid "Boot Method:"
+msgstr ""
+
 msgid "Boot disc"
+msgstr ""
+
+msgid "Boot method:"
 msgstr ""
 
 msgid "Booting game, please wait..."
@@ -385,6 +409,9 @@ msgstr ""
 msgid "DEVO"
 msgstr ""
 
+msgid "DIOS MIOS"
+msgstr ""
+
 msgid "DISC cover"
 msgstr ""
 
@@ -406,6 +433,12 @@ msgstr ""
 msgid "Debug"
 msgstr ""
 
+msgid "Default"
+msgstr ""
+
+msgid "Default Gamecube Loader:"
+msgstr ""
+
 msgid "Delete Game"
 msgstr ""
 
@@ -424,10 +457,10 @@ msgstr ""
 msgid "Device:"
 msgstr ""
 
-msgid "Devolution only accepts clean dumps!\n"
+msgid "Devolution"
 msgstr ""
 
-msgid "Devolution:"
+msgid "Devolution only accepts clean dumps!\n"
 msgstr ""
 
 msgid "Disc"
@@ -825,6 +858,9 @@ msgstr ""
 msgid "FULL cover"
 msgstr ""
 
+msgid "FWD Emulators"
+msgstr ""
+
 msgid "Fav"
 msgstr ""
 
@@ -887,9 +923,6 @@ msgid "Flight Sim"
 msgstr ""
 
 msgid "Football"
-msgstr ""
-
-msgid "Force Devolution:"
 msgstr ""
 
 msgid "Force NTSC"
@@ -1128,6 +1161,12 @@ msgstr ""
 msgid "Loading..%s\n"
 msgstr ""
 
+msgid "MC size:"
+msgstr ""
+
+msgid "MC size::"
+msgstr ""
+
 msgid "Main"
 msgstr ""
 
@@ -1287,6 +1326,9 @@ msgid "Nintendo DS"
 msgstr ""
 
 msgid "Nintendo DS Connectivity"
+msgstr ""
+
+msgid "Nintendont"
 msgstr ""
 
 msgid "No"
@@ -1806,6 +1848,9 @@ msgid "Selected Game"
 msgstr ""
 
 msgid "Settings"
+msgstr ""
+
+msgid "Shared"
 msgstr ""
 
 msgid "Shooter"

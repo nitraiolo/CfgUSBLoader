@@ -1,0 +1,66 @@
+metaxml=<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+metaxml=<app version="1">
+metaxml=	<name>Configurable USB Loader MOD patched</name>
+metaxml=	<version>{VERSION}</version>
+metaxml=	<release_date>{DATE}</release_date>
+metaxml=	<coder>oggzee,usptactical,gannon,Clipper,R2-D2199,FIX94,airline38,Howard,NiTRo THe DeMoN</coder>
+metaxml=	<short_description>Play from USB drive</short_description>
+metaxml=<long_description>
+metaxml=Play Wii Backups from USB harddrive
+metaxml=Waninkoko cIOS 249 is required!
+metaxml=Hermes cIOS 222/223 is supported.
+metaxml=USE AT YOUR OWN RISK!
+metaxml=</long_description>
+metaxml=<ahb_access/>
+metaxml=</app>
+
+release = 70r78.9
+size = 1902240
+date = 2015-05-13
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r9/cfg70r78.9-222.dol
+-Usability - added filter persistance per profile on config save
+-Usability - added "FWD Emulators" GameType for most common emulator forwarder channels (to use with emunand) 
+-Usability - re-enabled online update from http://cfgusbloader.ntd.homelinux.org releases
+-Internals - implemented separated online update for -222 builds
+
+release = 70r78.8
+size = 1897504
+date = 2015-03-14
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r8/cfg70r78.8-222.dol
+-Compilation - code cleanup to remove all compilation warnings
+-GC - updated nintendont config support to version 0x00000003
+-Internals - added Wii / vWii identification capability
+-GC - fixed wide screen support in vWii for nintendont
+-GC - added nintendont memory card sizing
+-GC - added nintnedont shared memory card support
+-Internals - added "mem_card_emu" and "mem_card_size" keys for games configs in "settings.cfg"
+-Build - added revision number to version as suffix ".<rev>" (70r78.8)
+
+release = 70r78.7
+size = 1894720
+date = 2015-01-17
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r7/cfg70r78-222_stub.dol
+-Usability - added stub binary for return to loader and functions to manage the return TID via "return_to_channel" configuration key
+-Compilation - added all prebuild libraries for old PPC versions
+
+release = 70r78.6
+size = 1890368
+date = 2015-01-17
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r6/cfg70r78-222_ppc27.dol
+-Build - ported to Devkit PPC v27
+
+Unreleased = 70r78.5
+date = 2015-01-17
+-GC - avoid mload reload on ios 58 before nintendont startup
+
+release = 70r78.4
+size = 1931072
+date = 2015-01-17
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r4/cfg70r78-222_ios252.dol
+-Games - added ios 252 support (to allow a dx2 installation schema like the one in the wiiflow pack)
+
+release = 70r78.3
+size = 1931008
+date = 2015-01-17
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r3/cfg70r78-222_cheatfix.dol
+-Cheat - porting of my download patch that disables referer only for geckocodes.org

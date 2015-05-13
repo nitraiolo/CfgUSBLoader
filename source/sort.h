@@ -21,7 +21,7 @@ struct Sorts
 #define accessoryCnt 23
 #define genreCnt 76
 #define sortCnt 10
-#define gameTypeCnt 14
+#define gameTypeCnt 15
 #define searchFieldCnt 12
 #define searchCompareTypeCnt 6
 
@@ -52,6 +52,7 @@ struct Sorts
 #define GAME_TYPE_VC_Arcade		11
 #define GAME_TYPE_VC_C64		12
 #define GAME_TYPE_Wii_Channel	13
+#define GAME_TYPE_FWD_Emu		14
 
 extern s32 filter_type;
 extern s32 filter_index;

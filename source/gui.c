@@ -2689,6 +2689,29 @@ void Gui_Action_Profile(int n)
 	reset_sort_default();
 	Switch_Favorites(CFG.profile_start_favorites[CFG.current_profile]);
 	action_Theme_2(CFG.profile_theme[CFG.current_profile]);
+	if (CFG.save_filter) {
+		switch (CFG.profile_filter[CFG.current_profile]) {
+			case FILTER_GENRE:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_genre[CFG.current_profile]);
+				break;
+			case FILTER_FEATURES:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_feature[CFG.current_profile]);
+				break;
+			case FILTER_CONTROLLER:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_controller[CFG.current_profile]);
+				break;
+			case FILTER_GAME_TYPE:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_filter_gametype[CFG.current_profile]);
+				break;
+			case FILTER_SEARCH:
+				strncpy(search_str, CFG.profile_search_string[CFG.current_profile], 100);
+				filter_games_set(CFG.profile_filter[CFG.current_profile], CFG.profile_search_field[CFG.current_profile]);
+				break;
+			default:
+				filter_games_set(CFG.profile_filter[CFG.current_profile], 0);
+				break;
+		}
+	}
 	Gui_Refresh_List();
 	sprintf(action_string, gt("Profile: %s"), CFG.profile_names[CFG.current_profile]);
 	action_alpha = 0xFF;
