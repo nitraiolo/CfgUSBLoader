@@ -2685,7 +2685,8 @@ void action_Console(Widget *ww)
 
 char about_title[] = "Configurable SD/USB Loader";
 char about_str2[] =
-"by oggzee,Dr.Clipper,FIX94,R2-D2199,airline38,Howard"
+"by oggzee,Dr.Clipper,FIX94,R2-D2199,airline38,Howard,"
+"NiTRo THe DeMoN"
 "\n\n"
 "CREDITS: "
 "Waninkoko Kwiirk Hermes WiiGator Spaceman Spiff WiiPower "

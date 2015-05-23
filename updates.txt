@@ -14,6 +14,12 @@ metaxml=</long_description>
 metaxml=<ahb_access/>
 metaxml=</app>
 
+release = 70r78.10
+size = 1902208
+date = 2015-05-23
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r10/cfg70r78.10.dol
+-GC - fixed wide screen support in vWii for nintendont (CFG.vwii_mode was set too early)
+
 release = 70r78.9
 size = 1902208
 date = 2015-05-13

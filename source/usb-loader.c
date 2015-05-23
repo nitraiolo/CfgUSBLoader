@@ -91,6 +91,8 @@ int main(int argc, char **argv)
 	mem_init();
 	Sys_Init();
 
+	cfg_parsearg_early(argc, argv);
+	
 	/* Identify if we are on WII or WIIU in crediar way, Thanks! */
 	if((*HW_PROCESSOR >> 16) == 0xCAFE)
 	{
@@ -101,7 +103,6 @@ int main(int argc, char **argv)
 		CFG.vwii_mode = false;
 	}
 	
-	cfg_parsearg_early(argc, argv);
 	InitDebug();
 	// reset in 60 seconds in case an exception (CODE DUMP) occurs
 	#if OGC_VER >= 180
