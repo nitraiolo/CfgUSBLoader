@@ -1,7 +1,7 @@
-crc16.o: c:/progging/cfgMod/lib/libext2fs/source/crc16.c \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_types.h \
- c:/progging/cfgMod/lib/libext2fs/source/crc16.h
+crc16.o: c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/crc16.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_types.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/crc16.h
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_types.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_types.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/crc16.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/crc16.h:

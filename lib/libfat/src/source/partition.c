@@ -181,8 +181,8 @@ PARTITION* _FAT_partition_constructor_buf (const DISC_INTERFACE* disc, uint32_t 
 		return NULL;
 	}
 
-	// Make sure it is a valid MBR or boot sector
-	if ( (sectorBuffer[BPB_bootSig_55] != 0x55) || (sectorBuffer[BPB_bootSig_AA] != 0xAA)) {
+	// Make sure it is a valid MBR or boot sector or UStealth
+	if ( (sectorBuffer[BPB_bootSig_55] != 0x55) || ((sectorBuffer[BPB_bootSig_AA] != 0xAA) && (sectorBuffer[BPB_bootSig_AA] != 0xAB))) {
 		return NULL;
 	}
 

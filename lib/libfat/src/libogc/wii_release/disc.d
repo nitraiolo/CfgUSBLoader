@@ -1,7 +1,8 @@
-disc.o: c:/progging/cfgMod/lib/libfat/src/libogc/../source/disc.c \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/disc.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/common.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../include/fat.h \
+disc.o: \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/disc.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/disc.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/common.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../include/fat.h \
  c:/devkitPro/libogc/include/ogc/disc_io.h \
  c:/devkitPro/libogc/include/gctypes.h \
  c:/devkitPro/libogc/include/gccore.h \
@@ -57,11 +58,11 @@ disc.o: c:/progging/cfgMod/lib/libfat/src/libogc/../source/disc.c \
  c:/devkitPro/libogc/include/ogc/usbstorage.h \
  c:/devkitPro/libogc/include/sdcard/gcsd.h
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/disc.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/disc.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/common.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/common.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../include/fat.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../include/fat.h:
 
 c:/devkitPro/libogc/include/ogc/disc_io.h:
 

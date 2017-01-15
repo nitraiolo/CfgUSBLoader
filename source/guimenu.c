@@ -160,7 +160,8 @@ void Switch_Console_To_WGui()
 
 void banner_end(bool mute);
 
-void action_Reboot(Widget *_ww)
+//void action_Reboot(Widget *_ww)
+void action_Exit(Widget *_ww)
 {
 	banner_end(true);
 	Switch_Gui_To_Console(true);
@@ -176,7 +177,8 @@ void action_HBC(Widget *_ww)
 	Sys_HBC();
 }
 
-void action_Exit(Widget *_ww)
+//void action_Exit(Widget *_ww)
+void action_Reboot(Widget *_ww)
 {
 	banner_end(true);
 	Switch_Gui_To_Console(true);
@@ -474,6 +476,8 @@ struct W_GameCfg
 	Widget *nand_emu;
 	Widget *channel_boot;
 	Widget *alt_controller_cfg;
+	Widget *rem_speed_limit;
+	Widget *private_server;
 } wgame;
 
 
@@ -1038,6 +1042,9 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			ww = wgui_add_game_opt(op, gt("Alt Button Cfg:"), 2, NULL);
 			BIND_OPT(alt_controller_cfg);
 			
+			ww = wgui_add_game_opt(op, gt("No Speed Limit:"), 2, NULL);
+			BIND_OPT(rem_speed_limit);
+			
 			pos_move_to(pp, PAD0, -bh);
 			pos_pad(pp, PAD0);
 			pos_columns(pp, 4, SIZE_FULL);
@@ -1149,6 +1156,10 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			char *names_ios[num_ios];
 			num_ios = map_to_list(map_ios, num_ios, names_ios);
 			
+			int num_private_server = map_get_num(map_private_server);
+			char *names_private_server[num_private_server];
+			num_private_server = map_to_list(map_private_server, num_private_server, names_private_server);
+			
 			ww = wgui_add_game_opt(op, gt("Language:"), CFG_LANG_NUM, languages);
 			BIND_OPT(language);
 
@@ -1204,6 +1215,9 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			
 			ww = wgui_add_game_opt(op, gt("NAND Emu:"), 3, str_nand_emu);
 			BIND_OPT(nand_emu);
+			
+			ww = wgui_add_game_opt(op, gt("Private server:"), num_private_server, names_private_server);
+			BIND_OPT(private_server);
 
 			pos_move_to(pp, PAD0, -bh);
 			pos_pad(pp, PAD0);

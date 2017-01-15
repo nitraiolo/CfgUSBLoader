@@ -51,7 +51,7 @@
 struct UpdateInfo
 {
 	char version[32];
-	char url[100];
+	char url[128];
 	int size;
 	char date[16]; // 2009-12-30
 	char desc[MAX_UP_DESC][40];
@@ -62,7 +62,7 @@ struct ThemeInfo
 {
 	int ID;
 	char name[32];
-	char url[100];
+	char url[128];
 	char thumbpath[200];
 	char creator[32];
 	int version;
@@ -1058,7 +1058,7 @@ void Download_Titles()
 	struct block file;
 	file.data = NULL;
 	char fname[100];
-	char url[100];
+	char url[128];
 	FILE *f;
 
 	DefaultColor();

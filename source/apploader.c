@@ -596,6 +596,47 @@ bool NewSuperMarioBrosPatch(void *Address, int Size)
 	return false;
 }
 
+/** Patch URLs for private Servers - Thanks to ToadKing/wiilauncher-nossl **/
+void NoSSLPatch(void *addr, u32 len)
+{
+	// Patch protocol https -> http
+	char *cur = (char *)addr;
+	const char *end = cur + len - 8;
+	do
+	{
+		if (memcmp(cur, "https://", 8) == 0 && cur[8] != 0)
+		{
+			int len = strlen(cur);
+			memmove(cur + 4, cur + 5, len - 5);
+			cur[len - 1] = 0;
+			cur += len;
+		}
+	} while (++cur < end);
+}
+
+void WFCPatch(void *addr, u32 len, const char* domain)
+{
+	if(strlen("nintendowifi.net") < strlen(domain))
+		return;
+
+	char *cur = (char *)addr;
+	const char *end = cur + len - 16;
+	
+	do
+	{
+		if (memcmp(cur, "nintendowifi.net", 16) == 0)
+		{
+			int len = strlen(cur);
+			u8 i;
+			memcpy(cur, domain, strlen(domain));
+			memmove(cur + strlen(domain), cur + 16, len - 16);
+			for(i = 16 - strlen(domain); i > 0 ; i--)
+				cur[len - i ] = 0;
+			cur += len;
+		}
+	} while (++cur < end);
+}
+
 // from sneek by crediar
 void sneek_video_patch(void *addr, u32 len)
 {
@@ -714,6 +755,19 @@ void maindolpatches(void *dst, int len)
 	// PoP patch
 	if (!CFG.disable_pop_patch) {
 		PrinceOfPersiaPatch();
+	}
+	// Nintendo Wi-Fi Connection (WFC) patch
+	if (CFG.game.private_server) {
+		NoSSLPatch(dst, len);
+		switch (CFG.game.private_server)
+		{
+			case 2:
+				WFCPatch(dst, len, "wiimmfi.de");
+				break;
+			case 3:
+				WFCPatch(dst, len, CFG.custom_private_server);
+				break;
+		}
 	}
 
 	DCFlushRange(dst, len);

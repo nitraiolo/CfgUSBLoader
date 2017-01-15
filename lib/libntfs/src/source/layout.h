@@ -90,7 +90,7 @@ typedef struct {
 	u32 checksum;			/* Boot sector checksum. */
 /*0x54*/u8  bootstrap[426];		/* Irrelevant (boot up code). */
 	u16 end_of_sector_marker;	/* End of bootsector magic. Always is
-					   0xaa55 in little endian. */
+					   0xaa55 or 0xab55 (UStealth) in little endian. */
 /* sizeof() = 512 (0x200) bytes */
 } __attribute__((__packed__)) NTFS_BOOT_SECTOR;
 

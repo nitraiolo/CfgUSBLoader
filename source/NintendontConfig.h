@@ -5,7 +5,7 @@
 //#include "NintendontVersion.h"
 //#include "Metadata.h"
 
-#define NIN_CFG_VERSION		0x00000003
+#define NIN_CFG_VERSION		0x00000006
 
 #define NIN_CFG_MAXPAD 4
 
@@ -20,7 +20,10 @@ typedef struct NIN_CFG
 	char	CheatPath[255];
 	unsigned int		MaxPads;
 	unsigned int		GameID;
-	unsigned int		MemCardBlocks;
+	unsigned char		MemCardBlocks;
+	signed char			VideoScale;
+	signed char			VideoOffset;
+	unsigned char		Unused;
 } NIN_CFG;
 
 enum ninconfigbitpos
@@ -33,7 +36,8 @@ enum ninconfigbitpos
 	NIN_CFG_BIT_FORCE_WIDE	= (5),
 	NIN_CFG_BIT_FORCE_PROG	= (6),
 	NIN_CFG_BIT_AUTO_BOOT	= (7),
-	NIN_CFG_BIT_HID			= (8),
+	NIN_CFG_BIT_HID			= (8),	// Old Versions
+	NIN_CFG_BIT_REMLIMIT	= (8),	// New Versions
 	NIN_CFG_BIT_OSREPORT	= (9),
 	NIN_CFG_BIT_USB			= (10),
 	NIN_CFG_BIT_LED			= (11),
@@ -56,6 +60,7 @@ enum ninconfig
 	NIN_CFG_FORCE_PROG	= (1<<NIN_CFG_BIT_FORCE_PROG),
 	NIN_CFG_AUTO_BOOT	= (1<<NIN_CFG_BIT_AUTO_BOOT),
 	NIN_CFG_HID			= (1<<NIN_CFG_BIT_HID),
+	NIN_CFG_REMLIMIT	= (1<<NIN_CFG_BIT_REMLIMIT),
 	NIN_CFG_OSREPORT	= (1<<NIN_CFG_BIT_OSREPORT),
 	NIN_CFG_USB			= (1<<NIN_CFG_BIT_USB),
 	NIN_CFG_LED			= (1<<NIN_CFG_BIT_LED),
@@ -79,22 +84,27 @@ enum ninextrasettings
 
 enum ninvideomodeindex
 {
-	NIN_VID_INDEX_AUTO		= (0),
-	NIN_VID_INDEX_FORCE		= (1),
-	NIN_VID_INDEX_NONE		= (2),
-	NIN_VID_INDEX_FORCE_DF	= (4),
+//high bits
+	NIN_VID_INDEX_AUTO			= (0),
+	NIN_VID_INDEX_FORCE			= (1),
+	NIN_VID_INDEX_NONE			= (2),
+	NIN_VID_INDEX_FORCE_DF		= (4),
+//low bits
 	NIN_VID_INDEX_FORCE_PAL50	= (0),
 	NIN_VID_INDEX_FORCE_PAL60	= (1),
 	NIN_VID_INDEX_FORCE_NTSC	= (2),
 	NIN_VID_INDEX_FORCE_MPAL	= (3),
+
+	NIN_VID_INDEX_PROG			= (4),
+	NIN_VID_INDEX_PATCH_PAL50	= (5),
 };
 
 enum ninvideomode
 {
-	NIN_VID_AUTO		= (NIN_VID_INDEX_AUTO    <<16),
-	NIN_VID_FORCE		= (NIN_VID_INDEX_FORCE   <<16),
-	NIN_VID_NONE		= (NIN_VID_INDEX_NONE    <<16),
-	NIN_VID_FORCE_DF	= (NIN_VID_INDEX_FORCE_DF<<16),
+	NIN_VID_AUTO		= (NIN_VID_INDEX_AUTO		<<16),
+	NIN_VID_FORCE		= (NIN_VID_INDEX_FORCE   	<<16),
+	NIN_VID_NONE		= (NIN_VID_INDEX_NONE    	<<16),
+	NIN_VID_FORCE_DF	= (NIN_VID_INDEX_FORCE_DF	<<16),
 
 	NIN_VID_MASK		= NIN_VID_AUTO|NIN_VID_FORCE|NIN_VID_NONE|NIN_VID_FORCE_DF,
 
@@ -105,7 +115,8 @@ enum ninvideomode
 
 	NIN_VID_FORCE_MASK	= NIN_VID_FORCE_PAL50|NIN_VID_FORCE_PAL60|NIN_VID_FORCE_NTSC|NIN_VID_FORCE_MPAL,
 
-	NIN_VID_PROG		= (1<<4),	//important to prevent blackscreens
+	NIN_VID_PROG		= (1<<NIN_VID_INDEX_PROG),	//important to prevent blackscreens
+	NIN_VID_PATCH_PAL50	= (1<<NIN_VID_INDEX_PATCH_PAL50), //different force behaviour
 };
 
 enum ninlanguage

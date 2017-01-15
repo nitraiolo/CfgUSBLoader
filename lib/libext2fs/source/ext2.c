@@ -274,7 +274,7 @@ int ext2FindPartitions (const DISC_INTERFACE *interface, sec_t **out_partitions)
     }
 
     // If this is the devices master boot record
-    if (sector.mbr.signature == MBR_SIGNATURE)
+    if (sector.mbr.signature == MBR_SIGNATURE || sector.mbr.signature == MBR_US_SIGNATURE)
     {
         memcpy(&mbr, &sector, sizeof(MASTER_BOOT_RECORD));
 
@@ -322,7 +322,7 @@ int ext2FindPartitions (const DISC_INTERFACE *interface, sec_t **out_partitions)
                         // Read and validate the extended boot record
                         if (interface->readSectors(ebr_lba + next_erb_lba, 1, &sector))
                         {
-                            if (sector.ebr.signature == EBR_SIGNATURE)
+                            if (sector.ebr.signature == EBR_SIGNATURE || sector.ebr.signature == EBR_US_SIGNATURE)
                             {
                                 ext2_log_trace("Logical Partition @ %d: %s type 0x%x\n", ebr_lba + next_erb_lba,
                                                sector.ebr.partition.status == PARTITION_STATUS_BOOTABLE ? "bootable (active)" : "non-bootable",

@@ -1,4 +1,4 @@
-tdb.o: c:/progging/cfgMod/lib/libext2fs/source/tdb.c \
- c:/progging/cfgMod/lib/libext2fs/source/tdb.h
+tdb.o: c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/tdb.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/tdb.h
 
-c:/progging/cfgMod/lib/libext2fs/source/tdb.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/tdb.h:

@@ -725,6 +725,11 @@ void MountPrint()
 	printf_("%s", str);
 }
 
+char *MountGet (int mount_c)
+{
+	return mtab.point[mount_c].name;
+}
+
 s32 FAT_DiskSpace(f32 *used, f32 *free)
 {
 	f32 size;

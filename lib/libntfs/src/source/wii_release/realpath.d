@@ -1,10 +1,11 @@
-realpath.o: c:/progging/cfgMod/lib/libntfs/src/source/realpath.c \
- c:/progging/cfgMod/lib/libntfs/src/source/config.h \
- c:/progging/cfgMod/lib/libntfs/src/source/param.h \
- c:/progging/cfgMod/lib/libntfs/src/source/realpath.h
+realpath.o: \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/realpath.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/config.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/param.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/realpath.h
 
-c:/progging/cfgMod/lib/libntfs/src/source/config.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/config.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/param.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/param.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/realpath.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/realpath.h:

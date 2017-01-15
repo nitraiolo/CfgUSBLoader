@@ -1,5 +1,6 @@
-ext2_frag.o: c:/progging/cfgMod/lib/libext2fs/source/ext2_frag.c \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_internal.h \
+ext2_frag.o: \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_frag.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_internal.h \
  c:/devkitPro/libogc/include/gccore.h \
  c:/devkitPro/libogc/include/ogc/dsp.h \
  c:/devkitPro/libogc/include/gctypes.h \
@@ -51,19 +52,19 @@ ext2_frag.o: c:/progging/cfgMod/lib/libext2fs/source/ext2_frag.c \
  c:/devkitPro/libogc/include/ogc/mutex.h \
  c:/devkitPro/libogc/include/ogc/system.h \
  c:/devkitPro/libogc/include/ogc/wiilaunch.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2fs.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_types.h \
- c:/progging/cfgMod/lib/libext2fs/source/com_err.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_fs.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext3_extents.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_io.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_err.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_ext_attr.h \
- c:/progging/cfgMod/lib/libext2fs/source/bitops.h \
- c:/progging/cfgMod/lib/libext2fs/source/mem_allocate.h \
- c:/progging/cfgMod/lib/libext2fs/source/ext2_frag.h
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2fs.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_types.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/com_err.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_fs.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext3_extents.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_io.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_err.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_ext_attr.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/bitops.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/mem_allocate.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_frag.h
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_internal.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_internal.h:
 
 c:/devkitPro/libogc/include/gccore.h:
 
@@ -167,24 +168,24 @@ c:/devkitPro/libogc/include/ogc/system.h:
 
 c:/devkitPro/libogc/include/ogc/wiilaunch.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2fs.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2fs.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_types.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_types.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/com_err.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/com_err.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_fs.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_fs.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext3_extents.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext3_extents.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_io.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_io.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_err.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_err.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_ext_attr.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_ext_attr.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/bitops.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/bitops.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/mem_allocate.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/mem_allocate.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/ext2_frag.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/ext2_frag.h:

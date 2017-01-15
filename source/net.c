@@ -893,15 +893,13 @@ void Download_Plugins()
 
 	printf_("[.");
 	struct block file = downloadfile_progress(zipurl, 64);
-	printf("]\n");
+	printf("] - %d bytes\n", file.size);
 	
 	if (file.data == NULL) {
 		printf_(gt("Error: no data."));
 		printf("\n");
 		goto dl_err;
 	}
-	printf_(gt("Size: %d bytes"), file.size);
-	printf("\n");
 	
 	FILE *f;
 	f = fopen(zippath, "wb");
@@ -922,6 +920,7 @@ void Download_Plugins()
 	printf("\n");
 
 	////////////////////////
+	
 	unzFile unzfile = unzOpen(zippath);
 	if (unzfile == NULL) {
 		printf_(gt("Error opening: %s"), zippath);
@@ -964,86 +963,74 @@ void Download_Plugins()
 		goto dl_err;
 	}
 	printf_((char*)buffer+4);
+	printf("\n");
 	fwrite(buffer,1,zipfilebuffersize,f);
 	fclose(f);
 	memset(buffer, 0, zipfilebuffersize);
 	SAFE_FREE(buffer);
+	
 	///////////////////////
 	
-	/* Download Mighty Plugin */
-	char mightyPath[200];
-	snprintf(mightyPath, sizeof(mightyPath), "%s/%s", USBLOADER_PATH, "/plugins");
-	if (!fsop_DirExist(mightyPath)) mkpath(mightyPath, 0777);
-	strcat(mightyPath, "/mighty.dol");
-	remove(mightyPath);
-	char url[255];
-	strcopy(url, "http://cfg-loader-mod.googlecode.com/files/mighty.dol", sizeof(url));
-	if (url[0] == 0) {
-		printf_(gt("Error: no URL."));
-		printf("\n");
-		goto dl_err;	
-	}
-	
-	printf_x(gt("Downloading mighty plugin."));
-	printf("\n");
-	printf_("%s\n", url);
+	typedef struct plainPlugin {
+		int id;
+		const char *name;
+		const char *pathname;
+		const char *filename;
+		const char *url;
+	} plainPlugin;
 
-	printf_("[.");
-	file = downloadfile_progress(url, 64);
-	printf("]\n");
-	
-	f = fopen(mightyPath, "wb");
-	if (!f) {
-		printf("\n");
-		printf_(gt("Error opening: %s"), mightyPath);
-		printf("\n");
-		goto dl_err;
-	}
-	fwrite(file.data,1,file.size,f);
-	fclose(f);
-	SAFE_FREE(file.data);
-	printf_(gt("Download complete."));
-	printf("\n");
-	
-	
-	///////////////////////
-	
-	/* Download Neek2o Plugin */
-	char neekPath[200];
-	snprintf(neekPath, sizeof(neekPath), "%s/%s", USBLOADER_PATH, "/plugins");
-	if (!fsop_DirExist(neekPath)) mkpath(neekPath, 0777);
-	strcat(neekPath, "/neek2o.dol");
-	remove(neekPath);
-	strcopy(url, "http://cfg-loader-mod.googlecode.com/files/neek2o.dol", sizeof(url));
-	if (url[0] == 0) {
-		printf_(gt("Error: no URL."));
-		printf("\n");
-		goto dl_err;	
-	}
-	
-	printf_x(gt("Downloading neek2o plugin."));
-	printf("\n");
-	printf_("%s\n", url);
+	char defPluginPath[200];
+	snprintf(defPluginPath, sizeof(defPluginPath), "%s/%s", USBLOADER_PATH, "/plugins");
 
-	printf_("[.");
-	file = downloadfile_progress(url, 64);
-	printf("]\n");
+	plainPlugin plugin[] = {
+		{ .id = 1, .name = "mighty", .pathname = defPluginPath, .filename = "/mighty.dol", .url = "http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/plugins/mighty.dol" },
+		{ .id = 2, .name = "neek2o", .pathname = defPluginPath, .filename = "/neek2o.dol", .url = "http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/plugins/neek2o.dol" },
+		{ .id = 3, .name = "nintendont", .pathname = "/apps/nintendont", .filename = "/boot.dol", .url = "http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/plugins/nintendont.dol" },
+	};
+
+	char pluginPath[200];
+	int i;
 	
-	f = fopen(neekPath, "wb");
-	if (!f) {
+	for (i=0; i<(sizeof(plugin)/sizeof(plainPlugin)); i++) {
+		
+		if (plugin[i].id == 3 && !CFG.nin_upd_plugin) break;
+
+		snprintf(pluginPath, sizeof(pluginPath), "%s", plugin[i].pathname);
+		if (!fsop_DirExist(pluginPath)) mkpath(pluginPath, 0777);
+		strcat(pluginPath, plugin[i].filename);
+		
+		remove(pluginPath);
+		
+		if (plugin[i].url[0] == 0) {
+			printf_(gt("Error: no URL."));
+			printf("\n");
+			goto dl_err;	
+		}
+		
+		printf_x(gt("Downloading %s plugin."), plugin[i].name);
 		printf("\n");
-		printf_(gt("Error opening: %s"), neekPath);
+		printf_("%s\n", plugin[i].url);
+
+		printf_("[.");
+		file = downloadfile_progress(plugin[i].url, 64);
+		printf("] - %d bytes\n", file.size);
+		
+		f = fopen(pluginPath, "wb");
+		if (!f) {
+			printf("\n");
+			printf_(gt("Error opening: %s"), pluginPath);
+			printf("\n");
+			goto dl_err;
+		}
+		fwrite(file.data,1,file.size,f);
+		fclose(f);
+		SAFE_FREE(file.data);
+		printf_(gt("Download complete."));
 		printf("\n");
-		goto dl_err;
 	}
-	fwrite(file.data,1,file.size,f);
-	fclose(f);
-	SAFE_FREE(file.data);
-	printf_(gt("Download complete."));
-	printf("\n");
-	
 	
 	///////////////////////
+	
 	__console_flush(0);
 	printf_x(gt("Press any button.\n")); 
 	Wpad_WaitButtons();
@@ -1072,7 +1059,7 @@ void Download_Translation()
 	strcat(destPath, "/unifont.dat");
 	if ((!CFG.load_unifont) || fsop_FileExist(destPath))	//if unifont not used or already exists
 		goto skip_unifont;									//dont need to download it
-	strcopy(url, "http://cfg-loader-mod.googlecode.com/svn/trunk/tools/unifont.dat", sizeof(url));
+	strcopy(url, "http://cfgusbloader.ntd.homelinux.org/svn/CfgUSBLoader/trunk/tools/unifont.dat", sizeof(url));
 	if (url[0] == 0) {
 		printf_(gt("Error: no URL."));
 		printf("\n");
@@ -1115,7 +1102,7 @@ void Download_Translation()
 	snprintf(destPath, sizeof(destPath), "%s/%s", USBLOADER_PATH, "/languages");
 	if (!fsop_DirExist(destPath)) mkpath(destPath, 0777);
 	snprintf(destPath, sizeof(destPath), "%s/%s.lang", destPath, CFG.translation);
-	snprintf(url, sizeof(url), "http://cfg-loader-mod.googlecode.com/svn/trunk/Languages/%s.lang", CFG.translation);
+	snprintf(url, sizeof(url), "http://cfgusbloader.ntd.homelinux.org/svn/CfgUSBLoader/trunk/Languages/%s.lang", CFG.translation);
 	if (url[0] == 0) {
 		printf_(gt("Error: no URL."));
 		printf("\n");

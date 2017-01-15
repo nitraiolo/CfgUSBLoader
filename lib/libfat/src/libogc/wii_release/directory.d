@@ -1,8 +1,8 @@
 directory.o: \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/directory.c \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/directory.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/common.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../include/fat.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/directory.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/directory.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/common.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../include/fat.h \
  c:/devkitPro/libogc/include/ogc/disc_io.h \
  c:/devkitPro/libogc/include/gctypes.h \
  c:/devkitPro/libogc/include/gccore.h \
@@ -54,19 +54,19 @@ directory.o: \
  c:/devkitPro/libogc/include/ogc/mutex.h \
  c:/devkitPro/libogc/include/ogc/system.h \
  c:/devkitPro/libogc/include/ogc/wiilaunch.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/partition.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/cache.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/disc.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/lock.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/file_allocation_table.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/bit_ops.h \
- c:/progging/cfgMod/lib/libfat/src/libogc/../source/filetime.h
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/partition.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/cache.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/disc.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/lock.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/file_allocation_table.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/bit_ops.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/filetime.h
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/directory.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/directory.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/common.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/common.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../include/fat.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../include/fat.h:
 
 c:/devkitPro/libogc/include/ogc/disc_io.h:
 
@@ -170,16 +170,16 @@ c:/devkitPro/libogc/include/ogc/system.h:
 
 c:/devkitPro/libogc/include/ogc/wiilaunch.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/partition.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/partition.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/cache.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/cache.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/disc.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/disc.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/lock.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/lock.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/file_allocation_table.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/file_allocation_table.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/bit_ops.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/bit_ops.h:
 
-c:/progging/cfgMod/lib/libfat/src/libogc/../source/filetime.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libfat/src/libogc/../source/filetime.h:

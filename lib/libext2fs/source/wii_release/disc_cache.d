@@ -1,8 +1,9 @@
-disc_cache.o: c:/progging/cfgMod/lib/libext2fs/source/disc_cache.c \
+disc_cache.o: \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/disc_cache.c \
  c:/devkitPro/libogc/include/ogc/lwp_watchdog.h \
  c:/devkitPro/libogc/include/gctypes.h \
  c:/devkitPro/libogc/include/ogc/lwp_queue.h \
- c:/progging/cfgMod/lib/libext2fs/source/disc_cache.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/disc_cache.h \
  c:/devkitPro/libogc/include/ogc/disc_io.h \
  c:/devkitPro/libogc/include/gccore.h \
  c:/devkitPro/libogc/include/ogc/dsp.h \
@@ -53,8 +54,8 @@ disc_cache.o: c:/progging/cfgMod/lib/libext2fs/source/disc_cache.c \
  c:/devkitPro/libogc/include/ogc/mutex.h \
  c:/devkitPro/libogc/include/ogc/system.h \
  c:/devkitPro/libogc/include/ogc/wiilaunch.h \
- c:/progging/cfgMod/lib/libext2fs/source/bit_ops.h \
- c:/progging/cfgMod/lib/libext2fs/source/mem_allocate.h
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/bit_ops.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/mem_allocate.h
 
 c:/devkitPro/libogc/include/ogc/lwp_watchdog.h:
 
@@ -62,7 +63,7 @@ c:/devkitPro/libogc/include/gctypes.h:
 
 c:/devkitPro/libogc/include/ogc/lwp_queue.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/disc_cache.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/disc_cache.h:
 
 c:/devkitPro/libogc/include/ogc/disc_io.h:
 
@@ -164,6 +165,6 @@ c:/devkitPro/libogc/include/ogc/system.h:
 
 c:/devkitPro/libogc/include/ogc/wiilaunch.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/bit_ops.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/bit_ops.h:
 
-c:/progging/cfgMod/lib/libext2fs/source/mem_allocate.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libext2fs/source/mem_allocate.h:

@@ -6,6 +6,8 @@
 
 #define MBR_SIGNATURE                       ext2fs_cpu_to_le16(0xAA55)
 #define EBR_SIGNATURE                       ext2fs_cpu_to_le16(0xAA55)
+#define MBR_US_SIGNATURE                    ext2fs_cpu_to_le16(0xAB55)
+#define EBR_US_SIGNATURE                    ext2fs_cpu_to_le16(0xAB55)
 
 #define PARTITION_STATUS_BOOTABLE           0x80 /* Bootable (active) */
 
@@ -32,7 +34,7 @@ typedef struct _PARTITION_RECORD {
 typedef struct _MASTER_BOOT_RECORD {
     u8 code_area[446];                      /* Code area; normally empty */
     PARTITION_RECORD partitions[4];         /* 4 primary partitions */
-    u16 signature;                          /* MBR signature; 0xAA55 */
+    u16 signature;                          /* MBR signature; 0xAA55 (std) or 0xAB55 (UStealth) */
 } __attribute__((__packed__)) MASTER_BOOT_RECORD;
 
 /**
@@ -43,7 +45,7 @@ typedef struct _EXTENDED_BOOT_RECORD {
     PARTITION_RECORD partition;             /* Primary partition */
     PARTITION_RECORD next_ebr;              /* Next extended boot record in the chain */
     u8 reserved[32];                        /* Normally empty */
-    u16 signature;                          /* EBR signature; 0xAA55 */
+    u16 signature;                          /* EBR signature; 0xAA55 (std) or 0xAB55 (UStealth) */
 } __attribute__((__packed__)) EXTENDED_BOOT_RECORD;
 
 #endif

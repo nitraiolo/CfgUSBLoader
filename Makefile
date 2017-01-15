@@ -15,7 +15,7 @@ include $(DEVKITPPC)/wii_rules
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
-VERSION		:=	70r78.10
+VERSION		:=	70r78.11
 RELEASE		:=	release
 # to override RELEASE use: make announce RELEASE=beta
 ifeq ($(findstring compat,$(VERSION)),compat)
@@ -98,7 +98,7 @@ LIBS	:=	-lgrrlib -lfat -lntfs -lext2fs -lpng -ljpeg -lwiiuse -lbte -lmad -lmodpl
 # include and lib
 #---------------------------------------------------------------------------------
 #LIBDIRS	:=	$(DEVKITPPC)/lib $(CURDIR) $(CURDIR)/lib/png $(CURDIR)/lib/freetype $(CURDIR)/lib/libfat
-LIBDIRS	:=	$(DEVKITPPC)/lib $(CURDIR) $(CURDIR)/lib/png $(CURDIR)/lib/libfat $(CURDIR)/lib/libntfs $(CURDIR)/lib/libext2fs $(CURDIR)/lib/jpeg $(CURDIR)/lib/grrlib $(CURDIR)\lib\zlib $(PORTLIBS)
+LIBDIRS	:=	$(DEVKITPPC)/lib $(CURDIR) $(CURDIR)/lib/png $(CURDIR)/lib/libfat $(CURDIR)/lib/libntfs $(CURDIR)/lib/libext2fs $(CURDIR)/lib/jpeg $(CURDIR)/lib/grrlib $(CURDIR)/lib/zlib $(PORTLIBS)
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional

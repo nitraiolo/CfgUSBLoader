@@ -140,7 +140,7 @@ BOOL ntfs_boot_sector_is_ntfs(NTFS_BOOT_SECTOR *b)
 		}
 	}
 
-	if (b->end_of_sector_marker != cpu_to_le16(0xaa55))
+	if (b->end_of_sector_marker != cpu_to_le16(0xaa55) || b->end_of_sector_marker != cpu_to_le16(0xab55))
 		ntfs_log_debug("Warning: Bootsector has invalid end of sector "
 			       "marker.\n");
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-07 20:35+0200\n"
+"POT-Creation-Date: 2017-01-15 00:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -386,6 +386,9 @@ msgstr ""
 msgid "Current Version: %s"
 msgstr ""
 
+msgid "Custom"
+msgstr ""
+
 #, c-format
 msgid ""
 "Custom IOS %d could not be found!\n"
@@ -503,6 +506,10 @@ msgstr ""
 msgid "Downloadable Content"
 msgstr ""
 
+#, c-format
+msgid "Downloading %s plugin."
+msgstr ""
+
 msgid "Downloading ALL MISSING covers"
 msgstr ""
 
@@ -527,12 +534,6 @@ msgid "Downloading database."
 msgstr ""
 
 msgid "Downloading devolution."
-msgstr ""
-
-msgid "Downloading mighty plugin."
-msgstr ""
-
-msgid "Downloading neek2o plugin."
 msgstr ""
 
 msgid "Downloading titles.txt ..."
@@ -1331,7 +1332,14 @@ msgstr ""
 msgid "Nintendont"
 msgstr ""
 
+#, c-format
+msgid "Nintendont Ver. %d.%d\n"
+msgstr ""
+
 msgid "No"
+msgstr ""
+
+msgid "No Speed Limit:"
 msgstr ""
 
 #, c-format
@@ -1351,6 +1359,9 @@ msgid "No updates found."
 msgstr ""
 
 msgid "NoDisc:"
+msgstr ""
+
+msgid "NoSSL only"
 msgstr ""
 
 msgid "None found on disc"
@@ -1684,6 +1695,9 @@ msgstr ""
 msgid "Priiloader"
 msgstr ""
 
+msgid "Private server:"
+msgstr ""
+
 msgid "Profile:"
 msgstr ""
 
@@ -1741,6 +1755,9 @@ msgid "Release Date"
 msgstr ""
 
 msgid "Release Notes: (short)"
+msgstr ""
+
+msgid "Remove Speed Limit:"
 msgstr ""
 
 msgid "Removing game, please wait..."
@@ -2324,4 +2341,7 @@ msgstr ""
 
 #, c-format
 msgid "used: %p - %p"
+msgstr ""
+
+msgid "wiimmfi.de"
 msgstr ""

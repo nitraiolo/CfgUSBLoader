@@ -14,6 +14,19 @@ metaxml=</long_description>
 metaxml=<ahb_access/>
 metaxml=</app>
 
+release = 70r78.11
+size = 1904192
+date = 2017-01-15
+url = http://cfgusbloader.ntd.homelinux.org/trac/CfgUSBLoader/chrome/site/binaries/dol/r11/cfg70r78.11-222.dol
+-GC - updated nintendont config support to version 0x00000006
+-GC - if nintendont_config_mode=arg is set nintendont configuration is passed via command line argument
+-GC - added minimum nitnendont version check before game load
+-GC - added possibility to update nintendont as a plugin if update_nintendont=1 is set
+-Internals - added UStealth support
+-Internals - fixed plugins update URLs
+-Usability - fixed reboot and exit behaviour
+-Usability - WFC patching options
+
 release = 70r78.10
 size = 1902240
 date = 2015-05-23

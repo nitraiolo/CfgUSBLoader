@@ -9,6 +9,7 @@
 #include "util.h"
 #include "cfgutil.h"
 #include "strutil.h"
+#include "NintendontConfig.h"
 
 typedef struct PosCoords
 {
@@ -227,6 +228,9 @@ extern int COVER_HEIGHT_FRONT;
 #define CFG_PLAYLOG_JAPANESE 2
 #define CFG_PLAYLOG_ENGLISH  3
 
+#define MIN_NIN_MAJ 3
+#define MIN_NIN_MIN 368
+
 extern char FAT_DRIVE[];
 extern char USBLOADER_PATH[];
 extern char APPS_DIR[];
@@ -234,6 +238,7 @@ extern char CFG_VERSION[];
 extern char LAST_CFG_PATH[];
 extern char DIOS_MIOS_INFO[];
 extern u32  HBC_LOWER_TID;
+extern NIN_CFG *ncfg;
 
 typedef char GAMEID_t[8];
 
@@ -262,6 +267,8 @@ struct Game_CFG
 	int nand_emu;
 	int channel_boot;
 	int alt_controller_cfg;
+	int rem_speed_limit;
+	int private_server;
 };
 
 struct Game_CFG_2
@@ -566,10 +573,14 @@ struct CFG
 	int w_theme_previewW;
 	int w_theme_previewH;
 	int select;
-
 	//gamercards
 	char gamercard_url[1000];
 	char gamercard_key[200];
+	//private server
+	char custom_private_server[16];
+	//Nintendont parameters 
+	int nin_cfg_mode;
+	int nin_upd_plugin;
 };
 
 extern struct CFG CFG;
@@ -738,6 +749,7 @@ extern struct TextMap map_nand_emu[];
 extern struct TextMap map_channel_boot[];
 extern struct TextMap map_gc_boot[];
 extern struct TextMap map_mem_card_size[];
+extern struct TextMap map_private_server[];
 extern char *names_vpatch[CFG_VIDEO_PATCH_NUM];
 extern u8	  cIOS_base[];
 

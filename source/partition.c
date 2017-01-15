@@ -22,7 +22,7 @@ typedef struct {
 	/* Partition table entries */
 	partitionEntry entries[MAX_PARTITIONS];
 
-	// 0x55 0xAA signature
+	// 0x55 0xAA std signature or 0x55 0xAB UStealth signature 
 	u8 sig_55aa[2];
 } ATTRIBUTE_PACKED partitionTable;
 // total size = 512
@@ -333,8 +333,8 @@ int get_fs_type(void *buff)
 	// WBFS
 	wbfs_head_t *head = (wbfs_head_t *)buff;
 	if (head->magic == wbfs_htonl(WBFS_MAGIC)) return PART_FS_WBFS;
-	// 55AA
-	if (buf[0x1FE] == 0x55 && buf[0x1FF] == 0xAA) {
+	// 55AA - std boot signature, 55AB - U-Stealth boot signature
+	if (buf[0x1FE] == 0x55 && (buf[0x1FF] == 0xAA || buf[0x1FF] == 0xAB)) {
 		// FAT
 		if (memcmp(buf+0x36,"FAT",3) == 0) return PART_FS_FAT; //FAT16;
 		if (memcmp(buf+0x52,"FAT",3) == 0) return PART_FS_FAT; //FAT32;

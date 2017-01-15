@@ -452,7 +452,7 @@ bool fsop_CreateFolderTree (char *path)
 	return fsop_DirExist (path);
 }
 
-void fsop_deleteFolder(char *source)
+void fsop_deleteFolder (char *source)
 {
 	DIR *pdir;
 	struct dirent *pent;
@@ -482,4 +482,103 @@ void fsop_deleteFolder(char *source)
 	closedir(pdir);
 	dbg_printf("Deleting directory: %s\n",source);
 	unlink(source);
+}
+
+// Count the number of folder in a full path. It can be path1/path2/path3 or <mount>://path1/path2/path3
+int fsop_CountFolderTree (char *path)
+{
+	int i;
+	int start, len;
+	char b[8];
+	char *p;
+	int count = 0;
+	
+	start = 0;
+	
+	strcpy (b, "://");
+	p = strstr (path, b);
+	if (p == NULL)
+		{
+		strcpy (b, ":/");
+		p = strstr (path, b);
+		}
+	
+	if (p == NULL)
+		start = 0;
+	else
+		start = (p - path) + strlen(b);
+	
+	len = strlen(path);
+	if (path[len-1] == '/') len--;
+	if (len <= 0) return 0;
+
+	for (i = start; i <= len; i++)
+		{
+		if (path[i] == '/' || i == len)
+			{
+			count ++;
+			}
+		}
+	
+	// Check if the tree has been created
+	return count;
+}
+
+// read a file from disk
+u8 *fsop_ReadFile (char *path, size_t bytes2read, size_t *bytesReaded)
+	{
+	FILE *f;
+	size_t size = 0;
+	
+	f = fopen(path, "rb");
+	if (!f)
+		{
+		if (bytesReaded) *bytesReaded = size;
+		return NULL;
+		}
+
+	//Get file size
+	fseek( f, 0, SEEK_END);
+	size = ftell(f);
+	
+	if (size == 0) 
+		{
+		fclose (f);
+		return NULL;
+		}
+	
+	// goto to start
+	fseek( f, 0, SEEK_SET);
+	
+	if (bytes2read > 0 && bytes2read < size)
+		size = bytes2read;
+	
+	u8 *buff = malloc (size+1);
+	size = fread (buff, 1, size, f);
+	fclose (f);
+	
+	buff[size] = 0; // maybe we have readed a ascii file, let's 0 terminate it...
+	
+	if (bytesReaded) *bytesReaded = size;
+
+	return buff;
+	}
+
+// write a buffer to disk
+bool fsop_WriteFile (char *path, u8 *buff, size_t len)
+{
+	FILE *f;
+	size_t size = 0;
+	
+	f = fopen(path, "wb");
+	if (!f)
+		{
+		return false;
+		}
+
+	size = fwrite (buff, 1, len, f);
+	fclose (f);
+
+	if (size == len) return true;
+	return false;
 }

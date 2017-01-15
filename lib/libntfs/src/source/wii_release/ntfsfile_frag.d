@@ -1,31 +1,31 @@
 ntfsfile_frag.o: \
- c:/progging/cfgMod/lib/libntfs/src/source/ntfsfile_frag.c \
- c:/progging/cfgMod/lib/libntfs/src/source/config.h \
- c:/progging/cfgMod/lib/libntfs/src/source/ntfsinternal.h \
- c:/progging/cfgMod/lib/libntfs/src/source/types.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfsfile_frag.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/config.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfsinternal.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/types.h \
  c:/devkitPro/libogc/include/gctypes.h \
- c:/progging/cfgMod/lib/libntfs/src/source/compat.h \
- c:/progging/cfgMod/lib/libntfs/src/source/mem_allocate.h \
- c:/progging/cfgMod/lib/libntfs/src/source/logging.h \
- c:/progging/cfgMod/lib/libntfs/src/source/layout.h \
- c:/progging/cfgMod/lib/libntfs/src/source/endians.h \
- c:/progging/cfgMod/lib/libntfs/src/source/support.h \
- c:/progging/cfgMod/lib/libntfs/src/source/device.h \
- c:/progging/cfgMod/lib/libntfs/src/source/device_io.h \
- c:/progging/cfgMod/lib/libntfs/src/source/volume.h \
- c:/progging/cfgMod/lib/libntfs/src/source/param.h \
- c:/progging/cfgMod/lib/libntfs/src/source/inode.h \
- c:/progging/cfgMod/lib/libntfs/src/source/ntfstime.h \
- c:/progging/cfgMod/lib/libntfs/src/source/attrib.h \
- c:/progging/cfgMod/lib/libntfs/src/source/unistr.h \
- c:/progging/cfgMod/lib/libntfs/src/source/runlist.h \
- c:/progging/cfgMod/lib/libntfs/src/source/debug.h \
- c:/progging/cfgMod/lib/libntfs/src/source/index.h \
- c:/progging/cfgMod/lib/libntfs/src/source/mft.h \
- c:/progging/cfgMod/lib/libntfs/src/source/dir.h \
- c:/progging/cfgMod/lib/libntfs/src/source/reparse.h \
- c:/progging/cfgMod/lib/libntfs/src/source/security.h \
- c:/progging/cfgMod/lib/libntfs/src/source/efs.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/compat.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/mem_allocate.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/logging.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/layout.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/endians.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/support.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/device.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/device_io.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/volume.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/param.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/inode.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfstime.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/attrib.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/unistr.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/runlist.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/debug.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/index.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/mft.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/dir.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/reparse.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/security.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/efs.h \
  c:/devkitPro/libogc/include/gccore.h \
  c:/devkitPro/libogc/include/ogc/dsp.h \
  c:/devkitPro/libogc/include/ogc/aram.h \
@@ -76,61 +76,61 @@ ntfsfile_frag.o: \
  c:/devkitPro/libogc/include/ogc/mutex.h \
  c:/devkitPro/libogc/include/ogc/system.h \
  c:/devkitPro/libogc/include/ogc/wiilaunch.h \
- c:/progging/cfgMod/lib/libntfs/src/source/ntfsfile.h \
- c:/progging/cfgMod/lib/libntfs/src/source/../include/ntfs.h \
- c:/progging/cfgMod/lib/libntfs/src/source/../include/ntfs_frag.h
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfsfile.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/../include/ntfs.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/../include/ntfs_frag.h
 
-c:/progging/cfgMod/lib/libntfs/src/source/config.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/config.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/ntfsinternal.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfsinternal.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/types.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/types.h:
 
 c:/devkitPro/libogc/include/gctypes.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/compat.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/compat.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/mem_allocate.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/mem_allocate.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/logging.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/logging.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/layout.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/layout.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/endians.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/endians.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/support.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/support.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/device.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/device.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/device_io.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/device_io.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/volume.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/volume.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/param.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/param.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/inode.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/inode.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/ntfstime.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfstime.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/attrib.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/attrib.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/unistr.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/unistr.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/runlist.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/runlist.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/debug.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/debug.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/index.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/index.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/mft.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/mft.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/dir.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/dir.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/reparse.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/reparse.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/security.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/security.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/efs.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/efs.h:
 
 c:/devkitPro/libogc/include/gccore.h:
 
@@ -232,8 +232,8 @@ c:/devkitPro/libogc/include/ogc/system.h:
 
 c:/devkitPro/libogc/include/ogc/wiilaunch.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/ntfsfile.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/ntfsfile.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/../include/ntfs.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/../include/ntfs.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/../include/ntfs_frag.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/../include/ntfs_frag.h:

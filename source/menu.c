@@ -204,6 +204,14 @@ char *str_mem_card_size[6] =
 	gts("2043 blocks")
 };
 
+char *str_private_server[4] = 
+{
+	gts("Off"),
+	gts("NoSSL only"),
+	gts("wiimmfi.de"),
+	gts("Custom")
+};
+
 int Menu_Global_Options();
 int Menu_Game_Options();
 void Switch_Favorites(bool enable);
@@ -1828,7 +1836,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 	int opt_saved;
 	//int opt_ios_reload;
 	int opt_language, opt_video, opt_video_patch, opt_vidtv, opt_padhook, opt_nand_emu;
-	int opt_mem_card_emu, opt_mem_card_size, opt_country_patch, opt_anti_002, opt_ocarina, opt_wide_screen, opt_nodisc, opt_ntsc_j_patch, opt_screenshot; 
+	int opt_mem_card_emu, opt_mem_card_size, opt_country_patch, opt_anti_002, opt_ocarina, opt_wide_screen, opt_nodisc, opt_ntsc_j_patch, opt_screenshot, opt_private_server; 
 	f32 size = 0.0;
 	int redraw_cover = 0;
 	int i;
@@ -1874,8 +1882,8 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 	game_cfg = &game_cfg2->curr;
 
 	struct Menu menu;
-	int NUM_OPT = 19;
-	if (header->magic == GC_GAME_ON_DRIVE) NUM_OPT = 17;
+	int NUM_OPT = 20;
+	if (header->magic == GC_GAME_ON_DRIVE) NUM_OPT = 18;
 	if (header->magic == CHANNEL_MAGIC) NUM_OPT = 19;
 	char active[NUM_OPT];
 	menu_init(&menu, NUM_OPT);
@@ -1918,6 +1926,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 	 	opt_ocarina = game_cfg->ocarina;
 		opt_ntsc_j_patch = game_cfg->ntsc_j_patch;
 		opt_nand_emu = game_cfg->nand_emu;
+		opt_private_server = game_cfg->private_server;
 
 		if (game_cfg->clean == CFG_CLEAN_ALL) {
 			opt_language = CFG_LANG_CONSOLE;
@@ -1933,6 +1942,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 			opt_nand_emu = 0;
 			opt_nodisc = 0;
 			opt_screenshot = 0;
+			opt_private_server = 0;
 			active[1] = 0; // language
 			active[2] = 0; // video
 			active[3] = 0; // video_patch
@@ -2058,6 +2068,8 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				PRINT_OPT_B(gt("Screenshot:"), opt_screenshot);
 			if (menu_window_mark(&menu))
 				PRINT_OPT_B(gt("Alt Button Cfg:"), game_cfg->alt_controller_cfg);
+			if (menu_window_mark(&menu))
+				PRINT_OPT_B(gt("Remove Speed Limit:"), game_cfg->rem_speed_limit);
 				/*
 			if (menu_window_mark(&menu))
 				PRINT_OPT_S(gt("Write Playlog:"), gt(playlog_name[game_cfg->write_playlog]));
@@ -2160,6 +2172,8 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				PRINT_OPT_S(gt("NAND Emu:"), gt(str_nand_emu[opt_nand_emu]));
 			if (menu_window_mark(&menu))
 				PRINT_OPT_A(gt("Savegame:"), gt("Dump savegame"));
+			if (menu_window_mark(&menu))
+				PRINT_OPT_A(gt("Private server:"), gt(str_private_server[opt_private_server]));
 		}
 		
 		DefaultColor();
@@ -2256,6 +2270,9 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				break;
 			case 16: // Alt Button Cfg
 				CHANGE(game_cfg->alt_controller_cfg, 1);
+				break;
+			case 17: // Remove Speed Limit
+				CHANGE(game_cfg->rem_speed_limit, 1);
 				break;
 			}
 		} else if (change && (header->magic == CHANNEL_MAGIC)) {
@@ -2424,6 +2441,9 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				break;
 			case 18:
 				Menu_dump_savegame(header);
+				break;
+			case 19:
+				CHANGE(game_cfg->private_server, 3);
 				break;
 			}
 		}
@@ -4912,8 +4932,7 @@ L_repaint:
 			CFG.game.ios_idx = 58;
 //			IOSPATCH_Apply();
 			char args[255][255] = {{"\0"}};
-			int i = 0;
-			Menu_Plugin(PLUGIN_NINTENDONT, args, i);
+			Menu_Plugin(PLUGIN_NINTENDONT, args, CFG.nin_cfg_mode ? 1 : 0 );
 			return;	// should never get here
 
 		}
@@ -5666,26 +5685,7 @@ void Menu_Plugin(int plugin, char arguments[255][255], int argCnt) {
 	bzero(&args, sizeof(args));
 	args.argvMagic = ARGV_MAGIC;
 	args.length = 1;
-	
-	for (i = 0; i < argCnt; i++) {
-		args.length += strlen(arguments[i]) + 1;
-	}
-	
-	args.commandLine = (char*)allocate_memory(args.length);
-	if (!args.commandLine) dbg_printf("failed...\n");
-	
-	int pos = 0;
-	
-	for (i = 0; i < argCnt; i++) {
-		strcpy(args.commandLine+pos, arguments[i]);
-        pos += strlen(arguments[i]) + 1;
-	}
-	
-	args.argc = argCnt;
-	args.commandLine[args.length - 1] = '\0';
-	args.argv = &args.commandLine;
-	args.endARGV = args.argv + 1;
-	
+
 	switch (plugin) {
 		case PLUGIN_MIGHTY:
 			snprintf(fname, sizeof(fname), "%s/plugins/mighty.dol", USBLOADER_PATH);
@@ -5700,6 +5700,39 @@ void Menu_Plugin(int plugin, char arguments[255][255], int argCnt) {
 			return;
 	}
 	
+	args.length += strlen(fname) + 1;
+	
+	for (i = 0; i < argCnt; i++) {
+		if (plugin == PLUGIN_NINTENDONT && CFG.nin_cfg_mode) {
+			args.length += sizeof(NIN_CFG) + 1;
+		} else {
+			args.length += strlen(arguments[i]) + 1;
+		}
+	}
+	
+	args.commandLine = (char*)allocate_memory(args.length);
+	if (!args.commandLine) dbg_printf("failed...\n");
+	
+	int pos = 0;
+	
+	strcpy(args.commandLine+pos, fname);
+	pos += strlen(fname) + 1;
+	
+	for (i = 0; i < argCnt; i++) {
+		if (plugin == PLUGIN_NINTENDONT && CFG.nin_cfg_mode) {
+			memcpy(args.commandLine+pos, ncfg, sizeof(NIN_CFG));
+			pos += sizeof(NIN_CFG) + 1;
+		} else {
+			strcpy(args.commandLine+pos, arguments[i]);
+			pos += strlen(arguments[i]) + 1;
+		}
+	}
+	
+	args.argc = argCnt + 1;
+	args.commandLine[args.length - 1] = '\0';
+	args.argv = &args.commandLine;
+	args.endARGV = args.argv + 1;
+
 	printf_(gt("Loading..%s\n"), fname);
 
 	file = fopen(fname, "rb");
@@ -5718,8 +5751,34 @@ void Menu_Plugin(int plugin, char arguments[255][255], int argCnt) {
 	fread(buffer, 1, len, file);
 	fclose (file);
 	
+	if(plugin == PLUGIN_NINTENDONT)
+	{
+		const char* magic_str = "$$Version:";
+		int nin_maj=0,nin_min=0;
+		for(i = 0; i < len; i += 32)
+		{
+			if(memcmp(buffer+i, magic_str, strlen(magic_str)) == 0)
+			{
+				sscanf(buffer+i+strlen(magic_str),"%d.%d",&nin_maj,&nin_min);
+				break;
+			}
+		}
+		printf_(gt("Nintendont Ver. %d.%d\n"),nin_maj,nin_min);
+		printf("\n");
+		if (nin_maj < MIN_NIN_MAJ)
+		{
+			sleep(5);
+			return;
+		}
+		else if (nin_min < MIN_NIN_MIN)
+		{
+			sleep(5);
+			return;
+		}
+	}
+
 	entryPoint = load_dol_image_args(buffer, &args);
-	
+
 	ReloadIOS(1,1);
 	d2x_return_to_channel();
 	
@@ -5727,7 +5786,7 @@ void Menu_Plugin(int plugin, char arguments[255][255], int argCnt) {
 	Services_Close();
 	Subsystem_Close();
 	Wpad_Disconnect();
-	
+
 	__IOS_ShutdownSubsystems();
 	SYS_ResetSystem(SYS_SHUTDOWN,0,0);
 	entrypoint exec = (entrypoint)entryPoint;

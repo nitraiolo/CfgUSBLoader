@@ -37,6 +37,7 @@ char LAST_CFG_PATH[200];
 char direct_start_id_buf[] = "#GAMEID\0\0\0\0\0CFGUSB0000000000";
 char DIOS_MIOS_INFO[200] = "";
 u32  HBC_LOWER_TID = 0x00000000;
+NIN_CFG *ncfg = NULL;
 
 /* configurable fields */
 
@@ -472,6 +473,15 @@ struct TextMap map_search_field[] =
 	{ "synopsis_len",     10 },
 	{ "covers_available", 11 },
 	{ NULL,               -1 }
+};
+
+struct TextMap map_private_server[] = 
+{
+	{ "Off",        0 },
+	{ "NoSSL only", 1 },
+	{ "wiimmfi.de", 2 },
+	{ "Custom",     3 },
+	{ NULL,        -1 }
 };
 
 struct playStat {
@@ -1411,6 +1421,8 @@ void CFG_Default()
 	CFG.game.screenshot = 0;
 	CFG.game.block_ios_reload = 2; // 2=auto
 	CFG.game.alt_controller_cfg = 0;
+	CFG.game.rem_speed_limit = 0;
+	CFG.game.private_server = 0; //off
 	cfg_ios_set_idx(DEFAULT_IOS_IDX);
 	// all other game settings are 0 (memset(0) above)
 	STRCOPY(CFG.sort_ignore, "A,An,The");
@@ -1442,6 +1454,10 @@ void CFG_Default()
 	STRCOPY(CFG.nand_emu_path, "usb:/nand");
 	STRCOPY(CFG.wbfs_fat_dir, "/wbfs");
 	CFG.game.nand_emu = 0;
+	//private server
+	STRCOPY(CFG.custom_private_server, "wiimmfi.de");
+	CFG.nin_cfg_mode = 0;
+	CFG.nin_upd_plugin = 0;
 }
 
 bool map_auto_token(char *name, char *name2, char *val, struct TextMap *map, struct MenuButton *var)
@@ -2472,6 +2488,7 @@ void cfg_set_game(char *name, char *val, struct Game_CFG *game_cfg)
 	cfg_bool("block_ios_reload", &game_cfg->block_ios_reload);
 	cfg_map("block_ios_reload", "auto", &game_cfg->block_ios_reload, 2);
 	cfg_bool("alt_controller_cfg", &game_cfg->alt_controller_cfg);
+	cfg_bool("rem_speed_limit", &game_cfg->rem_speed_limit);
 	if (strcmp("alt_dol", name) == 0) {
 		int set = 0;
 		if (cfg_bool("alt_dol", &game_cfg->alt_dol)) set = 1;
@@ -2490,6 +2507,7 @@ void cfg_set_game(char *name, char *val, struct Game_CFG *game_cfg)
 	cfg_bool("ocarina", &game_cfg->ocarina);
 	cfg_map_auto("hooktype", map_hook, &game_cfg->hooktype);
 	cfg_int_max("write_playlog", &game_cfg->write_playlog, 3);
+	cfg_int_max("private_server", &game_cfg->private_server, 3);
 	
 }
 
@@ -2807,6 +2825,15 @@ void cfg_set(char *name, char *val)
 		else if (strlen(val) == 8)
 			sscanf(val, "%X", &CFG.return_to);
 	}
+	
+	if (strcmp(name, "custom_private_server")==0) {
+		if (strlen(val) <= 15)
+			strcpy(CFG.custom_private_server, val);
+	}
+
+	cfg_map("nintendont_config_mode", "file", &CFG.nin_cfg_mode, 0);
+	cfg_map("nintendont_config_mode", "arg",  &CFG.nin_cfg_mode, 1);
+	cfg_bool("update_nintendont", &CFG.nin_upd_plugin);
 
 	cfg_bool("db_show_info",  &CFG.db_show_info);
 	cfg_bool("db_ignore_titles", &CFG.db_ignore_titles);
@@ -3257,6 +3284,8 @@ bool CFG_Save_Settings(int verbose)
 		SAVE_STR("hooktype", s);
 		SAVE_NUM(write_playlog);
 		SAVE_BOOL(alt_controller_cfg);
+		SAVE_BOOL(rem_speed_limit);
+		SAVE_NUM(private_server);
 		if (game_cfg->clean == CFG_CLEAN_OFF) {
 			SAVE_STR("clear_patches", "0");
 		} else if (game_cfg->clean == CFG_CLEAN_ON) {

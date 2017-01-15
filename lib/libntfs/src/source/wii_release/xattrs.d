@@ -1,4 +1,4 @@
-xattrs.o: c:/progging/cfgMod/lib/libntfs/src/source/xattrs.c \
- c:/progging/cfgMod/lib/libntfs/src/source/config.h
+xattrs.o: c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/xattrs.c \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/config.h
 
-c:/progging/cfgMod/lib/libntfs/src/source/config.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/config.h:

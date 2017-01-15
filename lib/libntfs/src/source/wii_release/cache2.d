@@ -1,8 +1,8 @@
-cache2.o: c:/progging/cfgMod/lib/libntfs/src/source/cache2.c \
+cache2.o: c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/cache2.c \
  c:/devkitPro/libogc/include/ogc/lwp_watchdog.h \
  c:/devkitPro/libogc/include/gctypes.h \
  c:/devkitPro/libogc/include/ogc/lwp_queue.h \
- c:/progging/cfgMod/lib/libntfs/src/source/cache2.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/cache2.h \
  c:/devkitPro/libogc/include/ogc/disc_io.h \
  c:/devkitPro/libogc/include/gccore.h \
  c:/devkitPro/libogc/include/ogc/dsp.h \
@@ -53,8 +53,8 @@ cache2.o: c:/progging/cfgMod/lib/libntfs/src/source/cache2.c \
  c:/devkitPro/libogc/include/ogc/mutex.h \
  c:/devkitPro/libogc/include/ogc/system.h \
  c:/devkitPro/libogc/include/ogc/wiilaunch.h \
- c:/progging/cfgMod/lib/libntfs/src/source/bit_ops.h \
- c:/progging/cfgMod/lib/libntfs/src/source/mem_allocate.h
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/bit_ops.h \
+ c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/mem_allocate.h
 
 c:/devkitPro/libogc/include/ogc/lwp_watchdog.h:
 
@@ -62,7 +62,7 @@ c:/devkitPro/libogc/include/gctypes.h:
 
 c:/devkitPro/libogc/include/ogc/lwp_queue.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/cache2.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/cache2.h:
 
 c:/devkitPro/libogc/include/ogc/disc_io.h:
 
@@ -164,6 +164,6 @@ c:/devkitPro/libogc/include/ogc/system.h:
 
 c:/devkitPro/libogc/include/ogc/wiilaunch.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/bit_ops.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/bit_ops.h:
 
-c:/progging/cfgMod/lib/libntfs/src/source/mem_allocate.h:
+c:/devkitPro/CfgUSBLoadermod/lib/libntfs/src/source/mem_allocate.h:
