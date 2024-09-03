@@ -29,11 +29,19 @@ extern u8 configbytes[2];
 extern u32 regionfree;
 extern bool hookpatched;
 
+#define APP_NAME				"Cfg USB Loader MOD patched"
+#define APP_VERSION				"70r78.12"
+#define PRIVSERV_WIIMMFI		"wiimmfi.de"
+
 // Function prototypes
 bool dogamehooks(void *addr, u32 len);
 void langpatcher(void *addr, u32 len);
 void vidolpatcher(void *addr, u32 len);
 void patchdebug(void *addr, u32 len);
 bool PatchReturnTo(void *Address, int Size, u32 id);
+void WFCPatch(void *addr, u32 len, const char* domain);
+u32 do_new_wiimmfi(); 
+u32 do_new_wiimmfi_nonMKWii(); 
+
 
 #endif // __PATCHCODE_H__

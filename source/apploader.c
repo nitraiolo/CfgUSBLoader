@@ -614,27 +614,24 @@ void NoSSLPatch(void *addr, u32 len)
 	} while (++cur < end);
 }
 
-void WFCPatch(void *addr, u32 len, const char* domain)
+void WFCPatchWimmifi(void *addr, u32 len)
 {
-	if(strlen("nintendowifi.net") < strlen(domain))
-		return;
+    char GameID[5];
+	memset(GameID, 0, 5);
+	memcpy(GameID, (char*)0x80000000, 4);	
 
-	char *cur = (char *)addr;
-	const char *end = cur + len - 16;
-	
-	do
-	{
-		if (memcmp(cur, "nintendowifi.net", 16) == 0)
-		{
-			int len = strlen(cur);
-			u8 i;
-			memcpy(cur, domain, strlen(domain));
-			memmove(cur + strlen(domain), cur + 16, len - 16);
-			for(i = 16 - strlen(domain); i > 0 ; i--)
-				cur[len - i ] = 0;
-			cur += len;
-		}
-	} while (++cur < end);
+	if(memcmp("RMC", GameID, 3) != 0) {
+		// This isn't MKWii, perform the patch for other games.
+		do_new_wiimmfi_nonMKWii();
+		
+		// Do the plain old patching with the string search
+	    WFCPatch(addr, len, PRIVSERV_WIIMMFI);
+	}
+	else {
+		// This is MKWii, perform the known patch from 2018.
+		do_new_wiimmfi(); 
+	}
+
 }
 
 // from sneek by crediar
@@ -762,7 +759,7 @@ void maindolpatches(void *dst, int len)
 		switch (CFG.game.private_server)
 		{
 			case 2:
-				WFCPatch(dst, len, "wiimmfi.de");
+				WFCPatchWimmifi(dst, len);
 				break;
 			case 3:
 				WFCPatch(dst, len, CFG.custom_private_server);
