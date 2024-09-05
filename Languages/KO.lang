@@ -1,21 +1,32 @@
-﻿# CFG USB Loader language file.
-# Put the translated string in msgstr ""
-# Fill in the Last-Translator and Language-Team fields.
-# Please use utf-8 charset when editing.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# DDinghoya <ddinghoya@gmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-07 23:40+0200\n"
-"PO-Revision-Date: 2011-04-12 20:48+0100\n"
-"Last-Translator: cherries4u <cherries4u@hanmail.net>\n"
-"Language-Team: Korean Translation Team<cherries4u@hanmail.net>\n"
-"Language: KO\n"
+"POT-Creation-Date: 2024-09-03 19:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DDinghoya <ddinghoya@gmail.com>\n"
+"Language-Team: DDinghoya <ddinghoya@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "  59 blocks"
+msgstr " 59 블록"
+
+msgid " 123 blocks"
+msgstr " 123 블록"
+
+msgid " 251 blocks"
+msgstr " 251 블록"
+
+msgid " 507 blocks"
+msgstr "507 블록"
 
 #, c-format
 msgid "%.1fGB free of %.1fGB"
@@ -31,11 +42,11 @@ msgstr "%d:%02d:%02d에 %.2fGB 가 복사됨"
 
 #, c-format
 msgid "%d available"
-msgstr "%d 사용가능"
+msgstr "%d 사용 가능"
 
 #, c-format
 msgid "%d more notes"
-msgstr "%d 추가정보"
+msgstr "%d 추가 정보"
 
 #, c-format
 msgid "%s Split: %d %s"
@@ -43,7 +54,19 @@ msgstr "%s 분할: %d %s"
 
 #, c-format
 msgid "%s, please wait..."
-msgstr "%s, 기다려 주세요."
+msgstr "%s, 기다려 주세요..."
+
+#, c-format
+msgid "%s: Favorites"
+msgstr "%s: 즐겨찾기"
+
+#, c-format
+msgid "%s: GUI "
+msgstr "%s: GUI "
+
+#, c-format
+msgid "%s: Options "
+msgstr "%s: 옵션 "
 
 #, c-format
 msgid "(%d online)"
@@ -51,25 +74,49 @@ msgstr "(%d 온라인)"
 
 #, c-format
 msgid "(%d seconds timeout)"
-msgstr "(%d초 시간초과)"
+msgstr "(%d 초 시간초과)"
 
 msgid "(This can take a couple of minutes)"
-msgstr "(몇 분정도 걸릴 수 있습니다.)"
+msgstr "(이 작업에는 몇 분 정도 걸릴 수 있음)"
 
 msgid ".dol too small"
-msgstr ".dol 파일이 너무 작습니다."
+msgstr ".dol 파일이 너무 작음"
+
+msgid "1.2+"
+msgstr "1.2 이상"
+
+msgid "1019 blocks"
+msgstr "1019 블록"
+
+msgid "1st-Person Shooter"
+msgstr "1인칭 슈팅"
+
+msgid "2.0+"
+msgstr "2.0 이상"
+
+msgid "2.1+"
+msgstr "2.1 이상"
+
+msgid "2.2+"
+msgstr "2.2 이상"
+
+msgid "2043 blocks"
+msgstr "2043 블록"
 
 msgid "3D cover"
 msgstr "3D 커버"
 
+msgid "3rd-person Shooter"
+msgstr "3인칭 슈팅"
+
 msgid "< ASC  >"
-msgstr "<오름차순>"
+msgstr "< 오름차순 >"
 
 msgid "< DESC >"
-msgstr "<내림차순>"
+msgstr "< 내림차순 >"
 
 msgid "< DOWNLOAD >"
-msgstr "<다운로드>"
+msgstr "< 다운로드 >"
 
 msgid "About"
 msgstr "정보"
@@ -78,10 +125,10 @@ msgid "Action"
 msgstr "액션"
 
 msgid "Additional config:"
-msgstr "추가 설정:"
+msgstr "추가 구성:"
 
 msgid "Admin Lock:"
-msgstr "관리자 잠금:"
+msgstr "관리자 잠금"
 
 msgid "Admin Unlock"
 msgstr "관리자 해제"
@@ -90,29 +137,38 @@ msgid "Adult"
 msgstr "성인용"
 
 msgid "Adventure"
-msgstr "어드밴처"
+msgstr "어드벤처"
 
 msgid "All"
 msgstr "전체"
+
+msgid "All Channels"
+msgstr "모든 채널"
 
 msgid "All Games"
 msgstr "모든 게임"
 
 msgid "All themes up to date."
-msgstr "모든 테마가 최신버전 입니다. "
+msgstr "모든 테마가 최신버전 입니다."
+
+msgid "Alt Button Cfg:"
+msgstr "대체 버튼 구성:"
 
 msgid "Alt dol:"
 msgstr "대체 dol:"
 
 msgid "Alternative .dol:"
-msgstr "대체 dol:"
+msgstr "대체 .dol:"
 
 msgid "Anti 002 Fix:"
 msgstr "002 오류 수정:"
 
 #, c-format
 msgid "App. Path: %s"
-msgstr "프로그램경로: %s"
+msgstr "앱 경로: %s"
+
+msgid "Arcade"
+msgstr "아케이드"
 
 #, c-format
 msgid ""
@@ -120,21 +176,21 @@ msgid ""
 "this partition?"
 msgstr ""
 "이 파티션에 %s을\n"
-"하시겠습니까?"
+"할까요?"
 
 msgid ""
 "Are you sure you want to FIX\n"
 "this partition?"
 msgstr ""
 "이 파티션을 복구\n"
-"하시겠습니까?"
+"할까요?"
 
 msgid ""
 "Are you sure you want to remove this\n"
 "game?"
 msgstr ""
 "이 게임을 정말 삭제\n"
-"하시겠습니까?"
+"할까요?"
 
 msgid "Ascending"
 msgstr "오름차순"
@@ -144,42 +200,87 @@ msgstr "자동"
 
 #, c-format
 msgid "Auto-start game: %.6s not found!"
-msgstr "게임 자동 실행: %.6s 가 없습니다."
+msgstr "자동 시작 게임: %.6s을(를) 찾을 수 없습니다!"
 
 msgid "Available Updates"
-msgstr "가능한 업데이트"
+msgstr "사용 가능한 업데이트"
 
 msgid "Back"
-msgstr "뒤로"
+msgstr "뒤로 가기"
 
 msgid "Balance Board"
 msgstr "밸런스 보드"
 
+msgid "Baseball"
+msgstr "야구"
+
 msgid "Basic"
 msgstr "기본"
+
+msgid "Basketball"
+msgstr "농구"
+
+msgid "Bike Racing"
+msgstr "자전거 경주"
+
+msgid "Billiards"
+msgstr "당구"
 
 msgid "Block IOS Reload:"
 msgstr "IOS 다시읽기 금지:"
 
+msgid "Board Game"
+msgstr "보드 게임"
+
 msgid "Boot Disc"
-msgstr "게임디스크 실행"
+msgstr "디스크 부팅"
+
+msgid "Boot Method:"
+msgstr "부팅 방법:"
 
 msgid "Boot disc"
-msgstr "디스크 구동"
+msgstr "디스크 부팅"
 
-msgid "Booting Wii game, please wait..."
-msgstr "게임을 불러오는중 잠시 기다려 주세요."
+msgid "Boot method:"
+msgstr "부팅 방법:"
+
+msgid "Booting game, please wait..."
+msgstr "게임을 부팅 중입니다. 잠시만 기다려 주세요..."
+
+msgid "Bowling"
+msgstr "볼링"
+
+msgid "Boxing"
+msgstr "권투"
+
+msgid "Business Sim"
+msgstr "사업 시뮬레이션"
 
 #, c-format
 msgid "CFG base: %s"
-msgstr "CFG 기본폴더: %s"
+msgstr "CFG 기본 폴더: %s"
+
+msgid "Camera"
+msgstr "카메라"
+
+msgid "Can not dump GC savegames.\n"
+msgstr "GC 저장 게임을 덤프할 수 없습니다.\n"
+
+msgid "Can't install Wii games!"
+msgstr "Wii 게임을 설치할 수 없습니다!"
 
 msgid "Cancelled."
 msgstr "취소되었습니다."
 
 #, c-format
 msgid "Cannot create dir: %s"
-msgstr "%s폴더를 만들 수 없습니다."
+msgstr "디렉토리를 만들 수 없음: %s"
+
+msgid "Cards"
+msgstr "카드"
+
+msgid "Channel"
+msgstr "채널"
 
 msgid "Cheat Codes:"
 msgstr "치트 코드:"
@@ -191,50 +292,71 @@ msgid "Check For Updates"
 msgstr "업데이트 확인"
 
 msgid "Checking for themes..."
-msgstr "테마를 확인하고 있습니다."
+msgstr "테마 확인 중..."
 
 msgid "Checking for updates..."
-msgstr "업데이트를 확인하고 있습니다."
+msgstr "업데이트 확인하는 중..."
+
+msgid "Chess"
+msgstr "체스"
 
 msgid "Choose a sorting method"
-msgstr "정렬방법을 선택하세요."
+msgstr "정렬방법을 선택"
 
 msgid "Classic"
 msgstr "클래식"
 
 msgid "Classic Controller"
-msgstr "클래식 콘트롤러"
+msgstr "클래식 컨트롤러"
+
+msgid "Clear"
+msgstr "지우기"
 
 msgid "Clear Patches:"
-msgstr "패치를 삭제합니다."
+msgstr "패치 지우기:"
+
+msgid "Coaching"
+msgstr "코치"
+
+msgid "Compare Type"
+msgstr "비교 유형"
+
+msgid "Compilation"
+msgstr "모음집"
 
 #, c-format
 msgid "Complete. Size: %d"
-msgstr "작업종료 크기:%d"
+msgstr "완료되었습니다. 크기: %d"
 
 #, c-format
 msgid "Configurable Loader %s"
-msgstr "Configurable Loader %s"
+msgstr "구성 가능한 로더 %s"
 
 msgid "Configuration error, MAX_DNS_ENTRIES reached while the list is empty"
-msgstr "설정 오류 발견"
+msgstr "구성 오류, 목록이 비어 있는 동안 MAX_DNS_ENTRIES에 도달"
 
 #, c-format
 msgid "Connection error from net_read()  Errorcode: %i"
-msgstr "연결 오류 발견  에러코드: %i"
+msgstr "net_read()에서 연결 오류가 발생  오류코드: %i"
 
 msgid "Console"
 msgstr "콘솔"
 
-msgid "Console Def."
-msgstr "콘솔 선명도"
+msgid "Construction Sim"
+msgstr "건설 시뮬레이션"
+
+msgid "Contains"
+msgstr "포함"
 
 msgid "Controller"
-msgstr "콘트롤러"
+msgstr "컨트롤러"
+
+msgid "Cooking"
+msgstr "요리"
 
 #, c-format
 msgid "Could not initialize DIP module! (ret = %d)"
-msgstr "DIP 모듈 초기화 실패! (리턴값 = %d)"
+msgstr "DIP 모듈을 초기화할 수 없습니다! (리턴값 = %d)"
 
 msgid "Country Fix:"
 msgstr "지역코드 수정:"
@@ -248,11 +370,14 @@ msgstr "커버 이미지:"
 msgid "Cover Style"
 msgstr "커버 스타일"
 
+msgid "Covers Available"
+msgstr "사용 가능한 커버"
+
 msgid "Cover~~Back"
-msgstr "커버~~뒤"
+msgstr "커버~~뒷면"
 
 msgid "Cover~~Front"
-msgstr "커버~~앞"
+msgstr "커버~앞면"
 
 msgid "Create"
 msgstr "만들기"
@@ -260,54 +385,78 @@ msgstr "만들기"
 msgid "Creator"
 msgstr "제작자"
 
+msgid "Cricket"
+msgstr "크리켓"
+
 #, c-format
 msgid "Current Version: %s"
-msgstr "현재버전: %s"
+msgstr "현재 버전: %s"
+
+msgid "Custom"
+msgstr "커스텀"
 
 #, c-format
 msgid ""
 "Custom IOS %d could not be found!\n"
 "Please install it."
 msgstr ""
-"커스텀 IOS %d를 찾을 수 없습니다.\n"
+"커스텀 IOS %d를 찾을 수 없습니다!\n"
 "설치해 주세요."
 
 #, c-format
 msgid "Custom IOS %d could not be loaded! (ret = %d)"
-msgstr "cIOS %d를 불러올 수 없습니다. (리턴값 = %d)"
+msgstr "cIOS %d를 로드할 수 없습니다! (리턴값 = %d)"
 
 #, c-format
 msgid ""
 "Custom IOS %d is a stub!\n"
 "Please reinstall it."
 msgstr ""
-"커스텀 IOS %d가 바뀌었습니다.\n"
+"cIOS %d는 stub입니다!\n"
 "다시 설치해 주세요."
 
 #, c-format
 msgid "Custom IOS %s Loaded OK"
-msgstr "cIOS %s를 불러왔습니다."
+msgstr "cIOS %s 로드됨 확인"
+
+msgid "DEVO"
+msgstr "DEVO"
+
+msgid "DIOS MIOS"
+msgstr "DIOS MIOS"
 
 msgid "DISC cover"
 msgstr "디스크 커버"
 
 msgid "DOWN"
-msgstr "하"
+msgstr "아래쪽"
+
+msgid "Dance"
+msgstr "댄스"
 
 msgid "Dance Pad"
-msgstr "댄스 매트"
+msgstr "댄스 패드"
+
+msgid "Darts"
+msgstr "다트"
 
 msgid "Database update successful."
-msgstr "데이터베이스를 업데이트 하였습니다."
+msgstr "데이터베이스 업데이트가 성공했습니다."
 
 msgid "Debug"
 msgstr "디버그"
+
+msgid "Default"
+msgstr "기본"
+
+msgid "Default Gamecube Loader:"
+msgstr "기본 게임큐브 로더:"
 
 msgid "Delete Game"
 msgstr "게임 삭제"
 
 msgid "Deleting"
-msgstr "삭제중"
+msgstr "삭제 중"
 
 msgid "Descending"
 msgstr "내림차순"
@@ -316,87 +465,118 @@ msgid "Developer"
 msgstr "개발자"
 
 msgid "Device is not responding!"
-msgstr "장치가 응답하지 않습니다."
+msgstr "장치가 응답하지 않습니다!"
 
 msgid "Device:"
-msgstr "장치:"
+msgstr "장치"
+
+msgid "Devolution"
+msgstr "데볼루션"
+
+msgid "Devolution only accepts clean dumps!\n"
+msgstr "데볼루션은 클린 덤프만 허용합니다!\n"
 
 msgid "Disc"
 msgstr "디스크"
 
 msgid "Disc (Ask)"
-msgstr "디스크 (묻기)"
+msgstr "디스크 (질문)"
 
 msgid "Done."
-msgstr "마침"
+msgstr "완료하였습니다."
 
 msgid "Download .txt"
-msgstr ".txt를 다운로드"
+msgstr ".txt 다운로드"
 
 msgid "Download All Covers"
 msgstr "모든 커버 다운로드"
 
 msgid "Download All Missing Covers"
-msgstr "현재 부족한 커버 다운로드"
+msgstr "모든 누락된 커버 다운로드"
 
 msgid "Download Missing Covers"
-msgstr "없는 커버 다운로드"
+msgstr "누락된 커버 다운로드"
+
+msgid "Download Plugins"
+msgstr "플러그인 다운로드"
 
 msgid "Download Themes"
 msgstr "테마 다운로드"
 
 msgid "Download complete."
-msgstr "다운로드 했습니다."
+msgstr "다운로드가 완료되었습니다."
 
 #, c-format
 msgid "Download error on gamercard #%d."
-msgstr "게임카드 #%d에 다운로드 오류"
+msgstr "게이머카드 #%d에서 다운로드 오류가 발생했습니다."
 
-msgid "Download titles.txt"
-msgstr "title.txt 다운로드"
+msgid "Download game information"
+msgstr "게임 정보 다운로드"
 
 msgid "Downloadable Content"
 msgstr "다운로드 가능한 콘텐츠"
 
+#, c-format
+msgid "Downloading %s plugin."
+msgstr "%s 플러그인을 다운로드하는 중입니다."
+
 msgid "Downloading ALL MISSING covers"
-msgstr "현재 부족한 커버 다운로드중"
+msgstr "누락된 모든 커버 다운로드"
 
 msgid "Downloading ALL covers"
-msgstr "모든 커버 다운로드중"
+msgstr "모든 커버 다운로드"
 
 #, c-format
 msgid "Downloading ALL covers for %.6s"
-msgstr "%.6s 의 모든 커버 다운로드중"
+msgstr "%.6s에 대한 모든 커버 다운로드"
 
 #, c-format
 msgid "Downloading MISSING covers for %.6s"
-msgstr "%.6s 의 부족한 커버 다운로드중"
+msgstr "%.6s에 대한 누락된 커버 다운로드"
 
 msgid "Downloading Theme previews..."
-msgstr "테마 미리보기 다운로드중..."
+msgstr "테마 미리보기 다운로드 중..."
 
 msgid "Downloading cheats..."
-msgstr "치트 다운로드중"
+msgstr "치트 다운로드 중..."
 
 msgid "Downloading database."
-msgstr "데이터베이스 다운로드중"
+msgstr "데이터베이스를 다운로드하는 중입니다."
+
+msgid "Downloading devolution."
+msgstr "데볼루션을 다운로드 중입니다."
 
 msgid "Downloading titles.txt ..."
-msgstr "titles.txt 다운로드중"
+msgstr "titles.txt 다운로드 중..."
+
+msgid "Downloading translation file."
+msgstr "번역 파일 다운로드 중입니다."
+
+msgid "Downloading unifont."
+msgstr "유니폰트 다운로드 중입니다."
 
 #, c-format
 msgid "Downloading: %s"
-msgstr "다운로딩: %s"
+msgstr "다운로드: %s"
 
 #, c-format
 msgid "Downloading: %s as %s"
-msgstr "다운로딩: %s를 %s로"
+msgstr "다운로드: %s으(로) %s"
 
 msgid "Downloads"
 msgstr "다운로드"
 
+msgid "Drawing"
+msgstr "그리기"
+
 msgid "Drums"
 msgstr "드럼"
+
+msgid "Dump savegame"
+msgstr "저장게임 덤프"
+
+msgid "Duplicate ID3"
+msgstr "중복된 ID3"
 
 msgid "Dutch"
 msgstr "네덜란드어"
@@ -411,70 +591,70 @@ msgid "ERROR game opt"
 msgstr "게임 옵션 오류"
 
 msgid "ERROR reading BCA!"
-msgstr "BCA 불러오기 오류"
+msgstr "BCA 읽기 오류입니다!"
 
 #, c-format
 msgid "ERROR removing %s"
-msgstr "%s 삭제 오류"
+msgstr "%s 삭제 중 오류"
 
 msgid "ERROR writing BCA!"
-msgstr "BCA 저장하기 오류"
+msgstr "BCA 쓰기 오류입니다!"
 
 msgid "ERROR!"
-msgstr "오류!"
+msgstr "오류입니다!"
 
 #, c-format
 msgid "ERROR! (ret = %d)"
-msgstr "오류! (리턴값 = %d)"
+msgstr "오류입니다! (리턴값 = %d)"
 
 msgid "ERROR:"
 msgstr "오류:"
 
 #, c-format
 msgid "ERROR: %s is not accessible"
-msgstr "오류: %s 에 접근할 수 없습니다"
+msgstr "오류: %s 에 접근할 수 없습니다."
 
 #, c-format
 msgid "ERROR: Apploader %d"
-msgstr "오류: 어플로더 %d"
+msgstr "오류: 앱로더 %d"
 
 msgid "ERROR: CIOS222/223 v4 required for BCA"
-msgstr "오류: BCA에는 cIOS222/223 v4가 필요합니다"
+msgstr "오류: BCA에는 cIOS222/223 v4가 필요"
 
 msgid "ERROR: Cache Close"
-msgstr "오류: 캐쉬 닫기"
+msgstr ""오류: 캐쉬 닫기"
 
 #, c-format
 msgid "ERROR: Could not open game! (ret = %d)"
-msgstr "오류: 게임을 불러올 수 없습니다. (리턴값 = %d)"
+msgstr "오류: 게임을 불러올 수 없습니다! (리턴값 = %d)"
 
 msgid "ERROR: Game already installed!!"
-msgstr "오류: 게임이 이미 설치되어 있습니다."
+msgstr "오류: 게임이 이미 설치되어 있습니다!!"
 
 #, c-format
 msgid "ERROR: GetCerts %d"
 msgstr "오류: 인증서 가져오기 %d"
 
 msgid "ERROR: Invalid Game ID"
-msgstr "오류: 잘못된 게임 ID 입니다."
+msgstr "오류: 잘못된 게임 ID"
 
 #, c-format
 msgid "ERROR: Loading EHC module! (%d)"
-msgstr "오류: EHC모듈 불러오기 (%d)"
+msgstr "오류: EHC 모듈을 로딩 중입니다! (%d)"
 
 msgid ""
 "ERROR: NTFS write disabled!\n"
 "(set ntfs_write=1)"
 msgstr ""
 "오류: NTFS 쓰기가 금지되어 있습니다.\n"
-"ntfs_write=1을 설정하세요."
+"(ntfs_write=1 설정)"
 
 #, c-format
 msgid "ERROR: No partitions found! (ret = %d)"
-msgstr "오류: 파티션을 찾을 수 없습니다. (리턴값 = %d)"
+msgstr "오류: 파티션을 찾을 수 없습니다! (리턴값 = %d)"
 
 msgid "ERROR: Not a Wii disc!!"
-msgstr "오류: Wii 디스크가 아닙니다."
+msgstr "오류: Wii 디스크가 아닙니다!!"
 
 #, c-format
 msgid "ERROR: Offset(0x%llx) %d"
@@ -482,11 +662,11 @@ msgstr "오류: 오프셋(0x%llx) %d"
 
 #, c-format
 msgid "ERROR: OpenPartition %d"
-msgstr "오류: 파티션 열기 %d"
+msgstr "오류: 파티션열기 %d"
 
 #, c-format
 msgid "ERROR: OpenPartition(0x%llx) %d"
-msgstr "오류: 파티션 열기(0x%llx) %d"
+msgstr "오류: 파티션열기(0x%llx) %d"
 
 #, c-format
 msgid "ERROR: SetFragList(0): %d"
@@ -494,14 +674,17 @@ msgstr "오류: SetFragList(0): %d"
 
 #, c-format
 msgid "ERROR: SetWBFS: %d"
-msgstr "오류: WBFS 설정: %d"
+msgstr "오류: WBFS설정: %d"
 
 msgid "ERROR: Setting SD mode"
 msgstr "오류: SD 모드 설정"
 
 #, c-format
 msgid "ERROR: USB init! (%d)"
-msgstr "오류: USB 초기화 (%d)"
+msgstr "오류: USB 초기화! (%d)"
+
+msgid "ERROR: WBFS not mounted!"
+msgstr "오류: WBFS가 마운트되지 않았습니다!"
 
 msgid ""
 "ERROR: cIOS249rev18, cIOS222v4,\n"
@@ -527,7 +710,7 @@ msgid "ERROR: get_frag_list: %d"
 msgstr "오류: get_frag_list: %d"
 
 msgid "ERROR: memory overlap!"
-msgstr "오류: 메모리 중복"
+msgstr "오류: 메모리 중복입니다!"
 
 msgid ""
 "ERROR: multiple wbfs partitions\n"
@@ -537,7 +720,7 @@ msgstr ""
 "IOS222/223-mload 가 필요합니다."
 
 msgid "ERROR: not enough free space!!"
-msgstr "오류: 여유 공간이 부족합니다."
+msgstr "오류: 여유 공간이 부족합니다!!"
 
 msgid "ERROR: ntfs was not cleanly unmounted"
 msgstr "오류: ntfs 파티션이 제대로 해제되지 않았습니다."
@@ -555,20 +738,27 @@ msgid "ERROR: setting up fragments %d %d"
 msgstr "오류: 단편화 설정 %d %d"
 
 #, c-format
+msgid "ERROR: the drive or partition %s/ is not connected!!"
+msgstr "오류: 드라이브 또는 파티션 %s/가 연결되지 않았습니다!!"
+
+#, c-format
 msgid "ERROR: writing %s (%d)."
 msgstr "오류: %s 쓰기 (%d)"
 
 msgid "EXTEND"
 msgstr "확장"
 
+msgid "Educational"
+msgstr "교육"
+
 msgid "Ejecting DVD..."
-msgstr "DVD 꺼내기"
+msgstr "DVD를 꺼내는 중..."
 
 msgid "English"
 msgstr "영어"
 
 msgid "English Title"
-msgstr "영어 제목"
+msgstr "영어 타이틀"
 
 msgid "Enter Code: "
 msgstr "코드 입력: "
@@ -577,43 +767,47 @@ msgid "Error GRRLIB init"
 msgstr "GRRLIB 초기화 오류"
 
 msgid "Error Initializing Network."
-msgstr "네트워크 초기화 오류"
+msgstr "네트워크 초기화 오류입니다."
 
 msgid "Error adding disc!"
-msgstr "디스크 추가 오류"
+msgstr "디스크를 추가하는 중 오류가 발생했습니다!"
+
+#, c-format
+msgid "Error allocating buffer: %d"
+msgstr "버퍼 할당 오류: %d"
 
 msgid "Error creating directory..."
-msgstr "폴더 만들기 오류"
+msgstr "디렉토리 생성 중 오류가 발생했습니다..."
 
 msgid "Error discarding options!"
-msgstr "옵션 취소하기 오류"
+msgstr "옵션 삭제 중 오류가 발생했습니다!"
 
 msgid "Error downloading theme preview..."
-msgstr "테마 미리보기 다운로드 오류"
+msgstr "테마 미리보기를 다운로드하는 중 오류가 발생했습니다..."
 
 msgid "Error downloading theme..."
-msgstr "테마 다운로드 오류"
+msgstr "테마 다운로드 중 오류가 발생했습니다..."
 
 msgid "Error downloading themes..."
-msgstr "테마 다운로드 오류"
+msgstr "테마를 다운로드하는 중 오류가 발생했습니다..."
 
 msgid "Error downloading update..."
-msgstr "업데이트 다운로드 오류"
+msgstr "업데이트를 다운로드하는 중 오류가 발생했습니다..."
 
 msgid "Error downloading updates..."
-msgstr "업데이트 다운로드 오류"
+msgstr "업데이트를 다운로드하는 중 오류가 발생했습니다..."
 
 msgid "Error downloading."
-msgstr "다운로드 오류"
+msgstr "다운로드 중 오류가 발생했습니다."
 
 msgid "Error establishing connection"
-msgstr "연결 설정 오류"
+msgstr "연결 설정 중 오류 발생"
 
 msgid "Error extracting theme..."
-msgstr "테마 압축해제 오류"
+msgstr "테마 추출 중 오류가 발생했습니다..."
 
 msgid "Error opening database, update did not complete."
-msgstr "데이터베이스 연결 실패로 업데이트를 할 수 없습니다."
+msgstr "데이터베이스를 여는 중 오류가 발생하여 업데이트가 완료되지 않았습니다."
 
 #, c-format
 msgid "Error opening: %s"
@@ -621,67 +815,73 @@ msgstr "불러오기 오류: %s"
 
 #, c-format
 msgid "Error playing %s"
-msgstr "%s 실행 오류"
+msgstr "%s 플레이 중 오류 발생"
 
 msgid "Error reading .dol"
-msgstr ".dol 불러오기 오류"
+msgstr ".dol 읽기 오류"
 
 msgid "Error reading dol header"
-msgstr "dol 헤더 불러오기 오류"
+msgstr "dol 헤더 읽기 오류"
 
 #, c-format
 msgid "Error saving %s"
-msgstr "%s 저장 오류"
+msgstr "%s 저장 중 오류 발생"
 
 msgid "Error saving options!"
-msgstr "옵션 저장 오류"
+msgstr "옵션 저장 중 오류가 발생했습니다!"
 
 msgid "Error saving settings!"
-msgstr "설정 저장 오류"
+msgstr "설정 저장 중 오류가 발생했습니다!"
 
 msgid ""
 "Error storing playlog file.\n"
 "Start from the Wii Menu to fix."
 msgstr ""
-"게임기록파일 저장실패\n"
-"Wii 메뉴에서 수정하세요."
+"플레이로그 파일을 저장하는 중 오류가 발생했습니다.\n"
+"Wii 메뉴에서 시작하여 수정하세요."
 
 msgid "Error: Invalid PNG image!"
-msgstr "오류: 잘못된 PNG 이미지입니다."
+msgstr "오류: PNG 이미지가 잘못되었습니다!"
 
 msgid "Error: no URL."
-msgstr "오류: URL 없음"
+msgstr "오류: URL이 없습니다."
 
 msgid "Error: no data."
-msgstr "오류: 데이터 없음"
+msgstr "오류: 데이터가 없습니다."
+
+msgid "Exercise"
+msgstr "운동"
 
 msgid "Exit"
 msgstr "끝내기"
 
 #, c-format
 msgid "Extracting: %s"
-msgstr "압축해제: %s"
+msgstr "압축 해제: %s""
 
 msgid "FAIL"
 msgstr "실패"
 
 #, c-format
 msgid "FAT: ALLOC ERROR %p %p %p"
-msgstr "FAT: 할당 오류 %p %p %p"
+msgstr "치명적 오류: 메모리 부족 오류 %p %p %p"
 
 #, c-format
 msgid "FATAL: alloc grid(%d)"
-msgstr "치명적오류: 그리드 할당(%d)"
+msgstr "치명적 오류: 그리드 할당(%d)"
 
 #, c-format
 msgid "FILL %d"
-msgstr "채우기 %d"
+msgstr "%d 채우기"
 
 msgid "FLAT cover"
 msgstr "정면 커버"
 
 msgid "FULL cover"
 msgstr "전체 커버"
+
+msgid "FWD Emulators"
+msgstr "포워드 에뮬레이터"
 
 msgid "Fav"
 msgstr "즐겨찾기"
@@ -702,14 +902,14 @@ msgid "Favorite:"
 msgstr "즐겨찾기:"
 
 msgid "Favorites:"
-msgstr "즐겨찾기"
+msgstr "즐겨찾기:"
 
 msgid "Fighting"
 msgstr "격투"
 
 #, c-format
 msgid "File not found! %s"
-msgstr "파일을 찾을 수 없습니다. %s"
+msgstr "파일을 찾을 수 없습니다! %s"
 
 msgid "Filter"
 msgstr "분류"
@@ -720,8 +920,11 @@ msgstr "게임 분류"
 msgid "Filter by Controller"
 msgstr "콘트롤러에 의한 분류"
 
+msgid "Filter by Game Type"
+msgstr "게임 유형에 의한 분류"
+
 msgid "Filter by Genre"
-msgstr "쟝르에 의한 분류"
+msgstr "장르에 의한 분류"
 
 msgid "Filter by Online Features"
 msgstr "온라인 기능에 의한 분류"
@@ -729,11 +932,32 @@ msgstr "온라인 기능에 의한 분류"
 msgid "Filter:"
 msgstr "분류:"
 
+msgid "Fishing"
+msgstr "낚시"
+
+msgid "Fitness"
+msgstr "피트니스"
+
 msgid "Fixing EXTEND partition..."
-msgstr "확장 파티션 수정중..."
+msgstr "EXTEND 파티션을 수정하는 중..."
+
+msgid "Flight Sim"
+msgstr "비행 시뮬레이션"
+
+msgid "Football"
+msgstr "풋볼"
 
 msgid "Force NTSC"
 msgstr "강제 NTSC"
+
+msgid "Force NTSC 480p"
+msgstr "강제 NTSC 480p"
+
+msgid "Force PAL"
+msgstr "강제 PAL"
+
+msgid "Force PAL 480p"
+msgstr "강제 PAL 480p"
 
 msgid "Force PAL50"
 msgstr "강제 PAL50"
@@ -742,11 +966,11 @@ msgid "Force PAL60"
 msgstr "강제 PAL60"
 
 msgid "Formatting"
-msgstr "포맷중"
+msgstr "포맷 중"
 
 #, c-format
 msgid "Found %s"
-msgstr "%s 발견됨"
+msgstr "%s 찾았음"
 
 msgid "French"
 msgstr "프랑스어"
@@ -754,18 +978,30 @@ msgstr "프랑스어"
 msgid "Full"
 msgstr "전체"
 
+msgid "Futuristic Racing"
+msgstr "미래형 경주"
+
 msgid "GB"
-msgstr "GB"
+msgstr "기가바이트"
 
 msgid "Game Default"
-msgstr "게임 기본"
+msgstr "게임 기본값"
+
+msgid "Game ID"
+msgstr "게임 ID"
 
 msgid "Game Options"
 msgstr "게임 옵션"
 
 #, c-format
 msgid "Game Options:  %s"
-msgstr "게임 옵션: %s"
+msgstr "게임 옵션:  %s"
+
+msgid "Game Type"
+msgstr "게임 유형"
+
+msgid "GameCube"
+msgstr "게임큐브"
 
 msgid "Gamecube"
 msgstr "게임큐브"
@@ -775,51 +1011,69 @@ msgstr "게이머 카드:"
 
 #, c-format
 msgid "Gamercard #%d reported: %.*s"
-msgstr "게임카드 #%d 보고: %.*s"
+msgstr "게이머카드 #%d 보고됨: %.*s"
 
 msgid "Genre"
-msgstr "쟝르"
+msgstr "장르"
 
 msgid "German"
 msgstr "독일어"
 
 msgid "Global Options"
-msgstr "전체 옵션"
+msgstr "글로벌 옵션"
+
+msgid "Golf"
+msgstr "골프"
 
 msgid "Guitar"
 msgstr "기타"
 
 msgid "HQ cover"
-msgstr "고화질 커버"
+msgstr "고품질 커버"
 
 msgid "HTTP Response was without a file"
-msgstr "HTTP 파일없는 응답"
+msgstr "HTTP 응답에 파일이 없음"
+
+msgid "Health"
+msgstr "건강"
+
+msgid "Hidden Object"
+msgstr "숨겨진 개체"
 
 msgid "Hide"
 msgstr "숨김"
 
 msgid "Hide Game:"
-msgstr "숨김 게임:"
+msgstr "게임 숨기기"
+
+msgid "Hockey"
+msgstr "단축키"
 
 msgid "Hold button B to cancel."
-msgstr "B버튼 길게 눌러 취소"
+msgstr "B 버튼 길게 눌러 취소합니다."
+
+msgid "Home Menu"
+msgstr "홈 메뉴"
 
 msgid "Homebrew Channel"
 msgstr "홈브류 채널"
 
 msgid "Hook Type:"
-msgstr "치트 타입:"
+msgstr "치트 유형:"
+
+msgid "Hunting"
+msgstr "사냥"
 
 #, c-format
 msgid "ID mismatch: [%.6s] [%.6s]"
 msgstr "ID 불일치: [%.6s] [%.6s]"
 
 msgid "IOS Reload: Blocked"
-msgstr "IOS 다시읽기: 금지"
+msgstr "IOS 다시읽기: 금지됨"
 
 #, c-format
 msgid "IOS_Open(%s) failed with code %d"
-msgstr "IOS_Open(%s) 을 실패. 에러코드: %d"
+msgstr "IOS_Open(%s)이 코드 %d로 실패"
 
 msgid ""
 "If Cfg does not start properly\n"
@@ -832,7 +1086,10 @@ msgstr ""
 
 #, c-format
 msgid "Inconsistency in LZ77 encoding %x"
-msgstr "%x를 인코딩중 LZ77에 불일치 발생 "
+msgstr "LZ77 인코딩 %x에 불일치"
+
+msgid "Infinity Base"
+msgstr "인피니티 베이스"
 
 msgid "Info"
 msgstr "정보"
@@ -842,13 +1099,13 @@ msgid "Info file: %s"
 msgstr "파일 정보: %s"
 
 msgid "Initializing Network..."
-msgstr "네트워크 초기화중..."
+msgstr "네트워크 초기화 중..."
 
 msgid "Install"
 msgstr "설치"
 
 msgid "Install Date"
-msgstr "설치 날짜"
+msgstr "설치일"
 
 msgid "Install Game"
 msgstr "게임 설치"
@@ -858,17 +1115,17 @@ msgstr "게임 설치"
 
 #, c-format
 msgid "Installation ERROR! (ret = %d)"
-msgstr "설치 오류 (리턴값 = %d)"
+msgstr "설치 오류입니다! (리턴값 = %d)"
 
 msgid "Installing game, please wait..."
-msgstr "게임 설치중, 기다려 주세요."
+msgstr "게임 설치 중, 잠시만 기다려 주세요..."
 
 msgid "Invalid .dol"
-msgstr "잘못된 .dol 파일 입니다."
+msgstr "잘못된 .dol"
 
 #, c-format
 msgid "Invalid partition: '%s'"
-msgstr "파티션 오류: '%s'"
+msgstr "잘못된 파티션: '%s'"
 
 msgid "Italian"
 msgstr "이탈리아어"
@@ -877,7 +1134,16 @@ msgid "Japanese"
 msgstr "일본어"
 
 msgid "Japanese Title"
-msgstr "일본 제목"
+msgstr "일본 타이틀"
+
+msgid "Jump"
+msgstr "점프"
+
+msgid "Karaoke"
+msgstr "노래방"
+
+msgid "Kart Racing"
+msgstr "카트 경주"
 
 msgid "Keyboard"
 msgstr "키보드"
@@ -885,30 +1151,46 @@ msgstr "키보드"
 msgid "Korean"
 msgstr "한국어"
 
+msgid "LED:"
+msgstr "LED:"
+
 msgid "LEFT"
-msgstr "좌"
+msgstr "왼쪽"
 
 msgid "LOCKED!"
-msgstr "잠김"
+msgstr "잠겼음!"
 
 msgid "Language:"
-msgstr "언어: "
+msgstr "언어"
 
 msgid "Last Play Date"
-msgstr "최종 게임한 날짜"
+msgstr "마지막 플레이 날짜"
 
 msgid "Launch Methods"
-msgstr "실행방법"
+msgstr "실행 방법"
+
+msgid "Life Simulation"
+msgstr "인생 시뮬레이션"
 
 msgid "Load OK!"
-msgstr "불러오기 완료."
+msgstr "로드 확인되었습니다!"
 
 #, c-format
 msgid "Loader Version: %s"
-msgstr "로더 버전: %s"
+msgstr "로더 버전: %s
 
 msgid "Loading ..."
-msgstr "불러오는중"
+msgstr "로딩 중..."
+
+#, c-format
+msgid "Loading..%s\n"
+msgstr "로딩 중..%s\n"
+
+msgid "MC size:"
+msgstr "MC 크기:"
+
+msgid "MC size::"
+msgstr "MC 크기::"
 
 msgid "Main"
 msgstr "메인"
@@ -924,76 +1206,102 @@ msgstr ""
 "연결하셨는지 확인하세요."
 
 msgid "Manage"
-msgstr "설정"
+msgstr "관리"
 
 msgid "Manage Cheats"
-msgstr "치트 설정"
+msgstr "치트 관리"
+
+msgid "Management Sim"
+msgstr "매니지먼트 시뮬레이션"
+
+msgid "Martial Arts"
+msgstr "무술"
 
 msgid "Microphone"
 msgstr "마이크"
 
+msgid "Mighty Plugin"
+msgstr "마이티 플러그인"
+
 msgid "Motion+"
 msgstr "모션플러스"
 
+msgid "Motorcycle Racing"
+msgstr "모터사이클 경주"
+
 msgid "Mounting device, please wait..."
-msgstr "장치연결중, 기다려 주세요."
+msgstr "장치를 연결 중입니다. 잠시만 기다려 주세요..."
 
 msgid "Music"
 msgstr "음악"
 
 #, c-format
 msgid "Music file from dir: %s"
-msgstr "음악파일 폴더: %s"
+msgstr "폴더에서 음악 파일: %s"
 
 #, c-format
 msgid "Music file size: %d"
-msgstr "음악파일 크기: %d"
+msgstr "음악 파일 크기: %d"
 
 #, c-format
 msgid "Music file: %s"
-msgstr "음악파일: %s"
+msgstr "음악 파일: %s"
 
 msgid "Music: Disabled"
-msgstr "배경음악: 사용안함"
+msgstr "음악: 비활성화"
 
 msgid "Music: Enabled"
-msgstr "배경음악: 사용함"
+msgstr "음악: 활성화"
 
 #, c-format
 msgid "Music: Looking for %s files in: %s"
-msgstr "음악: %s 파일을 %s 폴더에서 찾는중"
+msgstr "음악: %s 파일을 %s 폴더에서 찾는 중"
 
 #, c-format
 msgid "Music: Next file index to play: %i"
-msgstr "음악: 다음 재생 파일: %i"
+msgstr "음악: 재생할 다음 파일 인덱스: %i"
 
 #, c-format
 msgid "Music: Number of %s files found: %i"
-msgstr "음악: %s개의 파일을 %i 에서 찾았습니다."
+msgstr "음악: %s 개의 파일을 %i 에서 찾았음: %i"
 
 msgid "Music: musicArray contents: "
-msgstr "음악: 음악배열 내용: "
+msgstr "음악: 음악배열 내용:"
+
+#, c-format
+msgid ""
+"NAND Emu Path:\n"
+"%s\n"
+msgstr ""
+"NAND 에뮤 경로:\n"
+"%s\n"
+
+msgid "NAND Emu:"
+msgstr "NAND 에뮤:"
+
+msgid "NMM:"
+msgstr "NMM:"
 
 msgid ""
 "NOTE: CIOS249 before rev10:\n"
 "Loading games from SDHC not supported!"
 msgstr ""
-"SDHC에서 게임을 하기 위해서는\n"
-"cIOS249 rev10 이상이 필요합니다."
+"참고: CIOS249 Rev10 이하:\n"
+"SDHC에서 게임 로딩은 지원되지 않습니다!"
 
 msgid ""
 "NOTE: CIOS249 before rev14:\n"
 "Possible error #001 is not handled!"
 msgstr ""
-"cIOS249 rev14 이하 버전은\n"
-"001오류 수정을 할 수 없습니다."
+"참고: CIOS249 Rev14 이하:\n"
+"가능한 오류 #001이 처리되지 않았습니다!"
 
 msgid ""
 "NOTE: CIOS249 before rev9:\n"
 "Loading games from USB not supported!"
 msgstr ""
-"USB에서 게임을 하기 위해서는\n"
-"cIOS249 rev9 이상이 필요합니다."
+"참고: CIOS249 Rev9 이하:\n"
+"USB에서 게임을 로딩하는 것은 지원되지 않습니다!"
 
 msgid ""
 "NOTE: You are using CIOS249 rev13:\n"
@@ -1001,10 +1309,10 @@ msgid ""
 "power-off the Wii before you start\n"
 "another game or it will hang here!"
 msgstr ""
-"cIOS249 rev13을 사용중:\n"
-"다른 게임을 하기 위해서는 리셋을 하던가\n"
-"Wii의 전원을 껐다가 켜야만 다른 게임을\n"
-"하실 수 있습니다."
+"참고: CIOS249 rev13 사용:\n"
+"게임을 종료하려면 다른 게임을 시작하기 전에\n"
+"Wii를 재설정하거나 전원을 꺼야 합니다.\n"
+"그렇지 않으면 여기서 멈춥니다!"
 
 msgid ""
 "NOTE: You are using CIOS249 rev14:\n"
@@ -1013,17 +1321,24 @@ msgid ""
 "you use a different IOS or revision\n"
 "for installation/playback of this game."
 msgstr ""
-"cIOS249 rev14를 사용중:\n"
-"rev14버전은 듀얼레이어 게임을 할 수\n"
-"없습니다. 다른 버전을 설치하시기\n"
-"바랍니다."
+""참고: CIOS249 rev14 사용:\n"
+"듀얼 레이어 게임에는 알려진 문제가 있습니다.\n"
+"이 게임을 설치/재생하려면 다른 IOS 또는\n"
+"개정판을 사용하는 것이 좋습니다."
 
 msgid ""
 "NOTE: loader restart is required\n"
 "for the update to take effect."
 msgstr ""
-"업데이트를 적용하려면 반드시\n"
-"로더를 재시작 하셔야 합니다."
+"참고: 업데이트를 적용하려면 로더를 다시\n"
+"시작해야 합니다."
+
+msgid ""
+"NOTE: may loader restart is required\n"
+"for the settings to take effect."
+msgstr ""
+"참고: 설정을 적용하려면 로더를 다시 시작해야\n"
+"합니다."
 
 #, c-format
 msgid ""
@@ -1032,22 +1347,28 @@ msgid ""
 "invalid setup. Press %s to change the\n"
 "partition type from EXTEND to data."
 msgstr ""
-"알림: 파티션 P#%d 는 확장타입에\n"
-"WBFS 파일시스템을 설치하셨습니다. 이것은\n"
-"잘못된 설정이므로 %s 를 누르셔서 파티션\n"
-"타입을 확장에서 데이터로 바꾸세요."
+"참고: 파티션 P#%d는 확장 유형이지만 WBFS\n"
+"파일 시스템을 포함합니다. 이는 잘못된 설정입니다.\n"
+"%s를 눌러 파티션 유형을 확장에서 데이터로\n"
+"변경합니다."
 
 msgid "NTFS compression not supported!"
-msgstr "NTFS 압축이 지원되지 않습니다."
+msgstr "NTFS 압축은 지원되지 않습니다!"
 
 msgid "NTFS encryption not supported!"
-msgstr "NTFS 암호화가 지원되지 않습니다."
+msgstr "NTFS 암호화는 지원되지 않습니다!"
+
+msgid "NTSC-J patch:"
+msgstr "NTSC-J 패치:"
+
+msgid "Neek2o Plugin"
+msgstr "Neek2o 플러그인"
 
 msgid "Network connection established."
-msgstr "네트워크에 접속했습니다."
+msgstr "네트워크 연결이 설정되었습니다."
 
 msgid "Network error. Can't update gamercards."
-msgstr "네트워크 오류: 게임카드를 업데이트 할 수 없습니다."
+msgstr "네트워크 오류입니다. 게이머카드를 업데이트할 수 없습니다."
 
 msgid "New Themes"
 msgstr "새로운 테마"
@@ -1056,29 +1377,48 @@ msgid "Nintendo DS"
 msgstr "닌텐도 DS"
 
 msgid "Nintendo DS Connectivity"
-msgstr "닌텐도 DS와의 통신기능"
+msgstr "닌텐도 DS 연결"
+
+msgid "Nintendont"
+msgstr "닌텐돈트"
+
+#, c-format
+msgid "Nintendont Ver. %d.%d\n"
+msgstr "닌텐돈트 버전 %d.%d\n"
 
 msgid "No"
 msgstr "아니오"
 
+msgid "No Speed Limit:"
+msgstr "속도 제한 없음:"
+
 #, c-format
 msgid "No domain part in URL '%s'"
-msgstr "'%s' 주소에 도메인이 없습니다."
+msgstr "URL '%s'에 도메인 부분이 없음"
 
 msgid "No games found!"
-msgstr "게임이 없습니다."
+msgstr "게임을 찾을 수 없습니다!"
 
 msgid "No partition selected!"
-msgstr "파티션이 선택되지 않았습니다."
+msgstr "선택된 파티션이 없습니다!"
 
 msgid "No themes found."
-msgstr "새로운 테마가 없습니다."
+msgstr "테마를 찾을 수 없습니다."
 
 msgid "No updates found."
 msgstr "업데이트가 없습니다."
 
+msgid "NoDisc:"
+msgstr "NoDisc:"
+
+msgid "NoSSL only"
+msgstr "NoSSL만"
+
 msgid "None found on disc"
-msgstr "디스크에 아무것도 없습니다."
+msgstr "디스크에서 찾을 수 없음"
+
+msgid "Not Found boot.dol!"
+msgstr "boot.dol을 찾을 수 없습니다!"
 
 msgid "Not Found!"
 msgstr "찾을 수 없음"
@@ -1090,43 +1430,46 @@ msgid "Number of Players"
 msgstr "플레이어 수"
 
 msgid "Nunchuk"
-msgstr "눈차크"
+msgstr "눈챠크"
 
 msgid "OK"
 msgstr "확인"
 
 msgid "OK!"
-msgstr "확인"
+msgstr "확인하였니다!"
 
 msgid "Ocarina (cheats):"
-msgstr "오카리나(치트): "
+msgstr "오카리나 (치트):"
 
 msgid "Ocarina Cheat Manager"
-msgstr "오카리나 치트 매니저"
+msgstr "오카리나 치트 관리자"
 
 msgid "Ocarina: Code Error"
 msgstr "오카리나: 코드 오류"
 
 msgid "Ocarina: Codes found."
-msgstr "오카리나: 코드 있음"
+msgstr "오카리나: 코드를 찾았습니다."
 
 msgid "Ocarina: No codes found"
-msgstr "오카리나: 코드 없음"
+msgstr "오카리나: 코드를 찾을 수 없음"
 
 msgid "Ocarina: Out Of Memory Error"
-msgstr "오카리나: 메모리 오류"
+msgstr "오카리나: 메모리 부족 오류"
 
 msgid "Ocarina: Searching codes..."
-msgstr "오카리나: 코드 검색중"
+msgstr "오카리나: 코드 검색 중..."
 
 msgid "Ocarina: Too many codes"
-msgstr "오카리나: 코드가 너무 많습니다."
+msgstr "오카리나: 코드가 너무 많음"
 
 msgid "Off"
-msgstr "끄기"
+msgstr "끔"
+
+msgid "Off-Road Racing"
+msgstr "오프로드 경주"
 
 msgid "On"
-msgstr "켜기"
+msgstr "켬"
 
 msgid "Online"
 msgstr "온라인"
@@ -1153,214 +1496,257 @@ msgid "Open Style"
 msgstr "스타일 열기"
 
 msgid "Opening DVD disc..."
-msgstr "DVD 디스크를 여는중"
+msgstr "DVD 디스크를 여는 중..."
 
 #, c-format
 msgid "Opening partition: %s"
-msgstr "파티션 여는중: %s"
+msgstr "파티션 여는 중: %s"
 
 msgid "Options"
 msgstr "옵션"
 
 msgid "Options discarded for this game."
-msgstr "이 게임에서 취소된 옵션"
+msgstr "이 게임에서 취소된 옵션입니다."
 
 msgid "Options saved for this game."
-msgstr "이 게임에 저장된 옵션"
+msgstr "이 게임에 저장된 옵션입니다."
 
 msgid "Out of memory"
 msgstr "메모리 오류"
 
+#, c-format
+msgid "P1 %3u%% | P2 %3u%% | P3 %3u%% | P4 %3u%%"
+msgstr "P1 %3u%% | P2 %3u%% | P3 %3u%% | P4 %3u%%"
+
+msgid "PAD HOOK"
+msgstr "패드 후크"
+
+msgid "PAD HOOK:"
+msgstr "패드 후크:"
+
 msgid "Page:"
 msgstr "페이지:"
+
+msgid "Partial"
+msgstr "부분"
 
 msgid "Partition:"
 msgstr "파티션:"
 
 #, c-format
 msgid "Partition: %s not found!"
-msgstr "파티션: %s를 찾을 수 없습니다."
+msgstr "파티션: %s을 찾을 수 없습니다!"
 
 msgid "Party"
 msgstr "파티"
 
 msgid "Paused Start"
-msgstr "일시정지 시작"
+msgstr "일시중지 시작"
+
+msgid "Petanque"
+msgstr "페탕크"
+
+msgid "Pinball"
+msgstr "핀볼"
 
 msgid "Platformer"
 msgstr "플랫폼"
 
 msgid "Play Count"
-msgstr "게임 횟수"
+msgstr "플레이 횟수"
 
 msgid "Players"
 msgstr "플레이어"
 
 msgid "Please insert a game disc..."
-msgstr "게임 디스크를 넣어주세요."
+msgstr "게임 디스크를 넣어주세요..."
+
+msgid "Plugin:"
+msgstr "플러그인:"
+
+msgid "Poker"
+msgstr "포커"
+
+msgid "Portal of Power"
+msgstr "포털 오브 파워"
 
 #, c-format
 msgid "Press %s button for options."
-msgstr "옵션을 설정하려면 %s를 누르세요."
+msgstr "옵션을 보려면 %s 버튼을 누르세요"
 
 #, c-format
 msgid "Press %s button to %s."
-msgstr "%s를 눌러 %s를 하세요."
+msgstr "%s 버튼을 눌러 %s로 이동하세요."
 
 #, c-format
 msgid "Press %s button to apply codes."
-msgstr "코드를 적용하려면 %s를 누르세요."
+msgstr "%s 버튼을 눌러 코드를 적용하세요."
 
 #, c-format
 msgid "Press %s button to cancel."
-msgstr "취소를 하려면 %s를 누르세요."
+msgstr "취소하려면 %s 버튼을 누르세요"
 
 #, c-format
 msgid "Press %s button to change device."
-msgstr "장치를 변경하려면 %s를 누르세요."
+msgstr "%s 버튼을 눌러 장치를 변경하세요."
 
 #, c-format
 msgid "Press %s button to continue."
-msgstr "계속하려면 %s를 누르세요."
+msgstr "계속하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to delete FS."
-msgstr "FS를 삭제하려면 %s를 누르세요."
+msgstr "FS를 삭제하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to dump BCA."
-msgstr "BCA를 덤프하려면 %s를 누르세요."
+msgstr "%s 버튼을 눌러 BCA를 덤프합니다."
 
 #, c-format
 msgid "Press %s button to exit."
-msgstr "종료하려면 %s를 누르세요."
+msgstr "종료하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to fix EXTEND/WBFS."
-msgstr "확장 WBFS문제를 수정하려면 %s를 누르세요."
+msgstr "확장/WBFS를 수정하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to format WBFS."
-msgstr "WBFS파티션을 포맷하려면 %s를 누르세요."
+msgstr "WBFS를 포맷하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to go back."
-msgstr "되돌아가려면 %s를 누르세요."
+msgstr "뒤로 돌아가려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to select a partition."
-msgstr "파티션을 선택하려면 %s를 누르세요."
+msgstr "파티션을 선택하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to select."
-msgstr "선택을 하려면 %s를 누르세요."
+msgstr "선택하려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to skip codes."
-msgstr "코드를 건너뛰려면 %s를 누르세요."
+msgstr "코드를 건너뛰려면 %s 버튼을 누르세요."
 
 #, c-format
 msgid "Press %s button to sync FAT."
-msgstr "FAT 동기화는 %s를 누르세요."
+msgstr "%s 버튼을 눌러 FAT를 동기화하세요."
 
 #, c-format
 msgid "Press %s for fullscreen preview"
-msgstr "전체화면 미리보기는 %s를 누르세요."
+msgstr "전체 화면 미리보기를 위해 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s for game options"
-msgstr "게임 옵션을 설정하려면 %s를 누르세요."
+msgstr "게임 옵션을 위해 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s for global options"
-msgstr "전체 옵션을 설정하려면 %s를 누르세요."
+msgstr "글로벌 옵션을 위해 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to discard options"
-msgstr "옵션변경을 취소하려면 %s를 누르세요."
+msgstr "옵션을 삭제하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to download and update"
-msgstr "업데이트를 하려면 %s를 누르세요."
+msgstr "다운로드 및 업데이트하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to download this theme"
-msgstr "이 테마 다운로드는 %s를 누르세요."
+msgstr "이 테마를 다운로드하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to download, %s to return"
-msgstr "다운로드는 %s 돌아가기는 %s"
+msgstr "다운로드하려면 %s 버튼을 누르고, 돌아가려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to return"
-msgstr "돌아가려면 %s를 누르세요."
+msgstr "돌아가려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to save global settings"
-msgstr "전체옵션을 저장하려면 %s를 누르세요."
+msgstr "%s 버튼을 눌러 글로벌 설정을 저장"
 
 #, c-format
 msgid "Press %s to save options"
-msgstr "옵션을 저장하려면 %s를 누르세요."
+msgstr "옵션을 저장하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to save selection"
-msgstr "선택을 저장하려면 %s를 누르세요."
+msgstr "선택 항목을 저장하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to select filter type"
-msgstr "%s를 눌러 게임분류를 선택하세요."
+msgstr "필터 유형을 선택하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to select sorting method"
-msgstr "%s를 눌러 정렬방식을 선택하세요."
+msgstr "정렬 방법을 선택하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to start game"
-msgstr "게임 시작은 %s를 누르세요."
+msgstr "게임을 시작하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s to update without meta.xml"
-msgstr "로더만 업데이트는 %s를 누르세요."
+msgstr "meta.xml 없이 업데이트하려면 %s 버튼을 누름"
 
 #, c-format
 msgid "Press %s/%s to select device."
-msgstr "장치선택은 %s/%s를 누르세요."
+msgstr "장치를 선택하려면 %s/%s 버튼을 누르세요."
+
+msgid "Press 1 to skip WBFS mounting"
+msgstr "WBFS 연결을 건너뛰려면 1 버튼을 누름"
 
 msgid "Press 2 to reload IOS"
-msgstr "2를 눌러 IOS를 다시 불러오세요."
+msgstr "IOS를 다시 로드하려면 2 버튼을 누름"
+
+msgid "Press A to continue without config.txt"
+msgstr "config.txt 없이 계속하려면 A 버튼을 누름"
 
 msgid "Press A to select device"
-msgstr "A를 눌러 장치를 선택하세요."
+msgstr "장치를 선택하려면 A 버튼을 누름"
 
 msgid "Press B to exit to HBC"
-msgstr "B를 누르면 홈브류 채널로 갑니다."
+msgstr "홈브류 채널로 나가려면 B 버튼을 누름"
 
 msgid "Press HOME to reset"
-msgstr "HOME을 누르면 리셋됩니다."
+msgstr "재설정 하려면 홈을 누름"
 
 msgid "Press LEFT/RIGHT to select IOS"
-msgstr "좌우 버튼으로 IOS를 선택하세요."
+msgstr "IOS를 선택하려면 왼쪽/오른쪽 버튼을 누름"
 
 msgid "Press any button to continue..."
-msgstr "계속하려면 아무키나 누르세요."
+msgstr "계속하려면 아무 버튼이나 누르세요..."
 
 msgid "Press any button to exit..."
-msgstr "종료하려면 아무키나 누르세요."
+msgstr "종료하려면 아무 버튼이나 누르세요..."
 
 msgid "Press any button to restart..."
-msgstr "다시 시작하려면 아무키나 누르세요."
+msgstr "재시작하려면 아무 버튼이나 누르세요..."
+
+msgid "Press any button.\n"
+msgstr "아무 버튼이나 누르세요.\n"
 
 msgid "Press any button..."
-msgstr "아무키나 누르세요."
+msgstr "아무 버튼이나 누르세요..."
 
 #, c-format
 msgid "Press button %s to download covers."
-msgstr "이미지 다운로드는 %s를 누르세요."
+msgstr "커버를 다운로드하려면 버튼 %s를 누르세요."
 
 #, c-format
 msgid "Press button %s to eject DVD."
-msgstr "DVD를 꺼내려면 %s를 누르세요."
+msgstr "DVD를 꺼내려면 버튼 %s를 누르세요."
+
+msgid "Priiloader"
+msgstr "프릴로더"
+
+msgid "Private server:"
+msgstr "사설 서버:"
 
 msgid "Profile:"
 msgstr "프로파일:"
@@ -1373,63 +1759,75 @@ msgid "Program Updates"
 msgstr "프로그램 업데이트"
 
 msgid "Publisher"
-msgstr "발매원"
+msgstr "배급사"
 
 msgid "Puzzle"
 msgstr "퍼즐"
 
 msgid "Quit"
-msgstr "마침"
+msgstr "나가기"
 
 msgid "RAW"
 msgstr "RAW"
 
 msgid "RIGHT"
-msgstr "우"
+msgstr "오른쪽"
 
 msgid "RPG"
 msgstr "롤플레잉"
 
 msgid "Racing"
-msgstr "레이싱"
+msgstr "경주"
+
+msgid "Rail Shooter"
+msgstr "레일 슈터"
 
 #, c-format
 msgid "Rated %s"
-msgstr "게임등급 %s "
+msgstr "%s로 평가됨"
 
 msgid "Rating"
-msgstr "게임등급"
+msgstr "평가"
 
 msgid "Read"
 msgstr "읽기"
 
 msgid "Reading BCA..."
-msgstr "BCA를 불러오는중"
+msgstr "BCA를 읽는 중..."
 
 msgid "Reboot"
-msgstr "재시작"
+msgstr "재부팅"
+
+msgid "Region"
+msgstr "지역"
 
 msgid "Release Date"
-msgstr "로더 수정날짜"
+msgstr "출시일"
 
 msgid "Release Notes: (short)"
-msgstr "수정내역: 요약"
+msgstr "수정 사항: (요약)"
+
+msgid "Remove Speed Limit:"
+msgstr "속도 제한 제거:"
 
 msgid "Removing game, please wait..."
-msgstr "게임을 삭제중입니다. 기다려 주세요."
+msgstr "게임 삭제 중, 잠시만 기다려 주세요..."
 
 msgid "Restarting Wii..."
-msgstr "Wii를 재시작중입니다."
+msgstr "Wii 재시작 중..."
 
 #, c-format
 msgid "Returned! (ret = %d)"
-msgstr "되돌아옴 (리턴값 = %d)"
+msgstr "되돌아갔습니다! (리턴값 = %d)"
 
 msgid "Rhythm"
 msgstr "리듬"
 
 msgid "Rows:"
 msgstr "열:"
+
+msgid "Rugby"
+msgstr "럭비"
 
 msgid "Running benchmark, please wait"
 msgstr "벤치마크를 실행중입니다. 기다려 주세요."
@@ -1441,7 +1839,7 @@ msgid "SD/SDHC Card"
 msgstr "SD/SDHC 카드"
 
 msgid "SUCCESS!"
-msgstr "성공"
+msgstr "성공하였습니다!"
 
 msgid "Save .gct"
 msgstr ".gct 저장"
@@ -1455,27 +1853,42 @@ msgstr "설정 저장"
 msgid "Save debug.log"
 msgstr "debug.log 저장"
 
+msgid "Savegame not found.\n"
+msgstr "저장게임을 찾을 수 없습니다.\n"
+
+msgid "Savegame:"
+msgstr "저장게임:"
+
 msgid "Saving Settings... "
-msgstr "설정 저장중"
+msgstr "설정 저장 중..."
 
 msgid "Saving cheats..."
-msgstr "치트 저장중"
+msgstr "치트 저장 중..."
 
 msgid "Saving gamelist.txt ... "
-msgstr "gamelist.txt 저장중"
+msgstr "gamelist.txt 저장 중..."
 
 msgid "Saving settings..."
-msgstr "설정 저장중"
+msgstr "설정 저장 중..."
 
 msgid "Saving:"
-msgstr "저장중:"
+msgstr "저장 중:"
 
 #, c-format
 msgid "Saving: %s"
-msgstr "저장중: %s"
+msgstr "저장 중: %s"
+
+msgid "Screenshot:"
+msgstr "스크린샷:"
 
 msgid "Scroll:"
 msgstr "스크롤:"
+
+msgid "Search"
+msgstr "검색"
+
+msgid "Search for:"
+msgstr "검색:"
 
 msgid "Select Alternative .dol:"
 msgstr "대체 .dol 선택:"
@@ -1484,16 +1897,19 @@ msgid "Select WBFS device:"
 msgstr "WBFS 장치 선택:"
 
 msgid "Select a different partition"
-msgstr "다른 파티션을 선택하세요."
+msgstr "다른 파티션 선택"
 
 msgid "Select a partition"
-msgstr "파티션을 선택하세요"
+msgstr "파티션 선택"
 
 msgid "Select all"
-msgstr "전체선택"
+msgstr "모두 선택"
+
+msgid "Select device:"
+msgstr "장치 선택:"
 
 msgid "Select the game you want to boot"
-msgstr "실행할 게임을 선택하세요."
+msgstr "부팅하려는 게임 선택"
 
 msgid "Selected Game"
 msgstr "선택된 게임"
@@ -1501,14 +1917,17 @@ msgstr "선택된 게임"
 msgid "Settings"
 msgstr "설정"
 
+msgid "Shared"
+msgstr "공유됨"
+
 msgid "Shooter"
 msgstr "슈팅"
 
 msgid "Show All"
-msgstr "모두 보기"
+msgstr "모두 표시"
 
 msgid "Show cIOS info"
-msgstr "cIOS 정보 보기"
+msgstr "cIOS 정보 표시"
 
 msgid "Shutdown"
 msgstr "끄기"
@@ -1516,15 +1935,33 @@ msgstr "끄기"
 msgid "Side:"
 msgstr "옆:"
 
+msgid "Sim Racing"
+msgstr "시뮬레이션 경주"
+
 msgid "Simulation"
 msgstr "시뮬레이션"
 
 msgid "Size(GB) Type  Mount Used"
-msgstr "(GB)크기 타입 마운트 사용중"
+msgstr "크기(GB) 유형 사용된 마운트"
 
 #, c-format
 msgid "Size: %d bytes"
-msgstr "크기: %d바이트"
+msgstr "크기: %d 바이트"
+
+msgid "Skateboard"
+msgstr "스케이트보드"
+
+msgid "Skateboarding"
+msgstr "스케이트보딩"
+
+msgid "Skiing"
+msgstr "스키"
+
+msgid "Snowboarding"
+msgstr "스노우보드"
+
+msgid "Soccer"
+msgstr "싸커"
 
 msgid "Sort"
 msgstr "정렬"
@@ -1536,7 +1973,7 @@ msgid "Sort Order:"
 msgstr "정렬 순서:"
 
 msgid "Sort Type:"
-msgstr "정렬 방식:"
+msgstr "정렬 유형:"
 
 #, c-format
 msgid "Sort: %s-%s"
@@ -1555,10 +1992,13 @@ msgid "Start Game"
 msgstr "게임 시작"
 
 msgid "Start this game?"
-msgstr "이 게임을 시작할까요?"
+msgstr "이 게임을 시작할까요?""
+
+msgid "Stealth Action"
+msgstr "잠입 액션"
 
 msgid "Stopping DVD..."
-msgstr "DVD를 멈추는중..."
+msgstr "DVD를 중지하는 중..."
 
 msgid "Strategy"
 msgstr "전략"
@@ -1569,20 +2009,38 @@ msgstr "스타일"
 msgid "Style:"
 msgstr "스타일:"
 
+msgid "Surfing"
+msgstr "서핑"
+
+msgid "Survival Horror"
+msgstr "서바이벌 호러"
+
 msgid "Sync FAT free space info?"
 msgstr "FAT의 빈공간 정보를 동기화 할까요?"
 
 msgid "Synchronizing, please wait."
-msgstr "동기화 하는중 기다려 주세요."
+msgstr "동기화 하는 중, 기다려 주세요."
+
+msgid "Synopsis"
+msgstr "개요"
+
+msgid "Synopsis Length"
+msgstr "개요 길이"
 
 msgid "System"
 msgstr "시스템"
 
 msgid "System Def."
-msgstr "시스템 선명도"
+msgstr "시스템 정의"
 
 msgid "T. Chinese"
-msgstr "표준 중국어"
+msgstr "번체 중국어"
+
+msgid "Table Tennis"
+msgstr "테이블 테니스"
+
+msgid "Tennis"
+msgstr "테니스"
 
 msgid "Theme"
 msgstr "테마"
@@ -1594,7 +2052,7 @@ msgid ""
 "Theme may be too large.\n"
 "Reboot of Cfg suggested.\n"
 msgstr ""
-"테마가 너무 큽니다.\n"
+"테마 크기가 너무 큽니다.\n"
 "프로그램을 다시 시작해 주세요."
 
 msgid "Theme:"
@@ -1605,7 +2063,7 @@ msgid "Theme: %s"
 msgstr "테마: %s"
 
 msgid "Themes provided by wii.spiffy360.com"
-msgstr "테마 제공: wii.spiffy360.com"
+msgstr "wii.spiffy360.com 테마 제공"
 
 msgid "Themes to download"
 msgstr "다운로드할 테마"
@@ -1618,72 +2076,111 @@ msgstr "타이틀"
 
 #, c-format
 msgid "Too many cheats! (%d)"
-msgstr "치트 과다 사용 (%d)"
+msgstr "치트를 과다 사용합니다! (%D)"
 
 msgid "Too many code lines!"
-msgstr "코드가 너무 많습니다."
+msgstr "코드 라인이 너무 많습니다."
 
 #, c-format
 msgid "Too many fragments! %d"
-msgstr "분할이 너무 많습니다. %d"
+msgstr "분할이 너무 많습니다! %d"
+
+msgid "Total Body Tracking"
+msgstr "종합 전식 추적"
+
+msgid "Train Simulation"
+msgstr "기차 시뮬레이션"
+
+msgid "Trivia"
+msgstr "트리비아"
+
+msgid "Truck Racing"
+msgstr "트럭 경주"
 
 #, c-format
 msgid "Trying (url#%d) ..."
-msgstr "접속중 (url#%d)"
+msgstr "접속 중 (url#%d) ..."
+
+msgid "Turntable"
+msgstr "턴테이블"
 
 msgid "UNUSED"
-msgstr "사용안됨"
+msgstr "사용하지 않음"
 
 msgid "UP"
-msgstr "위"
+msgstr "위쪽"
 
 #, c-format
 msgid "URL '%s' doesn't start with 'http://'"
-msgstr "'%s'주소에 'http://'가 빠졌습니다."
+msgstr "URL '%s'에 'http://'가 누락되었습니다."
 
 #, c-format
 msgid "URL '%s' has no PATH part"
-msgstr "'%s'주소에 경로가 없습니다."
+msgstr "URL '%s'에 경로가 없습니다."
 
 msgid "USB Gecko found. Debugging is enabled."
-msgstr "USB Gecko를 찾았습니다. 디버깅이 시작됩니다."
+msgstr "USB Gecko가 발견되었습니다. 디버깅이 활성화되었습니다."
 
 msgid "USB Mass Storage Device"
 msgstr "USB 대용량 저장장치"
 
 msgid "Unknown"
-msgstr "알수없음"
+msgstr "알 수 없음"
 
 msgid "Unknown syntax!"
-msgstr "알수없는 구문"
+msgstr "알 수 없는 구문입니다!"
 
 msgid "Unplayed"
-msgstr "실행안됨"
+msgstr "플레이하지 않음"
 
 msgid "Unplayed Games"
-msgstr "실행안한 게임"
-
-msgid "Update WiiTDB Game Database"
-msgstr "WiiTDB 데이터베이스 업데이트"
+msgstr "플레이하지 않은 게임"
 
 msgid "Update themes"
 msgstr "테마 업데이트"
-
-msgid "Update titles.txt"
-msgstr "title.txt 업데이트"
 
 msgid "Updates"
 msgstr "업데이트"
 
 msgid "Updating database."
-msgstr "데이터베이스 업데이트중"
+msgstr "데이터베이스 업데이트 중입니다."
+
+msgid "Updating devolution"
+msgstr "데볼루션 업데이트"
 
 #, c-format
 msgid "Used: %.1fGB Free: %.1fGB [%d]"
-msgstr "사용:  %.1fGB 빈공간: %.1fGB [%d]"
+msgstr "사용:  %.1fGB 여유 공간: %.1fGB [%d]"
 
 msgid "Using Saved Alternative .dol:"
 msgstr "저장된 대체 .dol 사용:"
+
+msgid "VC-Arcade"
+msgstr "VC-아케이드"
+
+msgid "VC-Commodore 64"
+msgstr "VC-코모도어 64"
+
+msgid "VC-N64"
+msgstr "VC-닌텐도64"
+
+msgid "VC-NES"
+msgstr "VC-패미컴"
+
+msgid "VC-Neo Geo"
+msgstr "VC-네오지오"
+
+msgid "VC-SMS"
+msgstr "VC-세가마스터시스템"
+
+msgid "VC-SNES"
+msgstr "VC-슈퍼패미컴"
+
+msgid "VC-Sega Genesis"
+msgstr "VC-세가 메가드라이브"
+
+msgid "VC-TurboGrafx-16"
+msgstr "VC-PC엔진"
 
 msgid "Version"
 msgstr "버전"
@@ -1697,8 +2194,14 @@ msgstr "비디오:"
 msgid "View"
 msgstr "보기"
 
+msgid "Virtual Pet"
+msgstr "가상 애완동물"
+
 msgid "Vitality Sensor"
 msgstr "체력 센서"
+
+msgid "Volleyball"
+msgstr "배구"
 
 msgid "WARNING:"
 msgstr "경고:"
@@ -1707,24 +2210,39 @@ msgstr "경고:"
 msgid "WBFS: %.1fGB free of %.1fGB"
 msgstr "WBFS: %.1fGB 사용 전체: %.1fGB"
 
+msgid "Watercraft Racing"
+msgstr "워터크래프트 경주"
+
 msgid "Wheel"
 msgstr "휠"
+
+msgid "Wide Screen:"
+msgstr "와이드 스크린:"
+
+msgid "Wii"
+msgstr "Wii"
+
+msgid "Wii Channel"
+msgstr "Wii 채널"
 
 msgid "Wii Speak"
 msgstr "Wii 스피크"
 
-msgid "WiiTDB Game Database"
-msgstr "WiiTDB 게임 데이터베이스"
+msgid "WiiWare"
+msgstr "Wii웨어"
 
 msgid "Wiimote"
 msgstr "위모트"
 
+msgid "Wrestling"
+msgstr "레슬링"
+
 msgid "Write Playlog:"
-msgstr "게임기록 쓰기:"
+msgstr "게임기록 기록:"
 
 #, c-format
 msgid "Writing to %s"
-msgstr "%s에 쓰는중"
+msgstr "%s에 기록 중"
 
 #, c-format
 msgid "Writing: %s"
@@ -1742,17 +2260,18 @@ msgid ""
 "and plugging back the device,\n"
 "or just wait some more"
 msgstr ""
-"장치를 다시 접속하시거나\n"
-"조금 더 기다리시기 바랍니다."
+"또한 장치의 플러그를 뽑았다가\n"
+"다시 꽂아보거나 잠시\n"
+"기다려보세요."
 
 msgid "Zapper"
-msgstr "재퍼"
+msgstr "재퍼건"
 
 msgid "[ CHANGED ]"
 msgstr "[ 변경됨 ]"
 
 msgid "[ FOUND ]"
-msgstr "[ 찾음 ]"
+msgstr "[ 찾았음 ]"
 
 msgid "[ SAVED ]"
 msgstr "[ 저장됨 ]"
@@ -1764,7 +2283,7 @@ msgid "[No HQ]"
 msgstr "[고화질 없음]"
 
 msgid "[USED]"
-msgstr "[사용]"
+msgstr "[사용함]"
 
 msgid "[default]"
 msgstr "[기본]"
@@ -1777,17 +2296,17 @@ msgid "bad wbfs file: %s"
 msgstr "잘못된 wbfs 파일: %s"
 
 msgid "calculating space, please wait..."
-msgstr "공간 계산중 기다려주세요."
+msgstr "공간 계산중 기다려주세요..."
 
 msgid "delete"
 msgstr "삭제"
 
 #, c-format
 msgid "dest: %p - %p"
-msgstr "목적지: %p - %p"
+msgstr "대상: %p - %p"
 
 msgid "discard"
-msgstr "버리기"
+msgstr "삭제"
 
 #, c-format
 msgid "domain %s could not be resolved"
@@ -1808,21 +2327,25 @@ msgid "format"
 msgstr "포맷"
 
 msgid "free"
-msgstr "빈공간"
+msgstr "여유 공간"
 
 #, c-format
 msgid "linear read speed: %.2f mb/s"
 msgstr "순차 읽기 속도: %.2f mb/s"
 
 msgid "linear..."
-msgstr "순차"
+msgstr "순차..."
+
+#, c-format
+msgid "loader.bin size: %d"
+msgstr "loader.bin 크기: %d"
 
 #, c-format
 msgid "music file too big (%d) %s"
-msgstr "음악파일이 너무 큽니다. (%d) %s"
+msgstr "음악 파일이 너무 큼 (%d) %s"
 
 msgid "music.mp3 or music.mod not found!"
-msgstr ".mp3 나 .mod 파일을 찾을 수 없습니다."
+msgstr ".mp3 나 .mod 파일을 찾을 수 없습니다!"
 
 msgid "no file"
 msgstr "파일 없음"
@@ -1839,15 +2362,21 @@ msgstr "페이지"
 msgid "parse error"
 msgstr "분석 오류"
 
+msgid "r51-"
+msgstr "r51 이하"
+
+msgid "r52+"
+msgstr "r52 이상"
+
 #, c-format
 msgid "random read speed: %.2f mb/s"
-msgstr "랜덤 읽기 속도: %.2f mb/s"
+msgstr "무작위읽기 속도: %.2f mb/s"
 
 msgid "random..."
-msgstr "랜덤"
+msgstr "무작위..."
 
 msgid "reset"
-msgstr "리셋"
+msgstr "재설정"
 
 msgid "revert"
 msgstr "되돌리기"
@@ -1860,7 +2389,7 @@ msgid "split error: %s"
 msgstr "분할 오류: %s"
 
 msgid "uDraw GameTablet"
-msgstr "uDraw GameTablet"
+msgstr "uDraw 게임태블릿"
 
 msgid "unable to open wii disc"
 msgstr "Wii 디스크를 불러올 수 없습니다."
@@ -1869,11 +2398,5 @@ msgstr "Wii 디스크를 불러올 수 없습니다."
 msgid "used: %p - %p"
 msgstr "사용중: %p - %p"
 
-#~ msgid "Front"
-#~ msgstr "앞"
-
-#~ msgid "Loading previous game list..."
-#~ msgstr "이전 게임목록을 불러오는중"
-
-#~ msgid "Remove Game"
-#~ msgstr "게임 삭제"
+msgid "wiimmfi.de"
+msgstr "wiimmfi.de"
