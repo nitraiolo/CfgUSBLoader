@@ -1,4 +1,4 @@
-# Configurable SD/USB Loader v70r78.11 MOD patched
+# Configurable SD/USB Loader v70r78 MOD patched
 
 ![enter image description here](http://cfgusbloader.ntd.homelinux.org/images/USB.png)
 
