@@ -14,6 +14,19 @@ metaxml=</long_description>
 metaxml=<ahb_access/>
 metaxml=</app>
 
+release = 70r78.13
+size = 2018688
+date = 2024-09-15
+url = http://cfgusbloader.ntd.homelinux.org/binaries/dol/r12/cfg70r78.13-222.dol
+-Internals - changed memory start addres to avoid overlaps
+-Graphics - added options for 480p Nintendo Revolution SDK bug fix patch
+-Graphics - added options for deflickering settings
+-Graphics - added options for disabling dithering
+-Graphics - added options for framebuffer width patch
+-Languages - Updated KO.lang
+-Languages - Updated ZH_CN.lang
+-Documentation - Moved to README.md
+
 release = 70r78.12
 size = 1908544
 date = 2024-09-03

@@ -478,6 +478,10 @@ struct W_GameCfg
 	Widget *alt_controller_cfg;
 	Widget *rem_speed_limit;
 	Widget *private_server;
+	Widget *deflicker;
+	Widget *fix_480p;
+	Widget *dithering;
+	Widget *fix_fb;
 } wgame;
 
 
@@ -1160,6 +1164,10 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			char *names_private_server[num_private_server];
 			num_private_server = map_to_list(map_private_server, num_private_server, names_private_server);
 			
+			int num_deflicker = map_get_num(map_deflicker);
+			char *names_deflicker[num_deflicker];
+			num_deflicker = map_to_list(map_deflicker, num_deflicker, names_deflicker);
+			
 			ww = wgui_add_game_opt(op, gt("Language:"), CFG_LANG_NUM, languages);
 			BIND_OPT(language);
 
@@ -1218,7 +1226,19 @@ void InitGameOptionsPage(Widget *pp, int bh)
 			
 			ww = wgui_add_game_opt(op, gt("Private server:"), num_private_server, names_private_server);
 			BIND_OPT(private_server);
-
+			
+			ww = wgui_add_game_opt(op, gt("Fix 480p:"), 2, NULL);
+			BIND_OPT(fix_480p);
+			
+			ww = wgui_add_game_opt(op, gt("Deflicker Filter:"), num_deflicker, names_deflicker);
+			BIND_OPT(deflicker);
+			
+			ww = wgui_add_game_opt(op, gt("Disable Dithering:"), 2, NULL);
+			BIND_OPT(dithering);
+			
+			ww = wgui_add_game_opt(op, gt("Framebuffer width:"), 2, NULL);
+			BIND_OPT(fix_fb);
+			
 			pos_move_to(pp, PAD0, -bh);
 			pos_pad(pp, PAD0);
 			pos_columns(pp, 4, SIZE_FULL);

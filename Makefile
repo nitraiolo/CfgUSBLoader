@@ -15,7 +15,7 @@ include $(DEVKITPPC)/wii_rules
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
-VERSION		:=	70r78.12
+VERSION		:=	70r78.13
 RELEASE		:=	release
 # to override RELEASE use: make announce RELEASE=beta
 ifeq ($(findstring compat,$(VERSION)),compat)
@@ -63,8 +63,16 @@ BUILD_DEBUG	:=	0
 ifeq ($(BUILD_DEBUG),1)
 	BUILD	:=	build_dbg
 	TARGET	:=	$(BINBASE)-dbg
-	BUILD_DBG_FLAG := -DBUILD_DBG=3
+	BUILD_DBG_FLAG := -DBUILD_DBG=3 -DDEBUG_PATCH=1
 endif
+
+BUILD_DEBUG_PATCH	:=	0
+ifeq ($(BUILD_DEBUG_PATCH),1)
+	BUILD	:=	build_dbg_patch
+	TARGET	:=	$(BINBASE)-dbg-patch
+	BUILD_DBG_FLAG := -DDEBUG_PATCH=1
+endif
+
 #"-g" tells the compiler to include support for the debugger
 #"-Wall" tells it to warn us about all suspicious-looking code
 DEBUG_OPT	= -Os
@@ -74,12 +82,13 @@ CFLAGS	= $(DEBUG_OPT) -Wall $(MACHDEP) $(INCLUDE) $(BUILD_FLAGS) $(DEFINES)
 CXXFLAGS	=	$(CFLAGS)
 
 # start address:
-# Original:   0x80a00100
-# NeoGammaR4: 0x80dfff00
-# cfg 33-36:  0x80c00000
-# cfg 37-49:  0x80b00000
-# cfg 50-..:  0x80a80000
-LDFLAGS	=	$(MACHDEP) -Wl,-Map,$(notdir $@).map,--section-start,.init=0x80a80000
+# Original:         0x80a00100
+# NeoGammaR4:       0x80dfff00
+# cfg 33-36:        0x80c00000
+# cfg 37-49:        0x80b00000
+# cfg 50-..:        0x80a80000
+# cfg 70r78.13-..:  0x80a50000
+LDFLAGS	=	$(MACHDEP) -Wl,-Map,$(notdir $@).map,--section-start,.init=0x80a50000
 
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
@@ -167,6 +176,9 @@ $(BUILD):
 
 debug:
 	@$(MAKE) --no-print-directory BUILD_DEBUG=1
+	
+debug_patch:
+	@$(MAKE) --no-print-directory BUILD_DEBUG_PATCH=1
 
 #---------------------------------------------------------------------------------
 lang:
@@ -188,6 +200,7 @@ clean:
 	@rm -fr $(BUILD) $(OUTPUT).elf $(OUTPUT).dol
 	@rm -fr $(BUILD)_222 $(OUTPUT)-222.elf $(OUTPUT)-222.dol
 	@rm -fr $(BUILD)_dbg $(OUTPUT)-dbg.elf $(OUTPUT)-dbg.dol
+	@rm -fr $(BUILD)_dbg_patch $(OUTPUT)-dbg-patch.elf $(OUTPUT)-dbg-patch.dol
 
 cleanall: clean
 	@rm -fr *.dol *.elf

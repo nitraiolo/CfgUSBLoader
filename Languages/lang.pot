@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-15 00:36+0100\n"
+"POT-Creation-Date: 2024-09-14 22:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -442,6 +442,12 @@ msgstr ""
 msgid "Default Gamecube Loader:"
 msgstr ""
 
+msgid "Defaults"
+msgstr ""
+
+msgid "Deflicker Filter:"
+msgstr ""
+
 msgid "Delete Game"
 msgstr ""
 
@@ -464,6 +470,9 @@ msgid "Devolution"
 msgstr ""
 
 msgid "Devolution only accepts clean dumps!\n"
+msgstr ""
+
+msgid "Disable Dithering:"
 msgstr ""
 
 msgid "Disc"
@@ -917,6 +926,9 @@ msgstr ""
 msgid "Fitness"
 msgstr ""
 
+msgid "Fix 480p:"
+msgstr ""
+
 msgid "Fixing EXTEND partition..."
 msgstr ""
 
@@ -949,6 +961,9 @@ msgstr ""
 
 #, c-format
 msgid "Found %s"
+msgstr ""
+
+msgid "Framebuffer width:"
 msgstr ""
 
 msgid "French"
@@ -1382,10 +1397,25 @@ msgstr ""
 msgid "Nunchuk"
 msgstr ""
 
+msgid "OFF (Extended)"
+msgstr ""
+
+msgid "OFF (Safe)"
+msgstr ""
+
 msgid "OK"
 msgstr ""
 
 msgid "OK!"
+msgstr ""
+
+msgid "ON (High)"
+msgstr ""
+
+msgid "ON (Low)"
+msgstr ""
+
+msgid "ON (Medium)"
 msgstr ""
 
 msgid "Ocarina (cheats):"

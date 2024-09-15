@@ -212,6 +212,16 @@ char *str_private_server[4] =
 	gts("Custom")
 };
 
+char *str_deflicker[6] = 
+{
+	gts("Defaults"),
+	gts("OFF (Safe)"),
+	gts("OFF (Extended)"),
+	gts("ON (Low)"),
+	gts("ON (Medium)"),
+	gts("ON (High)")
+};
+
 int Menu_Global_Options();
 int Menu_Game_Options();
 void Switch_Favorites(bool enable);
@@ -1836,7 +1846,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 	int opt_saved;
 	//int opt_ios_reload;
 	int opt_language, opt_video, opt_video_patch, opt_vidtv, opt_padhook, opt_nand_emu;
-	int opt_mem_card_emu, opt_mem_card_size, opt_country_patch, opt_anti_002, opt_ocarina, opt_wide_screen, opt_nodisc, opt_ntsc_j_patch, opt_screenshot, opt_private_server; 
+	int opt_mem_card_emu, opt_mem_card_size, opt_country_patch, opt_anti_002, opt_ocarina, opt_wide_screen, opt_nodisc, opt_ntsc_j_patch, opt_screenshot, opt_private_server, opt_deflicker, opt_fix_480p, opt_dithering, opt_fix_fb; 
 	f32 size = 0.0;
 	int redraw_cover = 0;
 	int i;
@@ -1882,7 +1892,7 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 	game_cfg = &game_cfg2->curr;
 
 	struct Menu menu;
-	int NUM_OPT = 20;
+	int NUM_OPT = 24;
 	if (header->magic == GC_GAME_ON_DRIVE) NUM_OPT = 18;
 	if (header->magic == CHANNEL_MAGIC) NUM_OPT = 19;
 	char active[NUM_OPT];
@@ -1927,6 +1937,10 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 		opt_ntsc_j_patch = game_cfg->ntsc_j_patch;
 		opt_nand_emu = game_cfg->nand_emu;
 		opt_private_server = game_cfg->private_server;
+		opt_deflicker = game_cfg->deflicker;
+		opt_fix_480p = game_cfg->fix_480p;
+		opt_dithering = game_cfg->dithering;
+		opt_fix_fb = game_cfg->fix_fb;
 
 		if (game_cfg->clean == CFG_CLEAN_ALL) {
 			opt_language = CFG_LANG_CONSOLE;
@@ -1943,6 +1957,10 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 			opt_nodisc = 0;
 			opt_screenshot = 0;
 			opt_private_server = 0;
+			opt_deflicker = 0;
+			opt_fix_480p = 0;
+			opt_dithering = 0;
+			opt_fix_fb = 0;
 			active[1] = 0; // language
 			active[2] = 0; // video
 			active[3] = 0; // video_patch
@@ -2174,6 +2192,14 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				PRINT_OPT_A(gt("Savegame:"), gt("Dump savegame"));
 			if (menu_window_mark(&menu))
 				PRINT_OPT_A(gt("Private server:"), gt(str_private_server[opt_private_server]));
+			if (menu_window_mark(&menu))
+				PRINT_OPT_B(gt("Fix 480p:"), opt_fix_480p);
+			if (menu_window_mark(&menu))
+				PRINT_OPT_A(gt("Deflicker Filter:"), gt(str_deflicker[opt_deflicker]));
+			if (menu_window_mark(&menu))
+				PRINT_OPT_B(gt("Disable Dithering:"), opt_dithering);
+			if (menu_window_mark(&menu))
+				PRINT_OPT_B(gt("Framebuffer width:"), opt_fix_fb);
 		}
 		
 		DefaultColor();
@@ -2444,6 +2470,18 @@ int Menu_Boot_Options(struct discHdr *header, bool disc) {
 				break;
 			case 19:
 				CHANGE(game_cfg->private_server, 3);
+				break;
+			case 20:
+				CHANGE(game_cfg->fix_480p, 1);
+				break;
+			case 21:
+				CHANGE(game_cfg->deflicker, 5);
+				break;
+			case 22:
+				CHANGE(game_cfg->dithering, 1);
+				break;
+			case 23:
+				CHANGE(game_cfg->fix_fb, 1);
 				break;
 			}
 		}

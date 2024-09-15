@@ -17,6 +17,7 @@
 #include "gettext.h"
 #include "menu.h"
 #include "dolmenu.h"
+#include "deflicker.h"
 
 /* Apploader function pointers */
 typedef int   (*app_main)(void **dst, int *size, int *offset);
@@ -291,8 +292,7 @@ s32 Apploader_Run(entry_point *entry)
 	TIME.size += appldr_len;
 
 	// used mem range by the loader
-	//void *mem_start = (void*)0x80b00000; // as set in Makefile
-	void *mem_start = (void*)0x80a80000; // as set in Makefile
+	void *mem_start = (void*)0x80a50000; // as set in Makefile
 	void *mem_end   = memalign(32,32);
 	//printf("malloc = %p sta = %p\n", mem, &ret);
 
@@ -753,6 +753,54 @@ void maindolpatches(void *dst, int len)
 	if (!CFG.disable_pop_patch) {
 		PrinceOfPersiaPatch();
 	}
+	
+	// Deflicker filter patch
+	if (CFG.game.deflicker == DEFLICKER_ON_LOW)
+    {
+        patch_vfilters(dst, len, vfilter_low);
+        patch_vfilters_rogue(dst, len, vfilter_low);
+    }
+    else if (CFG.game.deflicker == DEFLICKER_ON_MEDIUM)
+    {
+        patch_vfilters(dst, len, vfilter_medium);
+        patch_vfilters_rogue(dst, len, vfilter_medium);
+    }
+    else if (CFG.game.deflicker == DEFLICKER_ON_HIGH)
+    {
+        patch_vfilters(dst, len, vfilter_high);
+        patch_vfilters_rogue(dst, len, vfilter_high);
+    }
+    else if (CFG.game.deflicker != DEFLICKER_DEFAULT)
+    {
+        patch_vfilters(dst, len, vfilter_off);
+        patch_vfilters_rogue(dst, len, vfilter_off);
+        // This might break fade and brightness effects
+        if (CFG.game.deflicker == DEFLICKER_OFF_EXTENDED)
+            deflicker_patch(dst, len);
+    }
+
+	// 480p Pixel Fix
+	if (CFG.game.fix_480p) {
+	   	PatchFix480p();
+	}
+
+	// Dithering patch
+	if (CFG.game.dithering) {
+	   	dithering_patch(dst, len);
+	}
+	
+	// Framebuffer width patch
+	if (CFG.game.fix_fb) {
+		framebuffer_patch(dst, len);
+	}
+	
+#ifdef DEBUG_PATCH
+	// wait to read debug output
+    printf_(gt("Press any button..."));
+	printf("\n");
+	Wpad_WaitButtons();
+#endif
+
 	// Nintendo Wi-Fi Connection (WFC) patch
 	if (CFG.game.private_server) {
 		NoSSLPatch(dst, len);

@@ -1,3 +1,18 @@
+15-09-2024 cfg 70r78.13 (release)
+ - Internals - changed memory start addres to avoid overlaps
+ - Graphics - added options for 480p Nintendo Revolution SDK bug fix patch (Thanks leseratte)
+ - Graphics - added options for deflickering settings (Thanks blackb0x)
+ - Graphics - added options for disabling dithering (Thanks blackb0x)
+ - Graphics - added options for framebuffer width patch (Thanks blackb0x)
+ - Languages - Updated KO.lang (Thanks DDinghoya)
+ - Languages - Updated ZH_CN.lang (Thanks kavid)
+ - Documentation - Moved README-CFG.txt to README.md and converted to markdown format
+
+03-09-2024 cfg 70r78.12 (release)
+ - Internals - changed online update URL paths
+ - GC - updated nintendont config support to version 0x0000000A
+ - Usability - Wiimmfi WFC patching fixed (Thanks leseratte)
+
 15-01-2017 cfg 70r78.11 (release)
  - GC - updated nintendont config support to version 0x00000006
  - GC - if nintendont_config_mode=arg is set nintendont configuration is passed via command line argument

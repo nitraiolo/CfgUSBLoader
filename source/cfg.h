@@ -269,6 +269,10 @@ struct Game_CFG
 	int alt_controller_cfg;
 	int rem_speed_limit;
 	int private_server;
+	int deflicker;
+	int fix_480p;
+	int dithering;
+	int fix_fb;
 };
 
 struct Game_CFG_2
@@ -750,6 +754,7 @@ extern struct TextMap map_channel_boot[];
 extern struct TextMap map_gc_boot[];
 extern struct TextMap map_mem_card_size[];
 extern struct TextMap map_private_server[];
+extern struct TextMap map_deflicker[];
 extern char *names_vpatch[CFG_VIDEO_PATCH_NUM];
 extern u8	  cIOS_base[];
 

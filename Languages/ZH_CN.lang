@@ -1,7 +1,7 @@
-﻿# Configurable USB Loader ZH-CN By 91wii.com
-# Copyright (C) 2010 91wii.Com THE PACKAGE'S COPYRIGHT HOLDER 
-# This file is distributed under the same license as the PACKAGE package. 
-# Kavid <kavid@sina.com>, 2010. 
+﻿# CFG USB Loader language file template.
+# Put the translated string in msgstr ""
+# Fill in the Last-Translator and Language-Team fields.
+# Please use utf-8 charset when editing.
 #
 #, fuzzy
 msgid ""
@@ -15,7 +15,18 @@ msgstr ""
 "MIME-Version: 2.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: Simplified Chinese\n"
+
+msgid "  59 blocks"
+msgstr "59格"
+
+msgid " 123 blocks"
+msgstr "123格"
+
+msgid " 251 blocks"
+msgstr "251格"
+
+msgid " 507 blocks"
+msgstr "507格"
 
 #, c-format
 msgid "%.1fGB free of %.1fGB"
@@ -74,6 +85,9 @@ msgstr ".dol文件太小"
 msgid "1.2+"
 msgstr "1.2以上版本"
 
+msgid "1019 blocks"
+msgstr "1019格"
+
 msgid "1st-Person Shooter"
 msgstr "第一人称射击"
 
@@ -85,6 +99,9 @@ msgstr "2.1以上版本"
 
 msgid "2.2+"
 msgstr "2.2以上版本"
+
+msgid "2043 blocks"
+msgstr "2043格"
 
 msgid "3D cover"
 msgstr "3D封面"
@@ -216,8 +233,14 @@ msgstr "平衡板游戏"
 msgid "Boot Disc"
 msgstr "启动光盘"
 
+msgid "Boot Method:"
+msgstr "引导方式："
+
 msgid "Boot disc"
 msgstr "运行光盘"
+
+msgid "Boot method:"
+msgstr "引导方式："
 
 msgid "Booting game, please wait..."
 msgstr "正在启动游戏，请稍等..."
@@ -367,6 +390,9 @@ msgstr "板球"
 msgid "Current Version: %s"
 msgstr "当前版本：%s"
 
+msgid "Custom"
+msgstr "自定义"
+
 #, c-format
 msgid ""
 "Custom IOS %d could not be found!\n"
@@ -390,6 +416,9 @@ msgstr "cIOS %s加载成功！"
 msgid "DEVO"
 msgstr "DEVO"
 
+msgid "DIOS MIOS"
+msgstr "DIOS MIOS"
+
 msgid "DISC cover"
 msgstr "光盘封面"
 
@@ -410,6 +439,12 @@ msgstr "数据库更新成功。"
 
 msgid "Debug"
 msgstr "调试"
+
+msgid "Default"
+msgstr "缺省"
+
+msgid "Default Gamecube Loader:"
+msgstr "缺省GameCube启动器："
 
 msgid "Delete Game"
 msgstr "删除游戏"
@@ -475,6 +510,10 @@ msgstr "下载游戏信息"
 msgid "Downloadable Content"
 msgstr "支持下载增值内容（DLC）"
 
+#, c-format
+msgid "Downloading %s plugin."
+msgstr "正在下载 %s 插件。"
+
 msgid "Downloading ALL MISSING covers"
 msgstr "正在下载所有缺失的封面"
 
@@ -500,12 +539,6 @@ msgstr "正在下载数据库"
 
 msgid "Downloading devolution."
 msgstr "正在下载devolution。"
-
-msgid "Downloading mighty plugin."
-msgstr "正在下载mighty插件。"
-
-msgid "Downloading neek2o plugin."
-msgstr "正在下载neek2o 插件。"
 
 msgid "Downloading titles.txt ..."
 msgstr "正在下载titles.txt文件..."
@@ -836,6 +869,9 @@ msgstr "平面封面"
 msgid "FULL cover"
 msgstr "完整封面"
 
+msgid "FWD Emulators"
+msgstr "FWD模拟器"
+
 msgid "Fav"
 msgstr "收藏"
 
@@ -899,9 +935,6 @@ msgstr "飞行模拟"
 
 msgid "Football"
 msgstr "足球"
-
-msgid "Force Devolution:"
-msgstr "强制Devolution:"
 
 msgid "Force NTSC"
 msgstr "强制NTSC"
@@ -1142,6 +1175,12 @@ msgstr "读取中..."
 msgid "Loading..%s\n"
 msgstr "正在读取..%s\n"
 
+msgid "MC size:"
+msgstr "MC大小："
+
+msgid "MC size::"
+msgstr "MC大小："
+
 msgid "Main"
 msgstr "主菜单"
 
@@ -1323,8 +1362,18 @@ msgstr "对应Nintendo DS"
 msgid "Nintendo DS Connectivity"
 msgstr "支持与Nintendo DS联动"
 
+msgid "Nintendont"
+msgstr "Nintendont"
+
+#, c-format
+msgid "Nintendont Ver. %d.%d\n"
+msgstr "Nintendont 版本. %d.%d\n"
+
 msgid "No"
 msgstr "否"
+
+msgid "No Speed Limit:"
+msgstr "无速度限制："
 
 #, c-format
 msgid "No domain part in URL '%s'"
@@ -1344,6 +1393,9 @@ msgstr "未找到更新"
 
 msgid "NoDisc:"
 msgstr "免光盘："
+
+msgid "NoSSL only"
+msgstr "仅用NoSSL"
 
 msgid "None found on disc"
 msgstr "光盘上未找到内容"
@@ -1676,6 +1728,9 @@ msgstr "按%s键弹出DVD光盘"
 msgid "Priiloader"
 msgstr "Priiloader"
 
+msgid "Private server:"
+msgstr "私服："
+
 msgid "Profile:"
 msgstr "配置："
 
@@ -1734,6 +1789,9 @@ msgstr "发售日期"
 
 msgid "Release Notes: (short)"
 msgstr "发布说明：(简介)"
+
+msgid "Remove Speed Limit:"
+msgstr "删除速度限制："
 
 msgid "Removing game, please wait..."
 msgstr "正在删除游戏，请稍候..."
@@ -1841,6 +1899,9 @@ msgstr "已选游戏"
 
 msgid "Settings"
 msgstr "设置"
+
+msgid "Shared"
+msgstr "已分享"
 
 msgid "Shooter"
 msgstr "射击游戏"
@@ -2317,47 +2378,5 @@ msgstr "无法打开Wii光盘"
 msgid "used: %p - %p"
 msgstr "已使用: %p - %p"
 
-#~ msgid " Copying files from USB to SD card...(%c)"
-#~ msgstr "正在把文件从USB设备中复制到SD卡中...(%c)"
-
-#~ msgid "Booting Wii game, please wait..."
-#~ msgstr "正在启动Wii游戏，请稍候......"
-
-#~ msgid "Console Def."
-#~ msgstr "主机定义。"
-
-#~ msgid "DISK1:%s[%s]\n"
-#~ msgstr "磁盘1：%s[%s]\n"
-
-#~ msgid "DISK2:%s[%s]2\n"
-#~ msgstr "磁盘2：%s[%s]2\n"
-
-#~ msgid "Download titles.txt"
-#~ msgstr "下载Titltes.txt文件"
-
-#~ msgid "Front"
-#~ msgstr "前"
-
-#~ msgid "Loading previous game list..."
-#~ msgstr "正在读取上次游戏列表..."
-
-#~ msgid "Not Found boot.dol!!"
-#~ msgstr "未找到Boot.dol！"
-
-#~ msgid "Remove Game"
-#~ msgstr "删除游戏"
-
-#~ msgid "Synopsis Len"
-#~ msgstr "摘要长度"
-
-#~ msgid "Update WiiTDB Game Database"
-#~ msgstr "更新WiiTDB游戏数据库"
-
-#~ msgid "Update titles.txt"
-#~ msgstr "更新titles.txt"
-
-#~ msgid "WiiTDB Game Database"
-#~ msgstr "WiiTDB游戏数据库"
-
-#~ msgid "Wiird"
-#~ msgstr "Wii金手指"
+msgid "wiimmfi.de"
+msgstr "wiimmfi.de"

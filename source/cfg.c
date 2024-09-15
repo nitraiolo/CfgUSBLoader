@@ -484,6 +484,17 @@ struct TextMap map_private_server[] =
 	{ NULL,        -1 }
 };
 
+struct TextMap map_deflicker[] = 
+{
+	{ "Defaults",       0 },
+	{ "OFF (Safe)",     1 },
+	{ "OFF (Extended)", 2 },
+	{ "ON (Low)",       3 },
+	{ "ON (Medium)",    4 },
+	{ "ON (High)",      5 },
+	{ NULL,            -1 }
+};
+
 struct playStat {
 	char id[7];
 	s32 playCount;
@@ -1423,6 +1434,10 @@ void CFG_Default()
 	CFG.game.alt_controller_cfg = 0;
 	CFG.game.rem_speed_limit = 0;
 	CFG.game.private_server = 0; //off
+	CFG.game.deflicker = 0; //default game settings
+	CFG.game.fix_480p = 0; //off
+	CFG.game.dithering = 0; //default game settings
+	CFG.game.fix_fb = 0; //default game settings
 	cfg_ios_set_idx(DEFAULT_IOS_IDX);
 	// all other game settings are 0 (memset(0) above)
 	STRCOPY(CFG.sort_ignore, "A,An,The");
@@ -2508,6 +2523,10 @@ void cfg_set_game(char *name, char *val, struct Game_CFG *game_cfg)
 	cfg_map_auto("hooktype", map_hook, &game_cfg->hooktype);
 	cfg_int_max("write_playlog", &game_cfg->write_playlog, 3);
 	cfg_int_max("private_server", &game_cfg->private_server, 3);
+	cfg_int_max("deflicker", &game_cfg->deflicker, 5);
+	cfg_bool("fix_480p", &game_cfg->fix_480p);
+	cfg_bool("dithering", &game_cfg->dithering);
+	cfg_bool("fix_fb", &game_cfg->fix_fb);
 	
 }
 
@@ -3286,6 +3305,10 @@ bool CFG_Save_Settings(int verbose)
 		SAVE_BOOL(alt_controller_cfg);
 		SAVE_BOOL(rem_speed_limit);
 		SAVE_NUM(private_server);
+		SAVE_NUM(deflicker);
+		SAVE_BOOL(fix_480p);
+		SAVE_BOOL(dithering);
+		SAVE_BOOL(fix_fb);
 		if (game_cfg->clean == CFG_CLEAN_OFF) {
 			SAVE_STR("clear_patches", "0");
 		} else if (game_cfg->clean == CFG_CLEAN_ON) {

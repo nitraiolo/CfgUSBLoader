@@ -1099,6 +1099,24 @@ Example:
     #     1 = NoSSL only
     #     2 = wiimmfi.de
     #     3 = Custom string from "custom_private_server"
+    #	
+    # fix_480p = [0], 1
+    #   enable/disable 480p Nintendo Revolution SDK bug fix patch
+    #
+    # deflicker = [0], 1, 2, 3, 4, 5
+    #   override deflicker filter settings:
+    #     0 = Defaults as hardcoded in the game
+    #     1 = Turns off deflickering setting the vfilter to Off
+    #     2 = Turns off deflickering setting the vfilter and patchig GXSetCopyFilter function
+    #     3 = Turns on deflickering setting vfilter to Low
+    #     4 = Turns on deflickering setting vfilter to Medium
+    #     5 = Turns on deflickering setting vfilter to High
+    #
+    # dithering = [0], 1
+    #   enable/disable dithering removal patch
+    #
+    # fix_fb = [0], 1
+    #   enable/disable framebuffer width patch
     #
     # Profile Options:
     # ================

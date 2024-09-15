@@ -12,7 +12,12 @@
 //#include "fwrite_patch.h"
 //#include "fwrite_patch_slota.h"
 //#include "main.h"
+#ifdef DEBUG_PATCH
+#define debug_printf(fmt, args...) \
+	printf(fmt, ##args)
+#else
 #define debug_printf(fmt, args...)
+#endif
 
 bool hookpatched = false;
 
@@ -1076,4 +1081,103 @@ u32 do_new_wiimmfi() {
 	// Patches successfully installed
 	// returns 0 when all patching is done and game is ready to be booted. 
 	return 0; 	
+}
+
+/* 
+ * 480p Pixel Fix Patch by leseratte
+ *
+ * fix for a Nintendo Revolution SDK bug found by Extrems affecting early Wii console when using 480p video mode.
+ * https://shmups.system11.org/viewtopic.php?p=1361158#p1361158
+ * https://github.com/ExtremsCorner/libogc-rice/commit/941d687e271fada68c359bbed98bed1fbb454448
+ *
+ */
+void PatchFix480p() 
+{
+    u8 prefix[2] = { 0x4b, 0xff }; 
+
+    ///              Patch offset: ----------VVVVVVVV
+    u32 Pattern_MKW[8] =     { 0x38000065, 0x9b810019, 0x38810018, 0x386000e0, 0x98010018, 0x38a00002};
+    u32 patches_MKW[2] = { 0x38600003, 0x98610019 }; 
+    /// Used by: MKWii, Wii Play, Need for Speed Nitro, Wii Sports, ...
+
+    ///              Patch offset: ----------------------------------------------VVVVVVVV
+    u32 Pattern_NSMB[8] =   {  0x38000065, 0x9801001c, 0x3881001c, 0x386000e0, 0x9b81001d, 0x38a00002}; 
+    u32 patches_NSMB[2] = { 0x38a00003, 0x98a1001d }; 
+    /// Used by: New Super Mario Bros, ...
+   
+    /* 
+     * Code block that is being patched (in MKW): 
+     * 
+     * 4bffe30d: bl WaitMicroTime 
+     * 38000065: li r0, 0x65
+     * 9b810019: stb r28, 25(r1)        // store the wrong value (1)
+     * 38810018: addi r4, r1, 0x18
+     * 386000e0: li r3, 0xe0
+     * 98010018: stb r0, 24(r1)
+     * 38a00002: li r5, 2
+     * 4bffe73d: bl __VISendI2CData
+     * 
+     * r28 is a register that is set to 1 at the beginning of the function. 
+     * However, its contents are used elsewhere as well, so we can't just modify this one function. 
+     * 
+     * The following code first searches for one of the patterns above, then replaces the 
+     * "stb r28, 25(r1)" instruction that stores the wrong value on the stack with a branch instead
+     * That branch branches to the injected custom code ("li r3, 3; stb r3, 25(r1)") that stores the
+     * correct value (3) instead. At the end of the injected code will be another branch that branches
+     * back to the instruction after the one that has been replaced (so, to "addi r4, r1, 0x18"). 
+     * r3 can safely be used as a temporary register because its contents will be replaced immediately
+     * afterwards anyways. 
+     * 
+     */
+   
+    void * offset = NULL; 
+    void * addr = (void*)0x80000000; 
+    u32 len = 0x900000; 
+
+    void * patch_ptr = 0 ; 
+    void * a = addr; 
+
+    while ((char*)a < ((char*)addr + len)) {
+        if (memcmp(a, &Pattern_MKW, 6 * 4) == 0) {
+            // Found pattern?
+            if (memcmp(a - 4, &prefix, 2) == 0) {
+                if (memcmp(a + 8*4, &prefix, 2) == 0) {
+                    offset = a + 4;
+                    patch_ptr = &patches_MKW; 
+                    break; 
+                }
+            }
+        }
+        else if (memcmp(a, &Pattern_NSMB, 6 * 4) == 0) {
+            // Found pattern?
+            if (memcmp(a - 4, &prefix, 2) == 0) {
+                if (memcmp(a + 8*4, &prefix, 2) == 0) {
+                    offset = a + 16;
+                    patch_ptr = &patches_NSMB; 
+                    break; 
+                }
+            }
+        }
+        a+= 4; 
+    }
+
+   
+   
+    if (offset == 0) {
+        // offset is still 0, we didn't find the pattern, return
+        debug_printf("Didn't find offset for 480p patch!\n"); 
+        return;
+    }
+   
+    // If we are here, we found the offset. Lets grab some space
+    // from the heap for our patch
+    u32 old_heap_ptr = *(u32*)0x80003110;
+    *((u32*)0x80003110) = (old_heap_ptr - 0x20);
+    u32 heap_space = old_heap_ptr-0x20;
+    debug_printf("Found offset for 480p patch - create branch from 0x%x to heap (0x%x)\n", (u32) offset, (u32) heap_space); 
+    memcpy((void*)heap_space, patch_ptr, 8);
+   
+    *((u32*)offset) = 0x48000000 + (((u32)(heap_space) - ((u32)(offset))) & 0x3ffffff);
+    *((u32*)((u32)heap_space + 8)) = 0x48000000 + (((u32)((u32)offset + 4) - ((u32)(heap_space + 8))) & 0x3ffffff);
+    return;
 }
