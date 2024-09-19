@@ -452,6 +452,12 @@ msgstr "기본"
 msgid "Default Gamecube Loader:"
 msgstr "기본 게임큐브 로더:"
 
+msgid "Defaults"
+msgstr "기본"
+
+msgid "Deflicker Filter:"
+msgstr "깜박임 필터:"
+
 msgid "Delete Game"
 msgstr "게임 삭제"
 
@@ -475,6 +481,9 @@ msgstr "데볼루션"
 
 msgid "Devolution only accepts clean dumps!\n"
 msgstr "데볼루션은 클린 덤프만 허용합니다!\n"
+
+msgid "Disable Dithering:"
+msgstr "디더링 비활성화:"
 
 msgid "Disc"
 msgstr "디스크"
@@ -647,7 +656,7 @@ msgid ""
 "(set ntfs_write=1)"
 msgstr ""
 "오류: NTFS 쓰기가 금지되어 있습니다.\n"
-"(ntfs_write=1 설정)"
+"(ntfs_write 설정=1)"
 
 #, c-format
 msgid "ERROR: No partitions found! (ret = %d)"
@@ -692,9 +701,9 @@ msgid ""
 "for starting games from a FAT partition!\n"
 "Upgrade IOS249 or choose a different IOS."
 msgstr ""
-"오류: FAT 파티션에서 이 게임을 하기위해선\n"
+"오류: FAT 파티션에서 게임을 시작하려면\n"
 "cIOS249rev18, cIOS222v4, cIOS223v4,\n"
-"cIOS224v5 또는 상위버전이 필요합니다.\n"
+"cIOS224v5 또는 상위버전이 필요합니다!\n"
 "IOS249를 업데이트 하시거나 다른 IOS를 \n"
 "선택해 주세요."
 
@@ -938,6 +947,9 @@ msgstr "낚시"
 msgid "Fitness"
 msgstr "피트니스"
 
+msgid "Fix 480p:"
+msgstr "480p 수정:"
+
 msgid "Fixing EXTEND partition..."
 msgstr "EXTEND 파티션을 수정하는 중..."
 
@@ -971,6 +983,9 @@ msgstr "포맷 중"
 #, c-format
 msgid "Found %s"
 msgstr "%s 찾았음"
+
+msgid "Framebuffer width:"
+msgstr "프레임버퍼 폭:"
 
 msgid "French"
 msgstr "프랑스어"
@@ -1080,9 +1095,9 @@ msgid ""
 "next time, copy boot.dol.bak over\n"
 "boot.dol and try again."
 msgstr ""
-"프로그램이 정상적으로 동작하지\n"
-"않으면 boot.dol.bak 파일을 boot.dol로\n"
-"바꿔주신 후 다시 시도해 주세요."
+"다음에 Cfg가 제대로 시작되지 않으면\n"
+"boot.dol.bak을 boot.dol 위에 복사한 다음\n"
+"다시 시도하세요."
 
 #, c-format
 msgid "Inconsistency in LZ77 encoding %x"
@@ -1202,8 +1217,8 @@ msgid ""
 "Make sure USB port 0 is used!\n"
 "(The one nearest to the edge)"
 msgstr ""
-"Wii의 바깥쪽 0번 USB에\n"
-"연결하셨는지 확인하세요."
+"USB 포트 0이 사용되었는지 확인하세요!\n"
+"(가장자리에 가장 가까운 포트)"
 
 msgid "Manage"
 msgstr "관리"
@@ -1432,11 +1447,26 @@ msgstr "플레이어 수"
 msgid "Nunchuk"
 msgstr "눈챠크"
 
+msgid "OFF (Extended)"
+msgstr "끔 (확장)"
+
+msgid "OFF (Safe)"
+msgstr "끔 (안전)"
+
 msgid "OK"
 msgstr "확인"
 
 msgid "OK!"
 msgstr "확인하였니다!"
+
+msgid "ON (High)"
+msgstr "켬 (높음)"
+
+msgid "ON (Low)"
+msgstr "켬 (낮음)"
+
+msgid "ON (Medium)"
+msgstr "켬 (중간)"
 
 msgid "Ocarina (cheats):"
 msgstr "오카리나 (치트):"
