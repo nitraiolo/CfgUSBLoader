@@ -1,0 +1,4 @@
+.vscode/
+build/
+cfg*.dol
+cfg*.elf

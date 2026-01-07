@@ -75,6 +75,17 @@ struct ID_Title *cfg_title = NULL;
 HashTable title_hash_id6;
 HashTable title_hash_id4;
 
+// custom sort orders
+struct ID_CustomSort
+{
+	u8 id[7]; // 6 digits + null
+	char order[CUSTOM_SORT_ORDER_SIZE + 1];
+	int hnext; // linked list next with same hash
+};
+int num_cfg_custom_sort = 0;
+struct ID_CustomSort *cfg_custom_sort = NULL;
+HashTable custom_sort_hash_id6;
+
 #define MAX_CFG_GAME 500
 int num_cfg_game = 0;
 struct Game_CFG_2 cfg_game[MAX_CFG_GAME];
@@ -1598,6 +1609,58 @@ void title_set(char *id, char *title)
 			hash_check_init(&title_hash_id6, 0, NULL, &hash_id6, &title_cmp_id6, &title_get_hnext);
 			hash_add(&title_hash_id6, id, num_title - 1);
 		}
+	}
+}
+
+bool custom_sort_cmp_id6(void *cb, void *key, int i)
+{
+	if (i < 0 || i >= num_cfg_custom_sort) return false;
+	return strncmp((char*)cfg_custom_sort[i].id, (char*)key, 6) == 0;
+}
+
+int* custom_sort_get_hnext(void *cb, int i)
+{
+	if (i < 0 || i >= num_cfg_custom_sort) return NULL;
+	return &cfg_custom_sort[i].hnext;
+}
+
+struct ID_CustomSort* cfg_get_id6_custom_sort(u8 *id)
+{
+	if (strlen((char*)id) != 6) return NULL;
+	int i = hash_get(&custom_sort_hash_id6, id);
+	if (i >= 0 && i < num_cfg_custom_sort) return &cfg_custom_sort[i];
+	return NULL;
+}
+
+char *cfg_get_custom_sort_order(u8 *id)
+{
+	struct ID_CustomSort *id6_custom_order = cfg_get_id6_custom_sort(id);
+	if (id6_custom_order) return id6_custom_order->order;
+	return NULL;
+}
+
+void sort_set(char *id, char *order)
+{
+	if (strlen((char*)id) != 6) return;
+	struct ID_CustomSort *id6_custom_order = cfg_get_id6_custom_sort((u8*)id);
+	if (id6_custom_order && strncmp(id, (char*)id6_custom_order->id, 6) == 0) {
+		// replace
+		strcopy(id6_custom_order->order, order, CUSTOM_SORT_ORDER_SIZE + 1);
+	} else {
+		cfg_custom_sort = mem1_realloc(cfg_custom_sort, (num_cfg_custom_sort+1) * sizeof(struct ID_CustomSort));
+		if (!cfg_custom_sort) {
+			// error
+			num_cfg_custom_sort = 0;
+			return;
+		}
+		// add
+		memset(&cfg_custom_sort[num_cfg_custom_sort], 0, sizeof(cfg_custom_sort[num_cfg_custom_sort]));
+		strcopy((char*)cfg_custom_sort[num_cfg_custom_sort].id, id, 7);
+		strcopy(cfg_custom_sort[num_cfg_custom_sort].order, order, CUSTOM_SORT_ORDER_SIZE + 1);
+		num_cfg_custom_sort++;
+		// update hash
+		hash_check_init(&custom_sort_hash_id6, 0, NULL, &hash_id6, &custom_sort_cmp_id6, &custom_sort_get_hnext);
+		hash_add(&custom_sort_hash_id6, id, num_cfg_custom_sort - 1);
 	}
 }
 
@@ -4123,6 +4186,11 @@ void CFG_Load(int argc, char **argv)
 	snprintf(filename, sizeof(filename), "%s/%s", USBLOADER_PATH, "custom-titles.txt");
 	cfg_parsefile(filename, &title_set);
 
+	// load custom sort.txt
+	// it is a line by line text file, only extract leading 6 digit as game id for each line
+	snprintf(filename, sizeof(filename), "%s/%s", USBLOADER_PATH, "sort.txt");
+	cfg_parsesortfile(filename, &sort_set);
+
 	// get theme list
 	get_theme_list();
 
@@ -4172,7 +4240,7 @@ void CFG_Setup(int argc, char **argv)
 	}
 	// load unifont
 	char fname[200];
-	char * dbl = ((strlen(CFG.db_language) == 2) ? VerifyLangCode(CFG.db_language) : ConvertLangTextToCode(CFG.db_language));
+	char * dbl = UnifyToDBCode(CFG.db_language);
 	if ((!strncmp(CFG.translation,"JA",2))
 	  ||(!strncmp(CFG.translation,"KO",2))
 	  ||(!strncmp(CFG.translation,"ZH",2))
@@ -4187,7 +4255,7 @@ void CFG_Setup(int argc, char **argv)
 	get_time(&TIME.misc2);
 	// load database
 	get_time(&TIME.wiitdb1);
-	ReloadXMLDatabase(USBLOADER_PATH, CFG.db_language, 0);
+	ReloadXMLDatabase(USBLOADER_PATH, dbl, 0);
 	get_time(&TIME.wiitdb2);
 	cfg_debug(argc, argv);
 }

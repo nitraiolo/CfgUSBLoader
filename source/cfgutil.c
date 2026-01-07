@@ -186,13 +186,33 @@ void cfg_parseline(char *line, void (*set_func)(char*, char*))
 	set_func(name, val);
 }
 
-bool cfg_parsebuf(char *buf, void (*set_func)(char*, char*))
+void cfg_parsesortline(char *line, int line_num, void (*set_func)(char*, char*))
+{
+	int len = strlen(line);
+	if (len < 6) return;
+	
+	char key[7]; // 6 chars + null terminator
+	strcopy(key, line, 7);
+	
+	char line_num_str[CUSTOM_SORT_ORDER_SIZE + 1];
+	sprintf(line_num_str, "%0*d", CUSTOM_SORT_ORDER_SIZE, line_num);
+	
+	set_func(key, line_num_str);
+}
+
+typedef enum {
+    PARSER_SORTFILE,
+	PARSER_DEFAULT
+} ParserMode;
+
+bool cfg_parsebuf(char *buf, void (*set_func)(char*, char*), int parse_mode)
 {
 	char line[500];
 	char *p, *nl;
 	int len;
 	char bom[] = {0xEF, 0xBB, 0xBF, 0};
 	int i = 0;
+	int line_num = 0;
 	nl = buf;
 	// skip BOM UTF-8 (ef bb bf)
 	if (strncmp(nl, bom, 3) == 0) nl += 3;
@@ -226,47 +246,19 @@ bool cfg_parsebuf(char *buf, void (*set_func)(char*, char*))
 		}
 		i++;
 
-		cfg_parseline(line, set_func);
-	}
-	dbg_print(2, "\n");
-	return true;
-}
-
-bool cfg_parsefile_old(char *fname, void (*set_func)(char*, char*))
-{
-	FILE *f;
-	char line[500];
-	char bom[] = {0xEF, 0xBB, 0xBF};
-	int first_line = 1;
-
-	//printf("opening(%s)\n", fname); sleep(3);
-	f = fopen(fname, "rb");
-	if (!f) {
-		//printf("error opening(%s)\n", fname); sleep(3);
-		return false;
-	}
-
-	while (fgets(line, sizeof(line), f)) {
-		// skip BOM UTF-8 (ef bb bf)
-		if (first_line) {
-			if (memcmp(line, bom, sizeof(bom)) == 0) {
-				memmove(line, line+sizeof(bom), strlen(line)-sizeof(bom)+1);
-				/*printf("BOM found in %s\n", fname);
-				printf("line: '%s'\n", line);
-				sleep(3);*/
-			}
-			first_line = 0;
+		if (parse_mode == PARSER_SORTFILE) {
+			cfg_parsesortline(line, line_num++, set_func);
+		} else {
+			cfg_parseline(line, set_func);
 		}
-		// lines starting with # are comments
-		if (line[0] == '#') continue;
-		// parse
-		cfg_parseline(line, set_func);
 	}
-	fclose(f);
+	if (CFG.debug > 1) {
+		dbg_print(2, "\n");
+	}
 	return true;
 }
 
-bool cfg_parsefile(char *fname, void (*set_func)(char*, char*))
+bool cfg_parsefile_impl(char *fname, void (*set_func)(char*, char*), int parse_mode)
 {
 	int fd;
 	struct stat st;
@@ -274,8 +266,12 @@ bool cfg_parsefile(char *fname, void (*set_func)(char*, char*))
 	int size;
 	bool ret;
 	int r;
+	if (parse_mode == PARSER_SORTFILE) {
+		dbg_print(2, "parse_sort(%s)", fname);
+	} else {
+		dbg_print(2, "parse(%s)", fname);
+	}
 
-	dbg_print(2, "parse(%s)", fname);
 	r = stat(fname, &st);
 	if (r != 0) {
 		dbg_print(2, " -\n");
@@ -300,9 +296,19 @@ bool cfg_parsefile(char *fname, void (*set_func)(char*, char*))
 		return false;
 	}
 	buf[size] = 0; // zero terminate
-	ret = cfg_parsebuf(buf, set_func);
+	ret = cfg_parsebuf(buf, set_func, parse_mode);
 	SAFE_FREE(buf);
 	dbg_print(2, "EOF(%s)\n", fname);
 	return ret;
 }
 
+
+bool cfg_parsefile(char *fname, void (*set_func)(char*, char*))
+{
+	return cfg_parsefile_impl(fname, set_func, PARSER_DEFAULT);
+}
+
+bool cfg_parsesortfile(char *fname, void (*set_func)(char*, char*))
+{
+	return cfg_parsefile_impl(fname, set_func, PARSER_SORTFILE);
+}

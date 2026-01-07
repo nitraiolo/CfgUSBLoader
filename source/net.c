@@ -782,7 +782,7 @@ void Download_XML()
 	char zipurl[100];
 	extern char *get_cc();
 	char *cc = get_cc();
-	char * dbl = ((strlen(CFG.db_language) == 2) ? VerifyLangCode(CFG.db_language) : ConvertLangTextToCode(CFG.db_language));
+	char * dbl = UnifyToDBCode(CFG.db_language);
 	strcopy(zipurl, CFG.db_url, sizeof(zipurl));
 	str_replace(zipurl, "{CC}", cc, sizeof(zipurl));
 	str_replace(zipurl, "{DBL}", dbl, sizeof(zipurl));

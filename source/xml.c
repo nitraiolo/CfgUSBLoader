@@ -76,7 +76,6 @@ struct xmlTag tags[] =
 struct xmlIndex idx[TAG_MAX];
 
 /* config */
-char xmlCfgLang[3];
 char xmlcfg_filename[100];
 char *xmlData;
 static struct gameXMLinfo gameinfo;
@@ -118,7 +117,7 @@ static char langlist[11][22] =
 {"T. Chinese"},
 {"Korean"}};
 
-static char langcodes[11][3] =
+static char db_langcodes[11][5] =
 {{""},
 {"JA"},
 {"EN"},
@@ -127,8 +126,8 @@ static char langcodes[11][3] =
 {"ES"},
 {"IT"},
 {"NL"},
-{"ZH"},
-{"ZH"},
+{"ZHCN"},
+{"ZHTW"},
 {"KO"}};
 
 
@@ -139,7 +138,7 @@ void xml_stat()
 
 char * getLang(int lang) {
 	if (lang < 1 || lang > 10) return "EN";
-	return langcodes[lang+1];
+	return db_langcodes[lang+1];
 }
 
 char * unescape(char *input, int size) {
@@ -341,29 +340,20 @@ bool OpenXMLFile(char *filename)
 	return xml_loaded;
 }
 
-/* convert language text into ISO 639 two-letter language code */
-char *ConvertLangTextToCode(char *languagetxt)
+char* UnifyToDBCode(char *languagetxt)
 {
 	if (!strcmp(languagetxt, ""))
 		return "EN";
 	int i;
+	for (i=1;i<=10;i++)
+	{
+		if (!strcasecmp(languagetxt,db_langcodes[i])) // case insensitive comparison
+			return db_langcodes[i];
+	}
 	for (i=1;i<=10;i++)
 	{
 		if (!strcasecmp(languagetxt,langlist[i])) // case insensitive comparison
-			return langcodes[i];
-	}
-	return "EN";
-}
-
-char *VerifyLangCode(char *languagetxt)
-{
-	if (!strcmp(languagetxt, ""))
-		return "EN";
-	int i;
-	for (i=1;i<=10;i++)
-	{
-		if (!strcasecmp(languagetxt,langcodes[i])) // case insensitive comparison
-			return langcodes[i];
+			return db_langcodes[i];
 	}
 	return "EN";
 }
@@ -780,7 +770,7 @@ void readControls(char * start, struct gameXMLinfo *g)
 }
 
 
-void readTitles(xmlIndex *x, struct gameXMLinfo *g)
+void readTitles(xmlIndex *x, struct gameXMLinfo *g, char* db_lang)
 {
 	char *locStart;
 	char *locEnd;
@@ -806,7 +796,7 @@ void readTitles(xmlIndex *x, struct gameXMLinfo *g)
 		*locEnd = 0; // zero terminate
 		locEnd++; // move to next entry
 		tmpLang = locStart+14;
-		if (memcmp(tmpLang, xmlCfgLang, 2) == 0) {
+		if (memcmp(tmpLang, db_lang, strlen(db_lang)) == 0) {
 			found = 3;
 		} else if (memcmp(tmpLang, "EN", 2) == 0) {
 			found = 2;
@@ -867,24 +857,17 @@ int* xml_next_handle(void *cb, int handle)
 	return &get_game_info(handle)->hnext;
 }
 
-void LoadTitlesFromXML(char *langtxt, bool forcejptoen)
+void LoadTitlesFromXML(char *db_lang, bool forcejptoen)
 {
 	char * pos = xmlData;
-	bool forcelang = false;
 	struct gameXMLinfo *g;
 	
 	xmlgameCnt = 0;
 	obs_init(&obs_game_info, 10240, mem1_realloc, mem_resize);
 	hash_init(&hash_game_info, 0, NULL, &hash_id4, &xml_compare_key, &xml_next_handle);
 
-	if (strcmp(langtxt,""))
-		forcelang = true;
-	if (forcelang) {
-		// convert language text into ISO 639 two-letter language code
-		strcpy(xmlCfgLang, (strlen(langtxt) == 2) ? VerifyLangCode(langtxt) : ConvertLangTextToCode(langtxt));
-	}
-	if (forcejptoen && (!strcmp(xmlCfgLang,"JA")))
-		strcpy(xmlCfgLang,"EN");
+	if (forcejptoen && (!strcmp(db_lang,"JA")))
+		db_lang = "EN";
 	
 	prep_tags();
 
@@ -912,7 +895,7 @@ void LoadTitlesFromXML(char *langtxt, bool forcejptoen)
 			break;
 		}
 		hash_add(&hash_game_info, g->id, xmlgameCnt);
-		readTitles(idx+TAG_LOCALE, g);
+		readTitles(idx+TAG_LOCALE, g, db_lang);
 		readDate(idx+TAG_DATE, g);
 		readRatings(idx+TAG_RATING, g);
 		readWifi(idx+TAG_WIFI, g);
@@ -1022,46 +1005,46 @@ char *utf8toconsole(char *string)
 	ptr = string;
 	while (*ptr != '\0') {
 		switch (*ptr){
-			case 0x87: // «
+			case 0x87: // √á
 				*ptr = 0x80; 
 				break;
-			case 0xA7: // ÅE
+			case 0xA7: // ÔøΩE
 				*ptr = 0x87; 
 				break;
-			case 0xA0: // ÅE
+			case 0xA0: // ÔøΩE
 				*ptr = 0x85; 
 				break;
-			case 0xA2: // ÅE
+			case 0xA2: // ÔøΩE
 				*ptr = 0x83; 
 				break;
-			case 0x80: // ¿
+			case 0x80: // √Ä
 				*ptr = 0x41; 
 				break;
-			case 0x82: // ¬
+			case 0x82: // √Ç
 				*ptr = 0x41; 
 				break;
-			case 0xAA: // ÅE
+			case 0xAA: // ÔøΩE
 				*ptr = 0x88; 
 				break;
-			case 0xA8: // ÅE
+			case 0xA8: // ÔøΩE
 				*ptr = 0x8A; 
 				break;
-			case 0xA9: // ÅE
+			case 0xA9: // ÔøΩE
 				*ptr = 0x82;  
 				break;	
-			case 0x89: // …
+			case 0x89: // √â
 				*ptr = 0x90; 
 				break;
-			case 0x88: // »
+			case 0x88: // √à
 				*ptr = 0x45; 
 				break;
 			case 0xC5: // Okami
 				*ptr = 0x4F; 
 				break;
-			case 0xB1: // ÅE
+			case 0xB1: // ÔøΩE
 				*ptr = 0xA4; 
 				break;
-			case 0x9F: // ﬂ
+			case 0x9F: // √ü
 				*ptr = 0xE1; 
 				break;	
 				

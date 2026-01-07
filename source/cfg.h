@@ -706,6 +706,8 @@ int  CFG_MountUSB();
 char *cfg_get_title(u8 *id);
 char *get_title(struct discHdr *header);
 
+char *cfg_get_custom_sort_order(u8 *id);
+
 struct Game_CFG_2* CFG_find_game(u8 *id);
 struct Game_CFG CFG_read_active_game_setting(u8 *id);
 struct Game_CFG_2* CFG_get_game(u8 *id);

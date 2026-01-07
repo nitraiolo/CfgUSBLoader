@@ -11,6 +11,7 @@ struct TextMap
 };
 
 #define MAP_NUM(map) (sizeof(map) / sizeof(struct TextMap) - 1)
+#define CUSTOM_SORT_ORDER_SIZE 6
 
 int map_get_num(struct TextMap *map);
 int map_to_list(struct TextMap *map, int n, char **list);
@@ -30,9 +31,8 @@ bool cfg_str(char *name, char *var, int size);
 bool cfg_str_list(char *name, char *var, int size);
 // split line to name = val and trim whitespace
 void cfg_parseline(char *line, void (*set_func)(char*, char*));
-bool cfg_parsebuf(char *buf, void (*set_func)(char*, char*));
-bool cfg_parsefile_old(char *fname, void (*set_func)(char*, char*));
 bool cfg_parsefile(char *fname, void (*set_func)(char*, char*));
+bool cfg_parsesortfile(char *fname, void (*set_func)(char*, char*));
 
 #define CFG_STR(name, var) cfg_str(name, var, sizeof(var))
 #define CFG_STR_LIST(name, var) cfg_str_list(name, var, sizeof(var))

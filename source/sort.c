@@ -234,7 +234,7 @@ void build_arrays() {
 	genreTypes[50][1] = (char *)gt("Off-Road Racing");
 	genreTypes[51][0] = "party";
 	genreTypes[51][1] = (char *)gt("Party");
-	genreTypes[52][0] = "pétanque";
+	genreTypes[52][0] = "pÃ©tanque";
 	genreTypes[52][1] = (char *)gt("Petanque");
 	genreTypes[53][0] = "pinball";
 	genreTypes[53][1] = (char *)gt("Pinball");
@@ -1221,10 +1221,17 @@ s32 __sort_install_date(struct discHdr * hdr1, struct discHdr * hdr2, bool desc)
 
 s32 __sort_title(struct discHdr * hdr1, struct discHdr * hdr2, bool desc)
 {
-	char *title1 = get_title(hdr1);
-	char *title2 = get_title(hdr2);
-	title1 = skip_sort_ignore(title1);
-	title2 = skip_sort_ignore(title2);
+	// apply custom sort.txt first
+	char* title1 = cfg_get_custom_sort_order(hdr1->id);
+	char* title2 = cfg_get_custom_sort_order(hdr2->id);
+	if (!title1) {
+		title1 = get_title(hdr1);
+		title1 = skip_sort_ignore(title1);
+	}
+	if (!title2) {
+		title2 = get_title(hdr2);
+		title2 = skip_sort_ignore(title2);
+	}
 	if (desc)
 		return mbs_coll(title2, title1);
 	else
